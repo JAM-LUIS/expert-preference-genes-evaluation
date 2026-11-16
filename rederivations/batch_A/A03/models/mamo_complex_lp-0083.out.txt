@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 145.0
+  u_Charlie = 1.0
+  u_Delta = 3.0
+  x_Alpha_Bravo = 1.0
+  x_Bravo_Charlie = 1.0
+  x_Charlie_Delta = 1.0
+  x_Delta_Alpha = 1.0

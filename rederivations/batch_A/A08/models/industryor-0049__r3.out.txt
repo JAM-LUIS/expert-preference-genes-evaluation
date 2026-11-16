@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 212500.0
+  u_1_3 = 1.0
+  u_1_4 = 1.0
+  u_3_2 = 1.0
+  w_2 = 1.0
+  w_3 = 1.0
+  w_4 = 1.0
+  x_1_3 = 8.0
+  x_1_4 = 7.0
+  x_3_2 = 5.0

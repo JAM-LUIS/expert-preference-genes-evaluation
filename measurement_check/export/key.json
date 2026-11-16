@@ -1,0 +1,1946 @@
+{
+ "schema": "orgene.r1.measurement_check.key.v1",
+ "data": "TEST",
+ "seed": 20261008,
+ "model": "qwen3:8b",
+ "sample": {
+  "file": "sample.json",
+  "sha256": "56e93919d8fba7e24ff74a79a8cb489eaa417813390e18c4a35d2e410a52fffc",
+  "digest": "58169c7f5b1bb93be93c3e4d742035ee6d6a7f389d333a885a1e4b12d9f5c554"
+ },
+ "N": 125,
+ "N_D": 31,
+ "census_D": false,
+ "strata": [
+  {
+   "part": 1,
+   "stratum": "mamo_complex_lp|l_correct_e_incorrect",
+   "N_h": 3,
+   "n_h": 2,
+   "weight": 1.5
+  },
+  {
+   "part": 1,
+   "stratum": "mamo_complex_lp|l_incorrect_e_correct",
+   "N_h": 0,
+   "n_h": 0,
+   "weight": null
+  },
+  {
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "N_h": 12,
+   "n_h": 9,
+   "weight": 1.3333333333333333
+  },
+  {
+   "part": 1,
+   "stratum": "industryor|l_correct_e_incorrect",
+   "N_h": 2,
+   "n_h": 2,
+   "weight": 1.0
+  },
+  {
+   "part": 1,
+   "stratum": "industryor|l_incorrect_e_correct",
+   "N_h": 0,
+   "n_h": 0,
+   "weight": null
+  },
+  {
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "N_h": 14,
+   "n_h": 11,
+   "weight": 1.2727272727272727
+  },
+  {
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_correct",
+   "N_h": 37,
+   "n_h": 3,
+   "weight": 12.333333333333334
+  },
+  {
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_incorrect",
+   "N_h": 23,
+   "n_h": 3,
+   "weight": 7.666666666666667
+  },
+  {
+   "part": 2,
+   "stratum": "industryor|C3L_correct",
+   "N_h": 16,
+   "n_h": 2,
+   "weight": 8.0
+  },
+  {
+   "part": 2,
+   "stratum": "industryor|C3L_incorrect",
+   "N_h": 18,
+   "n_h": 2,
+   "weight": 9.0
+  }
+ ],
+ "accuracy": {
+  "C0": 0.392,
+  "C3E": 0.432,
+  "C3L": 0.472
+ },
+ "delta_C3L_C3E": 0.03999999999999998,
+ "delta_C3L_C0": 0.07999999999999996,
+ "delta_C3E_C0": 0.03999999999999998,
+ "problems": [
+  {
+   "problem_id": "P01",
+   "case_id": "mamo_complex_lp-0193",
+   "benchmark": "mamo_complex_lp",
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_incorrect",
+   "weight": 7.666666666666667,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P01-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "cfdf4c94e62773e3a7367fb92b65e4f1c00065e0666af1f2eae47b34f6413ae2"
+     ],
+     "display_sha256": "1bfb8e3af8ab1cb3aa0f47af0433fa32c559806fd9543041f36fd90e89b48f78",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P01-A",
+     "S": false,
+     "X": true,
+     "identity": "cfdf4c94e62773e3a7367fb92b65e4f1c00065e0666af1f2eae47b34f6413ae2"
+    },
+    "C3E": {
+     "program_id": "P01-A",
+     "S": false,
+     "X": true,
+     "identity": "cfdf4c94e62773e3a7367fb92b65e4f1c00065e0666af1f2eae47b34f6413ae2"
+    },
+    "C3L": {
+     "program_id": "P01-A",
+     "S": false,
+     "X": true,
+     "identity": "cfdf4c94e62773e3a7367fb92b65e4f1c00065e0666af1f2eae47b34f6413ae2"
+    }
+   }
+  },
+  {
+   "problem_id": "P02",
+   "case_id": "industryor-0018",
+   "benchmark": "industryor",
+   "part": 2,
+   "stratum": "industryor|C3L_correct",
+   "weight": 8.0,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P02-A",
+     "conditions": [
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "dc1a46b07374e03a0ec0f9331d173f1416256fe50f42da9978965d1b38151da5"
+     ],
+     "display_sha256": "235100a201d035b0ab0dcd460f54756fdbef60948f64fd7b73068c9be1c17a33",
+     "flags": []
+    },
+    {
+     "program_id": "P02-B",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "408eb3e42d9b84a830792d289e96e34180ce4872793f3b7c52d79e18ef911385"
+     ],
+     "display_sha256": "5181e98081a4f4ec36afae2f3761184d435449dd46ea472e392a76551730dc08",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P02-B",
+     "S": false,
+     "X": true,
+     "identity": "408eb3e42d9b84a830792d289e96e34180ce4872793f3b7c52d79e18ef911385"
+    },
+    "C3E": {
+     "program_id": "P02-A",
+     "S": true,
+     "X": true,
+     "identity": "dc1a46b07374e03a0ec0f9331d173f1416256fe50f42da9978965d1b38151da5"
+    },
+    "C3L": {
+     "program_id": "P02-A",
+     "S": true,
+     "X": true,
+     "identity": "dc1a46b07374e03a0ec0f9331d173f1416256fe50f42da9978965d1b38151da5"
+    }
+   }
+  },
+  {
+   "problem_id": "P03",
+   "case_id": "mamo_complex_lp-0165",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|l_correct_e_incorrect",
+   "weight": 1.5,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P03-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "65f53bbac83013da86645bc784f1efb8e9194d35381702692652bd111d704b1b"
+     ],
+     "display_sha256": "acf4e62e88c4170c68bb07851fb65e4262e0d30461ad7fd01d22a0ed2964b147",
+     "flags": []
+    },
+    {
+     "program_id": "P03-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "7b57d21db9c9833f169ed10030d563ed5515851c00585d774ff53372ca6562c0"
+     ],
+     "display_sha256": "402855f455332160faaf5e8f7e904708ccd40aeabefe92adc814196f1c0319de",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P03-B",
+     "S": false,
+     "X": false,
+     "identity": "7b57d21db9c9833f169ed10030d563ed5515851c00585d774ff53372ca6562c0"
+    },
+    "C3E": {
+     "program_id": "P03-B",
+     "S": false,
+     "X": false,
+     "identity": "7b57d21db9c9833f169ed10030d563ed5515851c00585d774ff53372ca6562c0"
+    },
+    "C3L": {
+     "program_id": "P03-A",
+     "S": true,
+     "X": true,
+     "identity": "65f53bbac83013da86645bc784f1efb8e9194d35381702692652bd111d704b1b"
+    }
+   }
+  },
+  {
+   "problem_id": "P04",
+   "case_id": "industryor-0063",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|l_correct_e_incorrect",
+   "weight": 1.0,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P04-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "5b758794e5bb3f8310a8fabd0275eff8d07f643dc2222311ca8d1021635c4ded"
+     ],
+     "display_sha256": "8cbdf2e16b9c0e40a461ef05b94628670bafdcbfe00f4849ab11d95f8564ae2a",
+     "flags": []
+    },
+    {
+     "program_id": "P04-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "72ab8d1c4dfcda65546d04fdc0d176f7db010f16cabb08161b2a905fe9add3d3"
+     ],
+     "display_sha256": "9b51531878289a8baefaa411eb768f314d57b9e95e0abaac608a5e257b3f0810",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P04-B",
+     "S": false,
+     "X": true,
+     "identity": "72ab8d1c4dfcda65546d04fdc0d176f7db010f16cabb08161b2a905fe9add3d3"
+    },
+    "C3E": {
+     "program_id": "P04-B",
+     "S": false,
+     "X": true,
+     "identity": "72ab8d1c4dfcda65546d04fdc0d176f7db010f16cabb08161b2a905fe9add3d3"
+    },
+    "C3L": {
+     "program_id": "P04-A",
+     "S": true,
+     "X": true,
+     "identity": "5b758794e5bb3f8310a8fabd0275eff8d07f643dc2222311ca8d1021635c4ded"
+    }
+   }
+  },
+  {
+   "problem_id": "P05",
+   "case_id": "industryor-0028",
+   "benchmark": "industryor",
+   "part": 2,
+   "stratum": "industryor|C3L_incorrect",
+   "weight": 9.0,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P05-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "ff363719286017eec5c2cc20f0bb1893752350ae0639f1d72060dcd3d624bde9"
+     ],
+     "display_sha256": "ec0dedd936bce3940ea5cdd3f47a4628e0db02384c5402de1a99b5ed7e85ef73",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P05-A",
+     "S": false,
+     "X": true,
+     "identity": "ff363719286017eec5c2cc20f0bb1893752350ae0639f1d72060dcd3d624bde9"
+    },
+    "C3E": {
+     "program_id": "P05-A",
+     "S": false,
+     "X": true,
+     "identity": "ff363719286017eec5c2cc20f0bb1893752350ae0639f1d72060dcd3d624bde9"
+    },
+    "C3L": {
+     "program_id": "P05-A",
+     "S": false,
+     "X": true,
+     "identity": "ff363719286017eec5c2cc20f0bb1893752350ae0639f1d72060dcd3d624bde9"
+    }
+   }
+  },
+  {
+   "problem_id": "P06",
+   "case_id": "industryor-0095",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P06-A",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "7248595ce7b1425035f5e15d8360a43c21e55c0dc0a79ae8eff5feef82ce491f"
+     ],
+     "display_sha256": "2fb84211c1c3e9ebe798cc3972d3ef59edb4ac3429e5b4da40797494e094997a",
+     "flags": []
+    },
+    {
+     "program_id": "P06-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "9d83166f87e7f5a622da32f7a8613d20bc065300dff2b7805d365dba7f574673"
+     ],
+     "display_sha256": "9943e620568748ada692073acf7910281651f32d09f3b01ed9182d6735c464f7",
+     "flags": []
+    },
+    {
+     "program_id": "P06-C",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "7e84bc4a56f72a43297582061deadde6c63ceb40b575ce5554e93acd1afa10a4"
+     ],
+     "display_sha256": "5316280254d21c445046a592c19f6f14559c399135a47c601431070c793560c9",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P06-C",
+     "S": false,
+     "X": true,
+     "identity": "7e84bc4a56f72a43297582061deadde6c63ceb40b575ce5554e93acd1afa10a4"
+    },
+    "C3E": {
+     "program_id": "P06-A",
+     "S": false,
+     "X": true,
+     "identity": "7248595ce7b1425035f5e15d8360a43c21e55c0dc0a79ae8eff5feef82ce491f"
+    },
+    "C3L": {
+     "program_id": "P06-B",
+     "S": false,
+     "X": true,
+     "identity": "9d83166f87e7f5a622da32f7a8613d20bc065300dff2b7805d365dba7f574673"
+    }
+   }
+  },
+  {
+   "problem_id": "P07",
+   "case_id": "mamo_complex_lp-0121",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P07-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "c629a9fc6a692c59ab93ea4770124ea73cfbfc767599686637bd38f0b276c692"
+     ],
+     "display_sha256": "04dc4e6246f7acde58d23e5c15254de1761d6bdc18dab494d639f7f3d25d0332",
+     "flags": []
+    },
+    {
+     "program_id": "P07-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "dff30430a59e665e06a8473228a66447712ffa996a51ed13b451c4bd5b976484"
+     ],
+     "display_sha256": "acfb9f0e21692a1f3da7803915c05daedfe90a8bc2a4a0e7ebe51e9008ca2efb",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P07-B",
+     "S": false,
+     "X": true,
+     "identity": "dff30430a59e665e06a8473228a66447712ffa996a51ed13b451c4bd5b976484"
+    },
+    "C3E": {
+     "program_id": "P07-B",
+     "S": false,
+     "X": true,
+     "identity": "dff30430a59e665e06a8473228a66447712ffa996a51ed13b451c4bd5b976484"
+    },
+    "C3L": {
+     "program_id": "P07-A",
+     "S": false,
+     "X": true,
+     "identity": "c629a9fc6a692c59ab93ea4770124ea73cfbfc767599686637bd38f0b276c692"
+    }
+   }
+  },
+  {
+   "problem_id": "P08",
+   "case_id": "industryor-0082",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P08-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "5e99733c965aade9e4e8e86fbc9c796246590cc5d1a4f4cab64ef90a3b03f9c7"
+     ],
+     "display_sha256": "ddf10ae3c4396be378fc97de1df8da0b0f56280f4bef886ad4426a83e163d24b",
+     "flags": []
+    },
+    {
+     "program_id": "P08-B",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "6fb309e2f4e805abe512bf6c2c34641cfed5ea576dfd3e42384a9c887c279ca7"
+     ],
+     "display_sha256": "63acbfa08b959522498698ef8766006f4e381cf91485a9dbcc3554a6df0b296a",
+     "flags": []
+    },
+    {
+     "program_id": "P08-C",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "73cd74eb5c3061aba10643b43ef25a23aebc184e02d834f86cec716017d7311b"
+     ],
+     "display_sha256": "390ad043cfe5e12b3f3944259e6970413e2cbdf224a539bdd3727225d58702a7",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P08-C",
+     "S": false,
+     "X": false,
+     "identity": "73cd74eb5c3061aba10643b43ef25a23aebc184e02d834f86cec716017d7311b"
+    },
+    "C3E": {
+     "program_id": "P08-B",
+     "S": false,
+     "X": false,
+     "identity": "6fb309e2f4e805abe512bf6c2c34641cfed5ea576dfd3e42384a9c887c279ca7"
+    },
+    "C3L": {
+     "program_id": "P08-A",
+     "S": false,
+     "X": false,
+     "identity": "5e99733c965aade9e4e8e86fbc9c796246590cc5d1a4f4cab64ef90a3b03f9c7"
+    }
+   }
+  },
+  {
+   "problem_id": "P09",
+   "case_id": "mamo_complex_lp-0040",
+   "benchmark": "mamo_complex_lp",
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_incorrect",
+   "weight": 7.666666666666667,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P09-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "0422db3552def805e4f726b84a1fa14d3e4a90b6fda55215c156746a96057214"
+     ],
+     "display_sha256": "36e05767d18f5ef9782ce741ba2b7762f2a52c76f9147830d0f869d98e0d1bd9",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P09-A",
+     "S": false,
+     "X": true,
+     "identity": "0422db3552def805e4f726b84a1fa14d3e4a90b6fda55215c156746a96057214"
+    },
+    "C3E": {
+     "program_id": "P09-A",
+     "S": false,
+     "X": true,
+     "identity": "0422db3552def805e4f726b84a1fa14d3e4a90b6fda55215c156746a96057214"
+    },
+    "C3L": {
+     "program_id": "P09-A",
+     "S": false,
+     "X": true,
+     "identity": "0422db3552def805e4f726b84a1fa14d3e4a90b6fda55215c156746a96057214"
+    }
+   }
+  },
+  {
+   "problem_id": "P10",
+   "case_id": "mamo_complex_lp-0112",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P10-A",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "85e129bb937219ca16dc128abd6d6e04cc9736bf6b3e120a400ee9280d729ae2"
+     ],
+     "display_sha256": "9237818dac27fa06ee3fecee7b36cb39f4b21a6765a0d579b0f6f55396655640",
+     "flags": []
+    },
+    {
+     "program_id": "P10-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "204283505cc8780b7700cadac815b55470d3487b73526b48e851cf44db515075"
+     ],
+     "display_sha256": "f0d6c45ba621605bed4f375741e670a60def59d3e9302edb70d9d7db6e9a8aa3",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P10-A",
+     "S": false,
+     "X": false,
+     "identity": "85e129bb937219ca16dc128abd6d6e04cc9736bf6b3e120a400ee9280d729ae2"
+    },
+    "C3E": {
+     "program_id": "P10-A",
+     "S": false,
+     "X": false,
+     "identity": "85e129bb937219ca16dc128abd6d6e04cc9736bf6b3e120a400ee9280d729ae2"
+    },
+    "C3L": {
+     "program_id": "P10-B",
+     "S": false,
+     "X": true,
+     "identity": "204283505cc8780b7700cadac815b55470d3487b73526b48e851cf44db515075"
+    }
+   }
+  },
+  {
+   "problem_id": "P11",
+   "case_id": "industryor-0017",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P11-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "cabe944b6d534a11ca4f6187284d4ab8669f17048734e7279723ff35be8c86b0"
+     ],
+     "display_sha256": "0a9ab46d5924ae84d44b3f84cdee252f2479a6960ec7ab89936b447e3e282667",
+     "flags": []
+    },
+    {
+     "program_id": "P11-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "6595a738ec63adf5e9bb4758c17a0a61b2ec1aaf1aee32984e9160c9d5b62c8d"
+     ],
+     "display_sha256": "436b90fbfeac63e92a3628dfc7e7079336a404dbaf5807d927e6b09ff3200ea9",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P11-B",
+     "S": false,
+     "X": true,
+     "identity": "6595a738ec63adf5e9bb4758c17a0a61b2ec1aaf1aee32984e9160c9d5b62c8d"
+    },
+    "C3E": {
+     "program_id": "P11-B",
+     "S": false,
+     "X": true,
+     "identity": "6595a738ec63adf5e9bb4758c17a0a61b2ec1aaf1aee32984e9160c9d5b62c8d"
+    },
+    "C3L": {
+     "program_id": "P11-A",
+     "S": false,
+     "X": true,
+     "identity": "cabe944b6d534a11ca4f6187284d4ab8669f17048734e7279723ff35be8c86b0"
+    }
+   }
+  },
+  {
+   "problem_id": "P12",
+   "case_id": "mamo_complex_lp-0133",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P12-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "91eef6c6cc5fe892e62a73819e6e3b4889a87c4994c5d3e5f155d4ef99f272bb"
+     ],
+     "display_sha256": "b37e991289fdef30ee28be5c7d0762e0d6487f5c0c31945df04de7a5d4e58ba3",
+     "flags": []
+    },
+    {
+     "program_id": "P12-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "81efd978e89cb7f7e2ffd01c8377b76f7dd4d642d46253e516ebbbb85a5f0a84"
+     ],
+     "display_sha256": "2a9430e60015517041180ab9681750b5c5a4c6e92de5e520d9e1f65e3585e60a",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P12-B",
+     "S": false,
+     "X": true,
+     "identity": "81efd978e89cb7f7e2ffd01c8377b76f7dd4d642d46253e516ebbbb85a5f0a84"
+    },
+    "C3E": {
+     "program_id": "P12-B",
+     "S": false,
+     "X": true,
+     "identity": "81efd978e89cb7f7e2ffd01c8377b76f7dd4d642d46253e516ebbbb85a5f0a84"
+    },
+    "C3L": {
+     "program_id": "P12-A",
+     "S": false,
+     "X": true,
+     "identity": "91eef6c6cc5fe892e62a73819e6e3b4889a87c4994c5d3e5f155d4ef99f272bb"
+    }
+   }
+  },
+  {
+   "problem_id": "P13",
+   "case_id": "industryor-0035",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P13-A",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "fde56ab0b7dae8149f0b534e15ee7cfb86df934a3772811c8af86a34d8d54599"
+     ],
+     "display_sha256": "8b6bc23560637793c9e0ae79cd4bfef2f5de3f0af4b49812d4acb1c04c3cf032",
+     "flags": []
+    },
+    {
+     "program_id": "P13-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "c24ba921560b102703959ed563ad63e2bf3b78e0b8a8379e1864f7fe173846ca"
+     ],
+     "display_sha256": "03623ab9efac491a31c8ca2b6dda0971c9899da4b83c6a36b0698f200b414ef0",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P13-A",
+     "S": false,
+     "X": true,
+     "identity": "fde56ab0b7dae8149f0b534e15ee7cfb86df934a3772811c8af86a34d8d54599"
+    },
+    "C3E": {
+     "program_id": "P13-A",
+     "S": false,
+     "X": true,
+     "identity": "fde56ab0b7dae8149f0b534e15ee7cfb86df934a3772811c8af86a34d8d54599"
+    },
+    "C3L": {
+     "program_id": "P13-B",
+     "S": false,
+     "X": true,
+     "identity": "c24ba921560b102703959ed563ad63e2bf3b78e0b8a8379e1864f7fe173846ca"
+    }
+   }
+  },
+  {
+   "problem_id": "P14",
+   "case_id": "industryor-0021",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P14-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "391e0b86ab2be37107ed3f521601c9dd9dd0f9693dd4a15f235e34110ccc0364"
+     ],
+     "display_sha256": "67a2a20df23b23482338d5fb1acfeb116461f63e891cf5c4bac8e1af24951c37",
+     "flags": []
+    },
+    {
+     "program_id": "P14-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "b98c94b1eab9e2834741be1baadf61f009a0c6a9502a810458c5aad00f374c78"
+     ],
+     "display_sha256": "b224239ac01b99581f03e23158a884e697f6bd48dd6540cadbf13de51ae3fd51",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P14-B",
+     "S": false,
+     "X": true,
+     "identity": "b98c94b1eab9e2834741be1baadf61f009a0c6a9502a810458c5aad00f374c78"
+    },
+    "C3E": {
+     "program_id": "P14-B",
+     "S": false,
+     "X": true,
+     "identity": "b98c94b1eab9e2834741be1baadf61f009a0c6a9502a810458c5aad00f374c78"
+    },
+    "C3L": {
+     "program_id": "P14-A",
+     "S": false,
+     "X": true,
+     "identity": "391e0b86ab2be37107ed3f521601c9dd9dd0f9693dd4a15f235e34110ccc0364"
+    }
+   }
+  },
+  {
+   "problem_id": "P15",
+   "case_id": "mamo_complex_lp-0122",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P15-A",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "b1be69c89b9d89e1a9e1b697f0d918150993a8afc69ebb9c640358f3c627ab14"
+     ],
+     "display_sha256": "cbe3b08c8d923c363182c09778c722e9cb6c529f5b132e10868ce4b1f7557a3a",
+     "flags": []
+    },
+    {
+     "program_id": "P15-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "289f8712ea3c969ffc49b0d3f544a15e21e97d576135a4f5f7bd253576ef11bb"
+     ],
+     "display_sha256": "457dde181cbcd883bbe9b97e5ab22f0d07b00b3f42cfd7552fdb398175d65383",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P15-A",
+     "S": false,
+     "X": true,
+     "identity": "b1be69c89b9d89e1a9e1b697f0d918150993a8afc69ebb9c640358f3c627ab14"
+    },
+    "C3E": {
+     "program_id": "P15-A",
+     "S": false,
+     "X": true,
+     "identity": "b1be69c89b9d89e1a9e1b697f0d918150993a8afc69ebb9c640358f3c627ab14"
+    },
+    "C3L": {
+     "program_id": "P15-B",
+     "S": false,
+     "X": true,
+     "identity": "289f8712ea3c969ffc49b0d3f544a15e21e97d576135a4f5f7bd253576ef11bb"
+    }
+   }
+  },
+  {
+   "problem_id": "P16",
+   "case_id": "industryor-0100",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P16-A",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "5884bf82b516f82d55e49173802a8c86304e79ae26ae15e7fb0ff960b484408e"
+     ],
+     "display_sha256": "e6642f25e366bc1cdef03c6179c421471eab8ea19f57a672cb3f8a60bb2945cb",
+     "flags": []
+    },
+    {
+     "program_id": "P16-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "13919c8ff4e7ceff57e472f07384b64da368af9336da8b66eb13b06bf9a19035"
+     ],
+     "display_sha256": "1e720fc58c4ff0c7e277b16f38a43c788ddb0e0d321f53fc533bc656aa4185a0",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P16-A",
+     "S": false,
+     "X": true,
+     "identity": "5884bf82b516f82d55e49173802a8c86304e79ae26ae15e7fb0ff960b484408e"
+    },
+    "C3E": {
+     "program_id": "P16-A",
+     "S": false,
+     "X": true,
+     "identity": "5884bf82b516f82d55e49173802a8c86304e79ae26ae15e7fb0ff960b484408e"
+    },
+    "C3L": {
+     "program_id": "P16-B",
+     "S": false,
+     "X": true,
+     "identity": "13919c8ff4e7ceff57e472f07384b64da368af9336da8b66eb13b06bf9a19035"
+    }
+   }
+  },
+  {
+   "problem_id": "P17",
+   "case_id": "mamo_complex_lp-0156",
+   "benchmark": "mamo_complex_lp",
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_correct",
+   "weight": 12.333333333333334,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P17-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "5da39ae4396bc961ce67308c69635e977177ae0407403f4bd74fb4436988e929"
+     ],
+     "display_sha256": "6b91125f6c2cb398f5b8c8c5f663f714f7af9b4ba9bb46388fc00e06dcb5283f",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P17-A",
+     "S": true,
+     "X": true,
+     "identity": "5da39ae4396bc961ce67308c69635e977177ae0407403f4bd74fb4436988e929"
+    },
+    "C3E": {
+     "program_id": "P17-A",
+     "S": true,
+     "X": true,
+     "identity": "5da39ae4396bc961ce67308c69635e977177ae0407403f4bd74fb4436988e929"
+    },
+    "C3L": {
+     "program_id": "P17-A",
+     "S": true,
+     "X": true,
+     "identity": "5da39ae4396bc961ce67308c69635e977177ae0407403f4bd74fb4436988e929"
+    }
+   }
+  },
+  {
+   "problem_id": "P18",
+   "case_id": "industryor-0067",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P18-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "dc7dcfe203ceaf3fa3688a7127cea90865dceed64921bf69ad7f9909a983401f"
+     ],
+     "display_sha256": "be3e352899a1557f03c173762ebb258b88df4b39a5434bb707ddb45470924fc2",
+     "flags": []
+    },
+    {
+     "program_id": "P18-B",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "f5cfe7aa7c783d88818da77b83690e4a2da003bfa42a6cf0b5c1b423416a5bf9"
+     ],
+     "display_sha256": "297c7af59b45e30cdbd24163690525b898f498822770db109a18917c5aed7743",
+     "flags": []
+    },
+    {
+     "program_id": "P18-C",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "19335df988f9ffbfccc9beeee9acf82023d4a01020c6089d5d98b6f89885a8eb"
+     ],
+     "display_sha256": "73412f6b4714a13002c9417109169887b3a438cf2f99ea0226e684088f1e491a",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P18-C",
+     "S": false,
+     "X": false,
+     "identity": "19335df988f9ffbfccc9beeee9acf82023d4a01020c6089d5d98b6f89885a8eb"
+    },
+    "C3E": {
+     "program_id": "P18-B",
+     "S": false,
+     "X": false,
+     "identity": "f5cfe7aa7c783d88818da77b83690e4a2da003bfa42a6cf0b5c1b423416a5bf9"
+    },
+    "C3L": {
+     "program_id": "P18-A",
+     "S": false,
+     "X": true,
+     "identity": "dc7dcfe203ceaf3fa3688a7127cea90865dceed64921bf69ad7f9909a983401f"
+    }
+   }
+  },
+  {
+   "problem_id": "P19",
+   "case_id": "industryor-0089",
+   "benchmark": "industryor",
+   "part": 2,
+   "stratum": "industryor|C3L_incorrect",
+   "weight": 9.0,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P19-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "929aefe3b6a2785f6db30f003ebfdd9389185121ec935728a8d5e49558081feb"
+     ],
+     "display_sha256": "2b667abba3d5d9a531b5b703c403b82ee60903f9567dc10c404a285f2a9f845b",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P19-A",
+     "S": false,
+     "X": true,
+     "identity": "929aefe3b6a2785f6db30f003ebfdd9389185121ec935728a8d5e49558081feb"
+    },
+    "C3E": {
+     "program_id": "P19-A",
+     "S": false,
+     "X": true,
+     "identity": "929aefe3b6a2785f6db30f003ebfdd9389185121ec935728a8d5e49558081feb"
+    },
+    "C3L": {
+     "program_id": "P19-A",
+     "S": false,
+     "X": true,
+     "identity": "929aefe3b6a2785f6db30f003ebfdd9389185121ec935728a8d5e49558081feb"
+    }
+   }
+  },
+  {
+   "problem_id": "P20",
+   "case_id": "industryor-0036",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P20-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "16c5149415cdec07c0b9064aa6de4e3a2df1a846738bebed0f9f85eb8017f067"
+     ],
+     "display_sha256": "cfc8548a5f3281e51f2803ec99b2066b61b3a38dfe5dc77dc47ba67516aabb98",
+     "flags": []
+    },
+    {
+     "program_id": "P20-B",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "19dde1470b55aefe4ec10e41c37467f0c2130058039c16cb913a79346c248c63"
+     ],
+     "display_sha256": "038de46db6e576fec3d3533bd0a6ebb068a4deab9b7cca943ebeda4a7cdc32d7",
+     "flags": []
+    },
+    {
+     "program_id": "P20-C",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "a3732fbf66b9184c19c27e27a0e72a4a2fea9fb19b4bc85b15ce99e1259e9625"
+     ],
+     "display_sha256": "4e2c85b9b96e5db8013e7538609a32dd5a57e0a2d5c2f7e807340214e8cacff4",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P20-C",
+     "S": false,
+     "X": true,
+     "identity": "a3732fbf66b9184c19c27e27a0e72a4a2fea9fb19b4bc85b15ce99e1259e9625"
+    },
+    "C3E": {
+     "program_id": "P20-B",
+     "S": false,
+     "X": true,
+     "identity": "19dde1470b55aefe4ec10e41c37467f0c2130058039c16cb913a79346c248c63"
+    },
+    "C3L": {
+     "program_id": "P20-A",
+     "S": false,
+     "X": true,
+     "identity": "16c5149415cdec07c0b9064aa6de4e3a2df1a846738bebed0f9f85eb8017f067"
+    }
+   }
+  },
+  {
+   "problem_id": "P21",
+   "case_id": "mamo_complex_lp-0083",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P21-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "a8dea26b6f50c41e82f3c17fee584ce42a14c011eeaa2a26d4a5ca8f37a4dfe2"
+     ],
+     "display_sha256": "030e270ab5f76cd568332161f3e40412a522fc9bccce7160217241e561fa4881",
+     "flags": []
+    },
+    {
+     "program_id": "P21-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "0297f3581ac6e2156271b19808712647bc2637a7e089cd87a0c450e05d60aa79"
+     ],
+     "display_sha256": "ed022bcec759d520f9d02f8030bcce23c8885bc2374112b1863dcbb887977300",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P21-B",
+     "S": false,
+     "X": false,
+     "identity": "0297f3581ac6e2156271b19808712647bc2637a7e089cd87a0c450e05d60aa79"
+    },
+    "C3E": {
+     "program_id": "P21-B",
+     "S": false,
+     "X": false,
+     "identity": "0297f3581ac6e2156271b19808712647bc2637a7e089cd87a0c450e05d60aa79"
+    },
+    "C3L": {
+     "program_id": "P21-A",
+     "S": false,
+     "X": true,
+     "identity": "a8dea26b6f50c41e82f3c17fee584ce42a14c011eeaa2a26d4a5ca8f37a4dfe2"
+    }
+   }
+  },
+  {
+   "problem_id": "P22",
+   "case_id": "mamo_complex_lp-0135",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P22-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "75ee0387b05a5f3b4789be7bce3aa6b7599dabe5b567cabc6ef31dc886029378"
+     ],
+     "display_sha256": "69ce53cfd1c81aaf99468653edff5034a55d91c4d6b0147f0f2f7f9f406d1cc8",
+     "flags": []
+    },
+    {
+     "program_id": "P22-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "c2d09b7ba4f67e9044dee7520f9109fc17656622a12b18c6e76741a120a593f2"
+     ],
+     "display_sha256": "3f9e57397b69658972a9208604a4c3c1bec45eb5f921c5b330ed74a4930abe24",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P22-B",
+     "S": false,
+     "X": true,
+     "identity": "c2d09b7ba4f67e9044dee7520f9109fc17656622a12b18c6e76741a120a593f2"
+    },
+    "C3E": {
+     "program_id": "P22-B",
+     "S": false,
+     "X": true,
+     "identity": "c2d09b7ba4f67e9044dee7520f9109fc17656622a12b18c6e76741a120a593f2"
+    },
+    "C3L": {
+     "program_id": "P22-A",
+     "S": false,
+     "X": true,
+     "identity": "75ee0387b05a5f3b4789be7bce3aa6b7599dabe5b567cabc6ef31dc886029378"
+    }
+   }
+  },
+  {
+   "problem_id": "P23",
+   "case_id": "mamo_complex_lp-0113",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P23-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "f0433a22ed94f6f773752f89b1349086db36778f2671bfad797656389744706b"
+     ],
+     "display_sha256": "209cba76f2985489209d1c73f6fb14fe16eff45f4af18a569a348986b7b25858",
+     "flags": [
+      "unparsable"
+     ]
+    },
+    {
+     "program_id": "P23-B",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "34d5e103231afecb781b066448b824fabc3832475f7a93a62a58442233220d6d"
+     ],
+     "display_sha256": "f3142203575c532b60f9fc26d5a6f0cc5ffc07a6e6c81cc5fc59cc54b7f7599b",
+     "flags": [
+      "unparsable"
+     ]
+    },
+    {
+     "program_id": "P23-C",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "6efa67ebd0e9f7e37391154c693c99ee47e8a7d111f8186ad3b2c61f23dcceda"
+     ],
+     "display_sha256": "a024b704952b0fdbdb86384b4dba8dd5c2875e1455410762f7f8b08e866e0897",
+     "flags": [
+      "unparsable"
+     ]
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P23-C",
+     "S": false,
+     "X": false,
+     "identity": "6efa67ebd0e9f7e37391154c693c99ee47e8a7d111f8186ad3b2c61f23dcceda"
+    },
+    "C3E": {
+     "program_id": "P23-B",
+     "S": false,
+     "X": false,
+     "identity": "34d5e103231afecb781b066448b824fabc3832475f7a93a62a58442233220d6d"
+    },
+    "C3L": {
+     "program_id": "P23-A",
+     "S": false,
+     "X": false,
+     "identity": "f0433a22ed94f6f773752f89b1349086db36778f2671bfad797656389744706b"
+    }
+   }
+  },
+  {
+   "problem_id": "P24",
+   "case_id": "mamo_complex_lp-0142",
+   "benchmark": "mamo_complex_lp",
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_correct",
+   "weight": 12.333333333333334,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P24-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "7d13bb040242f37be6f66ae36c6a9f96fdb963d7dd5ac465fd1e0b484c10d701"
+     ],
+     "display_sha256": "7cc88b00a636b1dea1bf07c928d5ad883bc06f79a604ff8ad4c73ae41edb1a60",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P24-A",
+     "S": true,
+     "X": true,
+     "identity": "7d13bb040242f37be6f66ae36c6a9f96fdb963d7dd5ac465fd1e0b484c10d701"
+    },
+    "C3E": {
+     "program_id": "P24-A",
+     "S": true,
+     "X": true,
+     "identity": "7d13bb040242f37be6f66ae36c6a9f96fdb963d7dd5ac465fd1e0b484c10d701"
+    },
+    "C3L": {
+     "program_id": "P24-A",
+     "S": true,
+     "X": true,
+     "identity": "7d13bb040242f37be6f66ae36c6a9f96fdb963d7dd5ac465fd1e0b484c10d701"
+    }
+   }
+  },
+  {
+   "problem_id": "P25",
+   "case_id": "mamo_complex_lp-0190",
+   "benchmark": "mamo_complex_lp",
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_correct",
+   "weight": 12.333333333333334,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P25-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "c154d11894a33bfb589c37435596e81cd7d093d4063487e5844c10bd542618cd"
+     ],
+     "display_sha256": "e5941144356a8893d5255b1cc953234311732aff0c86f47f2721ebdfd576e5bf",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P25-A",
+     "S": true,
+     "X": true,
+     "identity": "c154d11894a33bfb589c37435596e81cd7d093d4063487e5844c10bd542618cd"
+    },
+    "C3E": {
+     "program_id": "P25-A",
+     "S": true,
+     "X": true,
+     "identity": "c154d11894a33bfb589c37435596e81cd7d093d4063487e5844c10bd542618cd"
+    },
+    "C3L": {
+     "program_id": "P25-A",
+     "S": true,
+     "X": true,
+     "identity": "c154d11894a33bfb589c37435596e81cd7d093d4063487e5844c10bd542618cd"
+    }
+   }
+  },
+  {
+   "problem_id": "P26",
+   "case_id": "industryor-0072",
+   "benchmark": "industryor",
+   "part": 2,
+   "stratum": "industryor|C3L_correct",
+   "weight": 8.0,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P26-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "67a7449fb49246fccbb0541fbee09fe8eced69a09e8557ab24417442476c096d"
+     ],
+     "display_sha256": "8540d48fe6d9828dc59386f0e2e8dcb7751a615d0b879b98692c1c14a0c33501",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P26-A",
+     "S": true,
+     "X": true,
+     "identity": "67a7449fb49246fccbb0541fbee09fe8eced69a09e8557ab24417442476c096d"
+    },
+    "C3E": {
+     "program_id": "P26-A",
+     "S": true,
+     "X": true,
+     "identity": "67a7449fb49246fccbb0541fbee09fe8eced69a09e8557ab24417442476c096d"
+    },
+    "C3L": {
+     "program_id": "P26-A",
+     "S": true,
+     "X": true,
+     "identity": "67a7449fb49246fccbb0541fbee09fe8eced69a09e8557ab24417442476c096d"
+    }
+   }
+  },
+  {
+   "problem_id": "P27",
+   "case_id": "industryor-0033",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P27-A",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "c0147f8fada0566fd81d77b8e4361e0eb44ce8abaa3635198a3ed4e95b8b3412"
+     ],
+     "display_sha256": "3dea30c8dfe741003f526d88c464cc0a355a666f7430a248d23f116275827d4b",
+     "flags": []
+    },
+    {
+     "program_id": "P27-B",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "5d4e1f11b2c685a4bc2c014dc3b591c227776bf558a784fbc6faa3f29cfe6612"
+     ],
+     "display_sha256": "9927ca9cd057bba68c8c69d30942a0b06c57d52a0a94bacd131b604dcc88399c",
+     "flags": []
+    },
+    {
+     "program_id": "P27-C",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "a69cb18e826303fee7e4dc46712a264f95fb5dbfca7648361144f44bfae65200"
+     ],
+     "display_sha256": "0485589e4cf7afab6998909d9ca2a62bb735254a81818c6b5bc23f05f3ba70a4",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P27-B",
+     "S": false,
+     "X": false,
+     "identity": "5d4e1f11b2c685a4bc2c014dc3b591c227776bf558a784fbc6faa3f29cfe6612"
+    },
+    "C3E": {
+     "program_id": "P27-A",
+     "S": false,
+     "X": true,
+     "identity": "c0147f8fada0566fd81d77b8e4361e0eb44ce8abaa3635198a3ed4e95b8b3412"
+    },
+    "C3L": {
+     "program_id": "P27-C",
+     "S": false,
+     "X": false,
+     "identity": "a69cb18e826303fee7e4dc46712a264f95fb5dbfca7648361144f44bfae65200"
+    }
+   }
+  },
+  {
+   "problem_id": "P28",
+   "case_id": "mamo_complex_lp-0053",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P28-A",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "5f0a63138c6d7970c28adfe59fd8afe0286bc794601e91e4c1b8d5df4f273342"
+     ],
+     "display_sha256": "b8c5c8bd23381eabbb026f20a2bd1ae57e5cd4a7619dec451180c92ade6d48dd",
+     "flags": []
+    },
+    {
+     "program_id": "P28-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "1d43a3cbfe3f2eb312853fd6ed6d209f09cedb17511f2ec1a443b1c185919ec2"
+     ],
+     "display_sha256": "fccff628cdb93e9f0eb8dda0a4690c4d010bda0c16dcb44ff3965575dc275f2e",
+     "flags": []
+    },
+    {
+     "program_id": "P28-C",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "62535d7a2cd350759f7e26b1f65e7414cb442589b161b461273bdebb720570bf"
+     ],
+     "display_sha256": "7af442234c0cff15ec5f142b738abe43e85fc48f3883c116f5e00507ff77c18c",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P28-A",
+     "S": false,
+     "X": false,
+     "identity": "5f0a63138c6d7970c28adfe59fd8afe0286bc794601e91e4c1b8d5df4f273342"
+    },
+    "C3E": {
+     "program_id": "P28-C",
+     "S": true,
+     "X": true,
+     "identity": "62535d7a2cd350759f7e26b1f65e7414cb442589b161b461273bdebb720570bf"
+    },
+    "C3L": {
+     "program_id": "P28-B",
+     "S": true,
+     "X": true,
+     "identity": "1d43a3cbfe3f2eb312853fd6ed6d209f09cedb17511f2ec1a443b1c185919ec2"
+    }
+   }
+  },
+  {
+   "problem_id": "P29",
+   "case_id": "mamo_complex_lp-0158",
+   "benchmark": "mamo_complex_lp",
+   "part": 2,
+   "stratum": "mamo_complex_lp|C3L_incorrect",
+   "weight": 7.666666666666667,
+   "in_D": false,
+   "programs": [
+    {
+     "program_id": "P29-A",
+     "conditions": [
+      "C0",
+      "C3E",
+      "C3L"
+     ],
+     "identities": [
+      "b7bed9c84d5f49df884dff071b2b2970920766460d4e4915b807a0b833aeefc8"
+     ],
+     "display_sha256": "65bbdf5ae840e69e00f64d4fc269b8c8c0c218c343a9df7d66f767235dec4532",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P29-A",
+     "S": false,
+     "X": true,
+     "identity": "b7bed9c84d5f49df884dff071b2b2970920766460d4e4915b807a0b833aeefc8"
+    },
+    "C3E": {
+     "program_id": "P29-A",
+     "S": false,
+     "X": true,
+     "identity": "b7bed9c84d5f49df884dff071b2b2970920766460d4e4915b807a0b833aeefc8"
+    },
+    "C3L": {
+     "program_id": "P29-A",
+     "S": false,
+     "X": true,
+     "identity": "b7bed9c84d5f49df884dff071b2b2970920766460d4e4915b807a0b833aeefc8"
+    }
+   }
+  },
+  {
+   "problem_id": "P30",
+   "case_id": "industryor-0051",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P30-A",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "c85c13f0511dc3596e67b2ac73e41b28a08fc7037601a728d4732c4c506e0258"
+     ],
+     "display_sha256": "d2593419c9a229210a395bad06aaa3a692b58eaace3db50587a171a1fc4af389",
+     "flags": [
+      "unparsable"
+     ]
+    },
+    {
+     "program_id": "P30-B",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "01b640fddd18cc78765e73797133135a3407e8742e9885cef35536deb96bcd19"
+     ],
+     "display_sha256": "5890deff87253583ce26c8815c096a1970fcabbe1f843b82160fced6bf250a94",
+     "flags": []
+    },
+    {
+     "program_id": "P30-C",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "d23c74cee07c08a6503779954eea59a9eec2532dc15280e8f10e143d23976fe0"
+     ],
+     "display_sha256": "bf73b6296f2ae0aab3300163792983018b4bad2263bd58aa6c0bd20b7480efa8",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P30-A",
+     "S": false,
+     "X": false,
+     "identity": "c85c13f0511dc3596e67b2ac73e41b28a08fc7037601a728d4732c4c506e0258"
+    },
+    "C3E": {
+     "program_id": "P30-B",
+     "S": false,
+     "X": false,
+     "identity": "01b640fddd18cc78765e73797133135a3407e8742e9885cef35536deb96bcd19"
+    },
+    "C3L": {
+     "program_id": "P30-C",
+     "S": false,
+     "X": false,
+     "identity": "d23c74cee07c08a6503779954eea59a9eec2532dc15280e8f10e143d23976fe0"
+    }
+   }
+  },
+  {
+   "problem_id": "P31",
+   "case_id": "industryor-0008",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|l_correct_e_incorrect",
+   "weight": 1.0,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P31-A",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "15d622f7b7e30b6ad09e55f2712cd168a27d846d0a992ce30289ada14c3612a2"
+     ],
+     "display_sha256": "bf0541a48361450d8d73007321af2665139dc3ef15b9a1f8bef566a8a94e7b4a",
+     "flags": []
+    },
+    {
+     "program_id": "P31-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "ae374718009f58d15bff5b6465a699f2005c7042b162054338a371da8a195438"
+     ],
+     "display_sha256": "fc08ffd6fb25e2d926351a841f0f1bf45bca6cd07df82c2c79684b1385ce8489",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P31-A",
+     "S": false,
+     "X": false,
+     "identity": "15d622f7b7e30b6ad09e55f2712cd168a27d846d0a992ce30289ada14c3612a2"
+    },
+    "C3E": {
+     "program_id": "P31-A",
+     "S": false,
+     "X": false,
+     "identity": "15d622f7b7e30b6ad09e55f2712cd168a27d846d0a992ce30289ada14c3612a2"
+    },
+    "C3L": {
+     "program_id": "P31-B",
+     "S": true,
+     "X": true,
+     "identity": "ae374718009f58d15bff5b6465a699f2005c7042b162054338a371da8a195438"
+    }
+   }
+  },
+  {
+   "problem_id": "P32",
+   "case_id": "mamo_complex_lp-0068",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|l_correct_e_incorrect",
+   "weight": 1.5,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P32-A",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "988fb9806303a2bb07bbf6c8dda1b2db5fb7f1944d12f1c0a23d3d22ddbd96e0"
+     ],
+     "display_sha256": "66d704395893ada1ee074ab34058f2b7406de5ce5fc30c0e3b5f7e3090ab5002",
+     "flags": []
+    },
+    {
+     "program_id": "P32-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "52e676540adf5cb8a8e3b84bf5c9d3241bf2bcd7d4e6cc59ac153ec3e19f1106"
+     ],
+     "display_sha256": "e00752dbb3ab5a2eb433b0110fe22977553c17f32a4631246c0576722ee88180",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P32-A",
+     "S": false,
+     "X": false,
+     "identity": "988fb9806303a2bb07bbf6c8dda1b2db5fb7f1944d12f1c0a23d3d22ddbd96e0"
+    },
+    "C3E": {
+     "program_id": "P32-A",
+     "S": false,
+     "X": false,
+     "identity": "988fb9806303a2bb07bbf6c8dda1b2db5fb7f1944d12f1c0a23d3d22ddbd96e0"
+    },
+    "C3L": {
+     "program_id": "P32-B",
+     "S": true,
+     "X": true,
+     "identity": "52e676540adf5cb8a8e3b84bf5c9d3241bf2bcd7d4e6cc59ac153ec3e19f1106"
+    }
+   }
+  },
+  {
+   "problem_id": "P33",
+   "case_id": "industryor-0059",
+   "benchmark": "industryor",
+   "part": 1,
+   "stratum": "industryor|same_verdict",
+   "weight": 1.2727272727272727,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P33-A",
+     "conditions": [
+      "C3E"
+     ],
+     "identities": [
+      "c3a64820ebba2aee9773331a3aa5246737329d2c9d778ad6c1f13a17c88abf5c"
+     ],
+     "display_sha256": "b3ac60f797bf4981c723866bdeedca150e169c0bba468baa6b64df18c7d5ddb9",
+     "flags": []
+    },
+    {
+     "program_id": "P33-B",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "340a0523d3da5525a39ec5a3d79b90b8dfa7ae044249240ecb82c8a4326a9ebd"
+     ],
+     "display_sha256": "f873db140758d1efc448ad1413d8c6cdd41973dd6b518efc0cf91e0610582837",
+     "flags": []
+    },
+    {
+     "program_id": "P33-C",
+     "conditions": [
+      "C0"
+     ],
+     "identities": [
+      "48fe0f4fa6ccb7aef02b99b2f7d9973444d13f4ff0ad43ec4aba21e253667eba"
+     ],
+     "display_sha256": "7e5b5fb12795e98bbf7931528d62f24facb892791b69934fb9893f58f1ba7fd8",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P33-C",
+     "S": false,
+     "X": true,
+     "identity": "48fe0f4fa6ccb7aef02b99b2f7d9973444d13f4ff0ad43ec4aba21e253667eba"
+    },
+    "C3E": {
+     "program_id": "P33-A",
+     "S": false,
+     "X": true,
+     "identity": "c3a64820ebba2aee9773331a3aa5246737329d2c9d778ad6c1f13a17c88abf5c"
+    },
+    "C3L": {
+     "program_id": "P33-B",
+     "S": false,
+     "X": false,
+     "identity": "340a0523d3da5525a39ec5a3d79b90b8dfa7ae044249240ecb82c8a4326a9ebd"
+    }
+   }
+  },
+  {
+   "problem_id": "P34",
+   "case_id": "mamo_complex_lp-0100",
+   "benchmark": "mamo_complex_lp",
+   "part": 1,
+   "stratum": "mamo_complex_lp|same_verdict",
+   "weight": 1.3333333333333333,
+   "in_D": true,
+   "programs": [
+    {
+     "program_id": "P34-A",
+     "conditions": [
+      "C3L"
+     ],
+     "identities": [
+      "8020401b2bbe2ad8047208fc71aa5abd0196b670111dfd55bf084b75bfcee8f3"
+     ],
+     "display_sha256": "53e7a581b7b4be610b4b89afd4430fc5326dde6328d8457f9722eef1d36742d6",
+     "flags": []
+    },
+    {
+     "program_id": "P34-B",
+     "conditions": [
+      "C0",
+      "C3E"
+     ],
+     "identities": [
+      "8e592bf693ebe4cc146dc91f831fad45b4f167b55234acd4cb39cdb2220e3f9e"
+     ],
+     "display_sha256": "2f3c95ac93e1a60e609ffb65553b7d8aee4d6df2046d619a53e66e1debc4b661",
+     "flags": []
+    }
+   ],
+   "conditions": {
+    "C0": {
+     "program_id": "P34-B",
+     "S": false,
+     "X": false,
+     "identity": "8e592bf693ebe4cc146dc91f831fad45b4f167b55234acd4cb39cdb2220e3f9e"
+    },
+    "C3E": {
+     "program_id": "P34-B",
+     "S": false,
+     "X": false,
+     "identity": "8e592bf693ebe4cc146dc91f831fad45b4f167b55234acd4cb39cdb2220e3f9e"
+    },
+    "C3L": {
+     "program_id": "P34-A",
+     "S": false,
+     "X": false,
+     "identity": "8020401b2bbe2ad8047208fc71aa5abd0196b670111dfd55bf084b75bfcee8f3"
+    }
+   }
+  }
+ ],
+ "freeze_gate": {
+  "manifest": "FREEZE_MANIFEST.json",
+  "manifest_file_sha256": "54d7a20441d4dfcdeeec9a4388693d44127667f151bbb5c6b5b907f2bb29d023",
+  "content_sha256": "da8f807102defd97050bd593706062f5de17f27359374310ee81f0e4028ecea5",
+  "osf_registration_id": "ks8ye"
+ }
+}

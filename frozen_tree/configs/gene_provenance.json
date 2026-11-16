@@ -1,0 +1,430 @@
+{
+ "schema": "orgene-r1/gene_provenance/v1",
+ "library": {
+  "path": "genes/genes.it1.jsonl",
+  "sha256": "731ae37eb6aca75d453252f951e1993d7267371b8e10976a7e7cd0ef6c420cfc"
+ },
+ "function_classes": {
+  "path": "configs/gene_function_classes.json",
+  "sha256": "bb748abd63a9fd7155dd35bc921d1a0c66f4d00c5cfe99865297e01b6949cd5d"
+ },
+ "n_genes": 21,
+ "counts_by_class": {
+  "seed_dev_revised": 7,
+  "seed_unrevised": 4,
+  "dev_derived": 10
+ },
+ "genes": [
+  {
+   "geneId": "orgene.artifact.spec_present",
+   "version": "1.0.1",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.artifact.spec_present@1.0.0"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.spec_present.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "protocol_execution",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.artifact.code_present",
+   "version": "1.0.0",
+   "lifecycle_state": "active",
+   "supersedes": [],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_unrevised",
+   "devCaseIds": [],
+   "predicateId": "predicate.code_present.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "protocol_execution",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.objective.sense_consistent",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.objective.sense_consistent@1.0.0"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.objective_sense_consistent.v2",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.variables.domain_consistent",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.variables.domain_consistent@1.0.0"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.variable_domains_consistent.v2",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.constraints.implemented",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.constraints.implemented@1.0.0"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.constraints_added.v2",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.boundary.solve_before_report",
+   "version": "1.0.0",
+   "lifecycle_state": "active",
+   "supersedes": [],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_unrevised",
+   "devCaseIds": [],
+   "predicateId": "predicate.solve_before_report.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "protocol_execution",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.boundary.status_reported",
+   "version": "1.0.0",
+   "lifecycle_state": "active",
+   "supersedes": [],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_unrevised",
+   "devCaseIds": [],
+   "predicateId": "predicate.status_reported.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "protocol_execution",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.execution.runs",
+   "version": "1.0.0",
+   "lifecycle_state": "active",
+   "supersedes": [],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_unrevised",
+   "devCaseIds": [],
+   "predicateId": "predicate.executes.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "protocol_execution",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.solution.status_optimal_or_justified",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.solution.status_optimal_or_justified@1.0.0",
+    "orgene.solution.status_optimal_or_justified@1.0.1"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.status_optimal_or_justified.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.data.no_invented_numbers",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.data.no_invented_numbers@1.0.0"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.no_invented_numbers.v2",
+   "severity": "soft",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.numeric.bigm_bounded",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.numeric.bigm_bounded@1.0.0"
+   ],
+   "createdAt": "2026-09-05",
+   "sourceType": "seed_structural",
+   "provenance_class": "seed_dev_revised",
+   "devCaseIds": [],
+   "predicateId": "predicate.bigm_bounded.v1",
+   "severity": "soft",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.code.tuple_key_indexing",
+   "version": "1.0.0",
+   "lifecycle_state": "active",
+   "supersedes": [],
+   "createdAt": "2026-09-06",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "mamo_complex_lp-0044",
+    "mamo_complex_lp-0061",
+    "mamo_complex_lp-0062",
+    "mamo_complex_lp-0079",
+    "mamo_complex_lp-0084",
+    "mamo_complex_lp-0089",
+    "mamo_complex_lp-0094",
+    "mamo_complex_lp-0163"
+   ],
+   "predicateId": "predicate.tuple_key_indexing.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "coding_hygiene",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.code.sparse_index_guard",
+   "version": "1.2.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.code.sparse_index_guard@1.0.0",
+    "orgene.code.sparse_index_guard@1.1.0"
+   ],
+   "createdAt": "2026-09-06",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "mamo_complex_lp-0048",
+    "mamo_complex_lp-0105",
+    "mamo_complex_lp-0114",
+    "mamo_complex_lp-0116",
+    "mamo_complex_lp-0130"
+   ],
+   "predicateId": "predicate.sparse_index_guard.v2",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "coding_hygiene",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.code.pulp_api_exists",
+   "version": "1.2.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.code.pulp_api_exists@1.0.0",
+    "orgene.code.pulp_api_exists@1.1.0"
+   ],
+   "createdAt": "2026-09-06",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0099",
+    "mamo_complex_lp-0139",
+    "mamo_complex_lp-0197"
+   ],
+   "predicateId": "predicate.pulp_api_exists.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "coding_hygiene",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.model.linear_expressions_only",
+   "version": "1.2.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.model.linear_expressions_only@1.0.0",
+    "orgene.model.linear_expressions_only@1.1.0"
+   ],
+   "createdAt": "2026-09-06",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0025",
+    "industryor-0077",
+    "industryor-0094",
+    "industryor-0099",
+    "mamo_complex_lp-0197",
+    "mamo_complex_lp-0204"
+   ],
+   "predicateId": "predicate.linear_expressions_only.v2",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.objective.aggregates_declared_variables",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.objective.aggregates_declared_variables@1.0.1"
+   ],
+   "createdAt": "2026-09-06",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "mamo_complex_lp-0101",
+    "mamo_complex_lp-0105",
+    "mamo_complex_lp-0108",
+    "mamo_complex_lp-0111",
+    "mamo_complex_lp-0114",
+    "mamo_complex_lp-0116",
+    "mamo_complex_lp-0126",
+    "mamo_complex_lp-0130"
+   ],
+   "predicateId": "predicate.objective_aggregates_variables.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.model.binary_cardinality_linked",
+   "version": "1.2.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.model.binary_cardinality_linked@1.0.0",
+    "orgene.model.binary_cardinality_linked@1.1.0"
+   ],
+   "createdAt": "2026-09-06",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0049",
+    "industryor-0058"
+   ],
+   "predicateId": "predicate.binary_cardinality_linked.v2",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.solution.nontrivial_optimum",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.solution.nontrivial_optimum@1.0.0"
+   ],
+   "createdAt": "2026-09-29",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0058",
+    "industryor-0081",
+    "mamo_complex_lp-0087",
+    "mamo_complex_lp-0097"
+   ],
+   "predicateId": "predicate.optimum_not_trivial_zero.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "answer_distribution_heuristic",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.model.logic_via_indicators",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.model.logic_via_indicators@1.0.0"
+   ],
+   "createdAt": "2026-09-29",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0009",
+    "industryor-0019",
+    "industryor-0024",
+    "industryor-0058"
+   ],
+   "predicateId": "predicate.logic_uses_indicators.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.constraints.rows_sign_feasible",
+   "version": "1.0.0",
+   "lifecycle_state": "active",
+   "supersedes": [],
+   "createdAt": "2026-09-29",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0009",
+    "industryor-0024",
+    "industryor-0040",
+    "industryor-0058"
+   ],
+   "predicateId": "predicate.rows_sign_feasible.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  },
+  {
+   "geneId": "orgene.variables.integrality_of_counts",
+   "version": "1.1.0",
+   "lifecycle_state": "active",
+   "supersedes": [
+    "orgene.variables.integrality_of_counts@1.0.0"
+   ],
+   "createdAt": "2026-09-29",
+   "sourceType": "dev_failure_derived",
+   "provenance_class": "dev_derived",
+   "devCaseIds": [
+    "industryor-0081",
+    "industryor-0098",
+    "mamo_complex_lp-0001",
+    "mamo_complex_lp-0020",
+    "mamo_complex_lp-0021",
+    "mamo_complex_lp-0028",
+    "mamo_complex_lp-0029"
+   ],
+   "predicateId": "predicate.fractional_count_optimum.v1",
+   "severity": "hard",
+   "mode": "executable",
+   "function_class": "or_modelling",
+   "activation": "always"
+  }
+ ]
+}

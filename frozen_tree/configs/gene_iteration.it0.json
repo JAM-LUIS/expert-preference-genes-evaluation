@@ -1,0 +1,38 @@
+{
+  "schema_version": "orgene.dev_gene_iteration.v1",
+  "iteration": "it0",
+  "state": "author_approved_dev",
+  "approval_date": "2026-09-30",
+  "approval_scope": "all 12 proposals: G1-G4 and M1-M8",
+  "genes": "genes/genes.it0.approved.jsonl",
+  "lexicon": "genes/activation_lexicon.v2.json",
+  "predicate_module": "runtime/orgene/predicates_it0.py",
+  "split": "dev",
+  "analysis_set": "dev_signal55",
+  "conditions": [
+    "C0",
+    "C3L",
+    "C3E",
+    "C3"
+  ],
+  "max_repair_rounds": 2,
+  "frozen": false,
+  "source_sha256": {
+    "genes_proposed.jsonl": "02761d4533d6f45c0630eb3de7ffbd8c4d5bf9be93217014ad2f92ad95abc6ee",
+    "predicates_draft.py": "3b5b5eea7b92d2e8a3187c1ab9523cc744fabe4116da307f4f46a4c04dfc32d6",
+    "lexicon.draft.json": "20fcdafeb424fda1acbcc5d00737718d80cf2a13a5ab885524a9ab0dad386789",
+    "activation_examples.draft.json": "f8c57c4615e1f1e5a3cbdd872f12a165fccf407c5a71ae8b1231e04b8dda36ab"
+  },
+  "runtime_sha256": {
+    "genes/genes.it0.approved.jsonl": "21edf3b23d8771c27bf369ee3f1dbcd1685c60df5ea2e69017459e9ba76e7cf0",
+    "genes/activation_lexicon.v2.json": "2df6c5badce9b0e700eea7a2e82d02c6b0ce797109af0c427352138c9e419636",
+    "runtime/orgene/predicates_it0.py": "f2b18cc734a3e95d4e6d84093658aa8dea03e791ee2a377820bb083fda572989"
+  },
+  "composition": {
+    "seed": 17,
+    "unchanged": 7,
+    "amended": 10,
+    "new": 4,
+    "total": 21
+  }
+}

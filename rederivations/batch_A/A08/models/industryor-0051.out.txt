@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4240.0
+  regular_start_1 = 21.0
+  regular_start_2 = 4.0
+  regular_start_3 = 16.0
+  regular_start_4 = 2.0
+  regular_start_5 = 10.0
+INTEGERS_RELAXED: Optimal 4240.0 (12 general-integer variables made continuous; binaries kept)
+CONTRACT_NURSES: 0.0

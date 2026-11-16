@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 3360.0
+  barrels_to_A1 = 20.0
+  barrels_to_A2 = 30.0

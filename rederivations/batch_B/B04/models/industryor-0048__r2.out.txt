@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 11250.0
+  oA 0.0
+  oB 0.0
+  xA 12.0
+  xB 17.0
+INTEGERS_RELAXED: Optimal 11250.0

@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 5000000.0
+  A_in_II = 1500.0
+  B_in_II = 1000.0
+  tier1 = 500.0
+  tier1_full = 1.0
+  tier2 = 500.0
+  tier2_full = 1.0

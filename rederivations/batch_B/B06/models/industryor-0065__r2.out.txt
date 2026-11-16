@@ -1,0 +1,15 @@
+level 1: Optimal deviation = 0.0
+level 2: Optimal deviation = 0.0
+level 3: Optimal deviation = 0.0
+level 4: Optimal deviation = 0.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 40.0
+  d1m = 1400.0
+  d2p = 40.0
+  d4m = 20.0
+  d5m = 40.0
+  x1_microwave = 120.0
+  x2_heater = 10.0
+total unwanted deviation over all levels: 40.0
+plan: x1 = 120.0  x2 = 10.0

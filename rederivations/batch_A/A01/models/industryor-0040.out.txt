@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 36288567.274000004
+  x_elec = 6200.0276
+  x_engine = 39666.43
+  x_plastic = 5001.2626
+  x_steel = 32795.396

@@ -1,0 +1,62 @@
+{
+  "schema": "orgene.freeze_spec.v1",
+  "note": "What FREEZE_MANIFEST.json must hash before any test run (engineering plan 5.3). Each item is a path, a glob, or `pending` until its owner names the file; a required pending or missing item keeps the manifest incomplete, and the test gate never accepts an incomplete manifest. Owners replace `pending` with `path` or `glob` when their file exists. Paths are relative to the repository root.",
+  "items": [
+    {"id": "gene_library", "category": "gene", "path": "genes/genes.it1.jsonl", "required": true, "owner": "1C/E04", "note": "the it1 library (registered 2026-10-04, OSF x5tqc); genes.r1.jsonl is the it0 seed library kept for the record"},
+    {"id": "activation_lexicon", "category": "gene", "path": "genes/activation_lexicon.v2.json", "required": true, "owner": "E04"},
+    {"id": "predicates_module", "category": "gene", "path": "runtime/orgene/predicates_it0.py", "required": true, "owner": "1C", "note": "registered with the it1 library (OSF x5tqc)"},
+    {"id": "features_module", "category": "gene", "path": "runtime/orgene/features.py", "required": true, "owner": "E04"},
+    {"id": "gene_provenance_table", "category": "gene", "path": "configs/gene_provenance.json", "required": true, "owner": "E20", "note": "tools/gene_census.py from the it1 library and the function classes; --check compares"},
+
+    {"id": "condition_templates", "category": "prompts", "glob": "conditions/*.md", "required": true, "min_count": 6, "owner": "E03"},
+    {"id": "prompt_variants", "category": "prompts", "glob": "conditions/variants/**/*", "required": false, "owner": "E11", "note": "rewritten C0 base, C1 and C3 prompts (rw1, rw2); not run in this revision (author decision 2026-10-05), kept as drafts"},
+    {"id": "ora_prompts", "category": "prompts", "glob": "conditions/ora/**/*", "required": false, "owner": "E15", "note": "ORA is not run (author decision 2026-10-03)"},
+    {"id": "c1_matching_report", "category": "prompts", "path": "conditions/c1_matching_report.json", "required": true, "owner": "E11", "note": "written by orgene_cli.py c1-match on the dev cases (dev_signal55) with the frozen release; missing until 1D"},
+    {"id": "c3e_fixed_repair_template", "category": "prompts", "path": "conditions/C3E_generic_repair_template.json", "required": true, "owner": "E05", "note": "tools/export_generic_repair.py from orgene.genes.generic_template(); --check compares"},
+    {"id": "generic_repair_whitelist", "category": "prompts", "path": "conditions/generic_repair_whitelist.txt", "required": true, "owner": "E05", "note": "tools/export_generic_repair.py from orgene.genes.generic_whitelist()"},
+
+    {"id": "runtime_code", "category": "code", "glob": ["runtime/**/*.py", "runtime/*.sh"], "required": true, "owner": "all"},
+    {"id": "analysis_code", "category": "code", "glob": ["analysis/**/*.py", "analysis/**/*.sh"], "required": true, "owner": "E20"},
+    {"id": "tools_code", "category": "code", "glob": "tools/**/*.py", "required": true, "owner": "E21"},
+    {"id": "baseline_adapters", "category": "code", "glob": ["baselines/**/*.py", "baselines/**/*.patch", "baselines/**/*.sh"], "required": true, "owner": "E15-E18"},
+    {"id": "scoring_script", "category": "code", "path": "runtime/orgene/score.py", "required": true, "owner": "E13"},
+    {"id": "solve_recorder", "category": "code", "path": "runtime/orgene/solve_recorder.py", "required": true, "owner": "E12"},
+    {"id": "prereg_analysis", "category": "code", "path": "configs/prereg_analysis.json", "required": true, "owner": "E20", "note": "comparison families, TOST margins, tolerances, stratum cut points"},
+    {"id": "gene_function_classes", "category": "gene", "path": "configs/gene_function_classes.json", "required": true, "owner": "D12", "note": "function class of every gene (isolated it1 clause review); read by analysis/r1/mechanism.py"},
+    {"id": "tools_venv_pip_freeze", "category": "code", "path": "configs/venv_tools.freeze.txt", "required": true, "owner": "E09/E20", "note": "pip freeze of .venv-tools; configs/venv_tools.json records its sha256 and tools/venv_tools_check.py compares it with the installed environment"},
+
+    {"id": "config_registry", "category": "config", "path": "configs/r1_configs.json", "required": true, "owner": "E03"},
+    {"id": "run_plans", "category": "config", "glob": "configs/run_plans/*", "required": true, "owner": "E07", "note": "the seeded scheduler plans of the test stages and their hash receipts (tools/run_campaign.py --write-matrices); the test gate reads frozen inputs only, so the plan must be frozen"},
+    {"id": "run_matrix", "category": "config", "glob": ["configs/run_matrix/*.json", "configs/campaigns/test_*.json"], "required": true, "owner": "E07", "note": "the test unit matrices per stage and the campaign spec that builds them (tools/run_campaign.py --write-matrices; the driver refuses a stage whose matrix differs)"},
+    {"id": "model_registry", "category": "config", "path": "configs/model_registry.json", "required": true, "owner": "E19"},
+    {"id": "schema", "category": "config", "glob": "schema/*.json", "required": true, "owner": "E03"},
+
+    {"id": "cases", "category": "data", "glob": "data/cases/*.jsonl", "required": true, "min_count": 2, "owner": "E14"},
+    {"id": "splits_v5", "category": "data", "glob": "data/splits/**/*.json", "required": true, "min_count": 6, "owner": "E14"},
+    {"id": "splits_r1", "category": "data", "glob": "data/splits_r1/**/*.json", "required": true, "owner": "E14"},
+    {"id": "analysis_sets", "category": "data", "glob": "data/analysis_sets/*.json", "required": true, "owner": "E14", "note": "v2 with the _excl0905 sets and the nine excluded test ids"},
+    {"id": "analysis_set_definitions", "category": "data", "glob": "configs/analysis_set_defs*.json", "required": true, "owner": "E14"},
+    {"id": "exclusions_r1", "category": "data", "path": "data/exclusions_r1.json", "required": false, "owner": "E14", "note": "appended as a time-stamped revision before any score is unsealed (preregistration 6.5 step 4); not needed to run the test"},
+    {"id": "type_labels", "category": "data", "glob": "data/labels/**/*.json", "required": false, "owner": "E14", "note": "appended before unsealing (preregistration 6.5 step 4): blind re-derivation and adjudication"},
+    {"id": "reference_overrides", "category": "data", "glob": "data/reference_overrides/*.json", "required": false, "owner": "E13/E14", "note": "appended before unsealing (preregistration 6.5 step 4): the adjudication"},
+    {"id": "scale_features", "category": "data", "glob": "data/features/**/*", "required": true, "owner": "E14"},
+    {"id": "underspecified_screen", "category": "data", "path": "data/mamo_underspecified_ids.json", "required": true, "owner": "E01"},
+    {"id": "variance_and_determinism_ids", "category": "data", "path": "data/subsets_r1/variance_determinism_ids.json", "required": true, "owner": "E07/E20", "note": "tools/draw_subsets_r1.py (seed and rule in the file)"},
+    {"id": "engineering_cases", "category": "data", "glob": ["data/cases/eng.jsonl", "data/cases/README_ISOLATION.md", "data/splits/eng/*.json", "data/eng/**/*.json", "data/eng/**/*.py", "data/ingest_eng.py"], "required": true, "min_count": 12, "owner": "E22", "note": "engineering-source cases: ids (data/splits/eng/eng_holdout_ids.json), problem texts and reference values (data/cases/eng.jsonl, data/eng/reference_values.json; per-case SHA-256 in data/eng/eng_hashes.json), the selection record, the PGLib-UC template, the MIPLIB-NL converter and the CBC reference models"},
+
+    {"id": "alphaopt_patch", "category": "baselines", "path": "baselines/alphaopt.orgene.patch", "required": false, "owner": "E16", "note": "AlphaOPT is not run (author decision 2026-10-05)"},
+    {"id": "alphaopt_library", "category": "baselines", "pending": "E16: learned experience library JSON", "required": false, "owner": "E16", "note": "AlphaOPT is not run (author decision 2026-10-05)"},
+    {"id": "alphaopt_taxonomy", "category": "baselines", "pending": "E16: taxonomy JSON after learning", "required": false, "owner": "E16", "note": "AlphaOPT is not run (author decision 2026-10-05)"},
+    {"id": "anchor_orlm", "category": "baselines", "glob": ["baselines/orlm_adapter.py"], "required": false, "owner": "E17", "note": "adapter code (also covered by baseline_adapters); checkpoint, GGUF and llama.cpp record and the runner entry orlm-llama3-8b.anchor live in configs/model_registry.json (hashed there); optional: depends on the COPT licence (Q4)"},
+    {"id": "anchor_llmopt", "category": "baselines", "glob": ["baselines/llmopt/*.py", "runtime/tests/fixtures/llmopt_*", "runtime/tests/fixtures/qwen25_chat_template.jinja"], "required": false, "superseding_manifest": "the anchors run under a superseding manifest after their own dev rehearsal (preregistration section 3)", "owner": "E18", "note": "adapter, driver, backup parser (adapter.PARSER_FROZEN must be True: frozen after the dev rehearsal), chat-template ports and their references; the upstream prompt file is pinned by its sha256 in prompts.py and is not distributed; the conversion record is anchors.llmopt and the runner entry llmopt-qwen25-14b-q8.anchor of configs/model_registry.json"},
+
+    {"id": "tokenizer_files", "category": "model", "path": "configs/venv_tools.json", "required": true, "owner": "E09", "note": "tiktoken version and the sha256 of the cl100k_base / o200k_base encoding files (the files stay in the git-ignored .cache/tiktoken; tools/venv_tools_check.py re-hashes them). qwen3 counts use the Ollama weights blob registered in configs/model_registry.json"},
+
+    {"id": "prereg_text", "category": "text", "path": "prereg/PREREG_R1.md", "required": true, "owner": "1D"},
+    {"id": "measurement_check_plan", "category": "text", "path": "prereg/MEASUREMENT_CHECK_PLAN.md", "required": true, "owner": "E20"}
+  ],
+  "computed": [
+    {"id": "git_trees", "kind": "git_trees", "dirs": ["runtime", "analysis", "tools", "configs", "conditions", "genes", "schema", "baselines"], "required": true, "note": "tree hashes at HEAD of the frozen directories; the directories must be committed and clean"},
+    {"id": "gene_anchors", "kind": "call", "call": "tools/anchor_hashes.py:config_anchors", "path_args": ["genes/genes.it1.jsonl", "conditions", "configs/r1_configs.json", "genes/activation_lexicon.v2.json"], "required": true, "note": "per registered configuration: gene scope, activation mode, the scope's gene-set digest (library level; per-problem sets follow from it, the activation lexicon and features.py, and each request records its own), activation digest for whole-scope configurations, system prompt sha256 where it does not depend on the case; plus the C3 contract with every gene active"}
+  ]
+}

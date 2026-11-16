@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 964640.0
+  oneyear_y1 = 380000.0
+  oneyear_y2 = 306000.0
+  oneyear_y3 = 687200.0
+  p3_y2 = 150000.0
+  p4_y3 = 100000.0
+  twoyear_y1 = 120000.0

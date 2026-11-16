@@ -1,0 +1,33 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 7.0
+  hasA_0 = 1.0
+  hasA_4 = 1.0
+  hasA_6 = 1.0
+  n_A_4 = 16.0
+  n_A_6 = 104.0
+  n_B_0 = 52.0
+  n_B_2 = 38.0
+  n_C_0 = 2.0
+  n_C_2 = 37.0
+  n_C_3 = 132.0
+  n_C_4 = 69.0
+  n_C_5 = 59.0
+  n_C_6 = 1.0
+  n_D_0 = 12.0
+  n_D_1 = 12.0
+  n_D_2 = 12.0
+  n_D_3 = 12.0
+  n_D_4 = 12.0
+  n_D_5 = 18.0
+  n_D_6 = 12.0
+  n_E_1 = 81.0
+  n_E_5 = 39.0
+  use_0 = 1.0
+  use_1 = 1.0
+  use_2 = 1.0
+  use_3 = 1.0
+  use_4 = 1.0
+  use_5 = 1.0
+  use_6 = 1.0
+INTEGERS_RELAXED: Optimal 7.0 (50 general-integer variables made continuous; binaries kept)

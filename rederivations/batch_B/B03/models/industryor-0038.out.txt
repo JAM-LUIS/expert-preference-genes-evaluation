@@ -1,0 +1,17 @@
+ENUMERATION_CHECK: (14, (3, 2, 1))
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.0
+  Cmax = 14.0
+  s_1_0 = 8.0
+  s_1_1 = 10.0
+  s_1_2 = 13.0
+  s_2_0 = 4.0
+  s_2_1 = 8.0
+  s_2_2 = 10.0
+  s_3_0 = 0.0
+  s_3_1 = 3.0
+  s_3_2 = 8.0
+  y_1_2 = 0.0
+  y_1_3 = 0.0
+  y_2_3 = 0.0

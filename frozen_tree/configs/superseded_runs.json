@@ -1,0 +1,35 @@
+{
+ "schema": "orgene.r1.superseded_runs.v1",
+ "about": [
+  "Runs that exist on the run host but are superseded and never read (DECISIONS R1-D1): the v5 test runs of C0, C1 and C2 on 2026-09-07/08, made before the revised design. They are registered with their condition, number of cases and times only. No path is recorded and analysis/r1/registry.py refuses an entry that names a directory or a file, so nothing can load their contents; the revised design re-runs every configuration on test once, after the freeze.",
+  "Source of the facts: the stage-0 v5 status check (report T8, section 1.6), made with directory listings and file times only; the directories' contents were never opened. n_cases = number of lines of the run's receipts file (equal to the test split size). started = modification time of the generation directory's config.json (written when the runner starts; an inference), finished = modification time of the run directory. The run host's clock is US Eastern daylight time (UTC-4); both forms are recorded.",
+  "Configurations C3L, C3E and C3 had request files generated on 2026-09-07 but were never run on test; they are not runs and are not listed."
+ ],
+ "superseded": [
+  {"config": "C0", "model": "qwen3:8b", "benchmark": "mamo_complex_lp", "split": "test", "n_cases": 151,
+   "started_utc": "2026-09-07T22:54:58Z", "finished_utc": "2026-09-07T23:41:52Z",
+   "started_local": "2026-09-07T18:54:58-04:00", "finished_local": "2026-09-07T19:41:52-04:00"},
+  {"config": "C0", "model": "qwen3:8b", "benchmark": "industryor", "split": "test", "n_cases": 75,
+   "started_utc": "2026-09-07T23:41:52Z", "finished_utc": "2026-09-08T00:11:03Z",
+   "started_local": "2026-09-07T19:41:52-04:00", "finished_local": "2026-09-07T20:11:03-04:00"},
+  {"config": "C1", "model": "qwen3:8b", "benchmark": "mamo_complex_lp", "split": "test", "n_cases": 151,
+   "started_utc": "2026-09-08T00:11:03Z", "finished_utc": "2026-09-08T01:29:21Z",
+   "started_local": "2026-09-07T20:11:03-04:00", "finished_local": "2026-09-07T21:29:21-04:00"},
+  {"config": "C1", "model": "qwen3:8b", "benchmark": "industryor", "split": "test", "n_cases": 75,
+   "started_utc": "2026-09-08T01:29:22Z", "finished_utc": "2026-09-08T02:02:21Z",
+   "started_local": "2026-09-07T21:29:22-04:00", "finished_local": "2026-09-07T22:02:21-04:00"},
+  {"config": "C2", "model": "qwen3:8b", "benchmark": "mamo_complex_lp", "split": "test", "n_cases": 151,
+   "started_utc": "2026-09-08T02:02:21Z", "finished_utc": "2026-09-08T04:13:54Z",
+   "started_local": "2026-09-07T22:02:21-04:00", "finished_local": "2026-09-08T00:13:54-04:00"},
+  {"config": "C2", "model": "qwen3:8b", "benchmark": "industryor", "split": "test", "n_cases": 75,
+   "started_utc": "2026-09-08T04:13:54Z", "finished_utc": "2026-09-08T04:52:47Z",
+   "started_local": "2026-09-08T00:13:54-04:00", "finished_local": "2026-09-08T00:52:47-04:00"}
+ ],
+ "common": {
+  "status": "superseded",
+  "contents": "not opened",
+  "time_basis": "directory and file modification times (stat only); start inferred from the runner's config.json",
+  "record": "stage-0 v5 status report T8 section 1.6; DECISIONS R1-D1; RECORDS R1-R1",
+  "superseded_by": "the R1 stage-2 test runs (every configuration once, after the freeze)"
+ }
+}

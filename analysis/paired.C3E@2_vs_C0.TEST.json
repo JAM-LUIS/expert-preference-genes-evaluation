@@ -1,0 +1,244 @@
+{
+ "schema": "orgene.r1.paired.v1",
+ "data": "TEST",
+ "generated_by": "analysis/r1/paired.py",
+ "outcome": "correct",
+ "a": "C3E@2",
+ "b": "C0",
+ "analysis_set": {
+  "name": "main",
+  "split": "test",
+  "reference": "r1",
+  "n": 125,
+  "sha256": "b7a8e14abc1c6bdf784a2421fa527c5cc357fafb44baabdfe73862c896763458",
+  "by_benchmark": {
+   "industryor": 50,
+   "mamo_complex_lp": 75
+  },
+  "pending": []
+ },
+ "prereg": {
+  "file": "configs/prereg_analysis.json",
+  "sha256": "c593f51c13b16d807d19d8773ffb3862d480929dc7909a6667a96ce638dff93e",
+  "status": "draft",
+  "pending_used": {}
+ },
+ "inputs": {
+  "registry": {
+   "path": "experiments/run_registry.json",
+   "sha256": "9362154ef83bd42de2d33c07c9c65760b2f8b04331f377aea3e835581d49e727"
+  },
+  "superseded": {
+   "path": "configs/superseded_runs.json",
+   "sha256": "d6777155b15bcf7518a93b80cd3615d26d8fd2eaf8ed26150017861936f0b58f",
+   "n": 6,
+   "read": false
+  },
+  "runs": [
+   {
+    "label": "C0",
+    "model": "qwen3:8b",
+    "config": "C0",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": null,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C0.jsonl",
+    "results_sha256": "b460ec60107057314bba91054bd08ef880d9581352146ddebecce2db59a87691",
+    "n_rows": 146
+   },
+   {
+    "label": "C3E@2",
+    "model": "qwen3:8b",
+    "config": "C3E",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": 2,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C3E.jsonl",
+    "results_sha256": "e5c3b47f782ff7d078ce6575bfcc3fa12511adf56a762146c4b05325b131645b",
+    "n_rows": 146
+   },
+   {
+    "label": "C0",
+    "model": "qwen3:8b",
+    "config": "C0",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": null,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C0.jsonl",
+    "results_sha256": "ed3e64945f74080344de150c7432832410be6893707ce7ce314f692a2ef74d59",
+    "n_rows": 71
+   },
+   {
+    "label": "C3E@2",
+    "model": "qwen3:8b",
+    "config": "C3E",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": 2,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C3E.jsonl",
+    "results_sha256": "11a54280c8378df38150b2d0bbb72a744d073af8847b3f651d350b35a8ed2e54",
+    "n_rows": 71
+   }
+  ],
+  "freeze_gate": [
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   }
+  ]
+ },
+ "results": [
+  {
+   "n": 50,
+   "acc_a": 0.32,
+   "acc_b": 0.28,
+   "diff": 0.04,
+   "ci": [
+    0.0,
+    0.1
+   ],
+   "ci_level": 0.95,
+   "ci_excludes_zero": false,
+   "n_boot": 10000,
+   "seed": 1,
+   "strata": null,
+   "wins": 2,
+   "ties": 48,
+   "losses": 0,
+   "mcnemar_exact_p": 0.5,
+   "binary": true,
+   "a_only_right": 2,
+   "b_only_right": 0,
+   "both_right": 14,
+   "both_wrong": 34,
+   "discordance": 0.04,
+   "discordance_wilson95": [
+    0.011,
+    0.1346
+   ],
+   "n_correct_a": 16,
+   "n_correct_b": 14,
+   "model": "qwen3:8b",
+   "a": "C3E@2",
+   "b": "C0",
+   "outcome": "correct",
+   "field": "correct",
+   "scope": "industryor",
+   "max_repeats_a": 1,
+   "max_repeats_b": 1
+  },
+  {
+   "n": 75,
+   "acc_a": 0.5067,
+   "acc_b": 0.4667,
+   "diff": 0.04,
+   "ci": [
+    0.0,
+    0.0933
+   ],
+   "ci_level": 0.95,
+   "ci_excludes_zero": false,
+   "n_boot": 10000,
+   "seed": 1,
+   "strata": null,
+   "wins": 3,
+   "ties": 72,
+   "losses": 0,
+   "mcnemar_exact_p": 0.25,
+   "binary": true,
+   "a_only_right": 3,
+   "b_only_right": 0,
+   "both_right": 35,
+   "both_wrong": 37,
+   "discordance": 0.04,
+   "discordance_wilson95": [
+    0.0137,
+    0.1111
+   ],
+   "n_correct_a": 38,
+   "n_correct_b": 35,
+   "model": "qwen3:8b",
+   "a": "C3E@2",
+   "b": "C0",
+   "outcome": "correct",
+   "field": "correct",
+   "scope": "mamo_complex_lp",
+   "max_repeats_a": 1,
+   "max_repeats_b": 1
+  },
+  {
+   "n": 125,
+   "acc_a": 0.432,
+   "acc_b": 0.392,
+   "diff": 0.04,
+   "ci": [
+    0.008,
+    0.08
+   ],
+   "ci_level": 0.95,
+   "ci_excludes_zero": true,
+   "n_boot": 10000,
+   "seed": 1,
+   "strata": [
+    "industryor",
+    "mamo_complex_lp"
+   ],
+   "wins": 5,
+   "ties": 120,
+   "losses": 0,
+   "mcnemar_exact_p": 0.0625,
+   "binary": true,
+   "a_only_right": 5,
+   "b_only_right": 0,
+   "both_right": 49,
+   "both_wrong": 71,
+   "discordance": 0.04,
+   "discordance_wilson95": [
+    0.0172,
+    0.0902
+   ],
+   "n_correct_a": 54,
+   "n_correct_b": 49,
+   "model": "qwen3:8b",
+   "a": "C3E@2",
+   "b": "C0",
+   "outcome": "correct",
+   "field": "correct",
+   "scope": "pooled",
+   "max_repeats_a": 1,
+   "max_repeats_b": 1
+  }
+ ]
+}

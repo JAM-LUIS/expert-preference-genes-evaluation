@@ -1,0 +1,12 @@
+total 183000
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1000.0
+  diff = 1000.0
+  y_boat = 1.0
+  y_diamond3 = 1.0
+  y_dogs_pair = 1.0
+  y_furniture = 1.0
+  y_harley = 1.0
+  y_painting = 1.0
+  y_sculpture = 1.0

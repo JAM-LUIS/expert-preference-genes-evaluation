@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "orgene.activation_lexicon.v1",
+  "status": "seed",
+  "note": "Seed word lists written from general operations-research vocabulary, not from benchmark text. Gene authors revise them in stage 1C using dev cases only; a revised list is saved under a new file name, and the sha256 of the file in use is recorded with every run. Patterns are Python regular expressions, matched case-insensitively after unicode dashes become '-' and whitespace runs become one space. kind 'any' gives a bool (some pattern matches); kind 'count' gives the total number of matches. Built-in features computed without this file: numeric_literal_count, word_count.",
+  "features": {
+    "integer_terms": {
+      "kind": "any",
+      "description": "explicit integrality wording: integer, whole number, indivisible, cannot be fractional",
+      "patterns": [
+        "\\bintegers?\\b",
+        "\\bwhole (?:numbers?|units?|amounts?)\\b",
+        "\\bindivisible\\b",
+        "\\b(?:cannot|can ?not|can't|must not|may not) be (?:split|divided|fractional|fractioned|broken up)\\b",
+        "\\bnon-?fractional\\b",
+        "\\bno fractional\\b",
+        "\\bfractional (?:units|amounts|quantities|values) (?:are|is) not (?:allowed|permitted|possible)\\b",
+        "\\bdiscrete (?:units|quantities|numbers?)\\b"
+      ]
+    },
+    "count_terms": {
+      "kind": "count",
+      "description": "counting wording: how many, number of",
+      "patterns": [
+        "\\bhow many\\b",
+        "\\bnumbers? of\\b"
+      ]
+    },
+    "binary_terms": {
+      "kind": "any",
+      "description": "yes/no and selection wording: whether, either ... or, or not, select, choose",
+      "patterns": [
+        "\\bwhether\\b",
+        "\\byes\\s*(?:/|-|or)\\s*no\\b",
+        "\\beither\\b[^.]{0,80}\\bor\\b",
+        "\\bor not\\b",
+        "\\bselect(?:s|ed|ing|ion)?\\b",
+        "\\b(?:choose|chooses|chose|chosen|choosing)\\b",
+        "\\bon\\s*(?:/|-)\\s*off\\b"
+      ]
+    },
+    "fixed_cost_terms": {
+      "kind": "any",
+      "description": "fixed, set-up, start-up, opening or one-time charges",
+      "patterns": [
+        "\\bfixed (?:costs?|charges?|fees?|expenses?)\\b",
+        "\\bset-?up (?:costs?|charges?|fees?)\\b",
+        "\\bstart-?up (?:costs?|charges?|fees?)\\b",
+        "\\b(?:opening|activation|installation) (?:costs?|charges?|fees?)\\b",
+        "\\bone-?time (?:costs?|charges?|fees?|payments?|investments?)\\b"
+      ]
+    },
+    "multi_period_terms": {
+      "kind": "any",
+      "description": "several time periods: next N months, month 1, planning horizon, two month names",
+      "patterns": [
+        "\\bmulti-?period\\b",
+        "\\bplanning horizon\\b",
+        "\\b(?:next|following|coming|upcoming) (?:\\d+|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve) (?:days|weeks|months|quarters|years|periods|seasons)\\b",
+        "\\b(?:each|every) of the (?:next |following |coming )?(?:\\d+|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve) (?:days|weeks|months|quarters|years|periods|seasons)\\b",
+        "\\b(?:period|month|week|quarter|year|day|season) (?:[1-9]|1[0-2]|one|two|three|four)\\b",
+        "\\b(?:first|second|third|fourth) (?:day|week|month|quarter|year|period|season)\\b",
+        "\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b[^.]{0,200}?\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b"
+      ]
+    },
+    "inventory_terms": {
+      "kind": "any",
+      "description": "inventory, holding or storage costs, carry-over, backlog",
+      "patterns": [
+        "\\binventor(?:y|ies)\\b",
+        "\\bholding (?:costs?|charges?|fees?)\\b",
+        "\\bstorage (?:costs?|charges?|fees?)\\b",
+        "\\bcarr(?:y|ies|ied|ying)[- ]?over\\b",
+        "\\bback-?(?:log|logs|logged|order|orders|ordered)\\b",
+        "\\b(?:in|into|from) stock\\b",
+        "\\bstock(?:piles?|piled| levels?)\\b",
+        "\\b(?:ending|starting|initial|opening|closing|safety) stock\\b"
+      ]
+    },
+    "network_flow_terms": {
+      "kind": "any",
+      "description": "networks, flows, routes, arcs, nodes, transport and shipping between locations",
+      "patterns": [
+        "\\bflows?\\b",
+        "\\bnetworks?\\b",
+        "\\brout(?:e|es|ed|ing)\\b",
+        "\\barcs?\\b",
+        "\\bnodes?\\b",
+        "\\bpipelines?\\b",
+        "\\btransport(?:s|ed|ing|ation)?\\b",
+        "\\bship(?:s|ped|ping|ments?)?\\b",
+        "\\bfrom (?:each|every) \\w+ to (?:each|every)\\b",
+        "\\bdistribution (?:centers?|centres?)\\b",
+        "\\b(?:supply|demand) (?:nodes?|points?)\\b"
+      ]
+    },
+    "ratio_percent_terms": {
+      "kind": "any",
+      "description": "percentages, ratios, proportions, fractions of a total",
+      "patterns": [
+        "\\d\\s*%",
+        "\\bper ?cent(?:age)?s?\\b",
+        "\\bratios?\\b",
+        "\\bproportion(?:s|al|ally)?\\b",
+        "\\bfraction of\\b",
+        "\\bshare of\\b",
+        "\\b(?:at least|at most|no more than|no less than|more than|less than|exactly) (?:half|one half|a half|a third|one third|a quarter|one quarter|two thirds|three quarters)\\b"
+      ]
+    },
+    "logical_terms": {
+      "kind": "any",
+      "description": "logical conditions between decisions: if ... then, only if, unless, at most k of, not both",
+      "patterns": [
+        "\\bif\\b[^.;]{0,150}\\bthen\\b",
+        "\\bonly if\\b",
+        "\\bunless\\b",
+        "\\b(?:at least|at most|exactly|no more than) (?:one|two|three|\\d+) of (?:the|these|them)\\b",
+        "\\b(?:cannot|can ?not|can't|must not|may not) both\\b",
+        "\\bnot both\\b",
+        "\\bmutually exclusive\\b",
+        "\\bif (?:it|they|(?:a|an|the) \\w+) (?:is|are) (?:used|opened|built|selected|chosen|produced|operated|made|hired|rented|leased)\\b"
+      ]
+    }
+  }
+}

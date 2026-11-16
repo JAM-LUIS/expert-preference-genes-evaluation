@@ -1,0 +1,15 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 6160.00002
+  x_A_A 1526.6667
+  x_A_B 473.33333
+  x_A_C 0.0
+  x_B_A 508.88889
+  x_B_B 1991.1111
+  x_B_C 0.0
+  x_C_A 508.88889
+  x_C_B 691.11111
+  x_C_C 0.0
+  brand A 2544.44448
+  brand B 3155.5555400000003
+  brand C 0.0

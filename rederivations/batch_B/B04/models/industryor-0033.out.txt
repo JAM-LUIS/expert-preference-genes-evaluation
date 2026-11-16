@@ -1,0 +1,17 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1000.0
+  son1 value 91000.0 son2 value 92000.0
+  painting 1.0
+  bust 0.0
+  vase 0.0
+  porsche 0.0
+  diamond1 0.0
+  diamond2 0.0
+  diamond3 1.0
+  sofa 0.0
+  dogs_pair 1.0
+  sculpture 1.0
+  boat 1.0
+  harley 1.0
+  cavour 1.0

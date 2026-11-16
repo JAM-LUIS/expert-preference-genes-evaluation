@@ -1,0 +1,10 @@
+
+FINAL_OBJECTIVE: <the objective value as a plain number>
+Fix it and return the complete corrected Python program in a single ```python block. Do not explain; do not omit any part.
+Fix it and return the complete corrected answer in the same format (the JSON spec block followed by the full Python program). Do not explain; do not omit any part.
+STATUS: <pulp.LpStatus[prob.status]>
+The solver reported status: {status}.
+Your program did not finish within the time limit.
+Your program did not produce the two required output lines.
+Your program failed to run. stderr:
+Your program must call .solve() and then print exactly two final lines:

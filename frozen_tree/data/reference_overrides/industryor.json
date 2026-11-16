@@ -1,0 +1,716 @@
+{
+ "cases_sha256": "13ae3ea9a4c13482904b2cc1ca3e80440ece10140dfa27af3b72a72d11adcec6",
+ "entries": [
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0001",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 219888.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0002",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 125.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0003",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 10349920.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0004",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 30400.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0005",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 18.6943,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0007",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 468510.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0011",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 3867.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0012",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 43200.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0013",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 180000.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0015",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 168.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0016",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 4100.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0019",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 4000.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0022",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 270290.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0023",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": 24000.0,
+   "original_value": 21500.0,
+   "verdict": "INCORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0026",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 53.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0027",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 1146.4142,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0028",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 580000.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0029",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 2500.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0030",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 32.43589743589744,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0031",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 1190.41,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0034",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 7.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0036",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 175.37,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0039",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 600.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0040",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 43090833.43,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0043",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 6800.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0045",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 700.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0048",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 11250.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0049",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 208000.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0050",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 9100.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0054",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 135.26666666666668,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0056",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": -700.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0057",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 600.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0058",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 240000.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0060",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 153.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0065",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 30500.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0069",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 20.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0070",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 35.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0071",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": 630.0,
+   "original_value": 330.0,
+   "verdict": "INCORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0073",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 1600.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0077",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 1005.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0078",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 172.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0079",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 9800.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0081",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 28.6,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0083",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 26.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0091",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 409.0909,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0093",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 3360.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "industryor-0095",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 528.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0096",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 19.6,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0097",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 115.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "industryor-0098",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 165900.0,
+   "verdict": "AMBIGUOUS"
+  }
+ ],
+ "rules_sha256": "8c14104e40fcf83cbfe8de58c05aac48c569b58c1daaecedebc09cb09e838b0b",
+ "schema": "orgene.reference_overrides.v1",
+ "source": "industryor"
+}

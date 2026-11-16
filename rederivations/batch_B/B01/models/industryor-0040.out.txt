@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 36288566.339999996
+  export_engine = 38798.483
+  prod_elec = 6200.0276
+  prod_engine = 39666.43
+  prod_plastic = 5001.2626
+  prod_steel = 32795.396

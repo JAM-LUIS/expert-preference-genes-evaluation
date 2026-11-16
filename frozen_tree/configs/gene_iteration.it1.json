@@ -1,0 +1,32 @@
+{
+  "schema_version": "orgene.dev_gene_iteration.v1",
+  "iteration": "it1",
+  "state": "author_approved_dev",
+  "approval_date": "2026-10-03",
+  "approval_scope": "isolated clause review: 28 flags, author reply 'all as recommended' (24 generalized, 4 deleted); text only, predicate logic unchanged",
+  "genes": "genes/genes.it1.jsonl",
+  "lexicon": "genes/activation_lexicon.v2.json",
+  "predicate_module": "runtime/orgene/predicates_it0.py",
+  "split": "dev",
+  "analysis_set": "dev_signal55",
+  "conditions": [
+    "C0",
+    "C3L",
+    "C3"
+  ],
+  "max_repair_rounds": 2,
+  "frozen": false,
+  "supersedes": "configs/gene_iteration.it0.json",
+  "source_sha256": {
+    "packet_it1/AUTHOR_DECISIONS_it1.json": "cf349118215e26cf848aa823340a164adb1cceedaee7687797ddc4e991b1838d",
+    "packet_it1/review/it1_review_outputs.json": "ad3dca4cd258d736ccd6fef25e798258fcf5b6c4f1051bc03cf566f2f0d0e9ec",
+    "packet_it1/RUBRIC_it1_clause_review.md": "85844595c26021679b36cf934bc6a9481100cd983ced7298b7c9f1ea59d76b46"
+  },
+  "runtime_sha256": {
+    "genes/genes.it1.jsonl": "731ae37eb6aca75d453252f951e1993d7267371b8e10976a7e7cd0ef6c420cfc",
+    "genes/activation_lexicon.v2.json": "2df6c5badce9b0e700eea7a2e82d02c6b0ce797109af0c427352138c9e419636",
+    "runtime/orgene/predicates_it0.py": "36efdd5297d3a503e600f54c85bdd1b3510816e7874eeacc088fdcc311a8c7de",
+    "runtime/orgene/genes.py": "fb33cae9f92f66e1689eecb06fe1f94da8f03a93d7326295738784e0783ab7da"
+  },
+  "notes": "C3E is not rerun: its repair messages are unchanged under it1 (offline replay). C0 is rerun as a determinism check and as the round-0 source for C3L. 2026-10-03 later: genes.py also gained the checklist repair mode (D12); its hash here follows the file, the detail texts of the it1 dev rerun (commit a17307e) are unchanged."
+}

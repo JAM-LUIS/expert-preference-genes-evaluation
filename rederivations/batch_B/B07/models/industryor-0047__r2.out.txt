@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 20241.784753848
+  chickens = 3.0
+  corn_ha = 39.318462
+  cows = 21.0
+  ext_days_aw = 22.0
+  used_days_aw = 3478.0
+  used_days_ss = 4000.0
+  wheat_ha = 0.0053846154

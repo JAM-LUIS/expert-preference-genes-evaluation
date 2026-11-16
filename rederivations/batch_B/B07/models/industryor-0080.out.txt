@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 84000.0
+  t1A_skilled = 200.0
+  t2B_laborers = 300.0
+  t2_methodB = 1.0
+  t3A_groups5L = 100.0
+INTEGERS_RELAXED: Optimal 84000.0 (6 general-integer variables made continuous; binaries kept)

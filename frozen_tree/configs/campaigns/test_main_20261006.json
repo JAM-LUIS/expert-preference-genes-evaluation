@@ -1,0 +1,143 @@
+{
+ "schema": "orgene.r1.campaign.v1",
+ "about": "Formal held-out run, first manifest (preregistration section 6.5 step 3). qwen3:8b: every configuration on the MAMO sensitivity test set (the cleaned main subset is a subset of it, so the main analysis and the all-211 sensitivity analysis come from the same units) and on the IndustryOR test set; the variance flow (temperature 0.7, three repeats) on the preregistered 100-problem subset; the second model on the main test sets; the engineering-source held-out set with C0, C3E and C3L. Scores stay sealed until the adjudication is appended (step 4). The measured anchors run under a superseding manifest. The scheduler plans are committed and frozen too (a sealed stage reads frozen inputs only).",
+ "seed": 20261006,
+ "genes": "genes/genes.it1.jsonl",
+ "lexicon": "genes/activation_lexicon.v2.json",
+ "env": {
+  "ORGENE_TOOLS_PY": "../../ORgene-R1/.venv-tools/bin/python",
+  "ORGENE_TIKTOKEN_DIR": "../../ORgene-R1/.cache/tiktoken"
+ },
+ "stages": [
+  {
+   "label": "mamo-test",
+   "cases": "data/cases/mamo_complex_lp.jsonl",
+   "split_dir": "data/splits_r1/mamo_sensitivity_full211_excl0905",
+   "split": "test",
+   "matrix": "configs/run_matrix/mamo-test.json",
+   "blocks": [
+    {
+     "registry_entry": "qwen3-8b.main",
+     "ids": {
+      "split": "test"
+     },
+     "configs": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C3E",
+      "C3L",
+      "C2E",
+      "C3T",
+      "C3A",
+      "C0R-E"
+     ]
+    },
+    {
+     "registry_entry": "qwen3-8b.var07",
+     "ids": {
+      "subset": "variance"
+     },
+     "repeats": 3,
+     "configs": [
+      "C0",
+      "C3E",
+      "C3L"
+     ]
+    },
+    {
+     "registry_entry": "gptoss-20b.main",
+     "ids": {
+      "split": "test",
+      "split_dir": "data/splits_r1/mamo_main_clean111_excl0905"
+     },
+     "configs": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C3E",
+      "C3L"
+     ]
+    }
+   ],
+   "plan": "configs/run_plans/mamo-test.plan.json"
+  },
+  {
+   "label": "industryor-test",
+   "cases": "data/cases/industryor.jsonl",
+   "split_dir": "data/splits_r1/industryor_main_rev2026_100_excl0905",
+   "split": "test",
+   "matrix": "configs/run_matrix/industryor-test.json",
+   "blocks": [
+    {
+     "registry_entry": "qwen3-8b.main",
+     "ids": {
+      "split": "test"
+     },
+     "configs": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C3E",
+      "C3L",
+      "C2E",
+      "C3T",
+      "C3A",
+      "C0R-E"
+     ]
+    },
+    {
+     "registry_entry": "qwen3-8b.var07",
+     "ids": {
+      "subset": "variance"
+     },
+     "repeats": 3,
+     "configs": [
+      "C0",
+      "C3E",
+      "C3L"
+     ]
+    },
+    {
+     "registry_entry": "gptoss-20b.main",
+     "ids": {
+      "split": "test"
+     },
+     "configs": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C3E",
+      "C3L"
+     ]
+    }
+   ],
+   "plan": "configs/run_plans/industryor-test.plan.json"
+  },
+  {
+   "label": "eng-holdout",
+   "cases": "data/cases/eng.jsonl",
+   "split_dir": "data/splits/eng",
+   "split": "eng_holdout",
+   "matrix": "configs/run_matrix/eng-holdout.json",
+   "blocks": [
+    {
+     "registry_entry": "qwen3-8b.main",
+     "ids": {
+      "split": "eng_holdout"
+     },
+     "configs": [
+      "C0",
+      "C3E",
+      "C3L"
+     ]
+    }
+   ],
+   "plan": "configs/run_plans/eng-holdout.plan.json"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 2924.1379
+  t_A_1 = 100.0
+  t_B_0 = 88.275862
+  t_B_1 = 61.724138
+  t_C_0 = 80.0
+  t_D_1 = 53.793103
+  t_D_2 = 146.2069
+  z = 2924.1379

@@ -1,0 +1,200 @@
+{
+  "schema": "orgene.r1.campaign.v1",
+  "campaign": "test-viewed0905-20261010",
+  "spec": "configs/campaigns/test_viewed0905_20261010.json",
+  "spec_sha256": "c95aebaeb088ea79a67b73ee99f1d71cc5818cea2551442fe7e10aa011da312b",
+  "git_head": "0e2d1e606ba0bdebb92de052d2358f932d98c998",
+  "started_at": "2026-10-10T17:29:08.905103+00:00",
+  "stages": {
+    "mamo-viewed0905": {
+      "state": "complete",
+      "units": 15,
+      "units_by_model": {
+        "qwen3-8b.main": 15
+      },
+      "plan_sha256": "d33c55392a7fc6a517a0b51bc9cffae59ca67aeddebf8a390859d7c2d7e0d1ba",
+      "matrix_sha256": "d8f5b4f6f49e2c8790468b064dbb808d574edefa0f0bb69427633e5d3953ca26",
+      "started_at": "2026-10-10T17:29:11.345046+00:00",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "runtime/orgene_cli.py",
+        "execute",
+        "--run",
+        "experiments/test-viewed0905-20261010/mamo-viewed0905",
+        "--cases",
+        "data/cases/mamo_complex_lp.jsonl",
+        "--split-dir",
+        "data/splits_r1/mamo_sensitivity_full211",
+        "--split",
+        "test",
+        "--genes",
+        "genes/genes.it1.jsonl",
+        "--lexicon",
+        "genes/activation_lexicon.v2.json",
+        "--local-tokens",
+        "on",
+        "--export-validated",
+        "--plan",
+        "configs/run_plans/mamo-viewed0905.plan.json",
+        "--plan-sha256",
+        "d33c55392a7fc6a517a0b51bc9cffae59ca67aeddebf8a390859d7c2d7e0d1ba"
+      ],
+      "attempts": [
+        {
+          "at": "2026-10-10T17:37:57.959127+00:00",
+          "exit": 0
+        }
+      ],
+      "finished_at": "2026-10-10T17:37:57.963236+00:00",
+      "audit": {
+        "planned": 15,
+        "complete": 15,
+        "stop_reasons": {
+          "observe_only": 5,
+          "accepted": 9,
+          "rounds_exhausted": 1
+        },
+        "problems": [],
+        "n_problems": 0
+      }
+    },
+    "industryor-viewed0905": {
+      "state": "complete",
+      "units": 12,
+      "units_by_model": {
+        "qwen3-8b.main": 12
+      },
+      "plan_sha256": "47c2fa543a2ea014b5522c203f0e3f934e05e4694dd84c6efc449b3e7eecbcc6",
+      "matrix_sha256": "f4e723e178f5a2c750e0125a82ef7278d473d4f08ecd4dff60b84cf0d4a16058",
+      "started_at": "2026-10-10T17:37:58.072067+00:00",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "runtime/orgene_cli.py",
+        "execute",
+        "--run",
+        "experiments/test-viewed0905-20261010/industryor-viewed0905",
+        "--cases",
+        "data/cases/industryor.jsonl",
+        "--split-dir",
+        "data/splits_r1/industryor_main_rev2026_100",
+        "--split",
+        "test",
+        "--genes",
+        "genes/genes.it1.jsonl",
+        "--lexicon",
+        "genes/activation_lexicon.v2.json",
+        "--local-tokens",
+        "on",
+        "--export-validated",
+        "--plan",
+        "configs/run_plans/industryor-viewed0905.plan.json",
+        "--plan-sha256",
+        "47c2fa543a2ea014b5522c203f0e3f934e05e4694dd84c6efc449b3e7eecbcc6"
+      ],
+      "attempts": [
+        {
+          "at": "2026-10-10T17:39:56.819242+00:00",
+          "exit": 0
+        }
+      ],
+      "finished_at": "2026-10-10T17:39:56.824249+00:00",
+      "audit": {
+        "planned": 12,
+        "complete": 12,
+        "stop_reasons": {
+          "observe_only": 4,
+          "accepted": 6,
+          "no_repair_left": 2
+        },
+        "problems": [],
+        "n_problems": 0
+      }
+    }
+  },
+  "runs": [
+    {
+      "at": "2026-10-10T17:29:08.905257+00:00",
+      "pid": 32209,
+      "resume": false,
+      "dry_run": false
+    }
+  ],
+  "state": "complete",
+  "preflight": [
+    {
+      "check": "tracked files committed",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "check": "interpreter and solver",
+      "ok": true,
+      "detail": "}"
+    },
+    {
+      "check": "selftest",
+      "ok": true,
+      "detail": "[selftest] PASS (run dir: <path>"
+    },
+    {
+      "check": "model registry vs host",
+      "ok": true,
+      "detail": "[registry] check against live (read-only): OK (0 invalid, 0 mismatch, 0 notes)"
+    },
+    {
+      "check": "test isolation",
+      "ok": true,
+      "detail": "RESULT: PASS"
+    },
+    {
+      "check": "seeded subsets",
+      "ok": true,
+      "detail": "RESULT: PASS (data<path> equals a fresh draw)"
+    },
+    {
+      "check": "freeze manifest",
+      "ok": true,
+      "detail": "VERIFY: PASS"
+    },
+    {
+      "check": "mamo-viewed0905: data/cases/mamo_complex_lp.jsonl",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "mamo-viewed0905: data/splits_r1/mamo_sensitivity_full211",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "industryor-viewed0905: data/cases/industryor.jsonl",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "industryor-viewed0905: data/splits_r1/industryor_main_rev2026_100",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "genes/genes.it1.jsonl",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "genes/activation_lexicon.v2.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "free disk",
+      "ok": true,
+      "detail": "94 GB"
+    }
+  ],
+  "current_stage": "industryor-viewed0905",
+  "finished_at": "2026-10-10T17:39:56.828531+00:00",
+  "failed_stages": [],
+  "output_files": 63,
+  "output_manifest_sha256": "2fb5503b8b4c5d37d60a2da48b41eaaa2686035194674ea2293fcfcc2745e132"
+}

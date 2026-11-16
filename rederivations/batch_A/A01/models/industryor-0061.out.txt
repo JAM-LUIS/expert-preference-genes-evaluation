@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 37000.0
+  x_A = 800.0
+  x_C = 1200.0
+  y_A = 1.0
+  y_C = 1.0
+INTEGERS_RELAXED: Optimal 37000.0 (4 general-integer variables made continuous; binaries kept)

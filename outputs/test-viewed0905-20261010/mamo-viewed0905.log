@@ -1,0 +1,3 @@
+
+===== 2026-10-10T17:29:11.345278+00:00 /opt/homebrew/opt/python@3.14/bin/python3.14 runtime/orgene_cli.py execute --run experiments/test-viewed0905-20261010/mamo-viewed0905 --cases data/cases/mamo_complex_lp.jsonl --split-dir data/splits_r1/mamo_sensitivity_full211 --split test --genes genes/genes.it1.jsonl --lexicon genes/activation_lexicon.v2.json --local-tokens on --export-validated --plan configs/run_plans/mamo-viewed0905.plan.json --plan-sha256 d33c55392a7fc6a517a0b51bc9cffae59ca67aeddebf8a390859d7c2d7e0d1ba
+{"counts": {"qwen3-8b.main": {"complete": 15}}, "plan_sha256": "d33c55392a7fc6a517a0b51bc9cffae59ca67aeddebf8a390859d7c2d7e0d1ba"}

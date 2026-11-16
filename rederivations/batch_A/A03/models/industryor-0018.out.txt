@@ -1,0 +1,18 @@
+LEVEL p1: 0.0
+LEVEL p2: 0.0
+LEVEL p3: 0.0
+LEVEL p4: 5.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 5.0
+  clothing_hours = 45.0
+  curtain_hours = 70.0
+  dminus_1 = 0.0
+  dminus_2 = 5.0
+  dminus_3 = 0.0
+  dminus_4 = 1e-09
+  dplus_1 = 5.0
+  dplus_2 = 1e-09
+  dplus_3 = 0.0
+  dplus_4 = 0.0
+PROFIT_AT_SOLUTION: 242500.0

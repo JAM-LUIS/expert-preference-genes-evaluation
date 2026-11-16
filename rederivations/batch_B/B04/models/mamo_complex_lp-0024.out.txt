@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 23.324945
+  x_1 0.0
+  x_2 0.0
+  x_3 0.0
+  x_4 4.3456954
+  x_5 5.1439294
+  x_6 0.0
+  x_7 0.0
+  x_8 0.0
+INTEGER_VERSION: Optimal Optimal Solution Found 24.0

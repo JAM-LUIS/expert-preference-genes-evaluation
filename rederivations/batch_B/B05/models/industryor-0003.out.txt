@@ -1,0 +1,30 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 10349920.0
+  C_1 = 8.0
+  C_2 = 35008.0
+  C_3 = 37008.0
+  C_4 = 30008.0
+  C_5 = 14008.0
+  C_6 = 23508.0
+  F_1 = 844.0
+  I_6 = 10000.0
+  P_1 = 4992.0
+  P_2 = 4992.0
+  P_3 = 4992.0
+  P_4 = 4992.0
+  P_5 = 4992.0
+  P_6 = 4992.0
+  S_1 = 20000.0
+  S_2 = 40000.0
+  S_3 = 42000.0
+  S_4 = 35000.0
+  S_5 = 19000.0
+  S_6 = 18500.0
+  W_1 = 156.0
+  W_2 = 156.0
+  W_3 = 156.0
+  W_4 = 156.0
+  W_5 = 156.0
+  W_6 = 156.0
+INTEGERS_RELAXED: Optimal 10350000.0 (48 general-integer variables made continuous; binaries kept)

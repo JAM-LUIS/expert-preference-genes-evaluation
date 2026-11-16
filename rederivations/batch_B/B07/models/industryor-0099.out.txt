@@ -1,0 +1,4 @@
+STATUS: Optimal
+FINAL_OBJECTIVE: 0.6075
+  spares = (4, 1, 1)
+  tie/opt: (4, 1, 1) 0.6075

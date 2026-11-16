@@ -1,0 +1,158 @@
+{
+ "schema": "orgene.r1.tost.v1",
+ "data": "TEST",
+ "generated_by": "analysis/r1/tost.py",
+ "margin": 0.05,
+ "alpha": 0.05,
+ "analysis_set": {
+  "name": "main",
+  "split": "test",
+  "reference": "r1",
+  "n": 125,
+  "sha256": "b7a8e14abc1c6bdf784a2421fa527c5cc357fafb44baabdfe73862c896763458",
+  "by_benchmark": {
+   "industryor": 50,
+   "mamo_complex_lp": 75
+  },
+  "pending": []
+ },
+ "prereg": {
+  "file": "configs/prereg_analysis.json",
+  "sha256": "c593f51c13b16d807d19d8773ffb3862d480929dc7909a6667a96ce638dff93e",
+  "status": "draft",
+  "pending_used": {}
+ },
+ "inputs": {
+  "registry": {
+   "path": "experiments/run_registry.json",
+   "sha256": "9362154ef83bd42de2d33c07c9c65760b2f8b04331f377aea3e835581d49e727"
+  },
+  "runs": [
+   {
+    "label": "C3L@1",
+    "model": "qwen3:8b",
+    "config": "C3L",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": 1,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C3L.jsonl",
+    "results_sha256": "ba30e644c06efc73d3d979e5578086bb5af307ecfef38469544ff35c6ac7fe0c",
+    "n_rows": 146
+   },
+   {
+    "label": "C3T@1",
+    "model": "qwen3:8b",
+    "config": "C3T",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": 1,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C3T.jsonl",
+    "results_sha256": "c62451c5f26353f9996a431016549122d9a2f718fefff1225963462da829a13e",
+    "n_rows": 146
+   },
+   {
+    "label": "C3L@1",
+    "model": "qwen3:8b",
+    "config": "C3L",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": 1,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C3L.jsonl",
+    "results_sha256": "fde96f69844da1c20673bcaf043a9f5065a8354c58b2b15f3f8f603ba7275d20",
+    "n_rows": 71
+   },
+   {
+    "label": "C3T@1",
+    "model": "qwen3:8b",
+    "config": "C3T",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": 1,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C3T.jsonl",
+    "results_sha256": "acd88b35553f6b41b4caf49afaeaedef35d29046f65574fe228d3ed8eff97e8e",
+    "n_rows": 71
+   }
+  ],
+  "freeze_gate": [
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   }
+  ]
+ },
+ "results": [
+  {
+   "model": "qwen3:8b",
+   "a": "C3L@1",
+   "b": "C3T@1",
+   "outcome": "correct",
+   "scope": "pooled",
+   "n": 125,
+   "bootstrap": {
+    "ci": [
+     0.016,
+     0.072
+    ],
+    "ci_level": 0.9,
+    "n_boot": 10000,
+    "seed": 1,
+    "equivalent": false
+   },
+   "max_repeats": 1,
+   "score": {
+    "b": 5,
+    "c": 0,
+    "n": 125,
+    "estimate": 0.04,
+    "margin": 0.05,
+    "alpha": 0.05,
+    "t_lower": 3.4412360080584263,
+    "t_upper": -0.5129891760425771,
+    "p_lower": 0.0002895316086096722,
+    "p_upper": 0.3039794460874996,
+    "p": 0.3039794460874996,
+    "ci": [
+     0.017966773280514214,
+     0.07988694250350337
+    ],
+    "ci_level": 0.9,
+    "equivalent": false,
+    "ci_inside_margin": false
+   },
+   "equivalent": false,
+   "methods_agree": true
+  }
+ ]
+}

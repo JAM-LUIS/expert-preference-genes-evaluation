@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1008200.0
+  x_A1 = 5300.0
+  x_A3 = 5400.0
+  y_A1 = 1.0
+  y_A3 = 1.0
+WITH_INTEGER_X: Optimal 1008200.0

@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 49.0
+  n_Rice = 7.0
+INTEGERS_RELAXED: Optimal 48.163346700000005 (5 general-integer variables made continuous; binaries kept)

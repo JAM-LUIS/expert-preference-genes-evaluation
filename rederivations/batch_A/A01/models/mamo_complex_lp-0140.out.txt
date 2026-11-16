@@ -1,0 +1,13 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 446011.0
+  open_0 = 1.0
+  open_2 = 1.0
+  open_3 = 1.0
+  x_(0,_1) = 345.0
+  x_(0,_2) = 966.0
+  x_(0,_3) = 643.0
+  x_(2,_4) = 470.0
+  x_(3,_0) = 589.0
+  x_(3,_1) = 617.0
+  x_(3,_4) = 434.0

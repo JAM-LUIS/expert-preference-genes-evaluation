@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 78450.0
+  inv_0 = 10.0
+  ot_1 = 10.0
+  ot_2 = 35.0
+  reg_0 = 40.0
+  reg_1 = 40.0
+  reg_2 = 40.0
+  reg_3 = 25.0

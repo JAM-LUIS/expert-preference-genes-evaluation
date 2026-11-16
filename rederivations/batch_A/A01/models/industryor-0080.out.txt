@@ -1,0 +1,11 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 84000.0
+  hired_laborers = 800.0
+  hired_skilled = 200.0
+  t1A_skilled = 200.0
+  t2B_laborers = 300.0
+  t3A_groups5 = 100.0
+  z1a = 1.0
+  z2b = 1.0
+  z3a = 1.0

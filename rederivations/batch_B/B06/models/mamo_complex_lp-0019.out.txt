@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.0
+  x_apples = 2.0
+  x_eggs = 8.0
+  x_tofu = 4.0
+INTEGERS_RELAXED: Optimal 12.9661017
+  x_eggs = 8.3644068
+  x_tofu = 4.6016949

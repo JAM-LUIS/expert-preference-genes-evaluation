@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1030.0
+  x_A_1 = 30.0
+  x_A_2 = 50.0
+  x_B_0 = 55.0
+  x_B_1 = 45.0

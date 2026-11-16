@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 32.0
+  food_3 = 16.0
+INTEGERS_RELAXED: Optimal 31.508772 (5 general-integer variables made continuous; binaries kept)

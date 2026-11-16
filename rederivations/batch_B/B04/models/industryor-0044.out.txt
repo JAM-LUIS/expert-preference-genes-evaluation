@@ -1,0 +1,13 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 685.0
+  x_1_1 100.0
+  x_1_2 0.0
+  x_2_1 0.0
+  x_2_2 100.0
+  y_1_1 0.0
+  y_1_2 100.0
+  y_2_1 80.0
+  y_2_2 20.0
+  z_1 1.0
+  z_2 1.0

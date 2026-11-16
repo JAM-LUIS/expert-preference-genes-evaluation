@@ -1,0 +1,553 @@
+{
+ "qwen3-8b.main|C0": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 4,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "observe_only": 125
+  },
+  "gen_seconds_mean": 22.1,
+  "gen_seconds_per_correct": 56.5,
+  "n_correct": 49,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 88,
+   "null": 26,
+   "infeasible": 10,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 49,
+   "objective_mismatch": 49,
+   "no_objective": 27
+  }
+ },
+ "qwen3-8b.main|C1": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 3,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "observe_only": 125
+  },
+  "gen_seconds_mean": 29.0,
+  "gen_seconds_per_correct": 103.5,
+  "n_correct": 35,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 71,
+   "null": 44,
+   "infeasible": 10
+  },
+  "reason": {
+   "match": 35,
+   "objective_mismatch": 44,
+   "no_objective": 46
+  }
+ },
+ "qwen3-8b.main|C2": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 10,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "observe_only": 125
+  },
+  "gen_seconds_mean": 48.2,
+  "gen_seconds_per_correct": 131.0,
+  "n_correct": 46,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 119,
+  "status_category": {
+   "optimal": 89,
+   "null": 27,
+   "infeasible": 9
+  },
+  "reason": {
+   "objective_mismatch": 52,
+   "match": 46,
+   "no_objective": 27
+  }
+ },
+ "qwen3-8b.main|C3": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 1,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 71,
+   "no_repair_left": 36,
+   "rounds_exhausted": 18
+  },
+  "gen_seconds_mean": 78.9,
+  "gen_seconds_per_correct": 205.6,
+  "n_correct": 48,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 123,
+  "status_category": {
+   "optimal": 97,
+   "infeasible": 12,
+   "null": 15,
+   "unbounded": 1
+  },
+  "reason": {
+   "objective_mismatch": 62,
+   "match": 48,
+   "no_objective": 15
+  }
+ },
+ "qwen3-8b.main|C3E": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 4,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 96,
+   "rounds_exhausted": 19,
+   "no_repair_left": 10
+  },
+  "gen_seconds_mean": 38.5,
+  "gen_seconds_per_correct": 89.1,
+  "n_correct": 54,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 96,
+   "infeasible": 9,
+   "null": 19,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 54,
+   "objective_mismatch": 51,
+   "no_objective": 20
+  }
+ },
+ "qwen3-8b.main|C3L": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 4,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 95,
+   "rounds_exhausted": 17,
+   "no_repair_left": 13
+  },
+  "gen_seconds_mean": 42.2,
+  "gen_seconds_per_correct": 89.4,
+  "n_correct": 59,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 100,
+   "infeasible": 10,
+   "null": 14,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 59,
+   "objective_mismatch": 51,
+   "no_objective": 15
+  }
+ },
+ "qwen3-8b.main|C2E": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 10,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "no_repair_left": 10,
+   "accepted": 93,
+   "rounds_exhausted": 22
+  },
+  "gen_seconds_mean": 107.7,
+  "gen_seconds_per_correct": 286.4,
+  "n_correct": 47,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 119,
+  "status_category": {
+   "optimal": 93,
+   "infeasible": 10,
+   "null": 22
+  },
+  "reason": {
+   "objective_mismatch": 56,
+   "match": 47,
+   "no_objective": 22
+  }
+ },
+ "qwen3-8b.main|C3T": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 4,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 82,
+   "no_repair_left": 21,
+   "rounds_exhausted": 22
+  },
+  "gen_seconds_mean": 43.2,
+  "gen_seconds_per_correct": 99.9,
+  "n_correct": 54,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 94,
+   "infeasible": 9,
+   "null": 21,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 54,
+   "objective_mismatch": 49,
+   "no_objective": 22
+  }
+ },
+ "qwen3-8b.main|C3A": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 4,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 80,
+   "no_repair_left": 21,
+   "rounds_exhausted": 24
+  },
+  "gen_seconds_mean": 53.7,
+  "gen_seconds_per_correct": 124.4,
+  "n_correct": 54,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 93,
+   "infeasible": 9,
+   "null": 22,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 54,
+   "objective_mismatch": 49,
+   "no_objective": 22
+  }
+ },
+ "qwen3-8b.main|C0R-E": {
+  "n_units": 125,
+  "n_complete": 125,
+  "truncated_units": 5,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "no_repair_left": 5,
+   "rounds_exhausted": 28,
+   "accepted": 92
+  },
+  "gen_seconds_mean": 54.9,
+  "gen_seconds_per_correct": 163.5,
+  "n_correct": 42,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 125,
+  "status_category": {
+   "optimal": 92,
+   "infeasible": 5,
+   "null": 28
+  },
+  "reason": {
+   "match": 42,
+   "objective_mismatch": 55,
+   "no_objective": 28
+  }
+ },
+ "gptoss-20b.main|C0": {
+  "n_units": 125,
+  "n_complete": 120,
+  "truncated_units": 0,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "observe_only": 120,
+   "null": 5
+  },
+  "gen_seconds_mean": 17.8,
+  "gen_seconds_per_correct": 26.7,
+  "n_correct": 80,
+  "exec_timeouts_final": 0,
+  "misreports": 2,
+  "misreport_recorded": 120,
+  "status_category": {
+   "optimal": 111,
+   "null": 7,
+   "infeasible": 7
+  },
+  "reason": {
+   "match": 80,
+   "objective_mismatch": 38,
+   "server_refused": 5,
+   "no_objective": 2
+  }
+ },
+ "gptoss-20b.main|C1": {
+  "n_units": 125,
+  "n_complete": 124,
+  "truncated_units": 0,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "observe_only": 124,
+   "null": 1
+  },
+  "gen_seconds_mean": 21.5,
+  "gen_seconds_per_correct": 38.6,
+  "n_correct": 69,
+  "exec_timeouts_final": 1,
+  "misreports": 1,
+  "misreport_recorded": 122,
+  "status_category": {
+   "optimal": 107,
+   "null": 8,
+   "infeasible": 8,
+   "unbounded": 2
+  },
+  "reason": {
+   "match": 69,
+   "objective_mismatch": 48,
+   "no_objective": 7,
+   "server_refused": 1
+  }
+ },
+ "gptoss-20b.main|C2": {
+  "n_units": 125,
+  "n_complete": 122,
+  "truncated_units": 0,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "observe_only": 122,
+   "null": 3
+  },
+  "gen_seconds_mean": 28.6,
+  "gen_seconds_per_correct": 50.7,
+  "n_correct": 69,
+  "exec_timeouts_final": 0,
+  "misreports": 0,
+  "misreport_recorded": 122,
+  "status_category": {
+   "optimal": 106,
+   "null": 10,
+   "infeasible": 7,
+   "unbounded": 2
+  },
+  "reason": {
+   "objective_mismatch": 46,
+   "server_refused": 3,
+   "match": 69,
+   "no_objective": 7
+  }
+ },
+ "gptoss-20b.main|C3": {
+  "n_units": 125,
+  "n_complete": 124,
+  "truncated_units": 0,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 110,
+   "no_repair_left": 9,
+   "rounds_exhausted": 5,
+   "null": 1
+  },
+  "gen_seconds_mean": 46.7,
+  "gen_seconds_per_correct": 65.7,
+  "n_correct": 88,
+  "exec_timeouts_final": 1,
+  "misreports": 0,
+  "misreport_recorded": 124,
+  "status_category": {
+   "optimal": 113,
+   "infeasible": 8,
+   "null": 4
+  },
+  "reason": {
+   "match": 88,
+   "objective_mismatch": 33,
+   "no_objective": 3,
+   "server_refused": 1
+  }
+ },
+ "gptoss-20b.main|C3E": {
+  "n_units": 120,
+  "n_complete": 120,
+  "truncated_units": 0,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 115,
+   "no_repair_left": 5
+  },
+  "gen_seconds_mean": 19.4,
+  "gen_seconds_per_correct": 28.8,
+  "n_correct": 81,
+  "exec_timeouts_final": 0,
+  "misreports": 2,
+  "misreport_recorded": 120,
+  "status_category": {
+   "optimal": 115,
+   "null": 5,
+   "infeasible": 4,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 81,
+   "objective_mismatch": 39,
+   "server_refused": 5
+  }
+ },
+ "gptoss-20b.main|C3L": {
+  "n_units": 120,
+  "n_complete": 120,
+  "truncated_units": 0,
+  "context_exceeded": 0,
+  "stop_reasons": {
+   "accepted": 110,
+   "no_repair_left": 9,
+   "rounds_exhausted": 1
+  },
+  "gen_seconds_mean": 20.2,
+  "gen_seconds_per_correct": 29.9,
+  "n_correct": 81,
+  "exec_timeouts_final": 0,
+  "misreports": 2,
+  "misreport_recorded": 120,
+  "status_category": {
+   "optimal": 113,
+   "null": 5,
+   "infeasible": 6,
+   "unbounded": 1
+  },
+  "reason": {
+   "match": 81,
+   "objective_mismatch": 39,
+   "server_refused": 5
+  }
+ },
+ "scale|C0|T1": {
+  "n": 36,
+  "gen_seconds_mean": 11.1,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "scale|C0|T2": {
+  "n": 23,
+  "gen_seconds_mean": 13.6,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "scale|C0|T3": {
+  "n": 66,
+  "gen_seconds_mean": 31.2,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "scale|C3E|T1": {
+  "n": 36,
+  "gen_seconds_mean": 15.2,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "scale|C3E|T2": {
+  "n": 23,
+  "gen_seconds_mean": 18.7,
+  "exec_seconds_mean": 0.08,
+  "timeouts": 0
+ },
+ "scale|C3E|T3": {
+  "n": 66,
+  "gen_seconds_mean": 58.1,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "scale|C3L|T1": {
+  "n": 36,
+  "gen_seconds_mean": 14.2,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "scale|C3L|T2": {
+  "n": 23,
+  "gen_seconds_mean": 21.4,
+  "exec_seconds_mean": 0.08,
+  "timeouts": 0
+ },
+ "scale|C3L|T3": {
+  "n": 66,
+  "gen_seconds_mean": 64.7,
+  "exec_seconds_mean": 0.07,
+  "timeouts": 0
+ },
+ "conflicts": {
+  "repaired_problems": 49,
+  "problems_with_new_hard_failure_after_repair": 5,
+  "pairs": {
+   "solution.status_optimal_or_justified -> boundary.solve_before_report": 2,
+   "solution.status_optimal_or_justified -> boundary.status_reported": 2,
+   "objective.aggregates_declared_variables -> solution.nontrivial_optimum": 1,
+   "code.sparse_index_guard -> boundary.solve_before_report": 1,
+   "execution.runs -> boundary.solve_before_report": 1,
+   "code.sparse_index_guard -> code.pulp_api_exists": 1,
+   "execution.runs -> code.pulp_api_exists": 1,
+   "solution.status_optimal_or_justified -> code.pulp_api_exists": 1
+  },
+  "not_converged_after_repair": 30,
+  "rules_still_failing": {
+   "solution.status_optimal_or_justified": 25,
+   "execution.runs": 14,
+   "code.sparse_index_guard": 4,
+   "model.binary_cardinality_linked": 4,
+   "solution.nontrivial_optimum": 3,
+   "code.tuple_key_indexing": 2,
+   "boundary.solve_before_report": 1,
+   "boundary.status_reported": 1
+  }
+ },
+ "activation": {
+  "artifact.code_present": 1.0,
+  "boundary.solve_before_report": 1.0,
+  "boundary.status_reported": 1.0,
+  "code.pulp_api_exists": 1.0,
+  "code.sparse_index_guard": 1.0,
+  "code.tuple_key_indexing": 1.0,
+  "constraints.rows_sign_feasible": 1.0,
+  "data.no_invented_numbers": 1.0,
+  "execution.runs": 1.0,
+  "model.binary_cardinality_linked": 1.0,
+  "model.linear_expressions_only": 1.0,
+  "model.logic_via_indicators": 0.128,
+  "numeric.bigm_bounded": 1.0,
+  "objective.aggregates_declared_variables": 1.0,
+  "solution.nontrivial_optimum": 1.0,
+  "solution.status_optimal_or_justified": 1.0
+ },
+ "order_effect": {
+  "n_units": 1250,
+  "coef_position_logit": -0.469,
+  "ci95": [
+   -1.062,
+   0.125
+  ],
+  "p": 0.122,
+  "model": "logit(correct) ~ run position (0 = first, 1 = last unit of the stage) + benchmark + condition; SE clustered by problem"
+ },
+ "replay_all": {
+  "problems": 125,
+  "problems_with_an_inactive_rule": 109,
+  "inactive_rule_would_fail_hard": {},
+  "problems_newly_sent_to_repair": 0,
+  "problems_already_in_repair_with_one_more_finding": 0
+ }
+}

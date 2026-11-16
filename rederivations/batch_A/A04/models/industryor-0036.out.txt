@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 175.37294006435135
+  route: [0, 5, 3, 7, 8, 10, 11, 9, 6, 4, 2, 1, 0] load 160 start times [15.13, 106.13, 198.13, 290.96, 384.57, 477.57, 591.92, 684.16, 776.39, 870.0, 967.0]
+  route: [0, 13, 17, 18, 19, 15, 16, 14, 12, 0] load 190 start times [30.81, 124.81, 217.81, 312.81, 407.81, 528.0, 620.0, 721.0]
+  route: [0, 20, 0] load 10 start times [10.0]

@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1.25
+  liquid = 45.0
+  solid = 6.25

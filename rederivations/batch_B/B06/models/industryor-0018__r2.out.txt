@@ -1,0 +1,11 @@
+level p1: Optimal deviation = 0.0
+level p2: Optimal deviation = 0.0
+level p3: Optimal deviation = 0.0
+level p4: Optimal deviation = 5.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 242500.0
+  d1p_overtime = 5.0
+  d2m = 5.0
+  x_cloth_h = 45.0
+  x_curtain_h = 70.0

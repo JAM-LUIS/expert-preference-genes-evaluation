@@ -1,0 +1,21 @@
+[
+ {"name": "sys_user_nothink", "think": false, "messages": [{"role": "system", "content": "You are a helper."}, {"role": "user", "content": "Problem:\nMaximize x.\n"}]},
+ {"name": "sys_user_think", "think": true, "messages": [{"role": "system", "content": "You are a helper."}, {"role": "user", "content": "Problem:\nMaximize x.\n"}]},
+ {"name": "sys_user_unset", "think": null, "messages": [{"role": "system", "content": "You are a helper."}, {"role": "user", "content": "Problem:\nMaximize x.\n"}]},
+ {"name": "user_only_nothink", "think": false, "messages": [{"role": "user", "content": "Hi"}]},
+ {"name": "empty_system_nothink", "think": false, "messages": [{"role": "system", "content": ""}, {"role": "user", "content": "Hi"}]},
+ {"name": "repair_turn_nothink", "think": false, "messages": [{"role": "system", "content": "S line 1\nS line 2\n"}, {"role": "user", "content": "Problem:\nP\n"}, {"role": "assistant", "content": "```python\nprint(1)\n```\n"}, {"role": "user", "content": "Fix it.\n"}]},
+ {"name": "repair_turn_think", "think": true, "messages": [{"role": "system", "content": "S"}, {"role": "user", "content": "P"}, {"role": "assistant", "content": "A", "thinking": "T"}, {"role": "user", "content": "R"}]},
+ {"name": "two_systems_consecutive_users", "think": false, "messages": [{"role": "system", "content": "S1"}, {"role": "system", "content": "S2"}, {"role": "user", "content": "U1"}, {"role": "user", "content": "U2"}]},
+ {"name": "assistant_last_nothink", "think": false, "messages": [{"role": "system", "content": "S"}, {"role": "user", "content": "U"}, {"role": "assistant", "content": "partial"}]},
+ {"name": "assistant_last_thinking_think", "think": true, "messages": [{"role": "user", "content": "U"}, {"role": "assistant", "content": "partial", "thinking": "T"}]},
+ {"name": "assistant_thinking_before_last_user", "think": true, "messages": [{"role": "user", "content": "U1"}, {"role": "assistant", "content": "A1", "thinking": "T1"}, {"role": "user", "content": "U2"}, {"role": "assistant", "content": "A2", "thinking": "T2"}, {"role": "user", "content": "U3"}]},
+ {"name": "empty_assistant_content", "think": false, "messages": [{"role": "user", "content": "U1"}, {"role": "assistant", "content": ""}, {"role": "user", "content": "U2"}]},
+ {"name": "tool_messages", "think": false, "messages": [{"role": "user", "content": "U1"}, {"role": "tool", "content": "R1"}, {"role": "tool", "content": "R2"}]},
+ {"name": "system_after_user", "think": false, "messages": [{"role": "user", "content": "U1"}, {"role": "system", "content": "late"}, {"role": "user", "content": "U2"}]},
+ {"name": "whitespace_edges", "think": false, "messages": [{"role": "system", "content": "\n  S with spaces  \n\n"}, {"role": "user", "content": "  U\t\n"}]},
+ {"name": "system_last", "think": false, "messages": [{"role": "user", "content": "U"}, {"role": "system", "content": "S"}]},
+ {"name": "consecutive_assistants_keep_first_thinking", "think": true, "messages": [{"role": "user", "content": "U"}, {"role": "assistant", "content": "A1", "thinking": "T1"}, {"role": "assistant", "content": "A2", "thinking": "T2"}]},
+ {"name": "unicode_and_braces", "think": false, "messages": [{"role": "system", "content": "{{ .System }} <b>&amp;</b>"}, {"role": "user", "content": "最优化 é ✓ {{ end }}"}]},
+ {"name": "empty_messages", "think": false, "messages": []}
+]

@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 57.0
+  A = 2.0
+  B = 4.0
+  C_disposed = 3.0
+  C_sold = 5.0

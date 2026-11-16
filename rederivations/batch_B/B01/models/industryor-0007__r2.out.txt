@@ -1,0 +1,13 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 904590.0
+  x_('Lamezia',_'Bari') = 3.0
+  x_('Lamezia',_'Naples') = 27.0
+  x_('Perugia',_'Genoa') = 7.0
+  x_('Perugia',_'Venice') = 5.0
+  x_('Pescara',_'Ancona') = 24.0
+  x_('Rome',_'Ancona') = 1.0
+  x_('Rome',_'Genoa') = 13.0
+  x_('Rome',_'Naples') = 6.0
+  x_('Taranto',_'Bari') = 18.0
+  x_('Verona',_'Venice') = 10.0

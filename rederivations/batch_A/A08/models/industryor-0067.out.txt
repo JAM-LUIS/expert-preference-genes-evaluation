@@ -1,0 +1,25 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 3160500.0
+  ext_m3_9 = 3000.0
+  inv_I_10 = 60000.0
+  inv_I_11 = 30000.0
+  inv_I_8 = 15000.0
+  inv_I_9 = 90000.0
+  own_m3_10 = 12000.0
+  own_m3_11 = 6000.0
+  own_m3_8 = 3000.0
+  own_m3_9 = 15000.0
+  prod_II_10 = 50000.0
+  prod_II_11 = 50000.0
+  prod_II_12 = 50000.0
+  prod_II_7 = 15000.0
+  prod_II_8 = 15000.0
+  prod_II_9 = 15000.0
+  prod_I_10 = 70000.0
+  prod_I_11 = 70000.0
+  prod_I_12 = 70000.0
+  prod_I_7 = 30000.0
+  prod_I_8 = 45000.0
+  prod_I_9 = 105000.0
+INTEGERS_RELAXED: Optimal 3160500.0 (24 general-integer variables made continuous; binaries kept)

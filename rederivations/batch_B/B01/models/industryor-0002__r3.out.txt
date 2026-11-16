@@ -1,0 +1,4 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 125.0
+  train_y2 = 25.0

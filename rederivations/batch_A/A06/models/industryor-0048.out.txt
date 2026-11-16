@@ -1,0 +1,11 @@
+LEVEL P1 optimum: 0.0
+LEVEL P2 optimum: 0.0
+LEVEL P3 optimum: 0.0
+LEVEL P4 optimum: 0.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 0.0
+  d1p = 1250.0
+  xA = 12.0
+  xB = 17.0
+PROFIT_AT_SOLUTION: 11250.0

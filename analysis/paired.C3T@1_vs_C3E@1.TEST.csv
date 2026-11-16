@@ -1,0 +1,4 @@
+n,acc_a,acc_b,diff,ci,ci_level,ci_excludes_zero,n_boot,seed,strata,wins,ties,losses,mcnemar_exact_p,binary,a_only_right,b_only_right,both_right,both_wrong,discordance,discordance_wilson95,n_correct_a,n_correct_b,model,a,b,outcome,field,scope,max_repeats_a,max_repeats_b
+50,0.32,0.32,0.0,"[0.0, 0.0]",0.95,False,10000,1,,0,50,0,1.0,True,0,0,16,34,0.0,"[0.0, 0.0713]",16,16,qwen3:8b,C3T@1,C3E@1,correct,correct,industryor,1,1
+75,0.5067,0.5067,0.0,"[0.0, 0.0]",0.95,False,10000,1,,0,75,0,1.0,True,0,0,38,37,0.0,"[0.0, 0.0487]",38,38,qwen3:8b,C3T@1,C3E@1,correct,correct,mamo_complex_lp,1,1
+125,0.432,0.432,0.0,"[0.0, 0.0]",0.95,False,10000,1,"[""industryor"", ""mamo_complex_lp""]",0,125,0,1.0,True,0,0,54,71,0.0,"[0.0, 0.0298]",54,54,qwen3:8b,C3T@1,C3E@1,correct,correct,pooled,1,1

@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 165900.0
+  A = 15.0
+  B = 9.0
+  overtime_hours = 81.0
+INTEGERS_RELAXED: Optimal 166666.668 (2 general-integer variables made continuous; binaries kept)

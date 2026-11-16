@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the article below."
+title: "Expert preference genes for optimization-model specification: evaluation materials"
+type: dataset
+authors:
+  - family-names: Zhang
+    given-names: Yuxin
+    orcid: "https://orcid.org/0009-0004-5778-0084"
+    affiliation: "Rochester Institute of Technology; JAM Studio"
+  - family-names: Deng
+    given-names: Qi
+    affiliation: "Southwest Jiaotong University Hope College"
+identifiers:
+  - type: doi
+    value: 10.17605/OSF.IO/CYFSP
+    description: "Archived copy on the Open Science Framework"
+repository-code: "https://github.com/JAM-LUIS/expert-preference-genes-evaluation"
+keywords:
+  - expert preference genes
+  - large language models
+  - optimization modeling
+  - mixed-integer linear programming
+  - program repair
+  - engineering decision support
+license: MIT
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zhang
+      given-names: Yuxin
+      orcid: "https://orcid.org/0009-0004-5778-0084"
+    - family-names: Deng
+      given-names: Qi
+  title: "Expert Preference Genes for Optimization-Model Specification in Engineering Decision Support: Versioned Executable Review Rules for Language-Model Formulation of Mixed-Integer Programs"
+  journal: "Engineering Applications of Artificial Intelligence"
+  year: 2026
+  status: in-press

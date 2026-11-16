@@ -1,0 +1,5 @@
+A jam maker ships blueberry jam from two kitchens to three shops. Kitchen K1 can supply
+up to 40 crates and kitchen K2 up to 50 crates. Shop S1 needs 30 crates, shop S2 needs
+25 crates and shop S3 needs 20 crates. The cost of shipping one crate is: from K1, 4 to
+S1, 6 to S2 and 9 to S3; from K2, 5 to S1, 3 to S2 and 7 to S3. Crates are shipped whole.
+Find the shipping plan that meets every shop's need at the lowest total cost.

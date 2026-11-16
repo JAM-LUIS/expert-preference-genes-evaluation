@@ -1,0 +1,12 @@
+  priority level achieved deviation 0.0
+  priority level achieved deviation 0.0
+  priority level achieved deviation 0.0
+  priority level achieved deviation 0.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 0.0
+  xA 14.0
+  xB 14.0
+  oA 1.0
+  oB 1.0
+  profit 11205.0

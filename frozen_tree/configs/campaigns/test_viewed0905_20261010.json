@@ -1,0 +1,57 @@
+{
+ "schema": "orgene.r1.campaign.v1",
+ "about": "Supplementary run, registered and started after the scores of the formal run were unsealed (2026-10-10): the nine test problems whose statements were viewed on 2026-09-05 (MAMO ComplexLP 5, IndustryOR 4), which the formal run did not include, with the three conditions of the main comparison on qwen3:8b. It supplies the preregistered sensitivity analysis that adds these problems back. Post hoc with respect to the unsealing; nothing of the formal run is rerun or changed.",
+ "seed": 20261010,
+ "genes": "genes/genes.it1.jsonl",
+ "lexicon": "genes/activation_lexicon.v2.json",
+ "env": {
+  "ORGENE_TOOLS_PY": "../../ORgene-R1/.venv-tools/bin/python",
+  "ORGENE_TIKTOKEN_DIR": "../../ORgene-R1/.cache/tiktoken"
+ },
+ "stages": [
+  {
+   "label": "mamo-viewed0905",
+   "cases": "data/cases/mamo_complex_lp.jsonl",
+   "split_dir": "data/splits_r1/mamo_sensitivity_full211",
+   "split": "test",
+   "matrix": "configs/run_matrix/mamo-viewed0905.json",
+   "blocks": [
+    {
+     "registry_entry": "qwen3-8b.main",
+     "ids": {
+      "split": "test",
+      "minus_split_dir": "data/splits_r1/mamo_sensitivity_full211_excl0905"
+     },
+     "configs": [
+      "C0",
+      "C3E",
+      "C3L"
+     ]
+    }
+   ],
+   "plan": "configs/run_plans/mamo-viewed0905.plan.json"
+  },
+  {
+   "label": "industryor-viewed0905",
+   "cases": "data/cases/industryor.jsonl",
+   "split_dir": "data/splits_r1/industryor_main_rev2026_100",
+   "split": "test",
+   "matrix": "configs/run_matrix/industryor-viewed0905.json",
+   "blocks": [
+    {
+     "registry_entry": "qwen3-8b.main",
+     "ids": {
+      "split": "test",
+      "minus_split_dir": "data/splits_r1/industryor_main_rev2026_100_excl0905"
+     },
+     "configs": [
+      "C0",
+      "C3E",
+      "C3L"
+     ]
+    }
+   ],
+   "plan": "configs/run_plans/industryor-viewed0905.plan.json"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 127.0
+  u_2 = 2.0
+  u_3 = 1.0
+  u_4 = 3.0
+  x_(1,_3) = 1.0
+  x_(2,_4) = 1.0
+  x_(3,_2) = 1.0
+  x_(4,_1) = 1.0

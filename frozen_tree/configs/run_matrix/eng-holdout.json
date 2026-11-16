@@ -1,0 +1,149 @@
+{
+ "schema_version": 1,
+ "units": [
+  {
+   "case_id": "miplib_nl-0001",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0001",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0001",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0002",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0002",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0002",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0003",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0003",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0003",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0004",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0004",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0004",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0005",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0005",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0005",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0006",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0006",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "miplib_nl-0006",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "pglib_uc-0001",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "pglib_uc-0001",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "pglib_uc-0001",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "pglib_uc-0002",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "pglib_uc-0002",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "pglib_uc-0002",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  }
+ ]
+}

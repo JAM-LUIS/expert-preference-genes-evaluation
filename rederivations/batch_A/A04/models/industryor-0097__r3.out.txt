@@ -1,0 +1,10 @@
+STATUS: Optimal
+FINAL_OBJECTIVE: 350.0
+  pool sulfur %: 1.0
+  rawA_to_pool = -0.0
+  rawB_to_pool = 50.0
+  rawD_to_pool = 50.0
+  pool_to_prodA = 0.0
+  pool_to_prodB = 100.0
+  rawC_to_prodA = 100.0
+  rawC_to_prodB = 100.0

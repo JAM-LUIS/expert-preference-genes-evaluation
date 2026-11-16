@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 0.0324358978
+  feed_4 = 39.74359
+  feed_5 = 25.641026

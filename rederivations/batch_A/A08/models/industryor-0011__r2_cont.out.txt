@@ -1,0 +1,6 @@
+continuous P1 0.0 P2 0.0 P3 weighted idle 194.666664
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4273.0000203 (profit of the goal-programming plan)
+  A 6.0
+  B 3.6666667

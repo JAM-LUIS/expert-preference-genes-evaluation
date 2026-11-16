@@ -1,0 +1,4 @@
+READING: distinct_sk
+STATUS: Infeasible
+SOLUTION_STATUS: No Solution Found
+FINAL_OBJECTIVE: None

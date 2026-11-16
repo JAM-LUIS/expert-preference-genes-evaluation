@@ -1,0 +1,270 @@
+{
+  "cases": {
+    "miplib_nl-0001": {
+      "cbc": {
+        "bound": 3.0,
+        "cbc_version": "2.10.13",
+        "cpu_seconds": 1627.31,
+        "finished_at": "2026-09-29T03:56:15+00:00",
+        "gap": 0.25,
+        "gap_printed": 0.33,
+        "n_constraints": 8447,
+        "n_variables": 9216,
+        "nodes": 196861.0,
+        "objective": 4.0,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Stopped on time limit",
+        "started_at": "2026-09-29T03:26:14+00:00",
+        "status": "time_limit_feasible",
+        "wall_seconds": 1800.125
+      },
+      "official_value": 4.0,
+      "problems": [],
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 4.0,
+      "solve_record_sha256": "85aa692b238e1c8b3dd907f2ee5bb4fcd28e119c34ece40640bc81c1d2f1cb06",
+      "source": "miplib_nl",
+      "source_id": "chromaticindex128-5"
+    },
+    "miplib_nl-0002": {
+      "cbc": {
+        "bound": 9.0,
+        "cbc_version": "2.10.13",
+        "cpu_seconds": 1762.57,
+        "finished_at": "2026-09-29T04:33:53+00:00",
+        "gap": 0.125,
+        "gap_printed": -0.11,
+        "n_constraints": 2897,
+        "n_variables": 1009,
+        "nodes": 92365.0,
+        "objective": 8.0,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Stopped on time limit",
+        "started_at": "2026-09-29T04:03:53+00:00",
+        "status": "time_limit_feasible",
+        "wall_seconds": 1799.805
+      },
+      "official_value": 8.0,
+      "problems": [],
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 8.0,
+      "solve_record_sha256": "21f4f38b8d33fa25c1e286a274fd9187cc2ab90fdcd9eb1404c15383ed71ebe6",
+      "source": "miplib_nl",
+      "source_id": "wachplan"
+    },
+    "miplib_nl-0003": {
+      "cbc": {
+        "bound": 1579.033,
+        "cbc_version": "2.10.13",
+        "cpu_seconds": 1613.56,
+        "finished_at": "2026-09-29T03:56:15+00:00",
+        "gap": 0.09517442030381924,
+        "gap_printed": 0.11,
+        "n_constraints": 870,
+        "n_variables": 436,
+        "nodes": 1213255.0,
+        "objective": 1745.12418242,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Stopped on time limit",
+        "started_at": "2026-09-29T03:26:14+00:00",
+        "status": "time_limit_feasible",
+        "wall_seconds": 1800.54
+      },
+      "official_value": 1745.123813,
+      "problems": [],
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 1745.12418242,
+      "solve_record_sha256": "750f7ea14f0d6ac2faacef53e566867c3ed629c60eec831470ea8bf05f43561a",
+      "source": "miplib_nl",
+      "source_id": "supportcase26"
+    },
+    "miplib_nl-0004": {
+      "cbc": {
+        "bound": 12613.594,
+        "cbc_version": "2.10.13",
+        "cpu_seconds": 1602.95,
+        "finished_at": "2026-09-29T04:33:54+00:00",
+        "gap": 0.12362995900785109,
+        "gap_printed": 0.14,
+        "n_constraints": 184,
+        "n_variables": 195,
+        "nodes": 2047114.0,
+        "objective": 14393.0,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Stopped on time limit",
+        "started_at": "2026-09-29T04:03:53+00:00",
+        "status": "time_limit_feasible",
+        "wall_seconds": 1800.487
+      },
+      "official_value": 14393.0,
+      "problems": [],
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 14393.0,
+      "solve_record_sha256": "d1facb82641eb1d6a1b1bced0e899c2cacde77c69b5a73d8a38aa30a4e17199f",
+      "source": "miplib_nl",
+      "source_id": "neos-5140963-mincio"
+    },
+    "miplib_nl-0005": {
+      "cbc": {
+        "bound": null,
+        "cbc_version": "2.10.13",
+        "cpu_seconds": 13.37,
+        "finished_at": "2026-09-29T04:36:23+00:00",
+        "gap": null,
+        "gap_at_most": 1e-07,
+        "gap_printed": null,
+        "n_constraints": 144,
+        "n_variables": 1131,
+        "nodes": 24241.0,
+        "objective": 255.0,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Optimal solution found",
+        "started_at": "2026-09-29T04:36:09+00:00",
+        "status": "optimal",
+        "wall_seconds": 13.898
+      },
+      "official_value": 255.0,
+      "problems": [],
+      "reference_kind": "cbc_optimal",
+      "reference_objective": 255.0,
+      "solve_record_sha256": "f29429ec176a406d8f991e1eef1a1d22dc9ec2f91ee2ab274539a385d3f597ec",
+      "source": "miplib_nl",
+      "source_id": "neos-3118745-obra"
+    },
+    "miplib_nl-0006": {
+      "cbc": {
+        "bound": null,
+        "cbc_version": "2.10.13",
+        "cpu_seconds": 537.87,
+        "finished_at": "2026-09-29T03:36:50+00:00",
+        "gap": null,
+        "gap_at_most": 1e-07,
+        "gap_printed": null,
+        "n_constraints": 27,
+        "n_variables": 30,
+        "nodes": 4664254.0,
+        "objective": 6840.96564179,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Optimal solution found",
+        "started_at": "2026-09-29T03:26:14+00:00",
+        "status": "optimal",
+        "wall_seconds": 635.887
+      },
+      "official_value": 6840.96564179,
+      "problems": [],
+      "reference_kind": "cbc_optimal",
+      "reference_objective": 6840.96564179,
+      "solve_record_sha256": "aeb8768a9de176f38f9c88a44d71b2311c1378a9865dcc5b9966eff6f7286f11",
+      "source": "miplib_nl",
+      "source_id": "gen-ip054"
+    },
+    "pglib_uc-0001": {
+      "cbc": {
+        "bound": 965706.975,
+        "cbc_version": "2.10.13",
+        "check": {
+          "abs_diff": 2.444721758365631e-09,
+          "n_violations": 0,
+          "recomputed_objective": 967440.3368019524,
+          "rel_diff": 2.5270000281847907e-15,
+          "violations_head": []
+        },
+        "cpu_seconds": 1743.38,
+        "finished_at": "2026-09-29T03:43:11+00:00",
+        "gap": 0.0017916989151806207,
+        "gap_printed": 0.0,
+        "n_constraints": 39443,
+        "n_variables": 44544,
+        "nodes": 18367.0,
+        "objective": 967440.33680195,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Stopped on time limit",
+        "started_at": "2026-09-29T03:13:13+00:00",
+        "status": "time_limit_feasible",
+        "wall_seconds": 1797.993
+      },
+      "official_value": null,
+      "problems": [],
+      "reference_kind": "cbc_time_limited",
+      "reference_objective": 967440.33680195,
+      "solve_record_sha256": "5108ad8675f2a0301c7d5ee8b3cbe7f719cc46de40aa634e29e65fc3b8c55fd3",
+      "source": "pglib_uc",
+      "source_id": "rts_gmlc/2020-11-25"
+    },
+    "pglib_uc-0002": {
+      "cbc": {
+        "bound": 2509021.084,
+        "cbc_version": "2.10.13",
+        "check": {
+          "abs_diff": 7.450580596923828e-09,
+          "n_violations": 0,
+          "recomputed_objective": 2509962.2398946127,
+          "rel_diff": 2.9684034598212276e-15,
+          "violations_head": []
+        },
+        "cpu_seconds": 1701.81,
+        "finished_at": "2026-09-29T03:56:15+00:00",
+        "gap": 0.0003749681487877117,
+        "gap_printed": 0.0,
+        "n_constraints": 39443,
+        "n_variables": 44544,
+        "nodes": 50848.0,
+        "objective": 2509962.23989462,
+        "options": {
+          "gap_rel": 1e-07,
+          "threads": 1,
+          "time_limit_s": 1800
+        },
+        "pulp_version": "3.3.2",
+        "result": "Stopped on time limit",
+        "started_at": "2026-09-29T03:26:14+00:00",
+        "status": "time_limit_feasible",
+        "wall_seconds": 1799.846
+      },
+      "official_value": null,
+      "problems": [],
+      "reference_kind": "cbc_time_limited",
+      "reference_objective": 2509962.23989462,
+      "solve_record_sha256": "f1da8a2b6063457905b37931aa3e164c644c74ed8b169e77bce6287920124cf3",
+      "source": "pglib_uc",
+      "source_id": "rts_gmlc/2020-03-05"
+    }
+  },
+  "note": "CBC reference values of the engineering-source cases (E22). Model: data/eng/reference/ (PGLib-UC: MODEL.tex of the benchmark; MIPLIB-NL: PuLP translation of the instance's solve.py). Limit 1800 s wall clock, ratioGap 1e-7, one thread. kind cbc_optimal: CBC closed the gap within the limit; cbc_attains_published_optimum: CBC stopped at the limit with an incumbent equal to the published optimal_value (optimality from the published value); cbc_time_limited: best value found within the limit, reported with its gap and scored separately. official_value: MIPLIB-NL instance.json optimal_value.",
+  "schema": "orgene.r1.eng_reference_values.v1"
+}

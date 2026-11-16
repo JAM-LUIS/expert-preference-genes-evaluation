@@ -1,0 +1,6 @@
+{
+  "heading": "## Contract for the model (built from {n} versioned expert review rules)",
+  "required": "Must do:",
+  "forbidden": "Must not do:",
+  "checks": "Automatic checks on your output:"
+}

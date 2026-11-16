@@ -1,0 +1,233 @@
+{
+  "_note": "HEURISTIC LOWER BOUND, not a verified label set. 关键词粗筛，既有误报也有漏报。作者 2026-09-05 已决定：这些题**全部保留**，主表用全集；本文件只供附录的 well-specified 子集次要分析使用。",
+  "created": "2026-09-05",
+  "manually_confirmed_ill_specified": [
+    {
+      "case_id": "mamo_complex_lp-0070",
+      "why": "6 城 TSP，30 条弧只给了 8 条的成本"
+    },
+    {
+      "case_id": "mamo_complex_lp-0149",
+      "why": "9×7 选址-运输，63 个运输成本只给了 4 个就写 etc./Continuing similarly"
+    },
+    {
+      "case_id": "mamo_complex_lp-0151",
+      "why": "7×9 选址-运输，运输成本矩阵完全没给，只写 ranging from $1 to $5"
+    }
+  ],
+  "patterns": {
+    "Continuing similarly": "\\bContinuing similarly\\b",
+    "For instance": "\\bFor instance\\b",
+    "and so on": "\\band so on\\b",
+    "breakdown of some": "\\bbreakdown of some\\b",
+    "etc.": "\\betc\\.",
+    "for example": "\\bfor example\\b",
+    "ranging from": "\\branging from\\b",
+    "similarly for": "\\bsimilarly for\\b",
+    "some specific": "\\bsome specific\\b",
+    "vary": "\\bvary\\b"
+  },
+  "rule_version": "mamo_underspec_keyword.v1",
+  "sources": {
+    "industryor": {
+      "flagged": [
+        {
+          "case_id": "industryor-0012",
+          "matched": [
+            "For instance"
+          ]
+        },
+        {
+          "case_id": "industryor-0036",
+          "matched": [
+            "For instance",
+            "for example"
+          ]
+        }
+      ],
+      "n": 100,
+      "n_flagged": 2,
+      "rate": 0.02
+    },
+    "mamo_complex_lp": {
+      "flagged": [
+        {
+          "case_id": "mamo_complex_lp-0041",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0046",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0048",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0049",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0051",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0053",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0070",
+          "matched": [
+            "For instance",
+            "breakdown of some",
+            "some specific"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0087",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0104",
+          "matched": [
+            "ranging from"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0108",
+          "matched": [
+            "ranging from"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0117",
+          "matched": [
+            "ranging from"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0130",
+          "matched": [
+            "ranging from"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0134",
+          "matched": [
+            "ranging from"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0137",
+          "matched": [
+            "ranging from"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0146",
+          "matched": [
+            "and so on"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0149",
+          "matched": [
+            "Continuing similarly",
+            "etc.",
+            "similarly for"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0150",
+          "matched": [
+            "and so on"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0151",
+          "matched": [
+            "ranging from",
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0155",
+          "matched": [
+            "and so on"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0156",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0160",
+          "matched": [
+            "vary"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0164",
+          "matched": [
+            "and so on"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0170",
+          "matched": [
+            "and so on"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0171",
+          "matched": [
+            "and so on"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0198",
+          "matched": [
+            "for example"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0199",
+          "matched": [
+            "for example"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0206",
+          "matched": [
+            "for example"
+          ]
+        },
+        {
+          "case_id": "mamo_complex_lp-0210",
+          "matched": [
+            "for example"
+          ]
+        }
+      ],
+      "n": 211,
+      "n_flagged": 28,
+      "rate": 0.1327
+    }
+  }
+}

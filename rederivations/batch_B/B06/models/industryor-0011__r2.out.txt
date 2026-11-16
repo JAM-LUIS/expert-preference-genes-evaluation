@@ -1,0 +1,13 @@
+level p1: Optimal deviation = 0.0
+level p2: Optimal deviation = 0.0
+level p3: Optimal deviation = 272.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 3867.0
+  d1p = 867.0
+  d2p = 1.0
+  idle1 = 29.0
+  idle2 = 4.0
+  x1 = 6.0
+  x2 = 3.0
+profit per unit A, B: 340 609

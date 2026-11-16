@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 28.000000000000004
+  y_1_2 = 1.0
+  y_2_2 = 1.0
+  y_3_3 = 1.0
+  y_4_1 = 1.0
+  y_5_2 = 1.0

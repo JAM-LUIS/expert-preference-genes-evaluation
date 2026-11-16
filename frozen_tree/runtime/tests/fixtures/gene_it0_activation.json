@@ -1,0 +1,28 @@
+{
+ "schemaVersion": "orgene.activation_examples.v1",
+ "note": "packet_it0 draft: activation examples for the proposed genes whose rule is not 'always' (G2 orgene.model.logic_via_indicators, G4 orgene.variables.integrality_of_counts). Every text is self-written for this file; none is copied or paraphrased from a benchmark problem. Evaluate with the draft lexicon proposals/lexicon.draft.json.",
+ "genes": {
+  "orgene.model.logic_via_indicators": {
+   "active": [
+    "A bakery can bake bread and cakes. If the bakery bakes cakes on a given day, it must also bake bread that day. Maximize the daily profit.",
+    "A contractor may lease an excavator or a crane for the project, but not both. Each machine has a weekly lease cost and a different digging rate. Minimize the total cost of finishing the earthworks.",
+    "A hardware shop may stock at most two different brands of paint. Each brand has its own margin per can and needs its own shelf space. Maximize the monthly margin."
+   ],
+   "inactive": [
+    "A farmer plants wheat and barley on 100 hectares. Each hectare of wheat earns 300 and each hectare of barley earns 250, and labour is limited to 400 hours. Maximize the total profit.",
+    "A mill blends two ores to reach a minimum iron content of 60 percent at the lowest cost per ton. Ore A costs 40 per ton and ore B costs 55 per ton.",
+    "What would the total cost be if the price of the second ore rose by ten percent? A mill blends two ores at the lowest cost."
+   ]
+  },
+  "orgene.variables.integrality_of_counts": {
+   "active": [
+    "A caterer prepares sandwiches and salads for an event. Each sandwich costs 3 and each salad costs 5. At least 40 servings are needed and at least 10 of them must be salads. Minimize the cost.",
+    "A fleet manager buys vans and trucks. A van carries 2 tons and a truck carries 5 tons, and at least 31 tons must be moved in one trip. Minimize the purchase cost."
+   ],
+   "inactive": [
+    "A refinery blends two crude oils; any amount of each crude may be used and fractional barrels are fine. Minimize the cost of meeting the octane target.",
+    "Output is measured in batches, and fractional batches are acceptable in the weekly plan. Maximize the weekly profit from two products that share one machine."
+   ]
+  }
+ }
+}

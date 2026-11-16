@@ -1,0 +1,3 @@
+STATUS: Infeasible
+SOLUTION_STATUS: No Solution Exists
+FINAL_OBJECTIVE: None

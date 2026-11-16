@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.0
+  x_III_B 1.0
+  x_II_A 1.0
+  x_IV_C 1.0
+  x_V_D 1.0

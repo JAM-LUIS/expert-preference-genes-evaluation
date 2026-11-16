@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 5000000.0
+  w1 1.0
+  w2 1.0
+  x_A_1 0.0
+  x_A_2 1500.0
+  x_B_1 0.0
+  x_B_2 1000.0
+  z1 500.0
+  z2 500.0
+  z3 0.0

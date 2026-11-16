@@ -1,0 +1,11 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 700.0
+  A = 40.0
+  C = 60.0
+  q_A_0 = 40.0
+  q_C_0 = 60.0
+  z_A_0 = 1.0
+  z_B_0 = 1.0
+  z_C_0 = 1.0
+INTEGERS_RELAXED: Optimal 700.0 (3 general-integer variables made continuous; binaries kept)

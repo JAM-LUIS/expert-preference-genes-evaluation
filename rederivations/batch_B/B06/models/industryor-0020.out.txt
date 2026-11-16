@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 956.0
+  x_blocks = 1.0
+  x_car = 118.0
+  y_blocks = 1.0
+  y_car = 1.0
+number of toy types produced: 2
+INTEGERS_RELAXED: Optimal 956.0 (4 general-integer variables made continuous; binaries kept)

@@ -1,0 +1,87 @@
+# Builds results.jsonl from the .out.txt files and checks consistency. Run from the group directory.
+import json, os, re, glob
+def obj(path):
+    t = open(path).read()
+    v = re.search(r"FINAL_OBJECTIVE: (\S+)", t).group(1)
+    return None if v == "None" else float(v)
+def relaxed(path):
+    return float(re.search(r"INTEGERS_RELAXED: \S+ (\S+)", open(path).read()).group(1))
+def rd(cid, suffix, text):
+    f = f"models/{cid}{suffix}.py"
+    return {"reading": text, "objective": obj(f[:-3] + ".out.txt"), "status": "Optimal", "model_file": f}
+R = []
+def add(cid, sense, summary, conf, ptype=None, rationale="", tconf=None, solver="PULP_CBC_CMD", amb_int=False,
+        issue="NONE", issue_note="", readings=None, tal=None, notes="", asked=None):
+    out = f"models/{cid}.out.txt"
+    R.append({"case_id": cid, "status": "Optimal", "objective": obj(out), "sense": sense,
+              "model_file": f"models/{cid}.py", "output_file": out, "solver": solver, "model_summary": summary,
+              "integrality_ambiguous": amb_int, "integer_relaxed_objective": relaxed(out) if amb_int else None,
+              "asked_value": asked, "issue": issue, "issue_note": issue_note, "readings": readings or [],
+              "confidence": conf, "problem_type": ptype, "type_after_linearization": tal,
+              "type_rationale": rationale, "type_confidence": tconf, "notes": notes})
+
+add("industryor-0004", "max", "整数变量：牛、羊、鸡的头数；最大化（售价减饲料成本）之和；粪便处理量上限、鸡数上限、牛羊数下限、总头数上限。", "HIGH",
+    "IP", "三个变量都是牲畜头数（整数），目标和约束均为线性。", "HIGH", notes="整数松弛后最优值相同。")
+c = "industryor-0017"
+add(c, "max", "整数变量：对每个要害部位投的重型、轻型炸弹数；目标为至少摧毁两个部位的概率（各炸弹独立）；约束为重弹、轻弹库存和总油耗（载弹去程、空载返程、每架次起降油耗）。", "LOW",
+    "NL_NOT_LINEARIZABLE", "变量是各部位的重/轻弹数（整数），库存和油耗约束线性；但目标“至少摧毁两个部位的概率”是四个部位未毁概率（各为变量的指数函数）的多重乘积之和，取对数也不能分离，无教科书标准的精确线性化。", "MEDIUM",
+    solver="enumeration", issue="AMBIGUOUS",
+    issue_note="“100 liters for both takeoff and landing per trip”一句：可读作每架次起飞加降落合计 100 升，也可读作起飞、降落各 100 升（合计 200 升），两种读法油耗不同、最优值不同。",
+    readings=[rd(c, "", "每架次起飞与降落合计耗油 100 升"), rd(c, "__r2", "起飞、降落各耗油 100 升（每架次 200 升）")],
+    notes="在全部整数分配上完全穷举（重弹总数≤28、轻弹总数≤12 的所有四部位分配，并筛油耗），故为全局最优。假设各炸弹命中相互独立、每枚炸弹一个架次。题型上：变量为有界整数，理论上可逐值枚举，但不属标准技巧，故标不可线性化，题型置信度中。")
+add("industryor-0019", "min", "整数变量：向 A、B、C 的订单数（A 每单 15 把，B、C 每单 10 把）及是否向 A、B 订货的 0-1 变量；最小化总购置成本；椅子总数在 100 到 500 之间；订 A 则 B 至少 10 把；订 B 则须订 C。", "HIGH",
+    "IP", "订单数为整数，另有表示“若…则…”的 0-1 变量；目标和约束均线性。", "HIGH", notes="题面给的是每把椅子的成本，按每单把数换算为每单成本。")
+add("industryor-0034", "min", "整数变量：每个集装箱装各类货物的件数，0-1 变量：集装箱是否启用、是否装 A；最小化启用的集装箱数；全部货物装完，每箱重量不超过 60 吨、启用则不少于 18 吨、启用则至少 12 件 D，装 A 则至少 1 件 C。", "MEDIUM",
+    "IP", "各箱各类货物件数为整数，启用与“装 A 则装 C”用 0-1 变量表示；目标和约束均线性。", "HIGH",
+    notes="假设全部货物都要装运、货物数量为件数（整数）。“装 A 须同时装至少 1 件 C”按每箱至少 1 件 C 理解；若读成每件 A 配 1 件 C，最优值相同（见 models/industryor-0034__check_perunit.py）。")
+c = "industryor-0040"
+add(c, "max", "连续变量：钢、发动机、电子元件、塑料的产量；最大化净产出按世界价格计的价值减去进口品支出；发动机、塑料产量上限，全年劳动力人月上限，各商品净产出非负。", "LOW",
+    "LP", "四种商品产量为连续变量，投入产出关系、劳动力和产量上限均线性，目标线性。", "HIGH",
+    issue="AMBIGUOUS",
+    issue_note="题面没有说明四种商品能否从世界市场进口用作中间投入：若净产出必须非负（只出口不进口这四种商品）得到一个值；若允许净产出为负（按世界价格买入中间品）得到另一个更大的值。目标“GDP”的具体定义题面也未给出，这里取净出口价值减进口品支出。",
+    readings=[rd(c, "", "各商品净产出（产量减中间消耗）必须非负"), rd(c, "__r2", "净产出可为负，即中间品可按世界价格进口")],
+    notes="劳动力统一换算为人月（1 人年 = 12 人月）。产量按连续量处理。题面要求用 AMPL，这里按规定用 CBC。")
+add("industryor-0061", "min", "变量：四台设备各自的加工量（整件）和是否启用的 0-1 变量；最小化准备费用加加工费用；总产量等于 2000，各设备加工量不超过其能力且仅在启用时可加工。", "HIGH",
+    "IP", "加工量按件取整数，启用用 0-1 变量表示固定费用；目标和约束线性。若把加工量看作连续量则为 MILP，最优值相同。", "MEDIUM",
+    amb_int=True, notes="产品件数按整数处理；改为连续后最优值相同。")
+add("industryor-0080", "min", "整数变量：每个任务各方法下的人数或小组数、雇用的技工数和普工数，0-1 变量：每个任务选哪种方法；最小化周工资加固定协调费；每个任务恰选一种方法且有效工时满足需求，人数上限，互斥规则，任务 3 混合方法至少 20 名技工，技工数不超过普工数的 60%。", "MEDIUM",
+    "IP", "人数、小组数为整数，方法选择、固定费用和条件约束用 0-1 变量加线性约束；目标和约束线性。", "HIGH",
+    notes="小组的有效工时按组内各人周有效工时之和计算；人数取整（工时需求向上取整到整人/整组）；允许雇用人数多于分派人数。")
+add("industryor-0082", "max", "0-1 变量：每类商店开设几家（每类至多选一个数量）；最大化商场租金收入（每家年利润的 20% 之和，单位万元）；总面积不超过 5000 平方米，各类家数满足上下限。", "HIGH",
+    "IP", "每类商店的家数用“开 k 家”的 0-1 变量表示（教科书标准写法），全部变量为 0-1，目标和面积约束线性。", "MEDIUM",
+    notes="每家利润随家数变化，直接用家数作变量时总利润是家数的非线性函数；这里按 0-1 选择变量的标准写法归为 IP。目标值单位为万元。")
+add("industryor-0084", "min", "0-1 变量：是否录用五位候选人；最小化薪酬总额；录用 2 到 3 人，预算上限，至少一名硕士或博士，总工作年限不少于 12 年，A 与 E 至多录用一人。", "HIGH",
+    "IP", "五个 0-1 录用变量，目标和约束均线性。", "HIGH")
+add("industryor-0085", "max", "连续变量：X、Y 的批数；最大化收入减机器工时和工匠工时成本；机器 40 小时、工匠 35 小时的时间上限，X 至少 10 批。", "HIGH",
+    "LP", "两个批数变量题面明确可取小数，目标和约束线性。", "HIGH", notes="工时成本只按实际使用的分钟数计，闲置不计费。")
+c = "industryor-0089"
+add(c, "max", "连续变量：A、B 的周产量（千克）；最大化利润；生产工时上限，B 产量不少于 A 的三倍，存储约束。", "MEDIUM",
+    "LP", "两个产量为连续变量（千克），目标和约束线性。", "HIGH",
+    issue="AMBIGUOUS",
+    issue_note="“The storage space required for product A is four times that of product B, and a maximum of four kilograms of product A can be stored per week”一句：可读作 A、B 共用仓储、总容量相当于 4 千克 A（4A + B ≤ 16），也可读作仅限制 A 不超过 4 千克。两种读法最优值不同。",
+    readings=[rd(c, "", "共用仓储：4A + B ≤ 16"), rd(c, "__r2", "仅 A ≤ 4 千克")],
+    notes="题面只要求建模，这里给出主读法下的最优值。")
+add("industryor-0095", "min", "连续变量：四周各周产量和周末库存（千箱）；最小化生产成本加存储成本；各周产量不超过产能，库存平衡，需求每周满足。", "HIGH",
+    "LP", "产量和库存以千箱计、为连续变量，目标和约束线性。", "HIGH", notes="期初库存为 0；存储费按每周末库存计。目标单位千元。")
+add("mamo_complex_lp-0025", "min", "变量：六种食物的份数；最小化总花费；蛋白质、碳水、热量三项下限。", "MEDIUM", amb_int=True,
+    notes="题面未说明份数能否取小数；主模型按整数份，连续松弛值另报。")
+add("mamo_complex_lp-0135", "max", "连续变量：各有向管道的流量；最大化从 0 号站到 8 号站的净流量；容量上限和中间站流量守恒。", "HIGH")
+add("mamo_complex_lp-0140", "min", "0-1 变量：各配送中心是否开设，连续变量：中心到门店的运量；最小化开设成本加运输成本；各门店需求满足，各中心运出量不超过其容量且仅开设时可用。", "HIGH")
+add("mamo_complex_lp-0154", "min", "0-1 变量：各配送中心是否开设，连续变量：中心到门店的运量；最小化开设成本加运输成本；各门店需求满足，各中心运出量不超过其容量且仅开设时可用。", "HIGH")
+
+with open("results.jsonl", "w", encoding="utf-8") as f:
+    for r in R:
+        f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+# checks
+rows = [json.loads(l) for l in open("results.jsonl", encoding="utf-8")]
+ids = sorted(os.path.basename(p)[:-4] for p in glob.glob("*.txt") if not p.startswith("MANIFEST"))
+assert sorted(r["case_id"] for r in rows) == ids and len(rows) == 16, "id mismatch"
+for r in rows:
+    assert os.path.exists(r["model_file"]) and os.path.exists(r["output_file"])
+    assert r["objective"] == obj(r["output_file"])
+    for x in r["readings"]:
+        assert os.path.exists(x["model_file"])
+    if r["case_id"].startswith("industryor-"):
+        assert r["problem_type"] and r["type_rationale"] and r["type_confidence"]
+print("CHECK_OK", len(rows))

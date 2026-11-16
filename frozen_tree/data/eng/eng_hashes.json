@@ -1,0 +1,68 @@
+{
+  "cases": {
+    "miplib_nl-0001": {
+      "record_sha256": "952001c973015b47733fc2afc8c50d4ef2d19c5313572a531d044a5a321b6dfb",
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 4.0,
+      "text_sha256": "f09a9caf108cefc43e45c5457e42b2a9757e03cf3a92bef60950a66dcdf3d329"
+    },
+    "miplib_nl-0002": {
+      "record_sha256": "5109bd2b8c57821b1e150111ba9e0fe33c6f64b1d17e48058409e2ad6aca0b82",
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 8.0,
+      "text_sha256": "a0436ed0101254174b462852dcea9a6182d50dd545bf190d32932efa59d5a304"
+    },
+    "miplib_nl-0003": {
+      "record_sha256": "ab206a891165d577638df4459c082fb7b249b2bd02a4411c7b1e2e0d368f8eb7",
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 1745.12418242,
+      "text_sha256": "6692776b419dd6cca798d5713d6477df870067cd642759629632a2f9a09a416a"
+    },
+    "miplib_nl-0004": {
+      "record_sha256": "6205cf2906702e8e47b9be45802afb50ea9dbfd8ed33d66a9444c6f51bf0fd0b",
+      "reference_kind": "cbc_attains_published_optimum",
+      "reference_objective": 14393.0,
+      "text_sha256": "ff96736cf4c5b8b5e876f7eea3044680df7bfadfacfd4615f6ffbe7bd0eaff98"
+    },
+    "miplib_nl-0005": {
+      "record_sha256": "ff23718b11c20677c4ecd5dddef85b0192cf560131fbd652a3a4a4de5622ac0c",
+      "reference_kind": "cbc_optimal",
+      "reference_objective": 255.0,
+      "text_sha256": "399810c89fc88247680a748690157a3a7c0b72f8f689dffd758488219ab6963b"
+    },
+    "miplib_nl-0006": {
+      "record_sha256": "6349a973ae7cbc277e3a00fa09ae83169dac8f11b1a322fa74ec607d2abb7527",
+      "reference_kind": "cbc_optimal",
+      "reference_objective": 6840.96564179,
+      "text_sha256": "43804a120aa05235f0a1254239c5db8453515a5407c3b457484498ad000067a5"
+    },
+    "pglib_uc-0001": {
+      "record_sha256": "35e70acdd71bbcfeff583c4ef95041e9e937856bd3293b6ef24f143dfbeb6da3",
+      "reference_kind": "cbc_time_limited",
+      "reference_objective": 967440.33680195,
+      "text_sha256": "104563b6c4ff3f6c2e624abd89557e38cf62b038c3f83aa197f4f132863b2333"
+    },
+    "pglib_uc-0002": {
+      "record_sha256": "4bef0438fa2e1b8f4f67322d04b96411344b0b7d07a239506d37d505ba4f421b",
+      "reference_kind": "cbc_time_limited",
+      "reference_objective": 2509962.23989462,
+      "text_sha256": "ac1a569cd4f50b4f26834c81bd4340f380c1c16cdee4bc5bc0d69db19654c6f9"
+    }
+  },
+  "cases_path": "data/cases/eng.jsonl",
+  "cases_sha256": "7538bfadeac3dfb4cfcb1aa00dcce73e56d9ed635c626bda43f08b6ba811b36b",
+  "ids": [
+    "miplib_nl-0001",
+    "miplib_nl-0002",
+    "miplib_nl-0003",
+    "miplib_nl-0004",
+    "miplib_nl-0005",
+    "miplib_nl-0006",
+    "pglib_uc-0001",
+    "pglib_uc-0002"
+  ],
+  "ids_sha256": "d266907c5fff0724e87f9cdf91ad70285c40c8133b04a0bf4343a775564eea4b",
+  "note": "SHA-256 of the engineering-source case ids, problem texts and reference values (E22), for the freeze manifest and the OSF upload. ids_sha256 = sha256(json.dumps(sorted ids)), as split.py hashes id lists.",
+  "reference_values_sha256": "c137a68eb948619d6110e2cbc3dfe04eb2c873018543d02f7d3ddae804125a39",
+  "schema": "orgene.r1.eng_hashes.v1"
+}

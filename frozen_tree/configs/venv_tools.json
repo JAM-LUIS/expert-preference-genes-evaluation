@@ -1,0 +1,45 @@
+{
+  "schema": "orgene.r1.venv_tools.v1",
+  "about": [
+    "R1's own environment for analysis and offline tokenizers (DECISIONS R1-D5, default 14): the shared generation interpreter gets no packages.",
+    "The environment and the tiktoken download cache are git-ignored and never scanned by the neutral-writing check (the venv's scripts carry absolute paths). What is registered here and in the freeze file is what a rebuild must reproduce.",
+    "tools/venv_tools_check.py compares the installed environment and the cached encoding files with this record; it downloads and installs nothing."
+  ],
+  "venv": ".venv-tools",
+  "created_utc": "2026-09-29T03:14:40Z",
+  "base_interpreter": "/opt/homebrew/bin/python3",
+  "python_version": "3.14.7",
+  "machine": "arm64",
+  "pip_version": "26.2.1",
+  "install": "python -m venv .venv-tools; .venv-tools/bin/python -m pip install --no-cache-dir --only-binary=:all: numpy scipy statsmodels pandas matplotlib tiktoken pytest (PyPI, binary wheels only; versions resolved at install time and pinned in the freeze file)",
+  "requested": ["numpy", "scipy", "statsmodels", "pandas", "matplotlib", "tiktoken", "pytest"],
+  "freeze_file": "configs/venv_tools.freeze.txt",
+  "freeze_command": ".venv-tools/bin/python -m pip freeze --all --exclude pip",
+  "freeze_sha256": "9f0d7c14a0cba35edb3929a51b1132bcdffa3d9cb85a7050e695bb53f56f1fcc",
+  "n_packages": 31,
+  "tiktoken": {
+    "version": "0.14.0",
+    "cache_dir": ".cache/tiktoken",
+    "cache_env": "TIKTOKEN_CACHE_DIR",
+    "downloaded_utc": "2026-09-29T03:52:49Z",
+    "how": "TIKTOKEN_CACHE_DIR=<repository>/.cache/tiktoken .venv-tools/bin/python -c 'import tiktoken; tiktoken.get_encoding(NAME)' (tiktoken's default source; the cache file name is the sha1 of the URL). The files are read-only. Local counts read them through runtime/orgene/tokcount.TiktokenCounter, which blocks every download.",
+    "encodings": {
+      "cl100k_base": {
+        "url": "https://openaipublic.blob.core.windows.net/encodings/cl100k_base.tiktoken",
+        "file": ".cache/tiktoken/9b5ad71b2ce5302211f9c61530b329a4922fc6a4",
+        "bytes": 1681126,
+        "sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+        "tiktoken_expected_sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+        "n_vocab": 100277
+      },
+      "o200k_base": {
+        "url": "https://openaipublic.blob.core.windows.net/encodings/o200k_base.tiktoken",
+        "file": ".cache/tiktoken/fb374d419588a4632f3f557e76b4b70aebbca790",
+        "bytes": 3613922,
+        "sha256": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d",
+        "tiktoken_expected_sha256": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d",
+        "n_vocab": 200019
+      }
+    }
+  }
+}

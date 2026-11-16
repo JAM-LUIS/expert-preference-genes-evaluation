@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 150.0
+  start_1 = 30.0
+  start_2 = 40.0
+  start_3 = 20.0
+  start_4 = 30.0
+  start_6 = 30.0
+INTEGERS_RELAXED: Optimal 150.0 (6 general-integer variables made continuous; binaries kept)

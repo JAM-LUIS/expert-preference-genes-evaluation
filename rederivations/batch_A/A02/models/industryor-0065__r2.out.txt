@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 30500.0
+  microwaves = 100.0
+  water_heaters = 50.0

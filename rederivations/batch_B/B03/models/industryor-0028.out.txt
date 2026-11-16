@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 580000.0
+  idle_y1 = 0.0
+  idle_y2 = 0.0
+  idle_y3 = 0.0
+  p1_y1 = 166666.67
+  p1_y2 = 0.0
+  p1_y3 = 100000.0
+  p2_y1 = 133333.33
+  p3_y2 = 200000.0
+  p4_y3 = 100000.0

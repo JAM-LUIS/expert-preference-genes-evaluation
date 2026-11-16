@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4100.0
+  buy_1 = 300.0
+  buy_2 = 500.0
+  buy_3 = 0.0
+  sell_1 = 500.0
+  sell_2 = 0.0
+  sell_3 = 500.0
+  stock_end_1 = 0.0
+  stock_end_2 = 500.0
+  stock_end_3 = 0.0

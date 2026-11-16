@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "units": [
+    {"case_id": "toy-a", "config_id": "C0", "repeat": 0, "registry_entry": "toy.main"},
+    {"case_id": "toy-a", "config_id": "C3L", "repeat": 0, "registry_entry": "toy.main"},
+    {"case_id": "toy-a", "config_id": "C3E", "repeat": 0, "registry_entry": "toy.main"}
+  ]
+}

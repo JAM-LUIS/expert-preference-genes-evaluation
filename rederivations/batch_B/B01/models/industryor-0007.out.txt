@@ -1,0 +1,26 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 468510.0
+  trucks_('Lamezia',_'Bari') = 2.0
+  trucks_('Lamezia',_'Naples') = 13.0
+  trucks_('Perugia',_'Ancona') = 1.0
+  trucks_('Perugia',_'Genoa') = 3.0
+  trucks_('Perugia',_'Venice') = 3.0
+  trucks_('Pescara',_'Ancona') = 12.0
+  trucks_('Rome',_'Genoa') = 7.0
+  trucks_('Rome',_'Naples') = 3.0
+  trucks_('Taranto',_'Bari') = 9.0
+  trucks_('Taranto',_'Naples') = 1.0
+  trucks_('Verona',_'Venice') = 5.0
+  x_('Lamezia',_'Bari') = 4.0
+  x_('Lamezia',_'Naples') = 26.0
+  x_('Perugia',_'Ancona') = 1.0
+  x_('Perugia',_'Genoa') = 6.0
+  x_('Perugia',_'Venice') = 5.0
+  x_('Pescara',_'Ancona') = 24.0
+  x_('Rome',_'Genoa') = 14.0
+  x_('Rome',_'Naples') = 6.0
+  x_('Taranto',_'Bari') = 17.0
+  x_('Taranto',_'Naples') = 1.0
+  x_('Verona',_'Venice') = 10.0
+INTEGERS_RELAXED: Optimal 452295.0 (60 general-integer variables made continuous; binaries kept)

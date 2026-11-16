@@ -1,0 +1,11 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 123.8
+  p100g_chicken = 5.0
+  packs_broccoli = 1.0
+  packs_mushrooms = 1.0
+  packs_spinach = 1.0
+  use_broccoli = 1.0
+  use_mushrooms = 1.0
+  use_spinach = 1.0
+INTEGERS_RELAXED: Optimal 123.8 (5 general-integer variables made continuous; binaries kept)

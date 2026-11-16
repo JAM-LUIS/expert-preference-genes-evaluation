@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 240000.0
+  acres_apple = 120.0
+  grow_apple = 1.0

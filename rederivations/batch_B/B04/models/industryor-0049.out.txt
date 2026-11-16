@@ -1,0 +1,16 @@
+READING: types
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 208000.0
+  n_1_1 5.0
+  n_1_3 10.0
+  n_3_2 10.0
+  n_4_1 2.0
+  u_1_1 1.0
+  u_1_3 1.0
+  u_3_2 1.0
+  u_4_1 1.0
+  y_1 1.0
+  y_2 1.0
+  y_3 1.0
+INTEGERS_RELAXED: Optimal 208000.0

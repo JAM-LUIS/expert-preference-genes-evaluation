@@ -1,0 +1,364 @@
+{
+  "schema": "orgene.r1.c1_matching_report.v1",
+  "status": "dev matching record; regenerated on the frozen release in 1D",
+  "rule": "C1 = C1 header + the prefix of the pool bullets (file order) whose qwen3 token count is closest to the target among the prefixes within target*(1+-tol); no prefix in the band is an error; target = mean over the dev cases of dev_signal55 of the qwen3 token count of each case's own C3 system prompt (per-problem activation); tol = 0.05. A rewrite v matches its C1 to its own C3 (same variant name).",
+  "api_rule": "C1-api: if the qwen-matched C1, counted with the API tokenizer, is outside 1+-tol of the dev mean of the C3 system prompts counted with the API tokenizer, the API model gets C1-api = the same rule (same header, same pool, same order, in-band prefix closest to the target) with the API tokenizer as the measure and the API dev mean as the target; otherwise the API model uses the qwen-matched C1 unchanged.",
+  "tolerance": 0.05,
+  "match_mode": "tokens",
+  "dev_set": {
+    "name": "dev_signal55",
+    "n": 55,
+    "sha256": "752cfb4a4587cfc4800826621741fcae39f5370294057c225240e9c007034545",
+    "by_benchmark": {
+      "industryor": 25,
+      "mamo_complex_lp": 30
+    },
+    "n_loaded": 55
+  },
+  "inputs": {
+    "gene_library": {
+      "path": "genes/genes.it1.jsonl",
+      "sha256": "731ae37eb6aca75d453252f951e1993d7267371b8e10976a7e7cd0ef6c420cfc",
+      "n_genes": 21
+    },
+    "lexicon": {
+      "path": "genes/activation_lexicon.v2.json",
+      "sha256": "2df6c5badce9b0e700eea7a2e82d02c6b0ce797109af0c427352138c9e419636"
+    },
+    "registry": {
+      "path": "configs/r1_configs.json",
+      "sha256": "08fc34a4f7e40cba6292c2683ccb6a77aa66ffcaa446c28959372176be09d7de"
+    },
+    "c3_config": {
+      "label": "spec + compiled contract + executable predicates + bounded repair",
+      "pipeline": "standard",
+      "token_cap": null,
+      "notes": "the contract is compiled per case from the genes active for that case",
+      "force_review": false,
+      "contract_scope": null,
+      "id": "C3",
+      "prompt": "C3",
+      "round0": "own",
+      "validator": "gene",
+      "gene_scope": "C3",
+      "activation": "per_problem",
+      "repair": "gene",
+      "closing": "spec_and_program",
+      "max_rounds": 2,
+      "num_predict": 6000,
+      "num_ctx": 32768,
+      "variant": null
+    },
+    "c1_config": "C1",
+    "cond_dir": "conditions"
+  },
+  "tokenizers": {
+    "qwen": {
+      "label": "qwen",
+      "identity_sha256": "1b0e3fbe842ac014fb8fe38f3eb7cf59d29a076aeca764895297e8f38121f7e1",
+      "identity": {
+        "backend": "ollama",
+        "model": "qwen3:8b",
+        "manifest_sha256": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "weights_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+        "template_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+        "model_family": "qwen3",
+        "renderer": "qwen3-ollama-template.v1",
+        "strip_history_think": true,
+        "tokenizer": {
+          "kind": "llama.cpp/llama-tokenize",
+          "version": "0.3.0 (build 10621, commit c1d0e7a00)",
+          "gguf_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+          "verify": "full",
+          "flags": [
+            "--no-escape",
+            "content: --no-parse-special --no-bos",
+            "prompt: parse special, model BOS"
+          ]
+        }
+      }
+    },
+    "api": {
+      "label": "api",
+      "identity_sha256": "1aff64af55051e4f8c6398746779352d8d7334013a67372b1934908732a6171b",
+      "identity": {
+        "backend": "openai",
+        "model": "c1match:o200k_base",
+        "tokenizer": {
+          "kind": "tiktoken",
+          "version": "0.14.0",
+          "encoding": "o200k_base",
+          "n_vocab": 200019,
+          "encoding_sha256": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d"
+        }
+      }
+    }
+  },
+  "gene_keyword_table": {
+    "sha256": "d2f5aa3c218da6b205efa790017f3dcc157cb40908284f9e4fe6eb69bbdc0065",
+    "n_terms": {
+      "code": 32,
+      "hyphen": 23,
+      "trigrams": 1370,
+      "rule_names": 19
+    }
+  },
+  "variants": {
+    "base": {
+      "variant": null,
+      "templates": {
+        "base": {
+          "path": "conditions/base_system.md",
+          "sha256": "cffa26552afe7198b8c7de8b88fd33495075920645beabcd0777b21cda57dfc5"
+        },
+        "schema_summary": {
+          "path": "conditions/spec_schema_summary.md",
+          "sha256": "ca56206f25a9650b529d5e66b7968755dc2568d0153caedc2cb799ca765fee11"
+        },
+        "C0": {
+          "path": "conditions/C0_direct.md",
+          "sha256": "f293f4478674f62bff6702810e86bfe0753bf535e21fe9eed1e16255960ca4ae"
+        },
+        "C1": {
+          "path": "conditions/C1_generic_expert_pool.md",
+          "sha256": "5ecb716f567831f61fb6f46ae7fb22a51015682f4f4c263093ecbf8108b2e7fb"
+        },
+        "C2": {
+          "path": "conditions/C2_schema_only.md",
+          "sha256": "08112d336503efe800b0bd058dd70ae2acb485346c3e7271db0a2c7b17d83d0e"
+        },
+        "C3": {
+          "path": "conditions/C3_orgene.md",
+          "sha256": "0229e2a757756a82975ff323a2b09a909ae868136d87122eb6457b692a9b0ac4"
+        },
+        "C0R": {
+          "path": "conditions/C0R_rules_in_prompt.md",
+          "sha256": "ace94e8249a800557338adbe64dc764255f9ffb9c5b8654cf3c8c2c439773c13"
+        },
+        "review_checklist": {
+          "path": "conditions/review_checklist.md",
+          "sha256": "a595f8c3607f98e81eefe93e9b200f5763c4ba8e1a3ca1d16cc1b4b6656078a9"
+        }
+      },
+      "c1_pool": {
+        "n_bullets": 77,
+        "n_v5_bullets": 39
+      },
+      "c3_dev": {
+        "n_cases": 55,
+        "n_distinct_prompts": 3,
+        "system_prompt_sha256": [
+          "46b4107d409c3cee643fef84af306a60d4734f09340605dae16c2ebce53b0953",
+          "89bce65a91907fb1892421623cc30bb4058b59bd57965bb2fc042ef41694876d",
+          "9ed615374fb4ee88d8aa403be60029f652e5cdc96d1431965fa0b07ce8207240"
+        ],
+        "prompts_sha256": "95a75a2162b538692c2b74d33e81ae0c8950d15c1fea06bb9054226ee49fb944"
+      },
+      "c3_all_active": {
+        "system_prompt_sha256": "9ed615374fb4ee88d8aa403be60029f652e5cdc96d1431965fa0b07ce8207240"
+      },
+      "tokenizers": {
+        "qwen": {
+          "c3_dev_tokens": {
+            "n": 55,
+            "min": 1608,
+            "p10": 1690.0,
+            "q1": 1690.0,
+            "median": 1690.0,
+            "q3": 1690.0,
+            "p90": 1837.0,
+            "max": 1837,
+            "mean": 1705.73
+          },
+          "c3_all_active_tokens": 1837,
+          "target": 1705.7272727272727,
+          "c1_full_pool_tokens": 2060,
+          "c1_full_pool_ratio": 1.2077,
+          "c1": {
+            "ok": true,
+            "bullets_used": 62,
+            "bullets_available": 77,
+            "tokens": 1711,
+            "chars": 8410,
+            "sha256": "d504f3416c8bfa9524c151d2d22c1f905be064e22de9eb6caf322980516b4178"
+          },
+          "ratio_to_dev_mean": 1.0031,
+          "ratio_all_active": 0.9314,
+          "per_case_ratio": {
+            "n": 55,
+            "min": 0.9314,
+            "p10": 0.9314,
+            "q1": 1.0124,
+            "median": 1.0124,
+            "q3": 1.0124,
+            "p90": 1.0124,
+            "max": 1.0641,
+            "mean": 1.004,
+            "n_within_tolerance": 46
+          },
+          "per_case_ratio_by_case": {
+            "industryor-0002": 1.0124,
+            "industryor-0009": 0.9314,
+            "industryor-0010": 1.0124,
+            "industryor-0019": 0.9314,
+            "industryor-0023": 1.0124,
+            "industryor-0024": 0.9314,
+            "industryor-0025": 1.0124,
+            "industryor-0032": 1.0124,
+            "industryor-0037": 1.0124,
+            "industryor-0040": 1.0124,
+            "industryor-0049": 0.9314,
+            "industryor-0053": 0.9314,
+            "industryor-0057": 1.0124,
+            "industryor-0058": 0.9314,
+            "industryor-0077": 0.9314,
+            "industryor-0078": 1.0124,
+            "industryor-0081": 1.0124,
+            "industryor-0083": 1.0124,
+            "industryor-0085": 1.0641,
+            "industryor-0088": 1.0641,
+            "industryor-0090": 1.0124,
+            "industryor-0093": 1.0124,
+            "industryor-0094": 1.0124,
+            "industryor-0098": 1.0124,
+            "industryor-0099": 1.0124,
+            "mamo_complex_lp-0001": 1.0124,
+            "mamo_complex_lp-0005": 1.0124,
+            "mamo_complex_lp-0020": 1.0124,
+            "mamo_complex_lp-0021": 1.0124,
+            "mamo_complex_lp-0026": 1.0124,
+            "mamo_complex_lp-0028": 1.0124,
+            "mamo_complex_lp-0029": 1.0124,
+            "mamo_complex_lp-0031": 1.0124,
+            "mamo_complex_lp-0034": 1.0124,
+            "mamo_complex_lp-0036": 1.0124,
+            "mamo_complex_lp-0046": 1.0124,
+            "mamo_complex_lp-0063": 1.0124,
+            "mamo_complex_lp-0064": 1.0124,
+            "mamo_complex_lp-0078": 1.0124,
+            "mamo_complex_lp-0084": 1.0124,
+            "mamo_complex_lp-0087": 1.0124,
+            "mamo_complex_lp-0094": 1.0124,
+            "mamo_complex_lp-0101": 1.0124,
+            "mamo_complex_lp-0105": 1.0124,
+            "mamo_complex_lp-0108": 1.0124,
+            "mamo_complex_lp-0111": 1.0124,
+            "mamo_complex_lp-0131": 1.0124,
+            "mamo_complex_lp-0139": 1.0124,
+            "mamo_complex_lp-0140": 1.0124,
+            "mamo_complex_lp-0144": 1.0124,
+            "mamo_complex_lp-0153": 1.0124,
+            "mamo_complex_lp-0163": 1.0124,
+            "mamo_complex_lp-0183": 1.0124,
+            "mamo_complex_lp-0192": 1.0124,
+            "mamo_complex_lp-0204": 1.0124
+          }
+        },
+        "api": {
+          "c3_dev_tokens": {
+            "n": 55,
+            "min": 1581,
+            "p10": 1662.0,
+            "q1": 1662.0,
+            "median": 1662.0,
+            "q3": 1662.0,
+            "p90": 1807.0,
+            "max": 1807,
+            "mean": 1677.51
+          },
+          "c3_all_active_tokens": 1807,
+          "target": 1677.509090909091,
+          "c1_full_pool_tokens": 2060,
+          "c1_full_pool_ratio": 1.228,
+          "qwen_c1": {
+            "ratio_to_dev_mean": 1.0206,
+            "ratio_all_active": 0.9474,
+            "per_case_ratio": {
+              "n": 55,
+              "min": 0.9474,
+              "p10": 0.9474,
+              "q1": 1.0301,
+              "median": 1.0301,
+              "q3": 1.0301,
+              "p90": 1.0301,
+              "max": 1.0829,
+              "mean": 1.0215,
+              "n_within_tolerance": 46
+            },
+            "per_case_ratio_by_case": {
+              "industryor-0002": 1.0301,
+              "industryor-0009": 0.9474,
+              "industryor-0010": 1.0301,
+              "industryor-0019": 0.9474,
+              "industryor-0023": 1.0301,
+              "industryor-0024": 0.9474,
+              "industryor-0025": 1.0301,
+              "industryor-0032": 1.0301,
+              "industryor-0037": 1.0301,
+              "industryor-0040": 1.0301,
+              "industryor-0049": 0.9474,
+              "industryor-0053": 0.9474,
+              "industryor-0057": 1.0301,
+              "industryor-0058": 0.9474,
+              "industryor-0077": 0.9474,
+              "industryor-0078": 1.0301,
+              "industryor-0081": 1.0301,
+              "industryor-0083": 1.0301,
+              "industryor-0085": 1.0829,
+              "industryor-0088": 1.0829,
+              "industryor-0090": 1.0301,
+              "industryor-0093": 1.0301,
+              "industryor-0094": 1.0301,
+              "industryor-0098": 1.0301,
+              "industryor-0099": 1.0301,
+              "mamo_complex_lp-0001": 1.0301,
+              "mamo_complex_lp-0005": 1.0301,
+              "mamo_complex_lp-0020": 1.0301,
+              "mamo_complex_lp-0021": 1.0301,
+              "mamo_complex_lp-0026": 1.0301,
+              "mamo_complex_lp-0028": 1.0301,
+              "mamo_complex_lp-0029": 1.0301,
+              "mamo_complex_lp-0031": 1.0301,
+              "mamo_complex_lp-0034": 1.0301,
+              "mamo_complex_lp-0036": 1.0301,
+              "mamo_complex_lp-0046": 1.0301,
+              "mamo_complex_lp-0063": 1.0301,
+              "mamo_complex_lp-0064": 1.0301,
+              "mamo_complex_lp-0078": 1.0301,
+              "mamo_complex_lp-0084": 1.0301,
+              "mamo_complex_lp-0087": 1.0301,
+              "mamo_complex_lp-0094": 1.0301,
+              "mamo_complex_lp-0101": 1.0301,
+              "mamo_complex_lp-0105": 1.0301,
+              "mamo_complex_lp-0108": 1.0301,
+              "mamo_complex_lp-0111": 1.0301,
+              "mamo_complex_lp-0131": 1.0301,
+              "mamo_complex_lp-0139": 1.0301,
+              "mamo_complex_lp-0140": 1.0301,
+              "mamo_complex_lp-0144": 1.0301,
+              "mamo_complex_lp-0153": 1.0301,
+              "mamo_complex_lp-0163": 1.0301,
+              "mamo_complex_lp-0183": 1.0301,
+              "mamo_complex_lp-0192": 1.0301,
+              "mamo_complex_lp-0204": 1.0301
+            },
+            "tokens": 1712
+          },
+          "c1_api_needed": false,
+          "c1_api": null
+        }
+      },
+      "errors": [],
+      "gene_wording": {
+        "n_bullets": 77,
+        "n_v5_bullets": 39,
+        "header_hits": [],
+        "bullets_with_hits": [],
+        "errors": []
+      },
+      "ok": true,
+      "status": "working"
+    }
+  },
+  "ok": true
+}

@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 6200.0
+  bus50 = 4.0
+  minibus40 = 5.0

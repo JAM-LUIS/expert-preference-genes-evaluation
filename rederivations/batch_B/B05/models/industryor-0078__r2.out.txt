@@ -1,0 +1,7 @@
+P1 level (d1-): 0.0  P2 level (d2- + d3-): 0.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 258.0
+  d2p = 172.0
+  x1 = 972.0
+  x2 = 320.0

@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "units": [
+  {
+   "case_id": "industryor-0014",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0014",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0014",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0041",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0041",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0041",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0061",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0061",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0061",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0066",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0066",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0066",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  }
+ ]
+}

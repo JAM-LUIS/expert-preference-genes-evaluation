@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 180000.0
+  corn = 0.0
+  sorghum = 0.0
+  soy = 100.0
+  wheat = 0.0

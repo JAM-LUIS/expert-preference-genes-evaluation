@@ -1,0 +1,70 @@
+{
+  "n": 60,
+  "exec_rate": 0.9,
+  "protocol_rate": 0.9,
+  "accuracy": 0.6667,
+  "n_correct": 40,
+  "status_counts": {
+    "optimal": 52,
+    "infeasible": 2,
+    "none": 6
+  },
+  "mean_out_tokens": 1006.1,
+  "mean_calls": 1.567,
+  "repaired_cases": 26,
+  "hard_issues_round0": 63,
+  "by_source": {
+    "mamo_complex_lp": {
+      "n": 60,
+      "exec_rate": 0.9,
+      "protocol_rate": 0.9,
+      "accuracy": 0.6667,
+      "n_correct": 40,
+      "status_counts": {
+        "optimal": 52,
+        "infeasible": 2,
+        "none": 6
+      },
+      "mean_out_tokens": 1006.1,
+      "mean_calls": 1.567,
+      "repaired_cases": 26,
+      "hard_issues_round0": 63
+    }
+  },
+  "gene_hard_failures": {
+    "orgene.execution.runs": {
+      "round0_fail": 17,
+      "final_fail": 6
+    },
+    "orgene.solution.status_optimal_or_justified": {
+      "round0_fail": 20,
+      "final_fail": 8
+    },
+    "orgene.code.tuple_key_indexing": {
+      "round0_fail": 9,
+      "final_fail": 2
+    },
+    "orgene.code.sparse_index_guard": {
+      "round0_fail": 6,
+      "final_fail": 7
+    },
+    "orgene.objective.aggregates_declared_variables": {
+      "round0_fail": 8,
+      "final_fail": 0
+    },
+    "orgene.model.linear_expressions_only": {
+      "round0_fail": 2,
+      "final_fail": 1
+    },
+    "orgene.code.pulp_api_exists": {
+      "round0_fail": 1,
+      "final_fail": 0
+    }
+  },
+  "condition": "C3L",
+  "scored_at": "2026-09-07T20:43:38.344090+00:00",
+  "tolerance": {
+    "rel": 0.0001,
+    "abs": 0.0001
+  }
+}

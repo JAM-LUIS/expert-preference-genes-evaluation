@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 6160.00002
+  rawA_in_candyA = 1526.6667
+  rawA_in_candyB = 473.33333
+  rawB_in_candyA = 508.88889
+  rawB_in_candyB = 1991.1111
+  rawC_in_candyA = 508.88889
+  rawC_in_candyB = 691.11111
+  candy A kg = 2544.44448
+  candy B kg = 3155.5555400000003
+  candy C kg = 0.0

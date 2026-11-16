@@ -1,0 +1,13 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 173.0
+  u_1 = 4.0
+  u_2 = 2.0
+  u_3 = 3.0
+  u_4 = 1.0
+  x_0_4 = 1.0
+  x_1_0 = 1.0
+  x_2_3 = 1.0
+  x_3_1 = 1.0
+  x_4_2 = 1.0
+ENUM_CHECK: 173

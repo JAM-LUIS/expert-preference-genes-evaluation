@@ -1,0 +1,326 @@
+{
+ "schema": "orgene.r1.length_model.v1",
+ "data": "TEST",
+ "generated_by": "analysis/r1/length_model.py",
+ "specification": {
+  "formula": "correct ~ configuration + log(out_tokens)",
+  "primary": "conditional logistic regression, one stratum per case",
+  "sensitivity": "GEE, binomial family, exchangeable working correlation, clusters = cases",
+  "quartiles": "output-token quartiles pooled over the compared configurations (statistics.quantiles n=4, inclusive); accuracy per configuration and quartile",
+  "out_tokens": "sum over all calls of the unit, as the result rows record it"
+ },
+ "analysis_set": {
+  "name": "main",
+  "split": "test",
+  "reference": "r1",
+  "n": 125,
+  "sha256": "b7a8e14abc1c6bdf784a2421fa527c5cc357fafb44baabdfe73862c896763458",
+  "by_benchmark": {
+   "industryor": 50,
+   "mamo_complex_lp": 75
+  },
+  "pending": []
+ },
+ "prereg": {
+  "file": "configs/prereg_analysis.json",
+  "sha256": "c593f51c13b16d807d19d8773ffb3862d480929dc7909a6667a96ce638dff93e",
+  "status": "draft",
+  "pending_used": {}
+ },
+ "inputs": {
+  "registry": {
+   "path": "experiments/run_registry.json",
+   "sha256": "9362154ef83bd42de2d33c07c9c65760b2f8b04331f377aea3e835581d49e727"
+  },
+  "runs": [
+   {
+    "label": "C0",
+    "model": "qwen3:8b",
+    "config": "C0",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": null,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C0.jsonl",
+    "results_sha256": "b460ec60107057314bba91054bd08ef880d9581352146ddebecce2db59a87691",
+    "n_rows": 146
+   },
+   {
+    "label": "C3E@2",
+    "model": "qwen3:8b",
+    "config": "C3E",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": 2,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C3E.jsonl",
+    "results_sha256": "e5c3b47f782ff7d078ce6575bfcc3fa12511adf56a762146c4b05325b131645b",
+    "n_rows": 146
+   },
+   {
+    "label": "C3L@2",
+    "model": "qwen3:8b",
+    "config": "C3L",
+    "benchmark": "mamo_complex_lp",
+    "split": "test",
+    "max_repair_rounds": 2,
+    "path": "experiments/test-main-20261006/mamo-test/by-model/qwen3-8b.main",
+    "results": "results.C3L.jsonl",
+    "results_sha256": "ba30e644c06efc73d3d979e5578086bb5af307ecfef38469544ff35c6ac7fe0c",
+    "n_rows": 146
+   },
+   {
+    "label": "C0",
+    "model": "qwen3:8b",
+    "config": "C0",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": null,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C0.jsonl",
+    "results_sha256": "ed3e64945f74080344de150c7432832410be6893707ce7ce314f692a2ef74d59",
+    "n_rows": 71
+   },
+   {
+    "label": "C3E@2",
+    "model": "qwen3:8b",
+    "config": "C3E",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": 2,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C3E.jsonl",
+    "results_sha256": "11a54280c8378df38150b2d0bbb72a744d073af8847b3f651d350b35a8ed2e54",
+    "n_rows": 71
+   },
+   {
+    "label": "C3L@2",
+    "model": "qwen3:8b",
+    "config": "C3L",
+    "benchmark": "industryor",
+    "split": "test",
+    "max_repair_rounds": 2,
+    "path": "experiments/test-main-20261006/industryor-test/by-model/qwen3-8b.main",
+    "results": "results.C3L.jsonl",
+    "results_sha256": "fde96f69844da1c20673bcaf043a9f5065a8354c58b2b15f3f8f603ba7275d20",
+    "n_rows": 71
+   }
+  ],
+  "freeze_gate": [
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   },
+   {
+    "manifest": "FREEZE_MANIFEST.json",
+    "manifest_file_sha256": "ff3366b3ceb0fd60f3818c39cf97fc38529f95fd32b035cbfe93e05001d1f0c2",
+    "content_sha256": "e7325fb92c2fa6cc26c3824b5a03066d8238478521ecbf1f8827863170a53b59",
+    "osf_registration_id": "y9x3u",
+    "stage": "analysis",
+    "split": "test"
+   }
+  ]
+ },
+ "results": [
+  {
+   "model_id": "qwen3:8b",
+   "labels": [
+    "C3L@2",
+    "C3E@2",
+    "C0"
+   ],
+   "reference_label": "C3L@2",
+   "outcome": "correct",
+   "n_dropped_no_tokens": 0,
+   "primary": {
+    "model": "conditional logistic regression (strata = cases)",
+    "n_obs": 375,
+    "n_strata": 125,
+    "n_informative_strata": 10,
+    "status": "no finite estimate: separation (linear-program check): a combination of the covariates never lowers and somewhere raises the conditional likelihood, e.g. one configuration never loses among the informative cases",
+    "converged": false,
+    "max_abs_score": null,
+    "params": null
+   },
+   "sensitivity": {
+    "model": "GEE binomial logit, exchangeable, clusters = cases (robust SE)",
+    "n_obs": 375,
+    "n_clusters": 125,
+    "status": "ok",
+    "working_correlation": 0.8906797501826563,
+    "params": {
+     "intercept": {
+      "coef": 0.8285925237229925,
+      "se": 0.7992527715837174,
+      "ci95": [
+       -0.737914123124912,
+       2.395099170570897
+      ],
+      "odds_ratio": 2.290093218996454,
+      "p": 0.29987150675310137
+     },
+     "label[C3E@2]": {
+      "coef": -0.17457752720215025,
+      "se": 0.07077268119046726,
+      "ci95": [
+       -0.3132894334248014,
+       -0.03586562097949911
+      ],
+      "odds_ratio": 0.8398117434505121,
+      "p": 0.013635080813320098
+     },
+     "label[C0]": {
+      "coef": -0.37377856685119476,
+      "se": 0.08548243887287547,
+      "ci95": [
+       -0.5413210683526773,
+       -0.20623606534971214
+      ],
+      "odds_ratio": 0.6881292695907779,
+      "p": 1.2278835233536749e-05
+     },
+     "log_out_tokens": {
+      "coef": -0.14099588565411572,
+      "se": 0.1219445768840248,
+      "ci95": [
+       -0.38000286445677994,
+       0.0980110931485485
+      ],
+      "odds_ratio": 0.8684928849704439,
+      "p": 0.24758740200185314
+     }
+    }
+   },
+   "quartiles": {
+    "cutpoints": [
+     422.0,
+     602.0,
+     914.0
+    ],
+    "rule": "Q1 <= c1 < Q2 <= c2 < Q3 <= c3 < Q4",
+    "table": [
+     {
+      "label": "C3L@2",
+      "quartile": "Q1",
+      "n": 28,
+      "n_correct": 21,
+      "accuracy": 0.75
+     },
+     {
+      "label": "C3L@2",
+      "quartile": "Q2",
+      "n": 27,
+      "n_correct": 18,
+      "accuracy": 0.6667
+     },
+     {
+      "label": "C3L@2",
+      "quartile": "Q3",
+      "n": 29,
+      "n_correct": 16,
+      "accuracy": 0.5517
+     },
+     {
+      "label": "C3L@2",
+      "quartile": "Q4",
+      "n": 41,
+      "n_correct": 4,
+      "accuracy": 0.0976
+     },
+     {
+      "label": "C3E@2",
+      "quartile": "Q1",
+      "n": 31,
+      "n_correct": 21,
+      "accuracy": 0.6774
+     },
+     {
+      "label": "C3E@2",
+      "quartile": "Q2",
+      "n": 29,
+      "n_correct": 18,
+      "accuracy": 0.6207
+     },
+     {
+      "label": "C3E@2",
+      "quartile": "Q3",
+      "n": 30,
+      "n_correct": 14,
+      "accuracy": 0.4667
+     },
+     {
+      "label": "C3E@2",
+      "quartile": "Q4",
+      "n": 35,
+      "n_correct": 1,
+      "accuracy": 0.0286
+     },
+     {
+      "label": "C0",
+      "quartile": "Q1",
+      "n": 37,
+      "n_correct": 21,
+      "accuracy": 0.5676
+     },
+     {
+      "label": "C0",
+      "quartile": "Q2",
+      "n": 36,
+      "n_correct": 18,
+      "accuracy": 0.5
+     },
+     {
+      "label": "C0",
+      "quartile": "Q3",
+      "n": 35,
+      "n_correct": 10,
+      "accuracy": 0.2857
+     },
+     {
+      "label": "C0",
+      "quartile": "Q4",
+      "n": 17,
+      "n_correct": 0,
+      "accuracy": 0.0
+     }
+    ]
+   }
+  }
+ ]
+}

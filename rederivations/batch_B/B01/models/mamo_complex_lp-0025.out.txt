@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 15.861723399999999
+  qty_Chicken = 6.8874415
+  qty_Lentils = 8.9742819

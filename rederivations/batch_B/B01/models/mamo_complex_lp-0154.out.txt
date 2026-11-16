@@ -1,0 +1,14 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 469200.0
+  open_1 = 1.0
+  open_2 = 1.0
+  open_3 = 1.0
+  ship_(1,_3) = 589.0
+  ship_(1,_4) = 426.0
+  ship_(1,_6) = 616.0
+  ship_(2,_2) = 875.0
+  ship_(2,_5) = 966.0
+  ship_(2,_6) = 27.0
+  ship_(3,_1) = 910.0
+  ship_(3,_4) = 536.0

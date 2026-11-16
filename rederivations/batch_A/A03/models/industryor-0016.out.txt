@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4100.0
+  end_stock_2 = 500.0
+  purchase_1 = 300.0
+  purchase_2 = 500.0
+  sales_1 = 500.0
+  sales_3 = 500.0

@@ -1,0 +1,5 @@
+{
+  "schemaVersion": "orgene.activation_examples.v1",
+  "note": "Template for gene authors (stage 1C). For every gene of genes/genes.r1.jsonl whose activation.rule is not \"always\", list at least 2 short self-written problem texts that must activate it and at least 2 that must not; never copy benchmark text. runtime/tests/test_activation.py evaluates every example with the lexicon in use. Shape: {\"genes\": {\"<geneId>\": {\"active\": [\"...\", \"...\"], \"inactive\": [\"...\", \"...\"]}}}.",
+  "genes": {}
+}

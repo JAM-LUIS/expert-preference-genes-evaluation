@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4.0
+  x_ComputerProgramming = 1.0
+  x_ComputerSimulation = 1.0
+  x_DataStructures = 1.0
+  x_OperationsResearch = 1.0

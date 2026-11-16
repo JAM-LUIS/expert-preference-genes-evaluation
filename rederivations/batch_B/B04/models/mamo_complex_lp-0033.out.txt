@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 42.77922
+  x_Avocado 0.0
+  x_Cheese 0.0
+  x_Chicken 0.0
+  x_Pasta 14.25974
+  x_Spinach 0.0
+  x_Tofu 0.0
+INTEGER_VERSION: Optimal Optimal Solution Found 44.0

@@ -1,0 +1,7 @@
+goal value 0.0
+goal value 0.0
+goal value 0.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 11250.0
+A 12.0 B 17.0

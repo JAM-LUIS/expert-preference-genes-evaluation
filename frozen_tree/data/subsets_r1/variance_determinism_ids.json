@@ -1,0 +1,177 @@
+{
+ "schema": "orgene-r1/seeded_subsets/v1",
+ "seed": 20261004,
+ "rule": "per benchmark: n proportional to the stratum size, largest remainder; within a stratum the first n ids in ascending order of sha256('<seed>|<subset>|<case_id>')",
+ "sources": [
+  {
+   "benchmark": "mamo_complex_lp",
+   "split_dir": "data/splits_r1/mamo_main_clean111_excl0905",
+   "split_lock_sha256": "2e5aa81f063052d5a2e187af80171d70f2183151313031933825c449c1dc9f8e"
+  },
+  {
+   "benchmark": "industryor",
+   "split_dir": "data/splits_r1/industryor_main_rev2026_100_excl0905",
+   "split_lock_sha256": "fa65315153d4954b0b08c679b77aeeaa504878ea3057b2d8c034344bc811292b"
+  }
+ ],
+ "subsets": {
+  "variance": {
+   "split": "test",
+   "n": 100,
+   "ids_sha256": "60cb8020f4a3e37d3f331c41c807cc8013c59732491937beff04a3f7e5ab8b8b",
+   "strata": {
+    "mamo_complex_lp": {
+     "population": 80,
+     "n": 53,
+     "ids": [
+      "mamo_complex_lp-0006",
+      "mamo_complex_lp-0010",
+      "mamo_complex_lp-0011",
+      "mamo_complex_lp-0013",
+      "mamo_complex_lp-0015",
+      "mamo_complex_lp-0016",
+      "mamo_complex_lp-0017",
+      "mamo_complex_lp-0019",
+      "mamo_complex_lp-0025",
+      "mamo_complex_lp-0033",
+      "mamo_complex_lp-0037",
+      "mamo_complex_lp-0039",
+      "mamo_complex_lp-0040",
+      "mamo_complex_lp-0041",
+      "mamo_complex_lp-0050",
+      "mamo_complex_lp-0052",
+      "mamo_complex_lp-0074",
+      "mamo_complex_lp-0082",
+      "mamo_complex_lp-0083",
+      "mamo_complex_lp-0100",
+      "mamo_complex_lp-0109",
+      "mamo_complex_lp-0112",
+      "mamo_complex_lp-0113",
+      "mamo_complex_lp-0119",
+      "mamo_complex_lp-0121",
+      "mamo_complex_lp-0122",
+      "mamo_complex_lp-0125",
+      "mamo_complex_lp-0128",
+      "mamo_complex_lp-0133",
+      "mamo_complex_lp-0137",
+      "mamo_complex_lp-0138",
+      "mamo_complex_lp-0141",
+      "mamo_complex_lp-0145",
+      "mamo_complex_lp-0148",
+      "mamo_complex_lp-0154",
+      "mamo_complex_lp-0156",
+      "mamo_complex_lp-0157",
+      "mamo_complex_lp-0158",
+      "mamo_complex_lp-0159",
+      "mamo_complex_lp-0161",
+      "mamo_complex_lp-0162",
+      "mamo_complex_lp-0165",
+      "mamo_complex_lp-0166",
+      "mamo_complex_lp-0167",
+      "mamo_complex_lp-0168",
+      "mamo_complex_lp-0169",
+      "mamo_complex_lp-0176",
+      "mamo_complex_lp-0177",
+      "mamo_complex_lp-0190",
+      "mamo_complex_lp-0191",
+      "mamo_complex_lp-0193",
+      "mamo_complex_lp-0202",
+      "mamo_complex_lp-0207"
+     ]
+    },
+    "industryor": {
+     "population": 71,
+     "n": 47,
+     "ids": [
+      "industryor-0004",
+      "industryor-0006",
+      "industryor-0008",
+      "industryor-0011",
+      "industryor-0012",
+      "industryor-0013",
+      "industryor-0016",
+      "industryor-0018",
+      "industryor-0021",
+      "industryor-0026",
+      "industryor-0027",
+      "industryor-0028",
+      "industryor-0029",
+      "industryor-0030",
+      "industryor-0031",
+      "industryor-0033",
+      "industryor-0034",
+      "industryor-0035",
+      "industryor-0036",
+      "industryor-0038",
+      "industryor-0039",
+      "industryor-0042",
+      "industryor-0045",
+      "industryor-0046",
+      "industryor-0047",
+      "industryor-0050",
+      "industryor-0051",
+      "industryor-0054",
+      "industryor-0055",
+      "industryor-0059",
+      "industryor-0060",
+      "industryor-0062",
+      "industryor-0064",
+      "industryor-0065",
+      "industryor-0068",
+      "industryor-0070",
+      "industryor-0071",
+      "industryor-0073",
+      "industryor-0074",
+      "industryor-0075",
+      "industryor-0076",
+      "industryor-0079",
+      "industryor-0082",
+      "industryor-0091",
+      "industryor-0095",
+      "industryor-0096",
+      "industryor-0100"
+     ]
+    }
+   }
+  },
+  "determinism": {
+   "split": "dev",
+   "n": 20,
+   "ids_sha256": "044bfe5c001f514755d274df5916986899d3b5a796a90a89c09fcb3858246a80",
+   "strata": {
+    "mamo_complex_lp": {
+     "population": 30,
+     "n": 11,
+     "ids": [
+      "mamo_complex_lp-0029",
+      "mamo_complex_lp-0031",
+      "mamo_complex_lp-0034",
+      "mamo_complex_lp-0036",
+      "mamo_complex_lp-0064",
+      "mamo_complex_lp-0078",
+      "mamo_complex_lp-0087",
+      "mamo_complex_lp-0140",
+      "mamo_complex_lp-0163",
+      "mamo_complex_lp-0192",
+      "mamo_complex_lp-0204"
+     ]
+    },
+    "industryor": {
+     "population": 25,
+     "n": 9,
+     "ids": [
+      "industryor-0002",
+      "industryor-0023",
+      "industryor-0025",
+      "industryor-0032",
+      "industryor-0057",
+      "industryor-0088",
+      "industryor-0090",
+      "industryor-0093",
+      "industryor-0094"
+     ]
+    }
+   }
+  }
+ }
+}

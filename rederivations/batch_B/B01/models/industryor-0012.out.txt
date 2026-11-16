@@ -1,0 +1,18 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 43200.0
+  open_1 = 1.0
+  open_3 = 1.0
+  open_4 = 1.0
+  open_6 = 1.0
+  prod_1 = 500.0
+  prod_3 = 1250.0
+  prod_4 = 900.0
+  prod_6 = 700.0
+  use_(1,_1) = 500.0
+  use_(3,_2) = 550.0
+  use_(3,_3) = 700.0
+  use_(4,_4) = 900.0
+  use_(6,_5) = 400.0
+  use_(6,_6) = 300.0
+INTEGERS_RELAXED: Optimal 43200.0 (27 general-integer variables made continuous; binaries kept)

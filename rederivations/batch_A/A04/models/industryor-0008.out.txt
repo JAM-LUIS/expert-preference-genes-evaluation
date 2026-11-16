@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.0
+  x_('I',_'B') = 1.0
+  x_('II',_'A') = 1.0
+  x_('IV',_'C') = 1.0
+  x_('V',_'D') = 1.0

@@ -1,0 +1,5 @@
+STATUS: Optimal
+FINAL_OBJECTIVE: 0.49465199929312553
+  heavy per part: [0, 7, 0, 0]
+  light per part: [4, 0, 5, 3]
+  fuel used: 9995.0

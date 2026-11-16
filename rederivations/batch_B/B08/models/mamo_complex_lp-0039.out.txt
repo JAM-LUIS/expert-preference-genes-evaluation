@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 15.0
+  x_spinach = 15.0
+INTEGERS_RELAXED: Optimal 14.5 (6 general-integer variables made continuous; binaries kept)

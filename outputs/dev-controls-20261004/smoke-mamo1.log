@@ -1,0 +1,5 @@
+[units] 1/4 mamo_complex_lp-0001.C0.r0 complete:observe_only calls=1 tokens=964 elapsed=0.2 min
+[units] 2/4 mamo_complex_lp-0001.C0R-E.r0 complete:accepted calls=1 tokens=2075 elapsed=0.5 min
+[units] 3/4 mamo_complex_lp-0001.C3T.r0 complete:accepted calls=1 tokens=964 elapsed=0.5 min
+[units] 4/4 mamo_complex_lp-0001.C3A.r0 complete:accepted calls=2 tokens=2504 elapsed=0.8 min
+[units] done: {"complete:accepted": 3, "complete:observe_only": 1}

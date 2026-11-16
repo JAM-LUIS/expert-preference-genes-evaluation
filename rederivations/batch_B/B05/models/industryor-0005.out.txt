@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 18.985714381
+  g_carrot = 42.857143
+  g_okra = 557.14286
+  pick_cabbage = 1.0
+  pick_carrot = 1.0
+  pick_celery = 1.0
+  pick_okra = 1.0
+  pick_pork = 1.0

@@ -1,0 +1,341 @@
+{
+ "template_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+ "go_version": "go1.25.6",
+ "generator": "tools/qwen3_template_ref/main.go",
+ "cases": [
+  {
+   "name": "sys_user_nothink",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helper."
+    },
+    {
+     "role": "user",
+     "content": "Problem:\nMaximize x.\n"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nYou are a helper.<|im_end|>\n<|im_start|>user\nProblem:\nMaximize x.\n /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "sys_user_think",
+   "think": true,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helper."
+    },
+    {
+     "role": "user",
+     "content": "Problem:\nMaximize x.\n"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nYou are a helper.<|im_end|>\n<|im_start|>user\nProblem:\nMaximize x.\n /think<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "sys_user_unset",
+   "think": null,
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are a helper."
+    },
+    {
+     "role": "user",
+     "content": "Problem:\nMaximize x.\n"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nYou are a helper.<|im_end|>\n<|im_start|>user\nProblem:\nMaximize x.\n<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "user_only_nothink",
+   "think": false,
+   "messages": [
+    {
+     "role": "user",
+     "content": "Hi"
+    }
+   ],
+   "prompt": "<|im_start|>user\nHi /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "empty_system_nothink",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": ""
+    },
+    {
+     "role": "user",
+     "content": "Hi"
+    }
+   ],
+   "prompt": "<|im_start|>user\nHi /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "repair_turn_nothink",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": "S line 1\nS line 2\n"
+    },
+    {
+     "role": "user",
+     "content": "Problem:\nP\n"
+    },
+    {
+     "role": "assistant",
+     "content": "```python\nprint(1)\n```\n"
+    },
+    {
+     "role": "user",
+     "content": "Fix it.\n"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nS line 1\nS line 2\n<|im_end|>\n<|im_start|>user\nProblem:\nP\n<|im_end|>\n<|im_start|>assistant\n```python\nprint(1)\n```\n<|im_end|>\n<|im_start|>user\nFix it.\n /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "repair_turn_think",
+   "think": true,
+   "messages": [
+    {
+     "role": "system",
+     "content": "S"
+    },
+    {
+     "role": "user",
+     "content": "P"
+    },
+    {
+     "role": "assistant",
+     "content": "A",
+     "thinking": "T"
+    },
+    {
+     "role": "user",
+     "content": "R"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nS<|im_end|>\n<|im_start|>user\nP<|im_end|>\n<|im_start|>assistant\nA<|im_end|>\n<|im_start|>user\nR /think<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "two_systems_consecutive_users",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": "S1"
+    },
+    {
+     "role": "system",
+     "content": "S2"
+    },
+    {
+     "role": "user",
+     "content": "U1"
+    },
+    {
+     "role": "user",
+     "content": "U2"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nS1\n\nS2<|im_end|>\n<|im_start|>user\nU1\n\nU2 /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "assistant_last_nothink",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": "S"
+    },
+    {
+     "role": "user",
+     "content": "U"
+    },
+    {
+     "role": "assistant",
+     "content": "partial"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nS<|im_end|>\n<|im_start|>user\nU /no_think<|im_end|>\n<|im_start|>assistant\npartial"
+  },
+  {
+   "name": "assistant_last_thinking_think",
+   "think": true,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U"
+    },
+    {
+     "role": "assistant",
+     "content": "partial",
+     "thinking": "T"
+    }
+   ],
+   "prompt": "<|im_start|>user\nU /think<|im_end|>\n<|im_start|>assistant\n<think>T</think>\npartial"
+  },
+  {
+   "name": "assistant_thinking_before_last_user",
+   "think": true,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U1"
+    },
+    {
+     "role": "assistant",
+     "content": "A1",
+     "thinking": "T1"
+    },
+    {
+     "role": "user",
+     "content": "U2"
+    },
+    {
+     "role": "assistant",
+     "content": "A2",
+     "thinking": "T2"
+    },
+    {
+     "role": "user",
+     "content": "U3"
+    }
+   ],
+   "prompt": "<|im_start|>user\nU1<|im_end|>\n<|im_start|>assistant\nA1<|im_end|>\n<|im_start|>user\nU2<|im_end|>\n<|im_start|>assistant\nA2<|im_end|>\n<|im_start|>user\nU3 /think<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "empty_assistant_content",
+   "think": false,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U1"
+    },
+    {
+     "role": "assistant",
+     "content": ""
+    },
+    {
+     "role": "user",
+     "content": "U2"
+    }
+   ],
+   "prompt": "<|im_start|>user\nU1<|im_end|>\n<|im_start|>assistant\n<|im_end|>\n<|im_start|>user\nU2 /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "tool_messages",
+   "think": false,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U1"
+    },
+    {
+     "role": "tool",
+     "content": "R1"
+    },
+    {
+     "role": "tool",
+     "content": "R2"
+    }
+   ],
+   "prompt": "<|im_start|>user\nU1 /no_think<|im_end|>\n<|im_start|>user\n<tool_response>\nR1\n</tool_response><|im_end|>\n<|im_start|>user\n<tool_response>\nR2\n</tool_response><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "system_after_user",
+   "think": false,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U1"
+    },
+    {
+     "role": "system",
+     "content": "late"
+    },
+    {
+     "role": "user",
+     "content": "U2"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nlate<|im_end|>\n<|im_start|>user\nU1<|im_end|>\n<|im_start|>user\nU2 /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "whitespace_edges",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": "\n  S with spaces  \n\n"
+    },
+    {
+     "role": "user",
+     "content": "  U\t\n"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\n\n  S with spaces  \n\n<|im_end|>\n<|im_start|>user\n  U\t\n /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "system_last",
+   "think": false,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U"
+    },
+    {
+     "role": "system",
+     "content": "S"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\nS<|im_end|>\n<|im_start|>user\nU /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "consecutive_assistants_keep_first_thinking",
+   "think": true,
+   "messages": [
+    {
+     "role": "user",
+     "content": "U"
+    },
+    {
+     "role": "assistant",
+     "content": "A1",
+     "thinking": "T1"
+    },
+    {
+     "role": "assistant",
+     "content": "A2",
+     "thinking": "T2"
+    }
+   ],
+   "prompt": "<|im_start|>user\nU /think<|im_end|>\n<|im_start|>assistant\n<think>T1</think>\nA1\n\nA2"
+  },
+  {
+   "name": "unicode_and_braces",
+   "think": false,
+   "messages": [
+    {
+     "role": "system",
+     "content": "{{ .System }} <b>&amp;</b>"
+    },
+    {
+     "role": "user",
+     "content": "最优化 é ✓ {{ end }}"
+    }
+   ],
+   "prompt": "<|im_start|>system\n\n{{ .System }} <b>&amp;</b><|im_end|>\n<|im_start|>user\n最优化 é ✓ {{ end }} /no_think<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+  },
+  {
+   "name": "empty_messages",
+   "think": false,
+   "messages": [],
+   "prompt": ""
+  }
+ ]
+}

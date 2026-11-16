@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 30400.0
+  cows = 70.0
+  sheep = 20.0
+INTEGERS_RELAXED: Optimal 30400.0 (3 general-integer variables made continuous; binaries kept)

@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 3.0
+  store_B = 1.0
+  store_G = 1.0
+  store_J = 1.0

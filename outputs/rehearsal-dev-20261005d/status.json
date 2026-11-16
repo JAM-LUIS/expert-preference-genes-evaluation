@@ -1,0 +1,216 @@
+{
+  "schema": "orgene.r1.campaign.v1",
+  "campaign": "rehearsal-dev-20261005d",
+  "spec": "configs/campaigns/dev_rehearsal_20261005.json",
+  "spec_sha256": "622d3aea58ccfb9c75f3ced7e93fb2c947e84c8eb0d8000cd252f75bf0d82c0a",
+  "git_head": "e8a34bb8272a474dfcc98526fb8e090f5e332297",
+  "started_at": "2026-10-05T21:08:48.339875+00:00",
+  "stages": {
+    "mamo-dev": {
+      "state": "complete",
+      "units": 332,
+      "units_by_model": {
+        "qwen3-8b.main": 167,
+        "qwen3-8b.var07": 99,
+        "gptoss-20b.main": 66
+      },
+      "plan_sha256": "104387a649b7162679a17fc3819c476bdad40556813eecaab8754f21f46785d3",
+      "matrix_sha256": "50b44a4913636fcd6d86ae4bd66f8c39a005ed8711791bf0dfd9f5fb2f232d00",
+      "started_at": "2026-10-05T21:08:50.339852+00:00",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "runtime/orgene_cli.py",
+        "execute",
+        "--run",
+        "experiments/rehearsal-dev-20261005d/mamo-dev",
+        "--cases",
+        "data/cases/mamo_complex_lp.jsonl",
+        "--split-dir",
+        "data/splits_r1/mamo_main_clean111_excl0905",
+        "--split",
+        "dev",
+        "--genes",
+        "genes/genes.it1.jsonl",
+        "--lexicon",
+        "genes/activation_lexicon.v2.json",
+        "--local-tokens",
+        "on",
+        "--export-validated",
+        "--plan",
+        "experiments/rehearsal-dev-20261005d/mamo-dev.plan.json",
+        "--plan-sha256",
+        "104387a649b7162679a17fc3819c476bdad40556813eecaab8754f21f46785d3"
+      ],
+      "attempts": [
+        {
+          "at": "2026-10-05T23:21:07.170800+00:00",
+          "exit": 0
+        }
+      ],
+      "finished_at": "2026-10-05T23:21:07.260086+00:00",
+      "audit": {
+        "planned": 332,
+        "complete": 332,
+        "stop_reasons": {
+          "observe_only": 137,
+          "accepted": 162,
+          "no_repair_left": 17,
+          "rounds_exhausted": 16
+        },
+        "problems": [],
+        "n_problems": 0
+      }
+    },
+    "industryor-dev": {
+      "state": "failed",
+      "units": 273,
+      "units_by_model": {
+        "qwen3-8b.main": 138,
+        "qwen3-8b.var07": 81,
+        "gptoss-20b.main": 54
+      },
+      "plan_sha256": "302b6f59eb28c735c2013c025a804c7a353a3f4449c7220b5fbfe848f677263b",
+      "matrix_sha256": "d452276942407f91addbcde331a256334d3fa89e7c97c90ab7f47ff93b43ac84",
+      "started_at": "2026-10-05T23:21:07.395748+00:00",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "runtime/orgene_cli.py",
+        "execute",
+        "--run",
+        "experiments/rehearsal-dev-20261005d/industryor-dev",
+        "--cases",
+        "data/cases/industryor.jsonl",
+        "--split-dir",
+        "data/splits_r1/industryor_main_rev2026_100_excl0905",
+        "--split",
+        "dev",
+        "--genes",
+        "genes/genes.it1.jsonl",
+        "--lexicon",
+        "genes/activation_lexicon.v2.json",
+        "--local-tokens",
+        "on",
+        "--export-validated",
+        "--plan",
+        "experiments/rehearsal-dev-20261005d/industryor-dev.plan.json",
+        "--plan-sha256",
+        "302b6f59eb28c735c2013c025a804c7a353a3f4449c7220b5fbfe848f677263b"
+      ],
+      "attempts": [
+        {
+          "at": "2026-10-06T00:42:10.309582+00:00",
+          "exit": 4
+        },
+        {
+          "at": "2026-10-06T00:44:25.916873+00:00",
+          "exit": 4
+        },
+        {
+          "at": "2026-10-06T00:46:37.561462+00:00",
+          "exit": 4
+        }
+      ],
+      "finished_at": "2026-10-06T00:47:07.684940+00:00",
+      "audit": {
+        "planned": 273,
+        "complete": 268,
+        "stop_reasons": {
+          "observe_only": 111,
+          "accepted": 146,
+          "no_repair_left": 4,
+          "rounds_exhausted": 7
+        },
+        "problems": [
+          "2 planned unit(s) have no record",
+          "industryor-0088.C0.r0: status incomplete",
+          "industryor-0093.C1.r0: status incomplete",
+          "industryor-0093.C3.r0: status incomplete"
+        ],
+        "n_problems": 4
+      }
+    }
+  },
+  "runs": [
+    {
+      "at": "2026-10-05T21:08:48.340045+00:00",
+      "pid": 71948,
+      "resume": false,
+      "dry_run": false
+    }
+  ],
+  "state": "failed",
+  "preflight": [
+    {
+      "check": "tracked files committed",
+      "ok": true,
+      "detail": "clean"
+    },
+    {
+      "check": "interpreter and solver",
+      "ok": true,
+      "detail": "}"
+    },
+    {
+      "check": "selftest",
+      "ok": true,
+      "detail": "[selftest] PASS (run dir: /var/folders/40/b5gk0kv131j5k2dhrqj0n4ym0000gn/T/orgene_selftest_oad4_m2a/run)"
+    },
+    {
+      "check": "model registry vs host",
+      "ok": true,
+      "detail": "[registry] check against live (read-only): OK (0 invalid, 0 mismatch, 0 notes)"
+    },
+    {
+      "check": "test isolation",
+      "ok": true,
+      "detail": "RESULT: PASS (7 analysis set(s) pending annotation)"
+    },
+    {
+      "check": "seeded subsets",
+      "ok": true,
+      "detail": "RESULT: PASS (data/subsets_r1/variance_determinism_ids.json equals a fresh draw)"
+    },
+    {
+      "check": "mamo-dev: data/cases/mamo_complex_lp.jsonl",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "mamo-dev: data/splits_r1/mamo_main_clean111_excl0905",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "industryor-dev: data/cases/industryor.jsonl",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "industryor-dev: data/splits_r1/industryor_main_rev2026_100_excl0905",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "genes/genes.it1.jsonl",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "genes/activation_lexicon.v2.json",
+      "ok": true,
+      "detail": "present"
+    },
+    {
+      "check": "free disk",
+      "ok": true,
+      "detail": "103 GB"
+    }
+  ],
+  "current_stage": "industryor-dev",
+  "finished_at": "2026-10-06T00:47:07.791392+00:00",
+  "failed_stages": [
+    "industryor-dev"
+  ],
+  "output_files": 741,
+  "output_manifest_sha256": "5c51525f4e3d7e0e02cc51dc85dcb2649a58089f5a30bce14683f4738bad204c"
+}

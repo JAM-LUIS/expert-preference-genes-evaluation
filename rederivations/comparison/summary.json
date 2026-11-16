@@ -1,0 +1,503 @@
+{
+ "audit_round2_candidates": {
+  "reference_check": [
+   "industryor-0003",
+   "industryor-0081",
+   "mamo_complex_lp-0012",
+   "mamo_complex_lp-0014",
+   "mamo_complex_lp-0017",
+   "mamo_complex_lp-0039",
+   "mamo_complex_lp-0053",
+   "mamo_complex_lp-0064",
+   "mamo_complex_lp-0140",
+   "mamo_complex_lp-0207"
+  ],
+  "type_label": [
+   "industryor-0022",
+   "industryor-0037",
+   "industryor-0041",
+   "industryor-0048",
+   "industryor-0055",
+   "industryor-0058",
+   "industryor-0063",
+   "industryor-0078",
+   "industryor-0080",
+   "industryor-0086"
+  ]
+ },
+ "complete": true,
+ "for_adjudicator": {
+  "ids": [
+   "industryor-0001",
+   "industryor-0002",
+   "industryor-0005",
+   "industryor-0007",
+   "industryor-0008",
+   "industryor-0011",
+   "industryor-0012",
+   "industryor-0013",
+   "industryor-0015",
+   "industryor-0016",
+   "industryor-0017",
+   "industryor-0021",
+   "industryor-0022",
+   "industryor-0023",
+   "industryor-0024",
+   "industryor-0026",
+   "industryor-0027",
+   "industryor-0028",
+   "industryor-0029",
+   "industryor-0030",
+   "industryor-0033",
+   "industryor-0034",
+   "industryor-0036",
+   "industryor-0038",
+   "industryor-0039",
+   "industryor-0040",
+   "industryor-0043",
+   "industryor-0045",
+   "industryor-0048",
+   "industryor-0049",
+   "industryor-0050",
+   "industryor-0051",
+   "industryor-0054",
+   "industryor-0056",
+   "industryor-0057",
+   "industryor-0061",
+   "industryor-0065",
+   "industryor-0067",
+   "industryor-0069",
+   "industryor-0070",
+   "industryor-0071",
+   "industryor-0073",
+   "industryor-0078",
+   "industryor-0079",
+   "industryor-0081",
+   "industryor-0082",
+   "industryor-0089",
+   "industryor-0091",
+   "industryor-0094",
+   "industryor-0096",
+   "industryor-0097",
+   "industryor-0098",
+   "industryor-0099",
+   "industryor-0100",
+   "mamo_complex_lp-0006",
+   "mamo_complex_lp-0021",
+   "mamo_complex_lp-0024",
+   "mamo_complex_lp-0025",
+   "mamo_complex_lp-0033",
+   "mamo_complex_lp-0036",
+   "mamo_complex_lp-0063",
+   "mamo_complex_lp-0083",
+   "mamo_complex_lp-0128",
+   "mamo_complex_lp-0135"
+  ],
+  "rows": 64
+ },
+ "models": {
+  "A": "claude-fable-5-1",
+  "B": "claude-opus-5-5"
+ },
+ "per_batch": {
+  "A": {
+   "confidence": {
+    "HIGH": 58,
+    "LOW": 17,
+    "MEDIUM": 50
+   },
+   "groups": {
+    "A01": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "A02": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "A03": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "A04": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "A05": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "A06": {
+     "manifest_files": 16,
+     "manifest_problems": [],
+     "n_lines": 15,
+     "n_rows": 15,
+     "results_file": true
+    },
+    "A07": {
+     "manifest_files": 16,
+     "manifest_problems": [],
+     "n_lines": 15,
+     "n_rows": 15,
+     "results_file": true
+    },
+    "A08": {
+     "manifest_files": 16,
+     "manifest_problems": [],
+     "n_lines": 15,
+     "n_rows": 15,
+     "results_file": true
+    }
+   },
+   "issue": {
+    "AMBIGUOUS": 36,
+    "NONE": 89
+   },
+   "missing": 0,
+   "output_check": {
+    "approx": 1,
+    "consistent": 124
+   },
+   "problems": [],
+   "rows": 125,
+   "rows_with_core_problems": 0,
+   "rows_with_type_problems": 0,
+   "status": {
+    "Infeasible": 1,
+    "Optimal": 124
+   },
+   "type_counts": {
+    "IP": 50,
+    "LP": 24,
+    "MILP": 16,
+    "NL_LINEARIZABLE": 8,
+    "NL_NOT_LINEARIZABLE": 2
+   },
+   "vs_reference_sample": {
+    "ALT_MATCH": 5,
+    "MATCH": 58,
+    "MISMATCH": 3
+   },
+   "vs_reference_screening": {
+    "ALT_MATCH": 6,
+    "MATCH": 50,
+    "MISMATCH": 2,
+    "ROUNDED": 1
+   }
+  },
+  "B": {
+   "confidence": {
+    "HIGH": 64,
+    "LOW": 13,
+    "MEDIUM": 48
+   },
+   "groups": {
+    "B01": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "B02": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "B03": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "B04": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "B05": {
+     "manifest_files": 17,
+     "manifest_problems": [],
+     "n_lines": 16,
+     "n_rows": 16,
+     "results_file": true
+    },
+    "B06": {
+     "manifest_files": 16,
+     "manifest_problems": [],
+     "n_lines": 15,
+     "n_rows": 15,
+     "results_file": true
+    },
+    "B07": {
+     "manifest_files": 16,
+     "manifest_problems": [],
+     "n_lines": 15,
+     "n_rows": 15,
+     "results_file": true
+    },
+    "B08": {
+     "manifest_files": 16,
+     "manifest_problems": [],
+     "n_lines": 15,
+     "n_rows": 15,
+     "results_file": true
+    }
+   },
+   "issue": {
+    "AMBIGUOUS": 32,
+    "NONE": 93
+   },
+   "missing": 0,
+   "output_check": {
+    "approx": 2,
+    "consistent": 123
+   },
+   "problems": [],
+   "rows": 125,
+   "rows_with_core_problems": 0,
+   "rows_with_type_problems": 0,
+   "status": {
+    "LocallyOptimal": 1,
+    "Optimal": 124
+   },
+   "type_counts": {
+    "IP": 46,
+    "LP": 27,
+    "MILP": 15,
+    "NL_LINEARIZABLE": 11,
+    "NL_NOT_LINEARIZABLE": 1
+   },
+   "vs_reference_sample": {
+    "ALT_MATCH": 4,
+    "MATCH": 53,
+    "MISMATCH": 7,
+    "ROUNDED": 2
+   },
+   "vs_reference_screening": {
+    "ALT_MATCH": 6,
+    "MATCH": 48,
+    "MISMATCH": 4,
+    "ROUNDED": 1
+   }
+  }
+ },
+ "reference_check_sample": {
+  "A_B_agree": 0.8636,
+  "A_matches_reference": 0.8788,
+  "B_matches_reference": 0.803,
+  "ab_relation": {
+   "AGREE": 57,
+   "DISAGREE": 9
+  },
+  "adjudicate_ids": [
+   "industryor-0001",
+   "industryor-0007",
+   "industryor-0011",
+   "industryor-0016",
+   "industryor-0022",
+   "industryor-0027",
+   "industryor-0029",
+   "industryor-0030",
+   "industryor-0039",
+   "industryor-0040",
+   "industryor-0048",
+   "industryor-0049",
+   "industryor-0050",
+   "industryor-0056",
+   "industryor-0057",
+   "industryor-0069",
+   "industryor-0070",
+   "industryor-0078",
+   "industryor-0091",
+   "industryor-0096",
+   "industryor-0098",
+   "mamo_complex_lp-0006",
+   "mamo_complex_lp-0021",
+   "mamo_complex_lp-0024",
+   "mamo_complex_lp-0025",
+   "mamo_complex_lp-0033",
+   "mamo_complex_lp-0063",
+   "mamo_complex_lp-0083",
+   "mamo_complex_lp-0128"
+  ],
+  "audit_ids": [
+   "industryor-0012",
+   "industryor-0013",
+   "industryor-0026",
+   "industryor-0028",
+   "industryor-0034",
+   "industryor-0043",
+   "industryor-0073",
+   "industryor-0079",
+   "mamo_complex_lp-0036",
+   "mamo_complex_lp-0135"
+  ],
+  "auto_correct_before_audit": 37,
+  "both_match_reference": 0.7879,
+  "categories": {
+   "both_match": 52,
+   "both_off_and_agree": 5,
+   "both_off_not_agreeing": 2,
+   "one_matches": 7
+  },
+  "n": 66,
+  "reasons": {
+   "AB_AGREE_BOTH_OFF_REFERENCE": 5,
+   "AB_DISAGREE": 9,
+   "A_ALT_MATCH": 5,
+   "A_AMBIGUOUS": 18,
+   "A_LOW_CONFIDENCE": 9,
+   "A_MISMATCH": 3,
+   "A_STATUS_Infeasible": 1,
+   "B_ALT_MATCH": 4,
+   "B_AMBIGUOUS": 18,
+   "B_LOW_CONFIDENCE": 7,
+   "B_MISMATCH": 7,
+   "B_ROUNDED": 2
+  },
+  "route": {
+   "ADJUDICATE": 29,
+   "AUDIT": 10,
+   "AUTO_CORRECT": 27
+  }
+ },
+ "rules": {
+  "audit_rule": "round 2 (10 more, fixed seed) only for an audit whose round 1 overturns >= 1 case; no third round",
+  "audit_seeds": {
+   "reference_check": "20260929-ref-audit",
+   "reference_check_round2": "20260929-ref-audit-round2",
+   "type_label": "20260929-type-audit",
+   "type_label_round2": "20260929-type-audit-round2"
+  },
+  "n_audit": 10,
+  "rerun": false,
+  "sample": "AUTO_CORRECT iff both batches match the reference (Optimal, no issue, not LOW, output consistent); otherwise ADJUDICATE",
+  "screening": "unsampled IndustryOR: SCREEN_FLAG (adjudicated) iff A and B agree with each other and neither matches the reference; otherwise SCREEN_KEEP (original reference kept)",
+  "tolerance": "abs(x - ref) <= max(1e-4, 1e-4*abs(ref))",
+  "type_label": "ADJUDICATE iff either batch says NL_* or LOW type confidence (or a type field is missing/invalid); equal LP/MILP/IP labels -> AUTO; differing LP/MILP/IP labels -> the label of the only batch whose objective matches the reference (AUTO_BY_REFERENCE), otherwise LINEAR_UNRESOLVED (UNRESOLVED)"
+ },
+ "schema": "orgene-r1/annotation_agent/comparison_summary/v2",
+ "screening_unsampled_industryor": {
+  "A_B_agree": 0.9661,
+  "A_matches_reference": 0.8475,
+  "B_matches_reference": 0.8136,
+  "both_match_reference": 0.8136,
+  "categories": {
+   "both_match": 48,
+   "both_off_and_agree": 9,
+   "one_matches": 2
+  },
+  "flag_ids": [
+   "industryor-0002",
+   "industryor-0005",
+   "industryor-0015",
+   "industryor-0023",
+   "industryor-0045",
+   "industryor-0054",
+   "industryor-0065",
+   "industryor-0071",
+   "industryor-0097"
+  ],
+  "flag_reasons": {
+   "A_ALT_MATCH": 6,
+   "A_AMBIGUOUS": 6,
+   "A_LOW_CONFIDENCE": 4,
+   "A_MISMATCH": 2,
+   "A_ROUNDED": 1,
+   "B_ALT_MATCH": 4,
+   "B_AMBIGUOUS": 6,
+   "B_LOW_CONFIDENCE": 4,
+   "B_MISMATCH": 4,
+   "B_ROUNDED": 1,
+   "B_STATUS_LocallyOptimal": 1,
+   "SCREEN_AB_AGREE_BOTH_OFF_REFERENCE": 9
+  },
+  "n": 59,
+  "route": {
+   "SCREEN_FLAG": 9,
+   "SCREEN_KEEP": 50
+  }
+ },
+ "type_label": {
+  "adjudicate_ids": [
+   "industryor-0017",
+   "industryor-0029",
+   "industryor-0033",
+   "industryor-0038",
+   "industryor-0045",
+   "industryor-0067",
+   "industryor-0071",
+   "industryor-0081",
+   "industryor-0082",
+   "industryor-0094",
+   "industryor-0096",
+   "industryor-0097",
+   "industryor-0099",
+   "industryor-0100"
+  ],
+  "audit_ids": [
+   "industryor-0002",
+   "industryor-0008",
+   "industryor-0012",
+   "industryor-0013",
+   "industryor-0021",
+   "industryor-0024",
+   "industryor-0036",
+   "industryor-0051",
+   "industryor-0061",
+   "industryor-0089"
+  ],
+  "auto_before_audit": 83,
+  "auto_by_reference_ids": [],
+  "kappa_5class": 0.881,
+  "kappa_effective_type": 0.9023,
+  "kappa_nl_not_linearizable_vs_rest": 0.6622,
+  "n": 100,
+  "n_both_labelled": 100,
+  "raw_agreement_5class": 0.92,
+  "reasons": {
+   "A_NL_LINEARIZABLE": 8,
+   "A_NL_NOT_LINEARIZABLE": 2,
+   "A_TYPE_LOW_CONFIDENCE": 1,
+   "BOTH_MATCH_REFERENCE": 1,
+   "B_NL_LINEARIZABLE": 11,
+   "B_NL_NOT_LINEARIZABLE": 1,
+   "B_TYPE_LOW_CONFIDENCE": 2,
+   "NEITHER_MATCHES_REFERENCE": 2,
+   "TYPE_DISAGREE": 5,
+   "TYPE_DISAGREE_LINEAR": 3
+  },
+  "route": {
+   "ADJUDICATE": 14,
+   "AUDIT": 10,
+   "AUTO": 73,
+   "UNRESOLVED": 3
+  },
+  "unresolved_ids": [
+   "industryor-0011",
+   "industryor-0042",
+   "industryor-0065"
+  ]
+ }
+}

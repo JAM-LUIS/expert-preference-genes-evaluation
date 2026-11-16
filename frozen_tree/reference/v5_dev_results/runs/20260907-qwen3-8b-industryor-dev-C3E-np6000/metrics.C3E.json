@@ -1,0 +1,58 @@
+{
+  "n": 25,
+  "exec_rate": 0.96,
+  "protocol_rate": 0.96,
+  "accuracy": 0.4,
+  "n_correct": 10,
+  "status_counts": {
+    "optimal": 21,
+    "infeasible": 3,
+    "none": 1
+  },
+  "mean_out_tokens": 905.2,
+  "mean_calls": 1.24,
+  "repaired_cases": 6,
+  "hard_issues_round0": 12,
+  "by_source": {
+    "industryor": {
+      "n": 25,
+      "exec_rate": 0.96,
+      "protocol_rate": 0.96,
+      "accuracy": 0.4,
+      "n_correct": 10,
+      "status_counts": {
+        "optimal": 21,
+        "infeasible": 3,
+        "none": 1
+      },
+      "mean_out_tokens": 905.2,
+      "mean_calls": 1.24,
+      "repaired_cases": 6,
+      "hard_issues_round0": 12
+    }
+  },
+  "gene_hard_failures": {
+    "orgene.solution.status_optimal_or_justified": {
+      "round0_fail": 6,
+      "final_fail": 4
+    },
+    "orgene.boundary.solve_before_report": {
+      "round0_fail": 1,
+      "final_fail": 0
+    },
+    "orgene.boundary.status_reported": {
+      "round0_fail": 1,
+      "final_fail": 0
+    },
+    "orgene.execution.runs": {
+      "round0_fail": 4,
+      "final_fail": 1
+    }
+  },
+  "condition": "C3E",
+  "scored_at": "2026-09-07T22:40:45.308265+00:00",
+  "tolerance": {
+    "rel": 0.0001,
+    "abs": 0.0001
+  }
+}

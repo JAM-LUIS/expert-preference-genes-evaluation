@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""Entry point: python3 runtime/orgene_cli.py <subcommand> ...  (see `--help`)."""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from orgene.cli import main  # noqa: E402
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,243 @@
+{
+ "schema": "orgene.r1.measurement_check.items.v1",
+ "problems": [
+  {
+   "problem_id": "P01",
+   "programs": [
+    "P01-A"
+   ]
+  },
+  {
+   "problem_id": "P02",
+   "programs": [
+    "P02-A",
+    "P02-B"
+   ]
+  },
+  {
+   "problem_id": "P03",
+   "programs": [
+    "P03-A",
+    "P03-B"
+   ]
+  },
+  {
+   "problem_id": "P04",
+   "programs": [
+    "P04-A",
+    "P04-B"
+   ]
+  },
+  {
+   "problem_id": "P05",
+   "programs": [
+    "P05-A"
+   ]
+  },
+  {
+   "problem_id": "P06",
+   "programs": [
+    "P06-A",
+    "P06-B",
+    "P06-C"
+   ]
+  },
+  {
+   "problem_id": "P07",
+   "programs": [
+    "P07-A",
+    "P07-B"
+   ]
+  },
+  {
+   "problem_id": "P08",
+   "programs": [
+    "P08-A",
+    "P08-B",
+    "P08-C"
+   ]
+  },
+  {
+   "problem_id": "P09",
+   "programs": [
+    "P09-A"
+   ]
+  },
+  {
+   "problem_id": "P10",
+   "programs": [
+    "P10-A",
+    "P10-B"
+   ]
+  },
+  {
+   "problem_id": "P11",
+   "programs": [
+    "P11-A",
+    "P11-B"
+   ]
+  },
+  {
+   "problem_id": "P12",
+   "programs": [
+    "P12-A",
+    "P12-B"
+   ]
+  },
+  {
+   "problem_id": "P13",
+   "programs": [
+    "P13-A",
+    "P13-B"
+   ]
+  },
+  {
+   "problem_id": "P14",
+   "programs": [
+    "P14-A",
+    "P14-B"
+   ]
+  },
+  {
+   "problem_id": "P15",
+   "programs": [
+    "P15-A",
+    "P15-B"
+   ]
+  },
+  {
+   "problem_id": "P16",
+   "programs": [
+    "P16-A",
+    "P16-B"
+   ]
+  },
+  {
+   "problem_id": "P17",
+   "programs": [
+    "P17-A"
+   ]
+  },
+  {
+   "problem_id": "P18",
+   "programs": [
+    "P18-A",
+    "P18-B",
+    "P18-C"
+   ]
+  },
+  {
+   "problem_id": "P19",
+   "programs": [
+    "P19-A"
+   ]
+  },
+  {
+   "problem_id": "P20",
+   "programs": [
+    "P20-A",
+    "P20-B",
+    "P20-C"
+   ]
+  },
+  {
+   "problem_id": "P21",
+   "programs": [
+    "P21-A",
+    "P21-B"
+   ]
+  },
+  {
+   "problem_id": "P22",
+   "programs": [
+    "P22-A",
+    "P22-B"
+   ]
+  },
+  {
+   "problem_id": "P23",
+   "programs": [
+    "P23-A",
+    "P23-B",
+    "P23-C"
+   ]
+  },
+  {
+   "problem_id": "P24",
+   "programs": [
+    "P24-A"
+   ]
+  },
+  {
+   "problem_id": "P25",
+   "programs": [
+    "P25-A"
+   ]
+  },
+  {
+   "problem_id": "P26",
+   "programs": [
+    "P26-A"
+   ]
+  },
+  {
+   "problem_id": "P27",
+   "programs": [
+    "P27-A",
+    "P27-B",
+    "P27-C"
+   ]
+  },
+  {
+   "problem_id": "P28",
+   "programs": [
+    "P28-A",
+    "P28-B",
+    "P28-C"
+   ]
+  },
+  {
+   "problem_id": "P29",
+   "programs": [
+    "P29-A"
+   ]
+  },
+  {
+   "problem_id": "P30",
+   "programs": [
+    "P30-A",
+    "P30-B",
+    "P30-C"
+   ]
+  },
+  {
+   "problem_id": "P31",
+   "programs": [
+    "P31-A",
+    "P31-B"
+   ]
+  },
+  {
+   "problem_id": "P32",
+   "programs": [
+    "P32-A",
+    "P32-B"
+   ]
+  },
+  {
+   "problem_id": "P33",
+   "programs": [
+    "P33-A",
+    "P33-B",
+    "P33-C"
+   ]
+  },
+  {
+   "problem_id": "P34",
+   "programs": [
+    "P34-A",
+    "P34-B"
+   ]
+  }
+ ]
+}

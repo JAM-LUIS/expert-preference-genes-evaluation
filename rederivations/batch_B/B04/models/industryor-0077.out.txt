@@ -1,0 +1,16 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1005.0
+  x_10_A
+  x_1_B
+  x_2_A
+  x_3_A
+  x_4_B
+  x_5_C
+  x_6_A
+  x_7_A
+  x_8_A
+  x_9_A
+  y_A
+  y_B
+  y_C

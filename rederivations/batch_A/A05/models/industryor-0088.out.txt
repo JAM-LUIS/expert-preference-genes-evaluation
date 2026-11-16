@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1.25
+  end_solid = 1.25
+  liquid_lots = 45.0
+  solid_lots = 6.25

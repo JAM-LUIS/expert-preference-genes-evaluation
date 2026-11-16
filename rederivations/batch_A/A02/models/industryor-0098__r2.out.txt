@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 137000.0
+  A = 1.0
+  B = 12.0
+INTEGERS_RELAXED: Optimal 137500.0 (2 general-integer variables made continuous; binaries kept)

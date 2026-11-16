@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 18.985714381
+  x_carrots = 0.42857143
+  x_okra = 5.5714286
+  y_beef = 1.0
+  y_cabbage = 1.0
+  y_carrots = 1.0
+  y_celery = 1.0
+  y_okra = 1.0

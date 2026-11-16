@@ -1,0 +1,94 @@
+{
+  "n": 60,
+  "exec_rate": 0.7833,
+  "protocol_rate": 0.7833,
+  "accuracy": 0.2667,
+  "n_correct": 16,
+  "status_counts": {
+    "optimal": 42,
+    "none": 13,
+    "infeasible": 5
+  },
+  "mean_out_tokens": 2065.5,
+  "mean_calls": 1.667,
+  "repaired_cases": 40,
+  "hard_issues_round0": 136,
+  "by_source": {
+    "mamo_complex_lp": {
+      "n": 60,
+      "exec_rate": 0.7833,
+      "protocol_rate": 0.7833,
+      "accuracy": 0.2667,
+      "n_correct": 16,
+      "status_counts": {
+        "optimal": 42,
+        "none": 13,
+        "infeasible": 5
+      },
+      "mean_out_tokens": 2065.5,
+      "mean_calls": 1.667,
+      "repaired_cases": 40,
+      "hard_issues_round0": 136
+    }
+  },
+  "gene_hard_failures": {
+    "orgene.artifact.spec_present": {
+      "round0_fail": 20,
+      "final_fail": 8
+    },
+    "orgene.objective.sense_consistent": {
+      "round0_fail": 20,
+      "final_fail": 8
+    },
+    "orgene.variables.domain_consistent": {
+      "round0_fail": 20,
+      "final_fail": 8
+    },
+    "orgene.constraints.implemented": {
+      "round0_fail": 20,
+      "final_fail": 8
+    },
+    "orgene.artifact.code_present": {
+      "round0_fail": 2,
+      "final_fail": 1
+    },
+    "orgene.boundary.solve_before_report": {
+      "round0_fail": 2,
+      "final_fail": 1
+    },
+    "orgene.boundary.status_reported": {
+      "round0_fail": 2,
+      "final_fail": 1
+    },
+    "orgene.execution.runs": {
+      "round0_fail": 16,
+      "final_fail": 13
+    },
+    "orgene.solution.status_optimal_or_justified": {
+      "round0_fail": 19,
+      "final_fail": 17
+    },
+    "orgene.code.tuple_key_indexing": {
+      "round0_fail": 3,
+      "final_fail": 3
+    },
+    "orgene.objective.aggregates_declared_variables": {
+      "round0_fail": 8,
+      "final_fail": 2
+    },
+    "orgene.code.sparse_index_guard": {
+      "round0_fail": 2,
+      "final_fail": 2
+    },
+    "orgene.model.linear_expressions_only": {
+      "round0_fail": 2,
+      "final_fail": 1
+    }
+  },
+  "condition": "C3",
+  "scored_at": "2026-09-07T20:26:28.012187+00:00",
+  "tolerance": {
+    "rel": 0.0001,
+    "abs": 0.0001
+  }
+}

@@ -1,0 +1,730 @@
+{
+  "schema_version": "orgene.r1.model_registry.v1",
+  "about": [
+    "Model and decoding-parameter registry (engineering item E19). Library: runtime/orgene/model_registry.py; tool: tools/model_registry.py.",
+    "entries: what a runner sends. The runners take --registry configs/model_registry.json --registry-entry <id>, refuse any call whose settings differ from the entry (seed = base + repeat index under seed_rule base+k) and record the entry's sha256 in the run's config.json. The identity block is part of the entry, so that hash also covers the weights, template, quantization, Ollama version and the server's flash attention / KV cache settings.",
+    "Decisions (opts, seed rules, purposes, timeouts, anchor provenance) are edited by hand. Observed facts are written only by `tools/model_registry.py update` from a read-only snapshot; `tools/model_registry.py check` compares the registry with the host.",
+    "Times are UTC. No host path, host name or user name is recorded."
+  ],
+  "generated": {
+    "by": "tools/model_registry.py update",
+    "snapshot_taken_at": "2026-09-29T21:07:08Z",
+    "snapshot": "configs/snapshots/model_env.20260929T210708Z.json",
+    "snapshot_sha256": "556c9dface307705464a60062fad39132e25408bd7e195185afdc4740a8459b9"
+  },
+  "entries": {
+    "orlm-llama3-8b.anchor": {
+      "backend": "llamacpp_completion",
+      "model": "orlm-llama3-8b-f16",
+      "digest": "947d1bbea4bb7e28340738666303d6785c82746f53bc188912461b9340ad249e",
+      "seed_rule": "base+k",
+      "status": "pending",
+      "opts": {
+        "temperature": 0.0,
+        "top_k": 0,
+        "top_p": 1.0,
+        "min_p": 0.0,
+        "typical_p": 1.0,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "dry_multiplier": 0.0,
+        "xtc_probability": 0.0,
+        "mirostat": 0,
+        "seed": 1,
+        "n_predict": 6000,
+        "cache_prompt": false,
+        "stop": [
+          "</s>"
+        ]
+      },
+      "purpose": "The ORLM anchor (baselines/orlm_adapter.py, E17): the official completion prompt sent verbatim to llama-server's native /completion, greedy, one call per case. While the entry is pending (status) the adapter uses it only with --allow-pending (dev rehearsal) and never for sealed (test) cases.",
+      "basis": [
+        "Official ORLM evaluation (Cardinal-Operations/ORLM @33bc47d, eval/generate.py lines 45-48): greedy decoding (temperature 0, top_p 1), stop ['</s>'], a plain completion prompt without chat template; max_tokens = max_model_len (8192) when not given.",
+        "llama-server: temperature 0 keeps only the arg-max token; every sampler that could move the arg-max is sent neutral (repeat, presence and frequency penalties, DRY, XTC, mirostat), and top_k 0, top_p 1, min_p 0, typical_p 1 switch the truncation samplers off, as vLLM's greedy decoding does. seed 1 is unused by greedy decoding and sent because every option is sent.",
+        "n_predict 6000 (draft): the output budget of the main configurations (qwen3-8b.main num_predict 6000). The alternative for 1D is -1 (generate until the 8192-token context is full, the official setting). The dev rehearsal reports the output-length distribution and the share of stop_type=limit under 6000.",
+        "cache_prompt false, one slot, no RAM prompt cache and no cache reuse (identity.server): every request evaluates its whole prompt, so a greedy output does not depend on what the previous request left in the KV cache (the cache effect recorded for Ollama in the baseline environment record, section 10.4).",
+        "identity.server is the llama-server command line the adapter builds with --launch: context 8192 (= max_position_embeddings, as the official vLLM max_model_len), KV cache f16 (the official run keeps the KV cache in 16 bits; the Ollama service on the host keeps it in q8_0 and cannot be reconfigured), flash attention off, all layers on the GPU, batch 2048 / ubatch 512 (the llama-server defaults, fixed), context shift off (generation stops at the context end)."
+      ],
+      "identity": {
+        "engine": "llama.cpp llama-server, native /completion",
+        "llama_cpp_build": 10621,
+        "llama_cpp_commit": "c1d0e7a00",
+        "gguf_file": "ORLM-LLaMA-3-8B-F16.gguf",
+        "server": {
+          "ctx_size": 8192,
+          "parallel": 1,
+          "cache_type_k": "f16",
+          "cache_type_v": "f16",
+          "flash_attn": "off",
+          "gpu_layers": "all",
+          "batch_size": 2048,
+          "ubatch_size": 512,
+          "context_shift": false,
+          "cache_ram_mib": 0,
+          "cache_reuse": 0
+        },
+        "prompt_template_sha256": "4b5e5ea9e6db1227273a65a2853a9613214278042161fa6339b7a4d332ec3f4e",
+        "prompt_rule": "TEMPLATE_q2mc_en.replace('{Question}', problem_text.strip()).strip(), sent verbatim; no BOS is added (the GGUF has no add_bos_token key, as the official HF tokenizer)"
+      },
+      "notes": "Decide before the 1D freeze: n_predict (6000 or -1), flash_attn (off or on), and whether the KV cache stays f16. Then remove the status key; the entry hash changes and the anchor's dev rehearsal is repeated with the decided entry if any setting changed."
+    },
+    "llmopt-qwen25-14b-q8.anchor": {
+      "backend": "llamacpp_completion",
+      "model": "llmopt-qwen25-14b-q8",
+      "digest": "95f2ddbbd9b87659213b5a7332ca58790d42162cb9034582f0dccdf77fce9a0f",
+      "seed_rule": "fixed",
+      "status": "pending",
+      "opts": {
+        "temperature": 0.0,
+        "top_k": 0,
+        "top_p": 1.0,
+        "min_p": 0.0,
+        "typical_p": 1.0,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "dry_multiplier": 0.0,
+        "xtc_probability": 0.0,
+        "mirostat": 0,
+        "seed": 1,
+        "n_predict": 8192,
+        "cache_prompt": false,
+        "stop": [
+          "<|im_end|>",
+          "<|endoftext|>"
+        ]
+      },
+      "purpose": "LLMOPT anchor (baseline, engineering item E18): both steps of the two-step Q2F -> F2C inference run by baselines/llmopt/run.py on llama-server's native /completion; each step is one user message rendered locally with the GGUF's chat template (baselines/llmopt/templates.py) and sent verbatim; greedy, one sample, no self-correction. While the entry is pending (status) the driver refuses sealed (test) cases.",
+      "basis": [
+        "Engineering plan 3.18 and DECISIONS R1-D5, default 11: the Q8_0 GGUF, two-step inference without self-correction.",
+        "llama-server's native /completion with the prompt rendered locally from the chat template stored in the GGUF (the Qwen2.5 template, sha256 cd8e9439..., templates.render_gguf, checked against jinja2), decided 2026-09-29 as for the ORLM anchor: KV cache f16, one slot, cache_prompt false. The Ollama service on the host keeps its KV cache in q8_0 with flash attention for every model and cannot be reconfigured; the official inference keeps 16-bit KV. No server-side template is involved.",
+        "temperature 0 (greedy), as the stage-0 baseline report recommends; the checkpoint's generation_config samples (temperature 0.7, top_p 0.8, top_k 20, repetition_penalty 1.05), a deviation stated in the paper. Every other sampler is sent neutral (top_k 0, top_p 1, min_p 0, typical_p 1, repeat, presence and frequency penalties, DRY, XTC and mirostat off), so only the arg-max token is kept, as greedy decoding does; whether repetition_penalty 1.05 is kept under greedy decoding is decided in the preregistration (llama.cpp applies it to the last 64 tokens only, HF to all).",
+        "n_predict 8192 per step, the upstream max_new_tokens of both steps, decided 2026-09-29: the anchor is outside the main comparison, so fidelity to the original method comes first (the main conditions keep 6000).",
+        "identity.server is the llama-server command line the driver builds with --launch: context 32768 (the model's context length; the F2C prompt carries a Q2F answer of up to 8192 tokens and 8192 more are generated, which 16k does not hold), one slot, KV cache f16, flash attention off, all layers on the GPU, batch 2048 / ubatch 512 (the llama-server defaults, fixed), context shift off, no RAM prompt cache and no cache reuse: every request evaluates its whole prompt, so a greedy output does not depend on the previous request.",
+        "seed 1 and one sample (seed_rule fixed); stop <|im_end|> and <|endoftext|>, the checkpoint's end-of-turn and end-of-text tokens (generation_config eos_token_id)."
+      ],
+      "identity": {
+        "engine": "llama.cpp llama-server, native /completion",
+        "llama_cpp_build": 10621,
+        "llama_cpp_commit": "c1d0e7a00",
+        "gguf_file": "LLMOPT-Qwen2.5-14B-Q8_0.gguf",
+        "server": {
+          "ctx_size": 32768,
+          "parallel": 1,
+          "cache_type_k": "f16",
+          "cache_type_v": "f16",
+          "flash_attn": "off",
+          "gpu_layers": "all",
+          "batch_size": 2048,
+          "ubatch_size": 512,
+          "context_shift": false,
+          "cache_ram_mib": 0,
+          "cache_reuse": 0
+        },
+        "prompt_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+        "prompt_rule": "templates.render_prompt: one user message -> '<|im_start|>system\\n' + the Qwen default system text + '<|im_end|>\\n<|im_start|>user\\n' + the upstream Q2F or F2C text + '<|im_end|>\\n<|im_start|>assistant\\n', sent verbatim; the server parses the special tokens and applies the model's BOS rule, and the local counter (templates.GgufCounter) does the same"
+      },
+      "notes": "status pending until the preregistration fixes the decoding (greedy decoding, repetition_penalty) before the 1D freeze; then remove the status key. The Ollama model in anchors.llmopt.ollama is the conversion record only. At --launch: weights about 15.7 GB plus about 6.4 GB of f16 KV cache for 32768 tokens; Ollama must hold no model."
+    },
+    "qwen3-8b.main": {
+      "backend": "ollama",
+      "model": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "seed_rule": "base+k",
+      "opts": {
+        "temperature": 0.0,
+        "top_k": 20,
+        "top_p": 0.95,
+        "seed": 1,
+        "num_ctx": 32768,
+        "num_predict": 6000,
+        "think": false,
+        "keep_alive": 0
+      },
+      "purpose": "qwen3:8b for every configuration of the main runs and of the dev rehearsal (C0, C1, C2, C3, C3L, C3E, C2E, C3L-ALL, ORA, and the prompt variants at temperature 0): greedy, one repeat, the model loaded cold for every call.",
+      "basis": [
+        "DECISIONS R1-D5, default 1: num_ctx 32768 for every qwen3 call (v5 mixed 16384 and 32768).",
+        "DECISIONS R1-D5, default 2: temperature 0 and seed 1; top_k 20 and top_p 0.95 (the Modelfile values) are sent explicitly so that nothing but repeat_penalty and the stop tokens is inherited.",
+        "DECISIONS R1-D5: keep_alive 0 (a warm KV cache can change greedy output).",
+        "num_predict 6000 and think false as in v5's final dev runs (np6000; thinking off)."
+      ],
+      "identity": {
+        "ollama_version": "0.33.0",
+        "weights_blob_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+        "template_blob_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+        "params_blob_sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+        "license_blob_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "8.2B",
+        "family": "qwen3",
+        "modelfile_params": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ],
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "inherited_by_calls": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ]
+        },
+        "server": {
+          "flash_attention": true,
+          "kv_cache_type": "q8_0",
+          "num_parallel": "1"
+        }
+      }
+    },
+    "qwen3-8b.var07": {
+      "backend": "ollama",
+      "model": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "seed_rule": "base+k",
+      "opts": {
+        "temperature": 0.7,
+        "top_k": 20,
+        "top_p": 0.95,
+        "seed": 1,
+        "num_ctx": 32768,
+        "num_predict": 6000,
+        "think": false,
+        "keep_alive": 0
+      },
+      "purpose": "qwen3:8b for the variance subset (the preregistered 100 problems, repeats k = 0, 1, 2): temperature 0.7, seed = 1 + k, everything else as qwen3-8b.main.",
+      "basis": [
+        "DECISIONS R1-D5, default 2: temperature 0.7 with top_p 0.95 and top_k 20 written explicitly; seed = base + k.",
+        "The seed base is 1, the same as the main runs (the default does not name a base; recorded here as the setting in use)."
+      ],
+      "identity": {
+        "ollama_version": "0.33.0",
+        "weights_blob_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+        "template_blob_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+        "params_blob_sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+        "license_blob_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "8.2B",
+        "family": "qwen3",
+        "modelfile_params": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ],
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "inherited_by_calls": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ]
+        },
+        "server": {
+          "flash_attention": true,
+          "kv_cache_type": "q8_0",
+          "num_parallel": "1"
+        }
+      }
+    },
+    "qwen3-8b.r0-v5": {
+      "backend": "ollama",
+      "model": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "seed_rule": "base+k",
+      "opts": {
+        "temperature": 0.0,
+        "top_k": 20,
+        "top_p": 0.95,
+        "seed": 1,
+        "num_ctx": 16384,
+        "num_predict": 6000,
+        "think": false,
+        "keep_alive": "30m"
+      },
+      "purpose": "R0 regression only, step 1: dev C0 through the R1 pipeline with v5's settings (num_ctx 16384, keep_alive 30m), compared with v5's dev outputs. Never used for a reported result.",
+      "basis": [
+        "Engineering plan 5.1 B4 (R0 regression).",
+        "v5 ran C0, C1 and C2 with num_ctx 16384 and its runner's default keep_alive of 30m; v5 did not send top_k and top_p, which is the same as sending the Modelfile values 20 and 0.95."
+      ],
+      "identity": {
+        "ollama_version": "0.33.0",
+        "weights_blob_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+        "template_blob_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+        "params_blob_sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+        "license_blob_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "8.2B",
+        "family": "qwen3",
+        "modelfile_params": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ],
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "inherited_by_calls": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ]
+        },
+        "server": {
+          "flash_attention": true,
+          "kv_cache_type": "q8_0",
+          "num_parallel": "1"
+        }
+      }
+    },
+    "qwen3-8b.r0-ctx16k": {
+      "backend": "ollama",
+      "model": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "seed_rule": "base+k",
+      "opts": {
+        "temperature": 0.0,
+        "top_k": 20,
+        "top_p": 0.95,
+        "seed": 1,
+        "num_ctx": 16384,
+        "num_predict": 6000,
+        "think": false,
+        "keep_alive": 0
+      },
+      "purpose": "R0 regression only, step 2: v5's context (16384) with cold loads, so that r0-v5 -> r0-ctx16k isolates keep_alive and r0-ctx16k -> main isolates num_ctx (the check of default 1). Never used for a reported result.",
+      "basis": [
+        "Engineering plan 5.1 B4 and DECISIONS R1-D5, default 1 (check that 16384 and 32768 give the same outputs)."
+      ],
+      "identity": {
+        "ollama_version": "0.33.0",
+        "weights_blob_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+        "template_blob_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+        "params_blob_sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+        "license_blob_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+        "quantization_level": "Q4_K_M",
+        "parameter_size": "8.2B",
+        "family": "qwen3",
+        "modelfile_params": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ],
+          "temperature": 0.6,
+          "top_k": 20,
+          "top_p": 0.95
+        },
+        "inherited_by_calls": {
+          "repeat_penalty": 1,
+          "stop": [
+            "<|im_start|>",
+            "<|im_end|>"
+          ]
+        },
+        "server": {
+          "flash_attention": true,
+          "kv_cache_type": "q8_0",
+          "num_parallel": "1"
+        }
+      }
+    },
+    "gptoss-20b.main": {
+      "backend": "ollama",
+      "model": "gpt-oss-20b-date20260929:latest",
+      "digest": "05290e9c52a55a67c3f6e9cec3f625de0e37af63ef9a0e154085aba08dd4283a",
+      "seed_rule": "base+k",
+      "opts": {
+        "temperature": 0.0,
+        "top_k": 40,
+        "top_p": 0.9,
+        "seed": 1,
+        "num_ctx": 32768,
+        "num_predict": 6000,
+        "think": "low",
+        "keep_alive": 0
+      },
+      "purpose": "gpt-oss:20b (open weights, Apache-2.0, not of the qwen family), the second model (D6 as changed 2026-09-29): C0, C1, C2, C3, C3E and C3L on test and in the 20-case dev rehearsal; greedy, one repeat, the model loaded cold for every call; reasoning at the lowest level, since it cannot be switched off. Called through the fixed-date alias gpt-oss-20b-date20260929 (models below), whose weights are gpt-oss:20b's.",
+      "basis": [
+        "D6 (2026-09-29): gpt-oss:20b replaces the API model; its reasoning cannot be turned off, so the lowest level (low) is used and reported.",
+        "Same generation settings as qwen3-8b.main where they apply: temperature 0, seed 1 (base + k), num_ctx 32768, num_predict 6000, keep_alive 0 (DECISIONS R1-D5).",
+        "think 'low': Ollama 0.33 accepts true, false, 'low', 'medium', 'high' and 'max' and answers 400 to other values; for gpt-oss a level becomes the 'Reasoning: <level>' line of the system message, true or no field give 'Reasoning: medium', and false only removes the line (the model still reasons and the answer's analysis channel still comes back as thinking; on a probe its reasoning was then longer than at medium). E23 probes, experiments/20260929-gptoss-20b-think-probe.",
+        "top_k 40 and top_p 0.9 are Ollama's own defaults (the gpt-oss:20b Modelfile sets only temperature 1), sent explicitly; at temperature 0 they change nothing: top_k 20 / top_p 0.95 gave byte-identical content and thinking on a smoke case, as did repeat_penalty 1.0 against not sending it (so no penalty applies by default), while repeat_penalty 1.3 changed the answer (E23 decoding probe).",
+        "Fixed-date alias: the gpt-oss template writes the server's local date into the system message ('Current date: YYYY-MM-DD'; confirmed from the server's own token ids of a rendered prompt), so the prompt would change at midnight. The alias fixes it to 2026-09-29 and changes nothing else in the prompt: same weights, license and params blobs; on 2026-09-29 the server's token ids of a probe prompt and the answer (content and thinking) to a smoke case were identical under both tags.",
+        "Local counts: render_gptoss (port of the template, checked against Go text/template) + o200k_harmony (tiktoken in .venv-tools; the blob's vocabulary equals it id for id) — runtime/orgene/tokcount_harmony.py; tokenizers.gpt_oss below."
+      ],
+      "notes": "num_predict 6000 fixed 2026-10-06 from the dev rehearsal (93 calls: median 831, 90th percentile 1,573, maximum 4,749 output tokens, none at the limit); reasoning tokens count against it. The alias's config reports quantization_level 'unknown' (ollama create writes file_type 'unknown'); the weights blob is gpt-oss:20b's MXFP4 blob (models.gpt-oss:20b).",
+      "identity": {
+        "ollama_version": "0.33.0",
+        "weights_blob_sha256": "e7b273f9636059a689e3ddcab3716e4f65abe0143ac978e46673ad0e52d09efb",
+        "template_blob_sha256": "5dc90082f15d02604c27bdcf974d45f68d003c46cee76249d9cb4f607825c64c",
+        "params_blob_sha256": "d8ba2f9a17b3bbdeb5690efaa409b3fcb0b56296a777c7a69c78aa33bbddf182",
+        "license_blob_sha256": "f60356777647e927149cbd4c0ec1314a90caba9400ad205ddc4ce47ed001c2d6",
+        "quantization_level": "unknown",
+        "parameter_size": "20.9B",
+        "family": "gptoss",
+        "modelfile_params": {
+          "temperature": 1
+        },
+        "inherited_by_calls": {},
+        "server": {
+          "flash_attention": true,
+          "kv_cache_type": "q8_0",
+          "num_parallel": "1"
+        }
+      }
+    }
+  },
+  "models": {
+    "qwen3-8b-ctx32k:latest": {
+      "role": "Long-context alias of qwen3:8b (created 2026-09-28 by the baseline-environment task) for /v1 clients that cannot send options. R1's own runners call qwen3:8b through /api/chat with every option sent, so no entry uses the alias.",
+      "same_weights_as": "qwen3:8b",
+      "digest": "c009fe1fdc2681a9e203cdedf4edba17b780f16642b68c759edf93f4d4058ce2",
+      "weights_blob_sha256": "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f",
+      "template_blob_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4",
+      "params_blob_sha256": "97c97f892d4ab8ca8b070b23b2420c1a948ad3f6eb82bf3313540a13bfc40284",
+      "license_blob_sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "params_blob_text": "{\"num_ctx\":32768,\"num_predict\":6000,\"repeat_penalty\":1,\"seed\":1,\"stop\":[\"\\u003c|im_start|\\u003e\",\"\\u003c|im_end|\\u003e\"],\"temperature\":0,\"top_k\":20,\"top_p\":0.95}\n",
+      "params": {
+        "num_ctx": 32768,
+        "num_predict": 6000,
+        "repeat_penalty": 1,
+        "seed": 1,
+        "stop": [
+          "<|im_start|>",
+          "<|im_end|>"
+        ],
+        "temperature": 0,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "quantization_level": "Q4_K_M",
+      "modelfile_directives": [
+        "FROM qwen3:8b",
+        "PARAMETER num_ctx 32768",
+        "PARAMETER temperature 0",
+        "PARAMETER seed 1",
+        "PARAMETER num_predict 6000"
+      ],
+      "modelfile_sha256": "94eff2ecd570e8bbad842e5f8ff6aa1d4b02950f1d89fc16908ca6dae0620302",
+      "caution": "The Modelfile (hash above; it also has four comment lines, not kept here) cannot turn thinking off. Through /v1 without temperature Ollama samples at 1.0 whatever the Modelfile says, so a client of the alias sends temperature, seed and reasoning_effort none on every call; at temperature > 0 it must override the alias's fixed temperature 0 and seed 1 on every call.",
+      "show_template_sha256": "ae370d884f108d16e7cc8fd5259ebc5773a0afa6e078b11f4ed7e39a27e0dfc4"
+    },
+    "gpt-oss-20b-date20260929:latest": {
+      "role": "Fixed-date alias of gpt-oss:20b, created 2026-09-29 (E23) with configs/ollama/gpt-oss-20b-date20260929.Modelfile; used by entry gptoss-20b.main. Its template is the template blob of gpt-oss:20b with {{ currentDate }} replaced by 2026-09-29; weights, license and params are gpt-oss:20b's.",
+      "modelfile_directives": [
+        "FROM gpt-oss:20b",
+        "TEMPLATE <the template blob of gpt-oss:20b (sha256 fa6710a93d78da62641e192361344be7a8c0a1c3737f139cf89f20ce1626b99c) with {{ currentDate }} replaced by 2026-09-29>"
+      ],
+      "modelfile_sha256": "300ad91399c935657d7c45ca1a385a1d0265f0a23a9705623b342a2a6a9dc3f7",
+      "caution": "Recreate it only from the Modelfile in configs/ollama (no network needed: FROM a local model). ollama create writes file_type 'unknown' into the alias's config, so /api/tags reports quantization 'unknown' although the weights blob is the MXFP4 blob of gpt-oss:20b.",
+      "digest": "05290e9c52a55a67c3f6e9cec3f625de0e37af63ef9a0e154085aba08dd4283a",
+      "weights_blob_sha256": "e7b273f9636059a689e3ddcab3716e4f65abe0143ac978e46673ad0e52d09efb",
+      "template_blob_sha256": "5dc90082f15d02604c27bdcf974d45f68d003c46cee76249d9cb4f607825c64c",
+      "params_blob_sha256": "d8ba2f9a17b3bbdeb5690efaa409b3fcb0b56296a777c7a69c78aa33bbddf182",
+      "license_blob_sha256": "f60356777647e927149cbd4c0ec1314a90caba9400ad205ddc4ce47ed001c2d6",
+      "params_blob_text": "{\"temperature\":1}\n",
+      "params": {
+        "temperature": 1
+      },
+      "quantization_level": "unknown",
+      "show_template_sha256": "5dc90082f15d02604c27bdcf974d45f68d003c46cee76249d9cb4f607825c64c"
+    },
+    "gpt-oss:20b": {
+      "role": "Base model of the fixed-date alias (Ollama library gpt-oss:20b, pulled 2026-09-05; OpenAI, Apache-2.0). No entry calls it: its template writes the server's local date into every prompt.",
+      "same_weights_as": "gpt-oss-20b-date20260929:latest",
+      "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+      "weights_blob_sha256": "e7b273f9636059a689e3ddcab3716e4f65abe0143ac978e46673ad0e52d09efb",
+      "template_blob_sha256": "fa6710a93d78da62641e192361344be7a8c0a1c3737f139cf89f20ce1626b99c",
+      "params_blob_sha256": "d8ba2f9a17b3bbdeb5690efaa409b3fcb0b56296a777c7a69c78aa33bbddf182",
+      "license_blob_sha256": "f60356777647e927149cbd4c0ec1314a90caba9400ad205ddc4ce47ed001c2d6",
+      "params_blob_text": "{\"temperature\":1}\n",
+      "params": {
+        "temperature": 1
+      },
+      "quantization_level": "MXFP4",
+      "show_template_sha256": "fa6710a93d78da62641e192361344be7a8c0a1c3737f139cf89f20ce1626b99c"
+    }
+  },
+  "api_models": {
+    "status": "pending: the author has not chosen the API model (D6). Requirements: a dated snapshot id, seed support, an offline tokenizer.",
+    "record_per_model": [
+      "requested_id",
+      "dated_snapshot",
+      "seed_supported",
+      "tokenizer (offline encoding file and its sha256)",
+      "observed.returned_models",
+      "observed.system_fingerprints",
+      "observed.call_dates_utc",
+      "observed.n_calls",
+      "observed.n_model_mismatch"
+    ],
+    "allowlist": [],
+    "models": {}
+  },
+  "anchors": {
+    "orlm": {
+      "hf_repo": "CardinalOperations/ORLM-LLaMA-3-8B",
+      "hf_revision": "94fdc3c5738c6536d4880dc19a78f215529181c5",
+      "license": "Llama 3 Community License (weights). Converted files stay on the host and are not distributed.",
+      "safetensors_sha256": {
+        "model-00001-of-00004.safetensors": "fd9030d7db17ee563b6aba5599b755f9277e1b93054ac17d97127aca5bf0fd88",
+        "model-00002-of-00004.safetensors": "89f5a7439fc9bb8bde3f625edccd52c287992d723715b8ad028a5290c8a82284",
+        "model-00003-of-00004.safetensors": "2782630b83a0d4ef2034cccfc915f21baf4ea3a5bc850fd12fb746d620bf71f5",
+        "model-00004-of-00004.safetensors": "537887517eaff104486aea39ca08467d608d898cbc5a19555da6f45cdbc6f103"
+      },
+      "other_files_sha256": {
+        "LICENSE": "809cfabd38484bd120f5a69d4033a3a77eee06445286040c161658d9825ca16e",
+        "config.json": "55a2e8435904f8d3f1ea85ea51fd6af613b49adf29c4e33b1dfc191fdacbfc3b",
+        "generation_config.json": "fb7e50d9e70cc16603bcb6ee94d314f26a2af4698f4c02055c388f79ae9f3a9c",
+        "gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+        "model.safetensors.index.json": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+        "special_tokens_map.json": "849070cae53bd45439e64ce5b1ddd650a66081b1bd47895c5a58939a05055579",
+        "tokenizer.json": "d6cdd8205049f318ac8821e2a6e0bc32d0c7c8a4c0b92cbe3df16244bd873904",
+        "tokenizer_config.json": "c5c96eed84712e843610d03dc38f2329a40a02717898e4a87909d97c09c27459"
+      },
+      "gguf": {
+        "file": "ORLM-LLaMA-3-8B-F16.gguf",
+        "sha256": "947d1bbea4bb7e28340738666303d6785c82746f53bc188912461b9340ad249e",
+        "outtype": "f16 (general.file_type 1), converted from BF16",
+        "converter": "llama.cpp convert_hf_to_gguf.py at commit c1d0e7a004015f23bc0233470b747b596f29b264 (tag b10621)"
+      },
+      "ollama": {
+        "model": "orlm-llama3-8b-f16:latest",
+        "digest": "b7c3a4df3b78e95d3ab362611727fdc536cc0032bc44f561de38f63bad303519",
+        "weights_blob_sha256": "546d70a871f91e19ba2276b0a45746335506be3993f6bfce18785baaa2e334d6",
+        "template_blob_sha256": "c1b96c841ee1d7a0e311eeedad4f2d765b31806c6f1838ba2ad25682bb5f9a69",
+        "params_blob_sha256": "bab064881b8af41e59cba6cc0c29f7340a7533d9b3a2c115f37fcd8173ac9cad",
+        "note": "ollama create stored the GGUF re-ordered (same metadata and tensors, different order), so the weights blob is not the GGUF's sha256.",
+        "quantization_level": "F16",
+        "modelfile_params": {
+          "num_ctx": 8192,
+          "num_predict": 6000,
+          "repeat_penalty": 1,
+          "seed": 1,
+          "stop": [
+            "</s>",
+            "<|end_of_text|>"
+          ],
+          "temperature": 0,
+          "top_p": 1
+        },
+        "show_template_sha256": "c1b96c841ee1d7a0e311eeedad4f2d765b31806c6f1838ba2ad25682bb5f9a69"
+      },
+      "run_settings": "Runner entry orlm-llama3-8b.anchor (backend llamacpp_completion, E17); status pending until the 1D freeze decides the decoding settings and the output budget.",
+      "provenance": "Baseline-environment record of 2026-09-28 (outside the repository): every file's sha256 checked against the HF API, GGUF and blobs re-hashed on the host."
+    },
+    "llmopt": {
+      "hf_repo": "ant-opt/LLMOPT-Qwen2.5-14B",
+      "hf_revision": "ed0ae2dd051aec57989eedef064ce7e445b6726a",
+      "license": "HF license tag mit; the LLMOPT code repository has no license file, so its prompts are used for internal evaluation only and are not distributed.",
+      "safetensors_sha256": {
+        "model-00001-of-00012.safetensors": "95c706c6b5136a08e3e8f071599d6b5b96fc20a1a2e3c40a5a1a334e3339c329",
+        "model-00002-of-00012.safetensors": "14aa997b6f1b9f1cfb1120ffa2a321749bbfa6a57f8134bb2c93071fa32f9e7b",
+        "model-00003-of-00012.safetensors": "5f438546893e135375ace348b3f713f8c9819e6f6b4aee6f69ee76b675367cc1",
+        "model-00004-of-00012.safetensors": "cd3d9a4a721cfebbca82674a2bfdcd13a7d33629a7bd17a67d786993c2404f1d",
+        "model-00005-of-00012.safetensors": "cd6c404a9ce5184cdebebfa846c0f8a17146b50a10263b4dce6b40af4d9c2181",
+        "model-00006-of-00012.safetensors": "887c52e455e6784f57949e1a668029d3e78159ddfee13d07a2070c26b97de951",
+        "model-00007-of-00012.safetensors": "d6ae035460031e08589cdefc6d92c6f4660290f6b3a9f11385ea8dbf62480a02",
+        "model-00008-of-00012.safetensors": "a09acbd245bce6ca6e3e0ed6ca2982662e29fca5001f4c6ec68ed24ebd47412b",
+        "model-00009-of-00012.safetensors": "4fd2099912c8a3b8636a3a00808d40e15aa38f16c2c42b88d9ee87f985605906",
+        "model-00010-of-00012.safetensors": "006699bbe3e91e44d068ffb88278fa9b14a7c65028c8fe9ecbc054eb30005abe",
+        "model-00011-of-00012.safetensors": "71291331ea3fbc32c9d37e8fb00514e4c3f214e8cd1281db2b659af18d3a61e8",
+        "model-00012-of-00012.safetensors": "ea2d9d62cc626b615612c39967757751f05e1a44465a6c8434f93c87b0c3e8a9"
+      },
+      "other_files_sha256": {
+        "config.json": "e57c07d7c027680197478c45d232f874d8a641122e3f7a14a5ef081d52075f4a",
+        "generation_config.json": "5918947c0207039638e94da583dda6ee88567bc03342ff98ef5a7cc10f64b746",
+        "gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+        "model.safetensors.index.json": "fe4e87aba786de956e2398a845235db29acff9a0d9eb1ad12dc430075096f22e",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "gguf": {
+        "file": "LLMOPT-Qwen2.5-14B-Q8_0.gguf",
+        "sha256": "95f2ddbbd9b87659213b5a7332ca58790d42162cb9034582f0dccdf77fce9a0f",
+        "outtype": "q8_0 (general.file_type 7), converted directly from F32",
+        "converter": "llama.cpp convert_hf_to_gguf.py at commit c1d0e7a004015f23bc0233470b747b596f29b264 (tag b10621)"
+      },
+      "ollama": {
+        "model": "llmopt-qwen25-14b-q8:latest",
+        "digest": "463fff170f4580e1f6c8494c0b7645f3918e4bd39b1283e1e18373db5dd1ff96",
+        "weights_blob_sha256": "946e15da901077b69413c7677ce69048ba8a95969202e8d464d6ad4dfa81539e",
+        "template_blob_sha256": "5d00c7c57b65651906a5696cf5fac099016152eaa49d682bcfd2cc4533464ead",
+        "params_blob_sha256": "aaba15f69889b0f902c969db76415813e3790e315c4e1ed4f7d43e19736a9794",
+        "note": "ollama create stored the GGUF re-ordered (same metadata and tensors, different order), so the weights blob is not the GGUF's sha256.",
+        "quantization_level": "Q8_0",
+        "modelfile_params": {
+          "num_ctx": 32768,
+          "num_predict": 8192,
+          "repeat_penalty": 1,
+          "seed": 1,
+          "stop": [
+            "<|im_end|>",
+            "<|endoftext|>"
+          ],
+          "temperature": 0
+        },
+        "show_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+      },
+      "run_settings": "runner entry llmopt-qwen25-14b-q8.anchor: llama-server's native /completion (backend llamacpp_completion) with the prompt rendered locally from the GGUF's chat template, KV cache f16, one slot, cache_prompt false; status pending until the preregistration fixes the decoding before the 1D freeze. The Ollama model below (anchors.llmopt.ollama) is the conversion record only; no runner entry uses it.",
+      "provenance": "Baseline-environment record of 2026-09-28 (outside the repository): every file's sha256 checked against the HF API, GGUF and blobs re-hashed on the host."
+    }
+  },
+  "server": {
+    "ollama": {
+      "version": "0.33.0",
+      "flash_attention": true,
+      "kv_cache_type": "q8_0",
+      "settings": {
+        "OLLAMA_CONTEXT_LENGTH": "0",
+        "OLLAMA_FLASH_ATTENTION": "true",
+        "OLLAMA_GPU_OVERHEAD": "0",
+        "OLLAMA_KEEP_ALIVE": "5m0s",
+        "OLLAMA_KV_CACHE_TYPE": "q8_0",
+        "OLLAMA_LOAD_TIMEOUT": "5m0s",
+        "OLLAMA_MAX_LOADED_MODELS": "0",
+        "OLLAMA_NOPRUNE": "false",
+        "OLLAMA_NUM_PARALLEL": "1",
+        "OLLAMA_SCHED_SPREAD": "false"
+      },
+      "sources_agree": true,
+      "sources": {
+        "launchd_job": {
+          "OLLAMA_FLASH_ATTENTION": "1",
+          "OLLAMA_KV_CACHE_TYPE": "q8_0"
+        },
+        "process_env": {
+          "OLLAMA_FLASH_ATTENTION": "1",
+          "OLLAMA_KV_CACHE_TYPE": "q8_0"
+        },
+        "startup_log": {
+          "OLLAMA_FLASH_ATTENTION": "true",
+          "OLLAMA_KV_CACHE_TYPE": "q8_0"
+        }
+      },
+      "process_started_at": "2026-08-27T21:19:55Z",
+      "startup_logged_at": "2026-08-27T21:19:56Z",
+      "model_load_evidence": {
+        "546d70a871f91e19ba2276b0a45746335506be3993f6bfce18785baaa2e334d6": {
+          "flash_attn_seen": [
+            "enabled"
+          ],
+          "kv_cache_seen": [
+            "q8_0/q8_0"
+          ]
+        },
+        "946e15da901077b69413c7677ce69048ba8a95969202e8d464d6ad4dfa81539e": {
+          "flash_attn_seen": [
+            "enabled"
+          ],
+          "kv_cache_seen": [
+            "q8_0/q8_0"
+          ]
+        },
+        "a3de86cd1c132c822487ededd47a324c50491393e6565cd14bafa40d0b8e686f": {
+          "flash_attn_seen": [
+            "enabled"
+          ],
+          "kv_cache_seen": [
+            "q8_0/q8_0"
+          ]
+        },
+        "e7b273f9636059a689e3ddcab3716e4f65abe0143ac978e46673ad0e52d09efb": {
+          "flash_attn_seen": [
+            "enabled"
+          ],
+          "kv_cache_seen": [
+            "q8_0/q8_0"
+          ]
+        }
+      },
+      "policy": "Not changed by this project: the server is neither restarted nor reconfigured (DECISIONS R1-D5). Flash attention and the q8_0 KV cache apply to every model this server loads: v5's runs, all R1 runs and the anchors. Official ORLM/LLMOPT inference keeps a 16-bit KV cache, so the anchors deviate here as well. The paper states both settings.",
+      "read_how": "Read-only, from three places that must agree: the launchd job that starts the server, the running server process's environment, and the server log's start-up line; the same log shows what every load of a registered weight blob ran with (model_load_evidence)."
+    }
+  },
+  "execution": {
+    "interpreter": "$ORGENE_PY, default /opt/homebrew/bin/python3 (runtime/orgene/env.py); never taken from PATH",
+    "python_version": "3.14.7",
+    "machine": "arm64",
+    "pulp_version": "3.3.2",
+    "cbc_version": "2.10.13",
+    "timeout_s": 60,
+    "timeout_s_engineering_cases": 600,
+    "timeouts_basis": "60 s as in v5 (execute.run_program). The engineering-source cases (E22) are reported at 60 s and again at 600 s, both from the same model outputs."
+  },
+  "baselines": {
+    "environment": "A separate virtual environment for the baseline programs (outside the repository); the main configurations' programs never run in it.",
+    "python_version": "3.14.7",
+    "packages": {
+      "coptpy": "8.0.7",
+      "pyomo": "6.10.1",
+      "numpy": "2.5.3",
+      "gguf": "0.19.0",
+      "transformers": "4.57.6",
+      "torch": "2.11.0"
+    },
+    "glpk_version": "5.0",
+    "llama_cpp": {
+      "version": "0.3.0",
+      "build": 10621,
+      "commit": "c1d0e7a00"
+    },
+    "copt_license": {
+      "mode": "no license file: COPT's built-in size-limited mode for non-commercial use",
+      "limits": "MIP 2000 variables x 2000 constraints; LP 10000 variables x 10000 constraints (measured 2026-09-28)",
+      "decision": "No license is applied for: the limits suffice for these benchmarks (author, 2026-09-28). Pending: the author confirms that the use is academic.",
+      "license_file_found": false
+    },
+    "solvers": "Pyomo programs use the Homebrew CBC 2.10.13 (the binary of the main runs) or glpk; coptpy programs use the COPT bundled with coptpy."
+  },
+  "tokenizers": {
+    "llama_tokenize": {
+      "use": "local token counts for qwen3, read from the Ollama weights blob (E09)",
+      "version": "0.3.0",
+      "build": 10621,
+      "commit": "c1d0e7a00"
+    },
+    "api": "pending: the API model's offline tokenizer (encoding file and its sha256) is recorded once the model is chosen (D6; E09, E10).",
+    "gpt_oss": {
+      "use": "local token counts for gpt-oss (E23): runtime/orgene/tokcount_harmony.py through tokcount.OllamaCounter",
+      "renderer": "gptoss-ollama-template.v1 (render_gptoss; the base template writes the local date, the alias template 2026-09-29)",
+      "templates": {
+        "fa6710a93d78da62641e192361344be7a8c0a1c3737f139cf89f20ce1626b99c": "gpt-oss:20b (server's local date)",
+        "5dc90082f15d02604c27bdcf974d45f68d003c46cee76249d9cb4f607825c64c": "gpt-oss-20b-date20260929 (2026-09-29)"
+      },
+      "default": "tiktoken",
+      "tiktoken": {
+        "encoding": "o200k_harmony",
+        "built_from": "o200k_base (configs/venv_tools.json)",
+        "encoding_sha256": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d",
+        "version": "0.14.0"
+      },
+      "llama_tokenize": {
+        "recipe": {
+          "id": "ollama-gptoss-compat.v1",
+          "architecture": "gpt-oss",
+          "overrides": {
+            "tokenizer.ggml.pre": "gpt-4o"
+          }
+        },
+        "from_weights_sha256": "e7b273f9636059a689e3ddcab3716e4f65abe0143ac978e46673ad0e52d09efb",
+        "derived_gguf_sha256": "e200fbaa17b087d350b08a3fae9e166e31c6c04b4fe5cbb57e26b82e7901fcbb",
+        "select": "ORGENE_GPTOSS_TOKENIZER=llama-tokenize"
+      },
+      "checks": "tools/gptoss_tokenizer_check.py (vocab: every id of the blob equals o200k_harmony, 1069 unused reserved ids named differently; server: the server's own token ids of rendered prompts; llama: the two tokenizers)"
+    }
+  }
+}

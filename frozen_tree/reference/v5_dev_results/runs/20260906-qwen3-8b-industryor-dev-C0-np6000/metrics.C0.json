@@ -1,0 +1,82 @@
+{
+  "n": 25,
+  "exec_rate": 0.88,
+  "protocol_rate": 0.84,
+  "accuracy": 0.4,
+  "n_correct": 10,
+  "status_counts": {
+    "optimal": 19,
+    "infeasible": 2,
+    "none": 4
+  },
+  "mean_out_tokens": 725.4,
+  "mean_calls": 1.0,
+  "repaired_cases": 0,
+  "hard_issues_round0": 116,
+  "by_source": {
+    "industryor": {
+      "n": 25,
+      "exec_rate": 0.88,
+      "protocol_rate": 0.84,
+      "accuracy": 0.4,
+      "n_correct": 10,
+      "status_counts": {
+        "optimal": 19,
+        "infeasible": 2,
+        "none": 4
+      },
+      "mean_out_tokens": 725.4,
+      "mean_calls": 1.0,
+      "repaired_cases": 0,
+      "hard_issues_round0": 116
+    }
+  },
+  "gene_hard_failures": {
+    "orgene.artifact.spec_present": {
+      "round0_fail": 25,
+      "final_fail": 25
+    },
+    "orgene.objective.sense_consistent": {
+      "round0_fail": 25,
+      "final_fail": 25
+    },
+    "orgene.variables.domain_consistent": {
+      "round0_fail": 25,
+      "final_fail": 25
+    },
+    "orgene.constraints.implemented": {
+      "round0_fail": 25,
+      "final_fail": 25
+    },
+    "orgene.model.linear_expressions_only": {
+      "round0_fail": 3,
+      "final_fail": 3
+    },
+    "orgene.solution.status_optimal_or_justified": {
+      "round0_fail": 6,
+      "final_fail": 6
+    },
+    "orgene.boundary.solve_before_report": {
+      "round0_fail": 1,
+      "final_fail": 1
+    },
+    "orgene.boundary.status_reported": {
+      "round0_fail": 1,
+      "final_fail": 1
+    },
+    "orgene.execution.runs": {
+      "round0_fail": 4,
+      "final_fail": 4
+    },
+    "orgene.code.pulp_api_exists": {
+      "round0_fail": 1,
+      "final_fail": 1
+    }
+  },
+  "condition": "C0",
+  "scored_at": "2026-09-06T17:11:41.824826+00:00",
+  "tolerance": {
+    "rel": 0.0001,
+    "abs": 0.0001
+  }
+}

@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 150.0
+  x1 = 3.0
+INTEGERS_RELAXED: Optimal 150.0 (0 general-integer variables made continuous; binaries kept)
+ALT time<=c continuous: Optimal 150.0
+INTEGER_VERSION: Optimal 150.0

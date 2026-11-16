@@ -1,0 +1,21 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 10755.0
+  inv_III_4 = 150.0
+  inv_II_2 = 138.0
+  inv_II_3 = 563.0
+  inv_II_4 = 150.0
+  inv_I_1 = 1000.0
+  inv_I_4 = 150.0
+  x_III_1 = 1000.0
+  x_III_2 = 2000.0
+  x_III_3 = 1500.0
+  x_III_4 = 2650.0
+  x_II_1 = 1500.0
+  x_II_2 = 1638.0
+  x_II_3 = 1625.0
+  x_II_4 = 1087.0
+  x_I_1 = 2500.0
+  x_I_3 = 2000.0
+  x_I_4 = 1350.0
+INTEGERS_RELAXED: Optimal 10750.0 (36 general-integer variables made continuous; binaries kept)

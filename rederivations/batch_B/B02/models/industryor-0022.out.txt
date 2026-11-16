@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 270289.99999999994
+  x_A2 = 4500.0
+  x_A3 = 5400.0
+  y_A2 = 1.0
+  y_A3 = 1.0

@@ -1,0 +1,26 @@
+{
+  "kind": "subset",
+  "name": "industryor_main_rev2026_100_excl0905",
+  "rule": "dev = parent dev ∩ subset; test = parent test ∩ subset; no case changes side; cases outside the subset are dropped, never re-sampled",
+  "parent_lock": "data/splits/industryor/SPLIT_LOCK.json",
+  "parent_lock_sha256": "eb297b16ffe41e8c3f7f20686bbc81af578191ed07cf39b8918fab47d8990a13",
+  "parent_dev_sha256": "f45a5a02b8afaf74075c34fdf1b983fb499cf005f1d342f5de3be0c58ad22868",
+  "parent_test_sha256": "e2233fd44afe90d626734db3807ea6e1efa29052ac43526c8429403585c2ce88",
+  "cases_path": "data/cases/industryor.jsonl",
+  "cases_sha256": "13ae3ea9a4c13482904b2cc1ca3e80440ece10140dfa27af3b72a72d11adcec6",
+  "seed": 20260905,
+  "subset_source": {
+    "path": "data/analysis_sets/analysis_sets.v2.json",
+    "sha256": "6baf6b7f8678e78f12884f5775ebbfda8d4b396e9b793abee6133f1462a5205d",
+    "set": "industryor_main_rev2026_100_excl0905"
+  },
+  "subset_sha256": "33ae5a8d0febf460bac7c80a2aa1d1d609d6aea11837d0daca87bbf7ab130447",
+  "n_dev": 25,
+  "n_test": 71,
+  "dev_sha256": "f45a5a02b8afaf74075c34fdf1b983fb499cf005f1d342f5de3be0c58ad22868",
+  "test_sha256": "c38c425df2a7b135a0725358af49c637a6d2d55237a772b169c17c5d15b43525",
+  "n_removed_dev": 0,
+  "n_removed_test": 4,
+  "removed_dev_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "removed_test_sha256": "9877d814e255eff3c9edf850c565e95cf694a9d31628a1974642f5345f6895e4"
+}

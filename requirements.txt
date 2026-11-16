@@ -1,0 +1,2 @@
+# The version used in the evaluation. It brings the CBC solver. Needs Python 3.10 or newer.
+pulp==3.3.2

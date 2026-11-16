@@ -1,0 +1,14 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 0.0
+  level values: [0.0, 0.0, 0.0, 0.0, 0.0]
+  dev_A_idle = 0.0
+  dev_A_ot_over20 = 0.0
+  dev_A_over = 0.0
+  dev_B_idle = 0.0
+  dev_B_over = 100.0
+  dev_cost_over = 0.0
+  dev_mw_short = 0.0
+  dev_wh_short = 0.0
+  microwaves = 100.0
+  water_heaters = 50.0

@@ -1,0 +1,14 @@
+[
+ {"name": "probe_workflow", "messages": [{"role": "user", "content": "The following is a synthetic text used only to test prompt rendering. $\\min_{x} f(x)$ s.t. $g(x) \\leq b$, where $x = (x_1, \\ldots, x_d)^\\top$.\n```\n## Sets: \n[You need to fill in]\n```\nKeep {{ braces }}, `backticks` and a trailing newline.\n"}]},
+ {"name": "probe_tool_turn", "messages": [{"role": "user", "content": "Probe A: answer with one word."}, {"role": "assistant", "content": "Alpha"}, {"role": "tool", "content": "probe tool result 7"}, {"role": "user", "content": "Probe B: answer with one word."}]},
+ {"name": "probe_consecutive_users", "messages": [{"role": "user", "content": "Probe C, part one."}, {"role": "user", "content": "Probe C, part two."}]},
+ {"name": "user_only", "messages": [{"role": "user", "content": "Hi"}]},
+ {"name": "user_whitespace", "messages": [{"role": "user", "content": "  leading and trailing spaces  \n\n"}]},
+ {"name": "user_unicode_and_template_syntax", "messages": [{"role": "user", "content": "Unicode ✓ ü 数 and {{ .Content }} and {% if x %}y{% endif %} text\n"}]},
+ {"name": "system_user", "messages": [{"role": "system", "content": "S line 1\nS line 2\n"}, {"role": "user", "content": "U"}]},
+ {"name": "user_assistant_user", "messages": [{"role": "user", "content": "A"}, {"role": "assistant", "content": "B"}, {"role": "user", "content": "C"}]},
+ {"name": "assistant_last", "messages": [{"role": "user", "content": "U"}, {"role": "assistant", "content": "partial"}]},
+ {"name": "two_tools", "messages": [{"role": "user", "content": "Q"}, {"role": "assistant", "content": "calling"}, {"role": "tool", "content": "r1"}, {"role": "tool", "content": "r2"}, {"role": "user", "content": "next"}]},
+ {"name": "two_systems", "messages": [{"role": "system", "content": "S1"}, {"role": "system", "content": "S2"}, {"role": "user", "content": "U"}]},
+ {"name": "system_later", "messages": [{"role": "user", "content": "U1"}, {"role": "system", "content": "S2"}, {"role": "user", "content": "U2"}]}
+]

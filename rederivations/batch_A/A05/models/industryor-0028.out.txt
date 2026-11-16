@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 580000.0
+  p1_1 = 166666.67
+  p1_3 = 100000.0
+  p2 = 133333.33
+  p3 = 200000.0
+  p4 = 100000.0

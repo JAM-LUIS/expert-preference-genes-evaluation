@@ -1,0 +1,20 @@
+TOTAL_LENGTH: 57.1
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 28.6
+  left_1 = 0.0
+  left_10 = 1.0
+  left_11 = 1.0
+  left_12 = 0.0
+  left_13 = 1.0
+  left_14 = 1.0
+  left_15 = 0.0
+  left_2 = 1.0
+  left_3 = 0.0
+  left_4 = 0.0
+  left_5 = 0.0
+  left_6 = 1.0
+  left_7 = 1.0
+  left_8 = 0.0
+  left_9 = 0.0
+  z = 28.6

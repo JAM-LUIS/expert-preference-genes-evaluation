@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 23000.0
+  hire_B = 1.0
+  hire_D = 1.0

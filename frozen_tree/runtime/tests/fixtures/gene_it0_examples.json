@@ -1,0 +1,467 @@
+[
+  {
+    "predicateId": "predicate.optimum_not_trivial_zero.v1",
+    "params": {
+      "abs_tol": 1e-06
+    },
+    "expect_ok": false,
+    "code": "import pulp\n",
+    "exec": {
+      "ran": true,
+      "exec_ok": true,
+      "protocol_ok": true,
+      "status": "Optimal",
+      "objective": -3e-12
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.optimum_not_trivial_zero.v1",
+    "params": {
+      "abs_tol": 1e-06
+    },
+    "expect_ok": true,
+    "code": "import pulp\n",
+    "exec": {
+      "ran": true,
+      "exec_ok": true,
+      "protocol_ok": true,
+      "status": "Optimal",
+      "objective": 0.5
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.optimum_not_trivial_zero.v1",
+    "params": {
+      "abs_tol": 1e-06
+    },
+    "expect_ok": true,
+    "code": "import pulp\n",
+    "exec": null,
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.logic_uses_indicators.v1",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\na = pulp.LpVariable('a', lowBound=0)\nb = pulp.LpVariable('b', lowBound=0)\nprob += 3 * a + 2 * b\nprob += a + b <= 10\nprob += a + b <= 1\nprob.solve(pulp.PULP_CBC_CMD(msg=0))\n",
+    "text": "A plant can make chairs and tables. If the plant makes tables, it must also make chairs. Maximize profit."
+  },
+  {
+    "predicateId": "predicate.logic_uses_indicators.v1",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\na = pulp.LpVariable('a', lowBound=0)\nb = pulp.LpVariable('b', lowBound=0)\nya = pulp.LpVariable('ya', cat='Binary')\nyb = pulp.LpVariable('yb', cat='Binary')\nprob += 3 * a + 2 * b\nprob += a <= 10 * ya\nprob += b <= 10 * yb\nprob += ya + yb <= 1\n",
+    "text": "A plant can make chairs and tables. If the plant makes tables, it must also make chairs. Maximize profit."
+  },
+  {
+    "predicateId": "predicate.logic_uses_indicators.v1",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\ny = pulp.LpVariable.dicts('y', range(3), 0, 1, pulp.LpInteger)\nprob += y[0] + 2 * y[1] + 3 * y[2]\nprob += y[0] + y[1] >= 1\n",
+    "text": "A plant can make chairs and tables. If the plant makes tables, it must also make chairs. Maximize profit."
+  },
+  {
+    "predicateId": "predicate.logic_uses_indicators.v1",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\na = pulp.LpVariable('a', lowBound=0)\nb = pulp.LpVariable('b', lowBound=0)\nprob += 3 * a + 2 * b\nprob += a + b <= 10\nprob += a + b <= 1\nprob.solve(pulp.PULP_CBC_CMD(msg=0))\n",
+    "text": "A plant makes chairs and tables to maximize profit. How does the plan change if the plant makes no tables?"
+  },
+  {
+    "predicateId": "predicate.rows_sign_feasible.v1",
+    "params": {
+      "min_terms_zero_forcing": 2
+    },
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x', lowBound=0)\ny = pulp.LpVariable('y', lowBound=0)\nprob += 4 * x + 5 * y\nprob += x + 2 * y >= 8\nprob += x + y == 0\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.rows_sign_feasible.v1",
+    "params": {
+      "min_terms_zero_forcing": 2
+    },
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable.dicts('x', range(3), lowBound=0)\nprob += pulp.lpSum(x[i] for i in range(3))\nprob += 2 * x[0] + x[1] + 30 <= 0\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.rows_sign_feasible.v1",
+    "params": {
+      "min_terms_zero_forcing": 2
+    },
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x', lowBound=0)\ny = pulp.LpVariable('y', lowBound=0)\nprob += x + y\nprob += x == 0\nprob += x + y >= 3\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.rows_sign_feasible.v1",
+    "params": {
+      "min_terms_zero_forcing": 2
+    },
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x', lowBound=0)\ny = pulp.LpVariable('y', lowBound=0)\nprob += x + y\nprob += x - y <= 0\nprob += x + y >= 3\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.rows_sign_feasible.v1",
+    "params": {
+      "min_terms_zero_forcing": 2
+    },
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x')\ny = pulp.LpVariable('y')\nprob += x + y\nprob += x + y <= 0\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.fractional_count_optimum.v1",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\ns = pulp.LpVariable('s', lowBound=0)\nt = pulp.LpVariable('t', lowBound=0)\nprob += 3 * s + 5 * t\nprob += 2 * s + 3 * t >= 7\n",
+    "exec": {
+      "ran": true,
+      "exec_ok": true,
+      "protocol_ok": true,
+      "status": "Optimal",
+      "objective": 11.666667
+    },
+    "text": "A caterer buys sandwiches and salads."
+  },
+  {
+    "predicateId": "predicate.fractional_count_optimum.v1",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\ns = pulp.LpVariable('s', lowBound=0, cat='Integer')\nt = pulp.LpVariable('t', lowBound=0, cat='Integer')\nprob += 3 * s + 5 * t\nprob += 2 * s + 3 * t >= 7\n",
+    "exec": {
+      "ran": true,
+      "exec_ok": true,
+      "protocol_ok": true,
+      "status": "Optimal",
+      "objective": 11.666667
+    },
+    "text": "A caterer buys sandwiches and salads."
+  },
+  {
+    "predicateId": "predicate.fractional_count_optimum.v1",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\ns = pulp.LpVariable('s', lowBound=0)\nt = pulp.LpVariable('t', lowBound=0)\nprob += 2.5 * s + 5 * t\nprob += 2 * s + 3 * t >= 7\n",
+    "exec": {
+      "ran": true,
+      "exec_ok": true,
+      "protocol_ok": true,
+      "status": "Optimal",
+      "objective": 8.75
+    },
+    "text": "A caterer buys sandwiches and salads."
+  },
+  {
+    "predicateId": "predicate.fractional_count_optimum.v1",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\ns = pulp.LpVariable('s', lowBound=0)\nt = pulp.LpVariable('t', lowBound=0)\nprob += 3 * s + 5 * t\nprob += 2 * s + 3 * t >= 7\n",
+    "exec": {
+      "ran": true,
+      "exec_ok": true,
+      "protocol_ok": true,
+      "status": "Optimal",
+      "objective": 11.666667
+    },
+    "text": "Fractional amounts of each ingredient are allowed."
+  },
+  {
+    "predicateId": "predicate.binary_cardinality_linked.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable.dicts('x', range(3), lowBound=0)\ny = pulp.LpVariable.dicts('y', range(3), cat='Binary')\nprob += pulp.lpSum(4 * x[i] for i in range(3))\nprob += pulp.lpSum(y[i] for i in range(3)) <= 2\nfor i in range(3):\n    prob += x[i] >= 5 * y[i]\n    prob += x[i] <= 60\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.binary_cardinality_linked.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable.dicts('x', range(3), lowBound=0)\ny = pulp.LpVariable.dicts('y', range(3), cat='Binary')\nprob += pulp.lpSum(4 * x[i] for i in range(3))\nprob += pulp.lpSum(y[i] for i in range(3)) <= 2\nfor i in range(3):\n    prob += x[i] - 60 * y[i] <= 0\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.linear_expressions_only.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0)\ny = pulp.LpVariable('y', lowBound=0)\nprob += x + y\nif x >= 5:\n    prob += y <= 3\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.linear_expressions_only.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nr = pulp.LpVariable('r', lowBound=0)\nprob += 3 * r ** 2\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.linear_expressions_only.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0, upBound=9, cat='Integer')\nprob += 2 * x\nprob.solve(pulp.PULP_CBC_CMD(msg=0))\nparity = pulp.value(x) % 2\nif pulp.value(x) > 3:\n    print('large')\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.linear_expressions_only.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\ncost = {1: 4, 2: 7}\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable.dicts('x', [1, 2], lowBound=0)\nprob += pulp.lpSum(cost[i] * x[i] for i in [1, 2])\nprob += x[1] + x[2] >= 3\n",
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.no_invented_numbers.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x', lowBound=0)\nprob += 45 * x  # cost per unit\nprob += x >= 2400 / 60\nfor i in range(17):\n    pass\n",
+    "text": "Each unit costs $44. The machine runs for 40 hours."
+  },
+  {
+    "predicateId": "predicate.no_invented_numbers.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x', lowBound=0)\nprob += 45 * x  # cost per unit\nprob += x >= 2400 / 60\nfor i in range(17):\n    pass\n",
+    "text": "Each unit costs $45. The machine runs for 40 hours."
+  },
+  {
+    "predicateId": "predicate.objective_sense_consistent.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p')\nx = pulp.LpVariable('x', lowBound=0, cat='Integer')\nprob += x\nprob += x >= 1\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.objective_sense_consistent.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMinimize)\nx = pulp.LpVariable('x', lowBound=0, cat='Integer')\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.objective_sense_consistent.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0, cat='Integer')\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {},
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.objective_sense_consistent.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nprob = pulp.LpProblem('p')\nx = pulp.LpVariable('x', lowBound=0, cat='Integer')\nprob += x\nprob += x >= 1\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "min"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.variable_domains_consistent.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0)\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.variable_domains_consistent.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0)\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "binary"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.variable_domains_consistent.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0, cat=pulp.LpContinuous)\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.variable_domains_consistent.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0, cat='Integer')\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.constraints_added.v2",
+    "params": {},
+    "expect_ok": false,
+    "code": "import pulp\nprob = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0, upBound=4, cat='Integer')\nprob += x\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  },
+  {
+    "predicateId": "predicate.constraints_added.v2",
+    "params": {},
+    "expect_ok": true,
+    "code": "import pulp\nlp_model = pulp.LpProblem('p', pulp.LpMaximize)\nx = pulp.LpVariable('x', lowBound=0, cat='Integer')\nlp_model += x\nlp_model += x <= 4\n",
+    "spec": {
+      "decision_variables": [
+        {
+          "name": "x",
+          "domain": "integer"
+        }
+      ],
+      "objective": {
+        "sense": "max"
+      },
+      "constraints": [
+        {
+          "name": "c1",
+          "expression": "x <= 4"
+        }
+      ]
+    },
+    "text": ""
+  }
+]

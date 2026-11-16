@@ -1,0 +1,368 @@
+[
+ {
+  "name": "c0-low",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "c0-medium",
+  "think": "medium",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "c0-high",
+  "think": "high",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "c0-true",
+  "think": true,
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "c0-false",
+  "think": false,
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "c0-absent",
+  "think": null,
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "no-system-low",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "repair-low",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   },
+   {
+    "role": "assistant",
+    "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```"
+   },
+   {
+    "role": "user",
+    "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+   }
+  ]
+ },
+ {
+  "name": "repair-history-thinking-low",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   },
+   {
+    "role": "assistant",
+    "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```",
+    "thinking": "We need a model."
+   },
+   {
+    "role": "user",
+    "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+   }
+  ]
+ },
+ {
+  "name": "repair2-low",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   },
+   {
+    "role": "assistant",
+    "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```"
+   },
+   {
+    "role": "user",
+    "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+   },
+   {
+    "role": "assistant",
+    "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```\n# second"
+   },
+   {
+    "role": "user",
+    "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+   }
+  ]
+ },
+ {
+  "name": "two-systems",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "First rule."
+   },
+   {
+    "role": "system",
+    "content": "Second rule."
+   },
+   {
+    "role": "user",
+    "content": "Hi"
+   }
+  ]
+ },
+ {
+  "name": "system-middle",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Hi"
+   },
+   {
+    "role": "system",
+    "content": "Late rule."
+   },
+   {
+    "role": "user",
+    "content": "Again"
+   }
+  ]
+ },
+ {
+  "name": "consecutive-users",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "Part one."
+   },
+   {
+    "role": "user",
+    "content": "Part two."
+   }
+  ]
+ },
+ {
+  "name": "prefill-content",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Hi"
+   },
+   {
+    "role": "assistant",
+    "content": "Hello"
+   }
+  ]
+ },
+ {
+  "name": "prefill-thinking-only",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Hi"
+   },
+   {
+    "role": "assistant",
+    "content": "",
+    "thinking": "Greet back."
+   }
+  ]
+ },
+ {
+  "name": "after-last-user-thinking-and-content",
+  "think": "high",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Hi"
+   },
+   {
+    "role": "assistant",
+    "content": "Hello",
+    "thinking": "Greet."
+   }
+  ]
+ },
+ {
+  "name": "unicode-braces",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "Use {{ braces }} and \\n escapes; ≤ ≥ — é ñ 中文 🙂\ttab"
+   },
+   {
+    "role": "user",
+    "content": "Cost ≤ 1,234.50 €/unit;\r\nnext line  \n\n  indented {x} <|start|> text"
+   }
+  ]
+ },
+ {
+  "name": "empty-user",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": ""
+   }
+  ]
+ },
+ {
+  "name": "date-2027",
+  "think": "low",
+  "date": "2027-01-01",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "date-2026-12-31-medium",
+  "think": "medium",
+  "date": "2026-12-31",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   }
+  ]
+ },
+ {
+  "name": "assistant-empty-content",
+  "think": "low",
+  "date": "2026-09-29",
+  "messages": [
+   {
+    "role": "system",
+    "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+   },
+   {
+    "role": "user",
+    "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+   },
+   {
+    "role": "assistant",
+    "content": ""
+   },
+   {
+    "role": "user",
+    "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+   }
+  ]
+ }
+]

@@ -1,0 +1,12 @@
+{
+ "schema": "orgene-r1/annotation_agent/adjudication_deviations/v1",
+ "date": "2026-10-10",
+ "decided_before_unsealing": true,
+ "why": "The adjudicator (C) returned the round-1 sheet on 2026-10-10 with three incomplete rows, and its reference audit overturned one of ten cases, which under the registered rule calls for a second audit round of ten. C was not asked again, for lack of time before the revision deadline. Nobody filled in a cell for C and nobody else read a statement. Each gap is closed by the fixed rule below, set on 2026-10-10 while every test score was still sealed.",
+ "round2_not_performed": ["reference_check"],
+ "cases": {
+  "industryor-0039": {"rule": "no_verdict_fall_back_to_agreement"},
+  "industryor-0045": {"rule": "after_linearization_from_batches"},
+  "industryor-0096": {"rule": "label_cell_stands"}
+ }
+}

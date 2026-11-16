@@ -1,0 +1,822 @@
+{
+ "schema": "orgene.r1.eng_selection.v1",
+ "note": "Which engineering-source instances form the E22 case set and why. Written once from the screening evidence; data/ingest_eng.py check re-derives the seeded orders and verifies the picks. Ids, sizes, counts and CBC outcomes only; no problem text.",
+ "decided_utc": "2026-09-29",
+ "sources": {
+  "pglib_uc": {
+   "repo": "https://github.com/power-grid-lib/pglib-uc",
+   "commit": "39a7f38cf4703de92f0291f0c873c2e98c789301",
+   "tree": "data/eng/sources/pglib_uc_tree.json",
+   "tree_sha256": "1e4902abcec4d4fd788a163b47939b6104a77cc15063ccb9b92261399a31b925",
+   "license": "CC-BY-4.0 (case data; LICENSE: 'Data License: Creative Commons Attribution 4.0'); software MIT",
+   "license_files": {
+    "LICENSE": "b5ececfa64eb67fd5b0e5c135624f0f9004b938d399150e644f9641b659e628c"
+   }
+  },
+  "miplib_nl": {
+   "repo": "https://github.com/optsuite/MIPLIB-NL",
+   "commit": "9f14ad1782eaa547f7dad982d1edb186321ffd88",
+   "tree": "data/eng/sources/miplib_nl_tree.json",
+   "tree_sha256": "d64811d0e055e62ccced3de4e5d74c288c1f280680c206adbcbebedc3a9c346b",
+   "license": "CC-BY-SA-4.0 (README.md, section License; the repository has no LICENSE file)",
+   "license_files": {
+    "README.md": "4a70be81474ec1bbc056110afec49129230ac63b7ff0914630f7d7afe19fcc1c"
+   }
+  }
+ },
+ "context_rule": {
+  "num_ctx": 32768,
+  "num_predict": 6000,
+  "why_inline": "the frozen base system prompt forbids reading files (conditions/base_system.md), so every number of a case travels inside the problem text",
+  "round0_fit": "max over the standard configurations of the rendered qwen3 prompt tokens (tokcount.OllamaCounter, think false) + num_predict <= num_ctx",
+  "repair_rounds": "not required to fit: a round-2 prompt adds up to two answers and two repair messages; large texts are the stress part of the set (see the E22 record)"
+ },
+ "pglib_uc_rule": {
+  "families": {
+   "rts_gmlc": {
+    "n_files": 12,
+    "min_bytes": 89807,
+    "max_bytes": 90934
+   },
+   "ca": {
+    "n_files": 20,
+    "min_bytes": 329326,
+    "max_bytes": 331708
+   },
+   "ferc": {
+    "n_files": 24,
+    "min_bytes": 511598,
+    "max_bytes": 515593
+   }
+  },
+  "fits": "rts_gmlc only: its tables (73 thermal units; renewables aggregated per hour) render to about 14k qwen3 tokens; ca (610 units) and ferc (larger) render to over 110 KB of tables, beyond num_ctx",
+  "draw": "random.Random('20260928:pglib_uc:v2:rts_gmlc').sample(sorted rts_gmlc days, 2)",
+  "drawn": [
+   "2020-11-25",
+   "2020-03-05"
+  ],
+  "reference": "CBC <= 1800 s wall clock, ratioGap 1e-7; not closing the gap keeps the case with a time-limited reference (scored separately; the 30-minute stop of the E22 brief)"
+ },
+ "miplib_nl_rule": {
+  "pool": "all 223 instance directories at the pinned commit (tree listing in sources/)",
+  "size": "bytes of instance.json + data files (tree listing); byte-level BPE never yields more tokens than bytes",
+  "strata": {
+   "T": [
+    0,
+    3000
+   ],
+   "S": [
+    3000,
+    8000
+   ],
+   "L": [
+    8000,
+    22001
+   ]
+  },
+  "strata_meaning": {
+   "T": "tiny: data a model can transcribe within num_predict",
+   "S": "small: borderline",
+   "L": "large (stress): fits num_ctx at round 0, data too long to transcribe within num_predict"
+  },
+  "order": "random.Random('20260928:miplib_nl:v2:<stratum>').shuffle(sorted names); first 2 eligible per stratum",
+  "eligibility": {
+   "E1": "every file named in instance.json exists and converts verbatim",
+   "E2": "optimal_value is a number (or a numeric string)",
+   "E3": "round-0 fit (context_rule)",
+   "E4": "CBC on the PuLP translation of the instance's solve.py, <= 1800 s wall clock: in strata T and S, CBC either closes the gap (cbc_optimal) or stops with an incumbent equal to optimal_value and a bound that does not contradict it (cbc_attains_published_optimum); in every stratum a CBC optimum must equal optimal_value within 1e-6 relative and a time-limited interval must contain it (otherwise the reference script and the published value disagree)",
+   "E4_finalised": "2026-09-29 03:53 UTC, while five of the six screening solves of strata T and S started at 03:26 UTC were still running (they ended between 03:56 and 04:00 UTC, before any of their outcomes was known); the sixth, csched010, had ended at 03:26 UTC within a second without a solution, an outcome that leaves it ineligible under either wording. The first wording (optimality proof required in T and S) was widened because small MIPLIB instances are often hard for CBC and each further screening round costs 30 minutes (corrected 2026-09-29 by the E22 verification from the solve-record timestamps; the earlier text said none of the six outcomes was known)"
+  },
+  "orders_head": {
+   "T": [
+    [
+     "chromaticindex128-5",
+     1892
+    ],
+    [
+     "p2m2p1m1p0n100",
+     1872
+    ],
+    [
+     "graph40-20-1rand",
+     2575
+    ],
+    [
+     "wachplan",
+     2456
+    ],
+    [
+     "sorrell4",
+     1638
+    ],
+    [
+     "chromaticindex1024-7",
+     2390
+    ],
+    [
+     "graph20-20-1rand",
+     2138
+    ],
+    [
+     "chromaticindex256-8",
+     2561
+    ],
+    [
+     "cvs16r106-72",
+     2893
+    ],
+    [
+     "graph20-80-1rand",
+     2221
+    ]
+   ],
+   "S": [
+    [
+     "csched010",
+     3492
+    ],
+    [
+     "supportcase26",
+     3134
+    ],
+    [
+     "markshare1",
+     4214
+    ],
+    [
+     "neos-5140963-mincio",
+     3168
+    ],
+    [
+     "gt2",
+     4478
+    ],
+    [
+     "noswot",
+     4050
+    ],
+    [
+     "radiationm18-12-05",
+     5624
+    ],
+    [
+     "p0201",
+     5582
+    ],
+    [
+     "decomp2",
+     6593
+    ],
+    [
+     "pigeon-08",
+     3803
+    ]
+   ],
+   "L": [
+    [
+     "neos-3118745-obra",
+     20395
+    ],
+    [
+     "gen-ip054",
+     11575
+    ],
+    [
+     "supportcase33",
+     21872
+    ],
+    [
+     "neos-911970",
+     10864
+    ],
+    [
+     "enlight_hard",
+     13639
+    ],
+    [
+     "bienst2",
+     12445
+    ],
+    [
+     "ran13x13",
+     9059
+    ],
+    [
+     "enlight11",
+     15826
+    ],
+    [
+     "graphdraw-gemcutter",
+     8288
+    ],
+    [
+     "neos-3611689-kaihu",
+     15529
+    ]
+   ]
+  },
+  "picks": {
+   "T": [
+    "chromaticindex128-5",
+    "wachplan"
+   ],
+   "S": [
+    "supportcase26",
+    "neos-5140963-mincio"
+   ],
+   "L": [
+    "neos-3118745-obra",
+    "gen-ip054"
+   ]
+  }
+ },
+ "miplib_nl_screening": {
+  "chromaticindex128-5": {
+   "stratum": "T",
+   "bytes": 1892,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 4.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 445,
+    "max_prompt": 1938,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 4.0,
+    "bound": 3.0,
+    "gap": 0.25,
+    "wall_seconds": 1800.125,
+    "n_variables": 9216,
+    "n_constraints": 8447
+   },
+   "reference_kind": "cbc_attains_published_optimum",
+   "eligible": true
+  },
+  "p2m2p1m1p0n100": {
+   "stratum": "T",
+   "bytes": 1872,
+   "reasons": [
+    "E4: published optimal_value outside CBC's [bound, incumbent] interval",
+    "E4: within 1800 s CBC neither closed the gap nor reached the published optimum (cbc_time_limited)"
+   ],
+   "E1_files_complete": true,
+   "official_value": 80431.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1482,
+    "max_prompt": 2975,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 80427.0,
+    "bound": 80424.0,
+    "gap": 3.730090641202581e-05,
+    "wall_seconds": 1800.366,
+    "n_variables": 100,
+    "n_constraints": 1
+   },
+   "reference_kind": "cbc_time_limited",
+   "eligible": false
+  },
+  "graph40-20-1rand": {
+   "stratum": "T",
+   "bytes": 2575,
+   "reasons": [
+    "E4: within 1800 s CBC neither closed the gap nor reached the published optimum (cbc_time_limited)"
+   ],
+   "E1_files_complete": true,
+   "official_value": 15.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1203,
+    "max_prompt": 2696,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 9.0,
+    "bound": 70.651,
+    "gap": 6.850111111111111,
+    "wall_seconds": 2011.196,
+    "n_variables": 28992,
+    "n_constraints": 52245
+   },
+   "reference_kind": "cbc_time_limited",
+   "eligible": false
+  },
+  "wachplan": {
+   "stratum": "T",
+   "bytes": 2456,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 8.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 521,
+    "max_prompt": 2014,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 8.0,
+    "bound": 9.0,
+    "gap": 0.125,
+    "wall_seconds": 1799.805,
+    "n_variables": 1009,
+    "n_constraints": 2897
+   },
+   "reference_kind": "cbc_attains_published_optimum",
+   "eligible": true
+  },
+  "sorrell4": {
+   "stratum": "T",
+   "bytes": 1638,
+   "reasons": [
+    "E4: within 1800 s CBC neither closed the gap nor reached the published optimum (cbc_time_limited)"
+   ],
+   "E1_files_complete": true,
+   "official_value": 24.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 306,
+    "max_prompt": 1799,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 17.0,
+    "bound": 654.626,
+    "gap": 37.50741176470588,
+    "wall_seconds": 1713.824,
+    "n_variables": 2048,
+    "n_constraints": 504451
+   },
+   "reference_kind": "cbc_time_limited",
+   "eligible": false
+  },
+  "chromaticindex1024-7": {
+   "stratum": "T",
+   "bytes": 2390,
+   "reasons": [
+    "E4: the CBC run ended with a solver error (PulpSolverError); not retried"
+   ],
+   "E1_files_complete": true,
+   "official_value": 4.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 529,
+    "max_prompt": 2022,
+    "round0_fits": true
+   },
+   "cbc": null,
+   "eligible": false
+  },
+  "csched010": {
+   "stratum": "S",
+   "bytes": 3492,
+   "reasons": [
+    "E4: CBC status infeasible",
+    "E4: the reference script gives no solution under CBC (for csched010: infeasible, so the published optimal_value cannot come from it)"
+   ],
+   "E1_files_complete": true,
+   "official_value": 408.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1457,
+    "max_prompt": 2950,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "infeasible",
+    "objective": null,
+    "bound": null,
+    "gap": null,
+    "wall_seconds": 0.026,
+    "n_variables": 1806,
+    "n_constraints": 648
+   },
+   "reference_kind": "no_reference",
+   "eligible": false
+  },
+  "supportcase26": {
+   "stratum": "S",
+   "bytes": 3134,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 1745.123813,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1431,
+    "max_prompt": 2924,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 1745.12418242,
+    "bound": 1579.033,
+    "gap": 0.09517442030381924,
+    "wall_seconds": 1800.54,
+    "n_variables": 436,
+    "n_constraints": 870
+   },
+   "reference_kind": "cbc_attains_published_optimum",
+   "eligible": true
+  },
+  "markshare1": {
+   "stratum": "S",
+   "bytes": 4214,
+   "reasons": [
+    "E4: within 1800 s CBC neither closed the gap nor reached the published optimum (cbc_time_limited)"
+   ],
+   "E1_files_complete": true,
+   "official_value": 1.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1983,
+    "max_prompt": 3476,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 5.0,
+    "bound": 0.0,
+    "gap": 1.0,
+    "wall_seconds": 1800.338,
+    "n_variables": 56,
+    "n_constraints": 6
+   },
+   "reference_kind": "cbc_time_limited",
+   "eligible": false
+  },
+  "neos-5140963-mincio": {
+   "stratum": "S",
+   "bytes": 3168,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 14393.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1800,
+    "max_prompt": 3293,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "time_limit_feasible",
+    "objective": 14393.0,
+    "bound": 12613.594,
+    "gap": 0.12362995900785109,
+    "wall_seconds": 1800.487,
+    "n_variables": 195,
+    "n_constraints": 184
+   },
+   "reference_kind": "cbc_attains_published_optimum",
+   "eligible": true
+  },
+  "gt2": {
+   "stratum": "S",
+   "bytes": 4478,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 21166.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 2886,
+    "max_prompt": 4379,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "optimal",
+    "objective": 21166.0,
+    "bound": null,
+    "gap": null,
+    "wall_seconds": 0.025,
+    "n_variables": 204,
+    "n_constraints": 29
+   },
+   "reference_kind": "cbc_optimal",
+   "eligible": true
+  },
+  "noswot": {
+   "stratum": "S",
+   "bytes": 4050,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 41.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 1593,
+    "max_prompt": 3086,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "optimal",
+    "objective": 41.0,
+    "bound": null,
+    "gap": null,
+    "wall_seconds": 0.04,
+    "n_variables": 50,
+    "n_constraints": 41
+   },
+   "reference_kind": "cbc_optimal",
+   "eligible": true
+  },
+  "neos-3118745-obra": {
+   "stratum": "L",
+   "bytes": 20395,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 255.0,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 17506,
+    "max_prompt": 18999,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "optimal",
+    "objective": 255.0,
+    "bound": null,
+    "gap": null,
+    "wall_seconds": 13.898,
+    "n_variables": 1131,
+    "n_constraints": 144
+   },
+   "model_variant": {
+    "carries_over": true,
+    "note": "reference solved on build_for_reference(): the script's model without the lower bound 0 of C0001 (a relaxation). The objective is C0001 itself, so an optimum >= 0 of the relaxation is feasible, hence optimal, in the script's model; solve.py checks this. With the bound, CBC 2.10.13 stopped at 1800 s with incumbent 257 and bound 254.845 (screening log); without it, it proves 255 in seconds."
+   },
+   "reference_kind": "cbc_optimal",
+   "eligible": true
+  },
+  "gen-ip054": {
+   "stratum": "L",
+   "bytes": 11575,
+   "reasons": [],
+   "E1_files_complete": true,
+   "official_value": 6840.96564179,
+   "E2_official_numeric": true,
+   "tokens": {
+    "text": 9291,
+    "max_prompt": 10784,
+    "round0_fits": true
+   },
+   "cbc": {
+    "status": "optimal",
+    "objective": 6840.96564179,
+    "bound": null,
+    "gap": null,
+    "wall_seconds": 635.887,
+    "n_variables": 30,
+    "n_constraints": 27
+   },
+   "reference_kind": "cbc_optimal",
+   "eligible": true
+  }
+ },
+ "discarded_first_draw": {
+  "what": "a first draw (2026-09-29, before the context criterion of the brief was applied) bucketed by data bytes (<10 KB, 10 KB-1 MB, >1 MB) and drew graph20-20-1rand, ex1010-pi, enlight_hard, beasleyC2, ramos3, gsvm2rl11, and PGLib-UC rts_gmlc/2020-11-25 + ca/2014-12-01_reserves_0",
+  "why_discarded": "the frozen prompts forbid reading files, so data must be inline; beasleyC2, ramos3, gsvm2rl11 and the ca instance cannot fit num_ctx inline. ex1010-pi names a data file the repository does not contain. The rule was restated (v2 seeds) before the new draw; the downloaded files of the discarded instances were deleted and their solves were stopped, except one: the CBC solve of rts_gmlc/2020-11-25, started at 03:13 UTC under the first draw (before the v2 draw), ran to its 1800 s limit and is the reference solve of pglib_uc-0001, because the v2 seed drew the same day (same instance, model and solver options; corrected 2026-09-29 by the E22 verification from the file and solve-record timestamps)"
+ },
+ "cases": [
+  {
+   "case_id": "miplib_nl-0001",
+   "source": "miplib_nl",
+   "source_id": "chromaticindex128-5",
+   "stratum": "T",
+   "source_files": {
+    "dataset/chromaticindex128-5/instance.json": {
+     "bytes": 1892,
+     "git_blob": "2129fcd50c63d2808abe08fa15cd9d21d0ba3b5a"
+    },
+    "dataset/chromaticindex128-5/model.md": {
+     "bytes": 1402,
+     "git_blob": "3505b168efd44bf35c3e2d98c92310ad72b6ed5a"
+    },
+    "dataset/chromaticindex128-5/solve.py": {
+     "bytes": 4577,
+     "git_blob": "b8a09f58e4858af57452d25ab476c3b85f44c78f"
+    }
+   },
+   "tokens": {
+    "text": 445,
+    "max_prompt": 1938,
+    "round0_fits": true
+   }
+  },
+  {
+   "case_id": "miplib_nl-0002",
+   "source": "miplib_nl",
+   "source_id": "wachplan",
+   "stratum": "T",
+   "source_files": {
+    "dataset/wachplan/instance.json": {
+     "bytes": 2456,
+     "git_blob": "a842a7362b7c2985bcad12677c4032a61c7268f2"
+    },
+    "dataset/wachplan/model.md": {
+     "bytes": 2708,
+     "git_blob": "f2ac25f030ec91a5b820401eecde9b41057ddd16"
+    },
+    "dataset/wachplan/solve.py": {
+     "bytes": 4659,
+     "git_blob": "7521953075d8971a5435e68d296bba326e1a5b59"
+    }
+   },
+   "tokens": {
+    "text": 521,
+    "max_prompt": 2014,
+    "round0_fits": true
+   }
+  },
+  {
+   "case_id": "miplib_nl-0003",
+   "source": "miplib_nl",
+   "source_id": "supportcase26",
+   "stratum": "S",
+   "source_files": {
+    "dataset/supportcase26/data/jobs.csv": {
+     "bytes": 927,
+     "git_blob": "9250ea53fbee1c1d69d4e26dd76649e62d619d61"
+    },
+    "dataset/supportcase26/instance.json": {
+     "bytes": 2207,
+     "git_blob": "458cccb1372dd13a0a82286c8ecd1e39e2fee20d"
+    },
+    "dataset/supportcase26/model.md": {
+     "bytes": 2879,
+     "git_blob": "b097bfc5f302b32a8baf200d7a67dad28ec3a3bb"
+    },
+    "dataset/supportcase26/solve.py": {
+     "bytes": 4605,
+     "git_blob": "7839783125fbae2340b87c2082abf3b691fcb80a"
+    }
+   },
+   "tokens": {
+    "text": 1431,
+    "max_prompt": 2924,
+    "round0_fits": true
+   }
+  },
+  {
+   "case_id": "miplib_nl-0004",
+   "source": "miplib_nl",
+   "source_id": "neos-5140963-mincio",
+   "stratum": "S",
+   "source_files": {
+    "dataset/neos-5140963-mincio/data/cost_matrix.csv": {
+     "bytes": 1394,
+     "git_blob": "4f2cab962e6ea042fc035019cbdbb6a16b9c1723"
+    },
+    "dataset/neos-5140963-mincio/data/locations.csv": {
+     "bytes": 45,
+     "git_blob": "c6d0976e681b3a44f608c93f7af8fd28619720f0"
+    },
+    "dataset/neos-5140963-mincio/instance.json": {
+     "bytes": 1729,
+     "git_blob": "66dfc02a8fc1274d16a90cd5faad8bae10d248b4"
+    },
+    "dataset/neos-5140963-mincio/model.md": {
+     "bytes": 1554,
+     "git_blob": "2d28771c4c41ea5503c66135053fc4e4b7e48dc0"
+    },
+    "dataset/neos-5140963-mincio/solve.py": {
+     "bytes": 3990,
+     "git_blob": "43a592b8ed36dd6e8b95dff97126b11e42308a48"
+    }
+   },
+   "tokens": {
+    "text": 1800,
+    "max_prompt": 3293,
+    "round0_fits": true
+   }
+  },
+  {
+   "case_id": "miplib_nl-0005",
+   "source": "miplib_nl",
+   "source_id": "neos-3118745-obra",
+   "stratum": "L",
+   "source_files": {
+    "dataset/neos-3118745-obra/data/C1.csv": {
+     "bytes": 103,
+     "git_blob": "5010791fc6f7fabe173aa211b5323c4cb4cb7e72"
+    },
+    "dataset/neos-3118745-obra/data/C2.csv": {
+     "bytes": 5663,
+     "git_blob": "a79eced9ffef6bcf50d29ff028d600957ca2908f"
+    },
+    "dataset/neos-3118745-obra/data/C3.csv": {
+     "bytes": 5733,
+     "git_blob": "c86ea48874bc8781816784406082ad0f24598187"
+    },
+    "dataset/neos-3118745-obra/data/C4.csv": {
+     "bytes": 4988,
+     "git_blob": "36323925b832c27fb244d60a730de2d14d0d7403"
+    },
+    "dataset/neos-3118745-obra/data/C5.csv": {
+     "bytes": 326,
+     "git_blob": "cbc6936d4d54889b34731f6e46606fe56e8d7ca8"
+    },
+    "dataset/neos-3118745-obra/instance.json": {
+     "bytes": 3582,
+     "git_blob": "7e9c390a38e420f8834cbaf7ce645c67907910b7"
+    },
+    "dataset/neos-3118745-obra/model.md": {
+     "bytes": 2134,
+     "git_blob": "0baa3fea8773648f22fb7813800dba5c8705150e"
+    },
+    "dataset/neos-3118745-obra/solve.py": {
+     "bytes": 4261,
+     "git_blob": "145e02d23585e11ceb2886a7ac105bcec947cf4d"
+    }
+   },
+   "tokens": {
+    "text": 17506,
+    "max_prompt": 18999,
+    "round0_fits": true
+   },
+   "source_text_issues": [
+    "abstract_problem names the total potential value through a placeholder that is not among the instance parameters; its value is parameter Y, the constant the reference script hard-codes. Kept verbatim (E22 brief: no rewording); a program has to take the value from the parameters"
+   ]
+  },
+  {
+   "case_id": "miplib_nl-0006",
+   "source": "miplib_nl",
+   "source_id": "gen-ip054",
+   "stratum": "L",
+   "source_files": {
+    "dataset/gen-ip054/data/C1.csv": {
+     "bytes": 653,
+     "git_blob": "d2041d704862e0ab6856836b18672ebe65708ac1"
+    },
+    "dataset/gen-ip054/data/C2.csv": {
+     "bytes": 1354,
+     "git_blob": "6792e49e13ef1085c3f68a62b799e49363a670a1"
+    },
+    "dataset/gen-ip054/data/C3.csv": {
+     "bytes": 88,
+     "git_blob": "62df0de56b6cdf3ecce0d8f4def16dc461e2920e"
+    },
+    "dataset/gen-ip054/data/C4.csv": {
+     "bytes": 6501,
+     "git_blob": "d6edfa0a5fc193d76633c7cd3d3b458eb23c6a18"
+    },
+    "dataset/gen-ip054/data/C5.csv": {
+     "bytes": 459,
+     "git_blob": "1e9a004506b3b441c06bc640d945b2e31b9fc47c"
+    },
+    "dataset/gen-ip054/instance.json": {
+     "bytes": 2520,
+     "git_blob": "3983ea2d355a08ad6dab245251b0cf25ea88ae48"
+    },
+    "dataset/gen-ip054/solve.py": {
+     "bytes": 4594,
+     "git_blob": "96437bd117319ee628f9ab975b138b68a1edad95"
+    }
+   },
+   "tokens": {
+    "text": 9291,
+    "max_prompt": 10784,
+    "round0_fits": true
+   },
+   "source_text_issues": [
+    "parameters N (equipment types) and M2 (performance requirements) are smaller than the data files: C1, C2 and C4 list more equipment rows, C5 (and the value columns of C4) more performance targets; the reference script reads every row and ignores the parameters. Kept verbatim (E22 brief: no rewording); a program that trusts N or M2 instead of the tables solves another instance"
+   ]
+  },
+  {
+   "case_id": "pglib_uc-0001",
+   "source": "pglib_uc",
+   "source_id": "rts_gmlc/2020-11-25",
+   "stratum": "rts_gmlc",
+   "source_files": {
+    "rts_gmlc/2020-11-25.json": {
+     "bytes": 90564,
+     "git_blob": "957321b6a889b540c1601c1934108762c92db208"
+    }
+   },
+   "tokens": {
+    "text": 14178,
+    "max_prompt": 15671
+   }
+  },
+  {
+   "case_id": "pglib_uc-0002",
+   "source": "pglib_uc",
+   "source_id": "rts_gmlc/2020-03-05",
+   "stratum": "rts_gmlc",
+   "source_files": {
+    "rts_gmlc/2020-03-05.json": {
+     "bytes": 89807,
+     "git_blob": "0927d65de3a128abe23ea774ad8152af4dab5fea"
+    }
+   },
+   "tokens": {
+    "text": 14122,
+    "max_prompt": 15615
+   }
+  }
+ ]
+}

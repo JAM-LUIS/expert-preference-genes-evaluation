@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 84.0
+  bandwidth = 84.0
+  pos_C = 1.0
+  pos_D = 3.0
+  pos_E = 4.0
+  x_A_C = 1.0
+  x_C_D = 1.0
+  x_D_E = 1.0

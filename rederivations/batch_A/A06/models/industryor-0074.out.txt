@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 115000.0
+  T = 25.0
+  s_A = 5.0
+  s_B = 20.0
+  s_C = 20.0
+  s_D = 18.0
+  s_F = 10.0
+  s_G = 9.0

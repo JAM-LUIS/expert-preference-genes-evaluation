@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 146.666669
+  A_kg = 1.3333333
+  B_kg = 10.666667

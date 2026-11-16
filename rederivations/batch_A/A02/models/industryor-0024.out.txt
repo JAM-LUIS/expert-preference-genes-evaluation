@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1000.0
+  ev = 30.0
+  truck = 10.0
+  use_ev = 1.0
+INTEGERS_RELAXED: Optimal 1000.0 (4 general-integer variables made continuous; binaries kept)

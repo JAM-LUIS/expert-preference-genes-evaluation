@@ -1,0 +1,9 @@
+reading: one-time extra cost per pattern
+feasible patterns enumerated: 11
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 19.6
+raw pipes: 19.0  extra: 0.6000000000000001
+  slot 2: pattern {290: 0, 315: 0, 350: 5, 455: 0} x 4.0
+  slot 1: pattern {290: 1, 315: 2, 350: 0, 455: 2} x 14.0
+  slot 3: pattern {290: 2, 315: 0, 350: 1, 455: 2} x 1.0

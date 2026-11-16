@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 510000.0
+  a1 = 100000.0
+  b2 = 170000.0

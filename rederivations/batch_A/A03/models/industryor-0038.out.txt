@@ -1,0 +1,12 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.0
+  makespan = 14.0
+  start_1_1 = 8.0
+  start_1_2 = 10.0
+  start_1_3 = 13.0
+  start_2_1 = 4.0
+  start_2_2 = 8.0
+  start_2_3 = 10.0
+  start_3_2 = 3.0
+  start_3_3 = 8.0

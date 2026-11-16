@@ -1,0 +1,834 @@
+{
+ "schema": "orgene-r1/labels/industryor_type/v1",
+ "basis": {
+  "file": "type_final_labels.csv",
+  "sha256": "35b236554cbf4a3f5af919026404f48f9e4ad466efaf1be736adb5aee187a612"
+ },
+ "rule": "D5: IndustryOR cases whose final label is NL_NOT_LINEARIZABLE are kept but reported separately: not in the main table and not in the MDE sample size",
+ "rule_linear_unresolved": "PREREG_R1: linear labels that differ between the two re-derivation batches and that the objective check cannot settle are LINEAR_UNRESOLVED: counted as linear (not in nl_not_linearizable), dropped only from type-stratified analyses (no effective_type)",
+ "status": "final",
+ "n_expected": 100,
+ "n_final": 100,
+ "counts": {
+  "LP": 24,
+  "MILP": 15,
+  "IP": 46,
+  "NL_LINEARIZABLE": 10,
+  "NL_NOT_LINEARIZABLE": 2,
+  "LINEAR_UNRESOLVED": 3
+ },
+ "labels": {
+  "industryor-0001": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0002": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0003": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0004": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0005": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0006": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0007": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0008": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0009": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0010": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0011": {
+   "split": "test",
+   "type": "LINEAR_UNRESOLVED",
+   "type_after_linearization": null,
+   "effective_type": null,
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0012": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0013": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0014": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0015": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0016": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0017": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "IP",
+   "effective_type": "IP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0018": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0019": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0020": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0021": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0022": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0023": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0024": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0025": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0026": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0027": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0028": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0029": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0030": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0031": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0032": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0033": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "MILP",
+   "effective_type": "MILP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0034": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0035": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0036": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0037": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0038": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "MILP",
+   "effective_type": "MILP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0039": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0040": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0041": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0042": {
+   "split": "test",
+   "type": "LINEAR_UNRESOLVED",
+   "type_after_linearization": null,
+   "effective_type": null,
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0043": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0044": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0045": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "IP",
+   "effective_type": "IP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0046": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0047": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0048": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0049": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0050": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0051": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0052": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0053": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0054": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0055": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0056": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0057": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0058": {
+   "split": "dev",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0059": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0060": {
+   "split": "test",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0061": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0062": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0063": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0064": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0065": {
+   "split": "test",
+   "type": "LINEAR_UNRESOLVED",
+   "type_after_linearization": null,
+   "effective_type": null,
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0066": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0067": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0068": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0069": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0070": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0071": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "IP",
+   "effective_type": "IP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0072": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0073": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0074": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0075": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0076": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0077": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0078": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0079": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0080": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0081": {
+   "split": "dev",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "MILP",
+   "effective_type": "MILP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0082": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "IP",
+   "effective_type": "IP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0083": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0084": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0085": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0086": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0087": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0088": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0089": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0090": {
+   "split": "dev",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0091": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0092": {
+   "split": "test",
+   "type": "IP",
+   "type_after_linearization": null,
+   "effective_type": "IP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0093": {
+   "split": "dev",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0094": {
+   "split": "dev",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "MILP",
+   "effective_type": "MILP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0095": {
+   "split": "test",
+   "type": "LP",
+   "type_after_linearization": null,
+   "effective_type": "LP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0096": {
+   "split": "test",
+   "type": "NL_NOT_LINEARIZABLE",
+   "type_after_linearization": null,
+   "effective_type": "NL_NOT_LINEARIZABLE",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0097": {
+   "split": "test",
+   "type": "NL_NOT_LINEARIZABLE",
+   "type_after_linearization": null,
+   "effective_type": "NL_NOT_LINEARIZABLE",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0098": {
+   "split": "dev",
+   "type": "MILP",
+   "type_after_linearization": null,
+   "effective_type": "MILP",
+   "method": "independent_agreement",
+   "adjudicator": null
+  },
+  "industryor-0099": {
+   "split": "dev",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "IP",
+   "effective_type": "IP",
+   "method": "third_party",
+   "adjudicator": "C"
+  },
+  "industryor-0100": {
+   "split": "test",
+   "type": "NL_LINEARIZABLE",
+   "type_after_linearization": "MILP",
+   "effective_type": "MILP",
+   "method": "third_party",
+   "adjudicator": "C"
+  }
+ },
+ "nl_not_linearizable": [
+  "industryor-0096",
+  "industryor-0097"
+ ],
+ "linear_unresolved": [
+  "industryor-0011",
+  "industryor-0042",
+  "industryor-0065"
+ ],
+ "pending": [],
+ "invalid": [],
+ "problems": []
+}

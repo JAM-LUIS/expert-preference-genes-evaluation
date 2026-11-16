@@ -1,0 +1,19 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.1
+  Cmax = 14.1
+  s_0_0 = 9.1
+  s_0_1 = 12.1
+  s_0_2 = 13.1
+  s_1_0 = 7.1
+  s_1_1 = 9.1
+  s_1_2 = 10.6
+  s_2_0 = 4.1
+  s_2_1 = 7.1
+  s_2_2 = 9.1
+  s_3_0 = 2.1
+  s_3_1 = 5.1
+  s_3_2 = 7.1
+  s_4_1 = 2.1
+  s_4_2 = 4.1
+ENUM_PERMUTATION_BEST: (14.1, (1, 3, 4, 2, 0))

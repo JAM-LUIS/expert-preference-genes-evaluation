@@ -1,0 +1,11 @@
+{
+ "schema": "orgene.r1.measurement_check.export.v1",
+ "export_id": "bcba70c93d1a",
+ "files": {
+  "booklet.html": "952e6d74118a020bc99fed150371dc40b59aaf5f8afc0fe59464c8b3ed8b6a45",
+  "items.json": "9a183df49f1d258ee2a267d76cdb36d4db3b65d3185e6b106251d4471d7ff376",
+  "key.json": "6f1759ad6c36123f872acf192ce9107f143b0af8e7e3e76861a2e6168b9a059f"
+ },
+ "n_problems": 34,
+ "n_programs": 68
+}

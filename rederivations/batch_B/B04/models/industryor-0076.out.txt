@@ -1,0 +1,8 @@
+CAP_MODE: all_stock CHARGE_U0: False
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 700.0
+  x_0_0 20.0
+  x_1_1 20.0
+  x_2_2 20.0
+  x_3_3 20.0

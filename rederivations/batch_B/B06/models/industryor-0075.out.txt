@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 57.0
+  C_sold = 5.0
+  xA = 4.25
+  xB = 2.5
+INTEGER_VERSION: Optimal 57.0 2.0 4.0

@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 255000.0
+  x_cloth_h = 45.0
+  x_curtain_h = 75.0

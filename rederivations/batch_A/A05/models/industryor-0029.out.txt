@@ -1,0 +1,15 @@
+P1 total shortfall: Optimal 0.0
+P2 d2_minus: Optimal 1000.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 2500.0
+  d2_minus = 1000.0
+  d3_minus = 2500.0
+  x_1_1_Donghai = 1000.0
+  x_1_1_Nanjiang = 500.0
+  x_2_2_Donghai = 1500.0
+  x_3_1_Nanjiang = 1500.0
+  x_4_3_Donghai = 1500.0
+  x_5_2_Donghai = 500.0
+  x_5_2_Nanjiang = 1000.0
+  x_6_3_Nanjiang = 1000.0

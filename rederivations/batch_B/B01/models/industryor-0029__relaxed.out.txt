@@ -1,0 +1,17 @@
+stage1 Optimal 0.0 stage2 Optimal 1000.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 2500.0
+total assigned: 8500.000005 in preferred city: 5500.000004 assigned not in preferred city: 3000.0000009999994
+  (1, 1, 'D') 1000.0
+  (1, 1, 'N') 500.0
+  (1, 2, 'N') 1.0000003e-06
+  (2, 2, 'D') 500.0
+  (2, 2, 'N') 1000.0
+  (3, 1, 'N') 1500.0
+  (4, 1, 'N') 1.0000003e-06
+  (4, 3, 'D') 1500.0
+  (4, 3, 'N') 9.9999988e-07
+  (5, 2, 'D') 1500.0
+  (5, 3, 'D') 2.0000003e-06
+  (6, 3, 'N') 1000.0

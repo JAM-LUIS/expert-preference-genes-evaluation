@@ -1,0 +1,14 @@
+{
+  "kind": "eng_holdout",
+  "rule": "every case of the engineering-source set is eng_holdout: neither dev nor test; no gene work, no dev tuning, run once after the freeze (E22)",
+  "cases_path": "data/cases/eng.jsonl",
+  "cases_sha256": "7538bfadeac3dfb4cfcb1aa00dcce73e56d9ed635c626bda43f08b6ba811b36b",
+  "seed": null,
+  "n_dev": 0,
+  "n_test": 0,
+  "n_eng_holdout": 8,
+  "numeric_only": false,
+  "dev_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "test_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "eng_holdout_sha256": "d266907c5fff0724e87f9cdf91ad70285c40c8133b04a0bf4343a775564eea4b"
+}

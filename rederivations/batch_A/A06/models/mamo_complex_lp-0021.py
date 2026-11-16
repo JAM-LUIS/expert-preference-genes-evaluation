@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# mamo_complex_lp-0021: diet problem. Integer number of servings of each food (main); continuous relaxation also reported.
+import pulp
+
+def report(m, extra=None):
+    status = pulp.LpStatus[m.status]; sol = pulp.LpSolution[m.sol_status]
+    print("STATUS:", status); print("SOLUTION_STATUS:", sol)
+    if status == "Optimal" and sol == "Optimal Solution Found":
+        print("FINAL_OBJECTIVE:", pulp.value(m.objective) if extra is None else extra)
+        for v in m.variables():
+            if v.varValue and abs(v.varValue) > 1e-9: print(f"  {v.name} = {v.varValue}")
+    else:
+        print("FINAL_OBJECTIVE: None")
+SOLVER = lambda: pulp.PULP_CBC_CMD(msg=False, timeLimit=600)
+def relax_and_report(m):
+    to_relax = [v for v in m.variables() if v.cat == pulp.LpInteger and not (v.lowBound == 0 and v.upBound == 1)]
+    for v in to_relax: v.cat = pulp.LpContinuous
+    m.solve(SOLVER())
+    print("INTEGERS_RELAXED:", pulp.LpStatus[m.status], pulp.value(m.objective), f"({len(to_relax)} general-integer variables made continuous; binaries kept)")
+    for v in to_relax: v.cat = pulp.LpInteger
+
+# name: (protein, carbs, calories, cost)
+foods = {"Chicken": (16,22,292,5), "Cheese": (10,4,82,9), "Rice": (12,21,207,2), "Beans": (13,14,81,1)}
+req = (94, 191, 2271)
+m = pulp.LpProblem("diet", pulp.LpMinimize)
+x = {f: pulp.LpVariable("x_" + f, lowBound=0, cat="Integer") for f in foods}
+m += pulp.lpSum(foods[f][3] * x[f] for f in foods), "cost"
+for k, nm in enumerate(["protein", "carbs", "calories"]):
+    m += pulp.lpSum(foods[f][k] * x[f] for f in foods) >= req[k], nm
+m.solve(SOLVER())
+report(m)
+relax_and_report(m)

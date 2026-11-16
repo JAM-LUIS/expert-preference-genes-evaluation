@@ -1,0 +1,3 @@
+
+===== 2026-10-10T17:37:58.072315+00:00 /opt/homebrew/opt/python@3.14/bin/python3.14 runtime/orgene_cli.py execute --run experiments/test-viewed0905-20261010/industryor-viewed0905 --cases data/cases/industryor.jsonl --split-dir data/splits_r1/industryor_main_rev2026_100 --split test --genes genes/genes.it1.jsonl --lexicon genes/activation_lexicon.v2.json --local-tokens on --export-validated --plan configs/run_plans/industryor-viewed0905.plan.json --plan-sha256 47c2fa543a2ea014b5522c203f0e3f934e05e4694dd84c6efc449b3e7eecbcc6
+{"counts": {"qwen3-8b.main": {"complete": 12}}, "plan_sha256": "47c2fa543a2ea014b5522c203f0e3f934e05e4694dd84c6efc449b3e7eecbcc6"}

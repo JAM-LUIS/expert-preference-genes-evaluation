@@ -1,0 +1,1643 @@
+{
+ "schema_version": 1,
+ "units": [
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3T",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3A",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C0R-E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0009",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0009",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0009",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0010",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0010",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0010",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0019",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0019",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0019",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0024",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0024",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0024",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0037",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0037",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0037",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0040",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0040",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0040",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0049",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0049",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0049",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0053",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0053",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0053",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0058",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0058",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0058",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0077",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0077",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0077",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0078",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0078",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0078",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0081",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0081",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0081",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0083",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0083",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0083",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0085",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0085",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0085",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0098",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0098",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0098",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0099",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0099",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0099",
+   "config_id": "C2E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C0",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3E",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3L",
+   "repeat": 1,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C0",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3E",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3L",
+   "repeat": 2,
+   "registry_entry": "qwen3-8b.var07"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0002",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0023",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0025",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0032",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0057",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0088",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0090",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0093",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C0",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C1",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C2",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3E",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  },
+  {
+   "case_id": "industryor-0094",
+   "config_id": "C3L",
+   "repeat": 0,
+   "registry_entry": "gptoss-20b.main"
+  }
+ ]
+}

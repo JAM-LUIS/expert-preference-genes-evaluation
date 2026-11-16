@@ -1,0 +1,10 @@
+
+to_relax = [v for v in m.variables()
+            if v.cat == pulp.LpInteger and not (v.lowBound == 0 and v.upBound == 1)]
+for v in to_relax:
+    v.cat = pulp.LpContinuous
+m.solve(pulp.PULP_CBC_CMD(msg=False, timeLimit=600))
+print("INTEGERS_RELAXED:", pulp.LpStatus[m.status], pulp.value(m.objective),
+      f"({len(to_relax)} general-integer variables made continuous; binaries kept)")
+for v in to_relax:
+    v.cat = pulp.LpInteger

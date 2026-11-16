@@ -1,0 +1,133 @@
+{
+ "schema": "orgene.r1.prereg_analysis.v1",
+ "status": "draft",
+ "about": [
+  "Pre-registered analysis settings of R1: comparison families (Holm), TOST margin, tolerance tiers, stratification cut points and the other choices the analysis scripts under analysis/r1/ read. Format by E20a; the pending values are decided in 1D, before any test run, and the file is frozen with the other pre-registration items (configs/freeze_spec.json, item prereg_analysis).",
+  "Every entry of `items` has a status: fixed = decided, `value` is used and `basis` names the decision; pending = not decided yet, `value` is null. An analysis of test data refuses a pending item. A dev analysis may run on the item's `proposal` (when there is one) and then lists the item under `pending_used` in its output.",
+  "Configuration labels: a repairing configuration is named <config>@<k> for the ladder point 'at most k repair rounds' (C3L@2, C3L@1, C3E@2), a configuration without repair by its id (C0, C1, C2). Scopes: a benchmark name or 'pooled' (both benchmarks, bootstrap resampled within benchmark).",
+  "Outcomes: correct (primary tier), correct_tol:<tier>, correct_original_ref, verified_correct, exec_ok. An analysis set whose reference kind is 'original' (sens_orig_ref) scores with the original reference values automatically."
+ ],
+ "items": {
+  "primary_comparison": {
+   "status": "fixed",
+   "value": {"id": "primary", "a": "C3L@2", "b": "C3E@2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"},
+   "basis": "DECISIONS R1-D5 (main comparison C3L vs C3E; main model qwen3:8b; at most 2 repair rounds is the primary reading)"
+  },
+  "outcome_primary": {
+   "status": "fixed",
+   "value": "correct",
+   "basis": "R1-D5 default 3 and R1-D13: printed FINAL_OBJECTIVE, |obj - ref| <= max(t, t*|ref|) at t = 1e-4, IEEE 754 double precision (R1-D16 item 2)"
+  },
+  "tolerance_tiers": {
+   "status": "fixed",
+   "value": ["1e-06", "0.0001", "0.01"],
+   "basis": "R1-D13 (runtime/orgene/score.py TOLERANCES; keys of correct_tol in the result rows)"
+  },
+  "tolerance_primary": {
+   "status": "fixed",
+   "value": "0.0001",
+   "basis": "R1-D13"
+  },
+  "analysis_set_main": {
+   "status": "fixed",
+   "value": "main",
+   "basis": "R1-D6 and R1-D16 item 4: MAMO cleaned subset and IndustryOR 2026 revision, both *_excl0905, minus NL_NOT_LINEARIZABLE and Q3-removed cases"
+  },
+  "analysis_sets_sensitivity": {
+   "status": "fixed",
+   "value": ["sens_orig_ref", "sens_full211", "sens_incl0905", "sens_full211_incl0905", "well_specified"],
+   "basis": "R1-D6 (the *_incl0905 sets are the only results that include the 9 cases viewed on 2026-09-05)"
+  },
+  "analysis_set_dev_signal": {
+   "status": "fixed",
+   "value": "dev_signal55",
+   "basis": "R1-D5 and R1-D6 (dev correctness signal: 55 cleaned dev cases)"
+  },
+  "repeats": {
+   "status": "fixed",
+   "value": "per-case mean over repeats before resampling and testing; the case is the resampling unit, never the call",
+   "basis": "v5 analysis/paired_bootstrap.py; engineering plan 3.20"
+  },
+  "paired_test": {
+   "status": "fixed",
+   "value": "exact two-sided McNemar on the per-case outcomes (exact sign test on per-case mean differences when a case has several repeats)",
+   "basis": "engineering plan 3.20; stage-0 report T8 section 2.2"
+  },
+  "alpha": {
+   "status": "fixed",
+   "value": 0.05,
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)"
+  },
+  "bootstrap": {
+   "status": "fixed",
+   "value": {"n_boot": 10000, "seed": 1, "ci_level": 0.95, "method": "percentile", "unit": "case", "pooled_strata": "benchmark"},
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)"
+  },
+  "holm_families": {
+   "status": "fixed",
+   "value": [{"id": "primary", "alpha": 0.05, "comparisons": [{"id": "C3L_vs_C3E", "a": "C3L@2", "b": "C3E@2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}]}, {"id": "ladder", "alpha": 0.05, "comparisons": [{"id": "C3E_vs_C0", "a": "C3E@2", "b": "C0", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L1_vs_C3E", "a": "C3L@1", "b": "C3E@2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L2_vs_C3L1", "a": "C3L@2", "b": "C3L@1", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C2E_vs_C2", "a": "C2E@2", "b": "C2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3_2_vs_C3_0", "a": "C3@2", "b": "C3@0", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}]}, {"id": "controls", "alpha": 0.05, "comparisons": [{"id": "C3L_vs_C0", "a": "C3L@2", "b": "C0", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L_vs_C1", "a": "C3L@2", "b": "C1", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L_vs_C2", "a": "C3L@2", "b": "C2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L_vs_C3", "a": "C3L@2", "b": "C3@2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}]}],
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)",
+   "note": "The primary family is the single comparison H1. 'Per-problem vs all activation' (C3L vs C3L-ALL) left the controls family on 2026-10-03: activation does not change the C3L trigger sets (offline replay), so it is reported descriptively. Mechanism comparisons are not in any family; H2 is a gated test. The agent baseline ORA (E15) is not run (author decision 2026-10-03): C3L vs ORA left the controls family; the generate-execute-debug comparison is C3E, with C3A and C0R-E as further controls."
+  },
+  "tost_margin": {
+   "status": "fixed",
+   "value": 0.05,
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)",
+   "note": "Reported as 'any effect is smaller than 5 points', never as no effect (prereg draft section 4)."
+  },
+  "tost": {
+   "status": "fixed",
+   "value": {"alpha": 0.05, "method": "Tango score interval for the paired difference (primary); case bootstrap percentile interval (cross-check)", "comparisons": [{"id": "C3L_vs_C3E_equiv", "a": "C3L@2", "b": "C3E@2", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L1_vs_C3T1_equiv", "a": "C3L@1", "b": "C3T@1", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}, {"id": "C3L_vs_C3L1_equiv", "a": "C3L@2", "b": "C3L@1", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}]},
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)",
+   "note": "The equivalence reading of the primary comparison applies only when H1 is not rejected."
+  },
+  "length_model": {
+   "status": "fixed",
+   "value": {"formula": "correct ~ configuration + log(out_tokens)", "primary": "conditional logistic regression, one stratum per case", "sensitivity": "GEE, binomial family, exchangeable working correlation, clusters = cases", "quartiles": "output-token quartiles pooled over the compared configurations (statistics.quantiles n=4, inclusive); accuracy per configuration and quartile", "out_tokens": "sum over all calls of the unit, as the result rows record it"},
+   "basis": "R1-D5 default 12 (todo A0-12)"
+  },
+  "strata_scale_feature": {
+   "status": "fixed",
+   "value": "n_numeric_literals",
+   "basis": "1D, author decision 2026-10-04: the numbers written in the statement (data volume); it does not depend on model output, unlike n_variables_est and n_constraints_est, which are missing where the C0 program fails"
+  },
+  "strata_scale_cutpoints": {
+   "status": "fixed",
+   "value": {"file_sha256": "aa1a70e708e9000e7562a4b1d12b58fa5ac97e2c5039f79c7da4fe8a603097d8", "feature": "n_numeric_literals", "cutpoints": {"industryor": [12.0, 18.0], "mamo_complex_lp": [23.666667, 56.666667]}},
+   "basis": "1D, 2026-10-04: tertile cut points per benchmark from the frozen dev cases, as data/features/scale_features.json records them (analysis/r1/scale_features.py)"
+  },
+  "strata_industryor_difficulty": {
+   "status": "fixed",
+   "value": {"field": "extra.difficulty", "levels": ["Easy", "Medium", "Hard"]},
+   "basis": "IndustryOR case records (field of the pinned release); only the label is read"
+  },
+  "strata_type_labels": {
+   "status": "fixed",
+   "value": {"file": "data/labels/industryor_type.json", "field": "effective_type"},
+   "basis": "R1-D6 (adjudicated type labels, ingested by data/ingest_annotations.py)"
+  },
+  "shared_round0_mde": {
+   "status": "fixed",
+   "value": {"alpha": 0.05, "power": 0.8, "p01_grid": [0.0, 0.005, 0.01, 0.02, 0.03], "step": 0.001, "n": "main analysis set, per benchmark and pooled"},
+   "basis": "stage-0 report T8 section 3.4 (method unchanged); author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)"
+  },
+  "forest_settings": {
+   "status": "fixed",
+   "value": ["main", "sens_orig_ref", "sens_full211", "sens_incl0905", "tolerance 1e-06", "tolerance 0.01", "second open-weight model (gpt-oss:20b)", "temperature 0.7 subset", "at most 1 repair round", "heuristic-only cases set to generic repair"],
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)",
+   "note": "'API model' replaced by the second open-weight model (decision 2026-09-29); 'activation all' removed (reported descriptively); the conservative bound of mechanism.py added."
+  },
+  "gated_tests": {
+   "status": "fixed",
+   "value": [{"id": "H2", "gate": "C3L_vs_C3E", "alpha": 0.05, "comparison": {"id": "C3L1_vs_C3T1", "a": "C3L@1", "b": "C3T@1", "model": "qwen3:8b", "outcome": "correct", "analysis_set": "main", "scope": "pooled"}}],
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)",
+   "note": "Fixed sequence: H2 (gene diagnosis and prescription beyond detection with an equal-length generic checklist, 1-round cut: same trigger, same number of calls) is tested only if H1 is rejected; familywise error stays at 0.05. Otherwise it is reported as an estimate."
+  },
+  "mechanism": {
+   "status": "fixed",
+   "value": {"labels": {"l": "C3L@1", "e": "C3E@1", "t": "C3T@1", "a": "C3A@1", "round0": "C0"}, "secondary_cut": 2, "estimates": ["nested decomposition d(L-E) = d(T-E) + d(L-T), pooled and per round-0 stratum N/P/X/M", "detection, repair success, false alarm and break rates per label", "gains by function class of the applied genes", "conservative bound for the answer-distribution heuristic", "per-gene detection at round 0", "C3A vs C3T (forced review)", "C3L@2 vs C0R-E@2 (rules in the prompt), with calls and tokens", "second model: C3L@2 vs C3E@2 on gpt-oss:20b, reported outside every family", "problem-family groups when labels exist"], "function_classes": "configs/gene_function_classes.json"},
+   "basis": "author decision 2026-10-03 (D12; prereg draft v2, stage1/prereg/PREREG_DRAFT_EN.md)",
+   "note": "Estimates and descriptions only (analysis/r1/mechanism.py --from-prereg); none enters a Holm family."
+  }
+ }
+}

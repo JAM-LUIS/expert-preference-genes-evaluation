@@ -1,0 +1,6 @@
+{{- if or (not .Messages) (ne (index .Messages 0).Role "system") }}<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+{{ end }}
+{{- range .Messages }}<|im_start|>{{ .Role }}
+{{ .Content }}<|im_end|>
+{{ end }}<|im_start|>assistant

@@ -1,0 +1,395 @@
+{
+ "template_sha256": "5dc90082f15d02604c27bdcf974d45f68d003c46cee76249d9cb4f607825c64c",
+ "go_version": "go1.25.6",
+ "generator": "tools/gptoss_template_ref/main.go",
+ "think_mapping": "absent: unset; true/false: set, Think=value, ThinkLevel empty; level string: set, Think true, ThinkLevel=value",
+ "cases": [
+  {
+   "name": "c0-low",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "c0-medium",
+   "think": "medium",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "c0-high",
+   "think": "high",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: high\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "c0-true",
+   "think": true,
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "c0-false",
+   "think": false,
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "c0-absent",
+   "think": null,
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "no-system-low",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "repair-low",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    },
+    {
+     "role": "assistant",
+     "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```"
+    },
+    {
+     "role": "user",
+     "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant<|channel|>final<|message|>```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```<|end|><|start|>user<|message|>The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program.<|end|><|start|>assistant"
+  },
+  {
+   "name": "repair-history-thinking-low",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    },
+    {
+     "role": "assistant",
+     "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```",
+     "thinking": "We need a model."
+    },
+    {
+     "role": "user",
+     "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant<|channel|>final<|message|>```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```<|end|><|start|>user<|message|>The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program.<|end|><|start|>assistant"
+  },
+  {
+   "name": "repair2-low",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    },
+    {
+     "role": "assistant",
+     "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```"
+    },
+    {
+     "role": "user",
+     "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+    },
+    {
+     "role": "assistant",
+     "content": "```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```\n# second"
+    },
+    {
+     "role": "user",
+     "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant<|channel|>final<|message|>```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```<|end|><|start|>user<|message|>The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program.<|end|><|start|>assistant<|channel|>final<|message|>```python\nimport pulp\nm = pulp.LpProblem('p', pulp.LpMaximize)\nprint(\"STATUS: Optimal\")\nprint(\"FINAL_OBJECTIVE: 100\")\n```\n# second<|end|><|start|>user<|message|>The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program.<|end|><|start|>assistant"
+  },
+  {
+   "name": "two-systems",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "First rule."
+    },
+    {
+     "role": "system",
+     "content": "Second rule."
+    },
+    {
+     "role": "user",
+     "content": "Hi"
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nFirst rule.\n\nSecond rule.<|end|><|start|>user<|message|>Hi<|end|><|start|>assistant"
+  },
+  {
+   "name": "system-middle",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Hi"
+    },
+    {
+     "role": "system",
+     "content": "Late rule."
+    },
+    {
+     "role": "user",
+     "content": "Again"
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nLate rule.<|end|><|start|>user<|message|>Hi<|end|><|start|>user<|message|>Again<|end|><|start|>assistant"
+  },
+  {
+   "name": "consecutive-users",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "Part one."
+    },
+    {
+     "role": "user",
+     "content": "Part two."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>Part one.\n\nPart two.<|end|><|start|>assistant"
+  },
+  {
+   "name": "prefill-content",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Hi"
+    },
+    {
+     "role": "assistant",
+     "content": "Hello"
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi<|end|><|start|>assistant<|channel|>final<|message|>Hello"
+  },
+  {
+   "name": "prefill-thinking-only",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Hi"
+    },
+    {
+     "role": "assistant",
+     "content": "",
+     "thinking": "Greet back."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi<|end|><|start|>assistant<|channel|>analysis<|message|>Greet back."
+  },
+  {
+   "name": "after-last-user-thinking-and-content",
+   "think": "high",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Hi"
+    },
+    {
+     "role": "assistant",
+     "content": "Hello",
+     "thinking": "Greet."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: high\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>user<|message|>Hi<|end|><|start|>assistant<|channel|>analysis<|message|>Greet.<|end|><|start|>assistant<|channel|>final<|message|>Hello"
+  },
+  {
+   "name": "unicode-braces",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "Use {{ braces }} and \\n escapes; ≤ ≥ — é ñ 中文 🙂\ttab"
+    },
+    {
+     "role": "user",
+     "content": "Cost ≤ 1,234.50 €/unit;\r\nnext line  \n\n  indented {x} <|start|> text"
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nUse {{ braces }} and \\n escapes; ≤ ≥ — é ñ 中文 🙂\ttab<|end|><|start|>user<|message|>Cost ≤ 1,234.50 €/unit;\r\nnext line  \n\n  indented {x} <|start|> text<|end|><|start|>assistant"
+  },
+  {
+   "name": "empty-user",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": ""
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|><|end|><|start|>assistant"
+  },
+  {
+   "name": "date-2027",
+   "think": "low",
+   "date": "2027-01-01",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "date-2026-12-31-medium",
+   "think": "medium",
+   "date": "2026-12-31",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: medium\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>assistant"
+  },
+  {
+   "name": "assistant-empty-content",
+   "think": "low",
+   "date": "2026-09-29",
+   "messages": [
+    {
+     "role": "system",
+     "content": "You are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value>"
+    },
+    {
+     "role": "user",
+     "content": "A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit."
+    },
+    {
+     "role": "assistant",
+     "content": ""
+    },
+    {
+     "role": "user",
+     "content": "The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program."
+    }
+   ],
+   "prompt": "<|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2026-09-29\n\nReasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.<|end|><|start|>developer<|message|>\n\n# Instructions\n\nYou are an operations research assistant. Write a complete Python program.\nEnd with two lines:\nSTATUS: <status>\nFINAL_OBJECTIVE: <value><|end|><|start|>user<|message|>A bakery makes bread (profit 3) and cake (profit 5). Oven hours: bread 1, cake 2, at most 40.\nMaximize profit.<|end|><|start|>user<|message|>The program failed:\n```\nKeyError: (1, 2)\n```\nReturn the complete corrected program.<|end|><|start|>assistant"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 53.0
+  start_1 = 21.0
+  start_2 = 4.0
+  start_3 = 16.0
+  start_4 = 2.0
+  start_5 = 10.0

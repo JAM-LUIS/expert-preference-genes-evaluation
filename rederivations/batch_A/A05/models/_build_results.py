@@ -1,0 +1,84 @@
+#!/usr/bin/env python3
+# Builds results.jsonl from the .out.txt files and checks consistency.
+import json, os, re, glob
+def out(name):
+    txt = open(f"models/{name}.out.txt").read()
+    st = re.search(r"^STATUS: (.*)$", txt, re.M).group(1)
+    fo = re.search(r"^FINAL_OBJECTIVE: (.*)$", txt, re.M).group(1)
+    rel = re.search(r"^INTEGERS_RELAXED: \w+ (\S+)", txt, re.M)
+    return st, (None if fo == "None" else round(float(fo), 6)), (round(float(rel.group(1)), 6) if rel else None)
+def rd(name, text):
+    st, ob, _ = out(name)
+    return {"reading": text, "objective": ob, "status": st, "model_file": f"models/{name}.py"}
+R = []
+def add(cid, sense, summary, conf, ptype=None, tal=None, rat="", tconf=None, int_amb=False, asked=None,
+        issue="NONE", issue_note="", readings=None, notes=""):
+    st, ob, rel = out(cid)
+    R.append({"case_id": cid, "status": st, "objective": ob, "sense": sense, "model_file": f"models/{cid}.py",
+              "output_file": f"models/{cid}.out.txt", "solver": "PULP_CBC_CMD", "model_summary": summary,
+              "integrality_ambiguous": int_amb, "integer_relaxed_objective": rel if int_amb else None,
+              "asked_value": asked, "issue": issue, "issue_note": issue_note, "readings": readings or [],
+              "confidence": conf, "problem_type": ptype, "type_after_linearization": tal, "type_rationale": rat,
+              "type_confidence": tconf, "notes": notes})
+add("industryor-0006", "min", "各产品各季度产量、季末库存、季末欠交量（整数）；最小化延期赔偿与库存费之和；库存-欠交平衡、每季 15000 工时、产品 I 第 2 季不生产、第 4 季末每种库存 150 且无欠交。",
+    "MEDIUM", "IP", None, "产量、库存、欠交都是整件数，目标和约束均为线性；若视产量可分则为 LP。", "MEDIUM", int_amb=True,
+    issue="AMBIGUOUS", issue_note="“第四季度末要求每种产品有 150 件库存”这部分期末库存是否计入每件每季 5 元的库存费，题面没有说明；两种读法相差一个常数。",
+    readings=[rd("industryor-0006", "每季末库存（含第 4 季末规定的 150 件）都计库存费"), rd("industryor-0006__r2", "第 4 季末规定的期末库存不计库存费")],
+    notes="假定第 4 季末不允许仍有欠交。整数与连续模型的最优值略有不同（工时整除性）。")
+add("industryor-0015", "min", "每阶段购买数、送慢修数、送快修数及干净/待修工具结存（整数）；最小化购买与修理费用；每阶段可用干净工具满足需求，用过的工具可送修或搁置。",
+    "MEDIUM", "IP", None, "购买、送修数量都是工具个数（整数），目标与平衡约束均为线性。", "HIGH",
+    issue="AMBIGUOUS", issue_note="“慢修需 p 个阶段取回、快修需 q 个阶段取回”的时间含义不明确：第 j 阶段末送修的工具是在第 j+p（j+q）阶段可用，还是要再晚一个阶段（j+p+1、j+q+1）才可用。",
+    readings=[rd("industryor-0015", "第 j 阶段末送修，第 j+p（慢）/ j+q（快）阶段可用"), rd("industryor-0015__r2", "第 j 阶段末送修，第 j+p+1（慢）/ j+q+1（快）阶段可用")],
+    notes="LP 松弛本身为整数解（网络结构）。")
+add("industryor-0022", "max", "三种产品产量（连续，单位 100kg）与是否开线的 0-1 变量；最大化销售毛利减开线固定费；产量不超过最大需求、开线则不低于最小批量、三种产品按日定额折算的生产天数合计不超过 22 天。",
+    "MEDIUM", "MILP", None, "产量为连续量，开线与否为 0-1 变量，固定费用和最小批量用 0-1 变量加线性约束表示。", "HIGH",
+    issue="AMBIGUOUS", issue_note="题面最后一句写“最大化总收入（total revenue）”，但同时给了单位生产成本；目标是（售价-成本）×产量-开线费，还是 售价×产量-开线费，两种读法最优值不同。",
+    readings=[rd("industryor-0022", "目标 = (售价-生产成本)×产量 - 开线固定费（利润）"), rd("industryor-0022__r2", "目标 = 售价×产量 - 开线固定费（不扣生产成本）")],
+    notes="产量取整数时主读法最优值相同。")
+add("industryor-0026", "min", "六个班次开始上班的人数（整数）；最小化总人数；每个 4 小时时段在岗人数（本班次加上一班次，循环）不少于需求。",
+    "HIGH", "IP", None, "各班次人数为整数变量，目标和覆盖约束均为线性。", "HIGH")
+add("industryor-0028", "max", "各年各项目投资额（连续，元）；最大化第三年末本利和；各年年初资金平衡（允许闲置），项目 2、3、4 有投资上限。",
+    "HIGH", "LP", None, "投资额为连续金额，目标与资金平衡约束均为线性。", "HIGH", notes="目标值单位为元。")
+add("industryor-0029", "min", "各类应聘者分配到（专业, 城市）岗位的人数（整数）及各目标的偏差变量；按优先级依次最小化：岗位缺额、偏好专业人数不足 8000 的差额、偏好城市人数不足 8000 的差额；每类人数不超过 1500，只能从事可胜任专业。",
+    "LOW", "IP", None, "分配人数为整数，目标规划各级目标与约束均为线性（按优先级逐级求解）。", "MEDIUM",
+    issue="AMBIGUOUS", issue_note="P1“三类专业人员需求全部满足”没有说明各岗位是否恰好按需求人数录用（共 8500 人），还是允许超过需求录用（最多 9000 人）；两种读法下 P2、P3 的最优偏差不同。",
+    readings=[rd("industryor-0029", "各岗位录用人数恰好等于需求（不超额录用）"), rd("industryor-0029__r2", "各岗位录用人数可以超过需求（只惩罚缺额）")],
+    notes="objective 为最后一级（P3）负偏差的最小值，即题目所问“至少多少人不能满足 P3”；前两级的结果见输出文件。")
+add("industryor-0035", "min", "每批布在每个染缸的开始时间（连续）与同一染缸上两批先后顺序的 0-1 变量；最小化最后一批的完工时间；每批按缸 1→2→3 顺序加工，每个缸同一时间只染一批。",
+    "HIGH", "MILP", None, "开始时间为连续变量，先后顺序为 0-1 变量，析取约束用大 M（取总加工时间）线性表示。", "HIGH",
+    notes="另用全部 120 个排列穷举核对，结果一致。")
+add("industryor-0057", "min", "每种切割方式（1 米或 2 米宽卷上并排的宽度组合）的切割长度（连续）；最小化废料面积 = 所用原纸面积 - 订单面积；各订单宽度的总长度恰好等于需求。",
+    "MEDIUM", "LP", None, "各切割方式的使用长度为连续变量，目标和需求约束均为线性。", "HIGH",
+    notes="目标值单位为平方米；超产部分视为废料（与恰好满足需求等价，因为已枚举所有子方式）。")
+add("industryor-0070", "min", "有向弧是否被选的 0-1 变量和 MTZ 顺序变量；最小化回路总距离；每城进出各一次、消除子回路。按距离表的 4 个城市求解（距离不对称）。",
+    "MEDIUM", "IP", None, "弧选择为 0-1 变量、MTZ 顺序变量取整数，目标与约束均为线性。", "HIGH",
+    notes="题面文字说“访问另外两个城市”（共 3 城），但距离表给了 4 个城市；另按只含城市 1-3 求了一次（models/industryor-0070__r2.py），最优值与 4 城相同，故不列为歧义。")
+add("industryor-0072", "max", "四处房产是否购买的 0-1 变量；最大化年收入；总购价不超过 700 万预算，房产 3 与 4 不能同时购买。",
+    "HIGH", "IP", None, "全部为 0-1 变量，目标和约束均为线性。", "HIGH", notes="目标值单位为美元。")
+add("industryor-0077", "min", "零件-机器指派的 0-1 变量与机器是否启用的 0-1 变量；最小化加工费与一次性准备费之和；每个零件加工一次，零件 1、2 恰有一个在 A 上，零件 3、4、5 分别在 A、B、C 上，C 上至多 3 种零件。",
+    "HIGH", "IP", None, "全部为 0-1 变量，固定费用与逻辑条件用线性约束表示。", "HIGH")
+add("industryor-0088", "max", "液体、固体肥料的生产批数（连续）；最大化周末两种产品库存之和（期初库存 + 产量 - 需求）；两台机器工时限制，期末库存非负（需求须满足）。",
+    "MEDIUM", "LP", None, "产量可取分数批，目标和约束均为线性。", "HIGH",
+    notes="目标为期末库存总量（已扣除本周需求）；假定需求必须满足，即期末库存不能为负。")
+add("industryor-0090", "max", "套餐 A、B 的销售份数（整数）；最大化促销收入；衬衫、裤子库存限制，A 不少于 20 份、B 不少于 10 份。",
+    "HIGH", "IP", None, "两种套餐份数为整数，目标和约束均为线性。", "HIGH", int_amb=False)
+add("industryor-0094", "max", "两种原油投入两种汽油的吨数、分三个价格档的原油 A 采购量（连续）及档位用满的 0-1 变量；最大化销售收入减采购费用；原油 A、B 可用量、A 最低比例、采购量上限 1500 吨。",
+    "MEDIUM", "NL_LINEARIZABLE", "MILP", "采购费用是采购量的分段线性函数且边际价格递减（凹），最大化利润时需用 0-1 变量保证按档位顺序采购；其余变量连续、约束线性。", "HIGH",
+    notes="目标值单位为元；按题面价格字面求解，采购价按分档累进计价。")
+add("mamo_complex_lp-0122", "max", "各有向链路上的流量（连续，不超过容量）；最大化从节点 0 净流出量；中间节点流量守恒。", "HIGH", None, None, "", None)
+add("mamo_complex_lp-0207", "min", "各季度正常与加班产量、季末库存（连续）；最小化生产与库存费用；按时满足需求，正常产能每季 40。", "HIGH", None, None, "", None,
+    notes="LP 最优解为整数。")
+with open("results.jsonl", "w", encoding="utf-8") as f:
+    for r in R: f.write(json.dumps(r, ensure_ascii=False) + "\n")
+# checks
+ids = sorted(os.path.basename(p)[:-4] for p in glob.glob("*.txt"))
+rows = [json.loads(l) for l in open("results.jsonl", encoding="utf-8")]
+assert sorted(r["case_id"] for r in rows) == ids and len(rows) == len(set(r["case_id"] for r in rows)) == 16
+for r in rows:
+    assert os.path.exists(r["model_file"]) and os.path.exists(r["output_file"])
+    assert out(r["case_id"])[1] == r["objective"] and r["status"] == "Optimal"
+    for q in r["readings"]: assert os.path.exists(q["model_file"]) and os.path.exists(q["model_file"][:-3] + ".out.txt")
+    if r["case_id"].startswith("industryor-"): assert r["problem_type"] and r["type_rationale"] and r["type_confidence"]
+    if r["issue"] != "NONE": assert r["issue_note"] and len(r["readings"]) >= 2
+    if r["integrality_ambiguous"]: assert r["integer_relaxed_objective"] is not None
+print("CHECK_OK rows:", len(rows))

@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 240000.0
+  x_apples = 120.0
+  y_apples = 1.0

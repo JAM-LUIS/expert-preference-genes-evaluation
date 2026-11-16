@@ -1,0 +1,92 @@
+{
+  "n": 60,
+  "exec_rate": 0.6667,
+  "protocol_rate": 0.6333,
+  "accuracy": 0.2833,
+  "n_correct": 17,
+  "status_counts": {
+    "optimal": 38,
+    "none": 22
+  },
+  "mean_out_tokens": 804.0,
+  "mean_calls": 1.0,
+  "repaired_cases": 0,
+  "hard_issues_round0": 311,
+  "by_source": {
+    "mamo_complex_lp": {
+      "n": 60,
+      "exec_rate": 0.6667,
+      "protocol_rate": 0.6333,
+      "accuracy": 0.2833,
+      "n_correct": 17,
+      "status_counts": {
+        "optimal": 38,
+        "none": 22
+      },
+      "mean_out_tokens": 804.0,
+      "mean_calls": 1.0,
+      "repaired_cases": 0,
+      "hard_issues_round0": 311
+    }
+  },
+  "gene_hard_failures": {
+    "orgene.artifact.spec_present": {
+      "round0_fail": 60,
+      "final_fail": 60
+    },
+    "orgene.objective.sense_consistent": {
+      "round0_fail": 60,
+      "final_fail": 60
+    },
+    "orgene.variables.domain_consistent": {
+      "round0_fail": 60,
+      "final_fail": 60
+    },
+    "orgene.constraints.implemented": {
+      "round0_fail": 60,
+      "final_fail": 60
+    },
+    "orgene.execution.runs": {
+      "round0_fail": 22,
+      "final_fail": 22
+    },
+    "orgene.solution.status_optimal_or_justified": {
+      "round0_fail": 22,
+      "final_fail": 22
+    },
+    "orgene.code.sparse_index_guard": {
+      "round0_fail": 6,
+      "final_fail": 6
+    },
+    "orgene.code.tuple_key_indexing": {
+      "round0_fail": 10,
+      "final_fail": 10
+    },
+    "orgene.boundary.solve_before_report": {
+      "round0_fail": 3,
+      "final_fail": 3
+    },
+    "orgene.boundary.status_reported": {
+      "round0_fail": 3,
+      "final_fail": 3
+    },
+    "orgene.objective.aggregates_declared_variables": {
+      "round0_fail": 2,
+      "final_fail": 2
+    },
+    "orgene.model.linear_expressions_only": {
+      "round0_fail": 2,
+      "final_fail": 2
+    },
+    "orgene.code.pulp_api_exists": {
+      "round0_fail": 1,
+      "final_fail": 1
+    }
+  },
+  "condition": "C1",
+  "scored_at": "2026-09-06T18:03:45.513093+00:00",
+  "tolerance": {
+    "rel": 0.0001,
+    "abs": 0.0001
+  }
+}

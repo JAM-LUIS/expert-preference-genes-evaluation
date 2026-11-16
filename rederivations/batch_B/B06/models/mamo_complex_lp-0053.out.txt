@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 13079.0
+  f_1_3 = 136.0
+  f_3_2 = 65.0
+  f_5_3 = 29.0
+  f_5_4 = 353.0
+INTEGERS_RELAXED: Optimal 13079.0 (20 general-integer variables made continuous; binaries kept)

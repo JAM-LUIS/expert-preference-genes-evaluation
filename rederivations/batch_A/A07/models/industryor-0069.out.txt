@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 20.0
+  n_0_1 = 1.0
+  n_0_2 = 7.0
+  n_2_1 = 45.0
+INTEGERS_RELAXED: Optimal 15.0 (7 general-integer variables made continuous; binaries kept)
+  bars used (last solve) = 52.5

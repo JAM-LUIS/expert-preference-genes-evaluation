@@ -1,0 +1,10 @@
+{
+  "cases_path": "data/cases/industryor.jsonl",
+  "cases_sha256": "13ae3ea9a4c13482904b2cc1ca3e80440ece10140dfa27af3b72a72d11adcec6",
+  "seed": 20260905,
+  "n_dev": 25,
+  "n_test": 75,
+  "numeric_only": true,
+  "dev_sha256": "f45a5a02b8afaf74075c34fdf1b983fb499cf005f1d342f5de3be0c58ad22868",
+  "test_sha256": "e2233fd44afe90d626734db3807ea6e1efa29052ac43526c8429403585c2ce88"
+}

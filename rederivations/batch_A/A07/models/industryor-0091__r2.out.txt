@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 409.0
+  A = 83.0
+  B = 32.0
+  k = 16.0

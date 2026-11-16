@@ -1,0 +1,66 @@
+{
+  "n": 25,
+  "exec_rate": 0.88,
+  "protocol_rate": 0.84,
+  "accuracy": 0.4,
+  "n_correct": 10,
+  "status_counts": {
+    "optimal": 19,
+    "infeasible": 2,
+    "none": 4
+  },
+  "mean_out_tokens": 725.4,
+  "mean_calls": 1.0,
+  "repaired_cases": 0,
+  "hard_issues_round0": 16,
+  "by_source": {
+    "industryor": {
+      "n": 25,
+      "exec_rate": 0.88,
+      "protocol_rate": 0.84,
+      "accuracy": 0.4,
+      "n_correct": 10,
+      "status_counts": {
+        "optimal": 19,
+        "infeasible": 2,
+        "none": 4
+      },
+      "mean_out_tokens": 725.4,
+      "mean_calls": 1.0,
+      "repaired_cases": 0,
+      "hard_issues_round0": 16
+    }
+  },
+  "gene_hard_failures": {
+    "orgene.model.linear_expressions_only": {
+      "round0_fail": 3,
+      "final_fail": 3
+    },
+    "orgene.solution.status_optimal_or_justified": {
+      "round0_fail": 6,
+      "final_fail": 6
+    },
+    "orgene.boundary.solve_before_report": {
+      "round0_fail": 1,
+      "final_fail": 1
+    },
+    "orgene.boundary.status_reported": {
+      "round0_fail": 1,
+      "final_fail": 1
+    },
+    "orgene.execution.runs": {
+      "round0_fail": 4,
+      "final_fail": 4
+    },
+    "orgene.code.pulp_api_exists": {
+      "round0_fail": 1,
+      "final_fail": 1
+    }
+  },
+  "condition": "C3L",
+  "scored_at": "2026-09-07T22:22:11.955058+00:00",
+  "tolerance": {
+    "rel": 0.0001,
+    "abs": 0.0001
+  }
+}

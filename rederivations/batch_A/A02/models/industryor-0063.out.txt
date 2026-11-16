@@ -1,0 +1,7 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 640.0
+  bicycle = 19.0
+  horse = 8.0
+  use_bicycle = 1.0
+INTEGERS_RELAXED: Optimal 640.0 (3 general-integer variables made continuous; binaries kept)

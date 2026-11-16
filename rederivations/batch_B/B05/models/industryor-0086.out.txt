@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 77499.99999999999
+  Meaties = 50000.0
+  Yummies = 100000.0

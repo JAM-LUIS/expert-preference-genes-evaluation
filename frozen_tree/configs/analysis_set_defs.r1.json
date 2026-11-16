@@ -1,0 +1,116 @@
+{
+  "schema": "orgene-r1/analysis_set_defs/v1",
+  "id_sets": {
+    "path": "data/analysis_sets/analysis_sets.v2.json",
+    "sha256": "6baf6b7f8678e78f12884f5775ebbfda8d4b396e9b793abee6133f1462a5205d"
+  },
+  "lists": {
+    "seen_20260905_test": "test cases whose statements were viewed in the 2026-09-05 reference spot check (id sets, exclusions); dropped from the main and the other sensitivity sets, included only in the *_incl0905 sets",
+    "nl_not_linearizable": "IndustryOR cases whose adjudicated type label is NL_NOT_LINEARIZABLE (data/exclusions_r1.json); kept, reported separately, not in main and not in the MDE sample size",
+    "q3_removed": "sampled reference checks with verdict AMBIGUOUS or UNDERSPECIFIED (data/exclusions_r1.json); out of the main set, kept in the full-data sensitivity sets and scored with the original reference",
+    "underspecified_screen": "keyword under-specification screen data/mamo_underspecified_ids.json (rule mamo_underspec_keyword.v1); only for the well-specified secondary subset"
+  },
+  "reference_kinds": {
+    "r1": "reference values after data/reference_overrides/ (CORRECT_ROUNDED and INCORRECT replaced; the original value is reported alongside)",
+    "original": "the benchmark reference values as frozen in data/cases/",
+    "not_a_signal": "cases looked at for error types only; their correctness is not used as a signal"
+  },
+  "sets": {
+    "main": {
+      "split": "test",
+      "reference": "r1",
+      "role": "primary analysis: MAMO cleaned subset + IndustryOR 2026 revision, without the 2026-09-05-viewed cases, the NL_NOT_LINEARIZABLE cases and the Q3-removed cases",
+      "terms": [
+        {"set": "mamo_main_clean111_excl0905", "minus": ["q3_removed"]},
+        {"set": "industryor_main_rev2026_100_excl0905", "minus": ["nl_not_linearizable", "q3_removed"]}
+      ],
+      "must_exclude": ["seen_20260905_test", "nl_not_linearizable", "q3_removed"]
+    },
+    "sens_orig_ref": {
+      "split": "test",
+      "reference": "original",
+      "role": "sensitivity: the main cases scored with the original reference values",
+      "terms": [{"def": "main"}],
+      "must_exclude": ["seen_20260905_test", "nl_not_linearizable", "q3_removed"],
+      "relations": [{"def": "main", "same_ids": true}]
+    },
+    "sens_full211": {
+      "split": "test",
+      "reference": "r1",
+      "role": "data-version sensitivity: all 211 MAMO cases (full pinned version) + all IndustryOR cases; Q3-removed cases kept (they have no override, so they are scored with the original reference); 2026-09-05-viewed and NL_NOT_LINEARIZABLE cases still out",
+      "terms": [
+        {"set": "mamo_sensitivity_full211_excl0905"},
+        {"set": "industryor_main_rev2026_100_excl0905", "minus": ["nl_not_linearizable"]}
+      ],
+      "must_exclude": ["seen_20260905_test", "nl_not_linearizable"],
+      "relations": [{"def": "main", "superset": true}]
+    },
+    "sens_incl0905": {
+      "split": "test",
+      "reference": "r1",
+      "role": "sensitivity: the main set with the 2026-09-05-viewed cases added back (MAMO cleaned subset 1, IndustryOR 4); the only result that includes them",
+      "terms": [
+        {"set": "mamo_main_clean111", "minus": ["q3_removed"]},
+        {"set": "industryor_main_rev2026_100", "minus": ["nl_not_linearizable", "q3_removed"]}
+      ],
+      "must_exclude": ["nl_not_linearizable", "q3_removed"],
+      "relations": [{"def": "main", "superset": true, "difference_within": ["seen_20260905_test"]}]
+    },
+    "sens_full211_incl0905": {
+      "split": "test",
+      "reference": "r1",
+      "role": "sensitivity: sens_full211 with the 2026-09-05-viewed cases added back (MAMO 5, IndustryOR 4)",
+      "terms": [
+        {"set": "mamo_sensitivity_full211"},
+        {"set": "industryor_main_rev2026_100", "minus": ["nl_not_linearizable"]}
+      ],
+      "must_exclude": ["nl_not_linearizable"],
+      "relations": [{"def": "sens_full211", "superset": true, "difference_within": ["seen_20260905_test"]}]
+    },
+    "well_specified": {
+      "split": "test",
+      "reference": "r1",
+      "role": "secondary: main without the cases hit by the keyword under-specification screen",
+      "terms": [{"def": "main", "minus": ["underspecified_screen"]}],
+      "must_exclude": ["seen_20260905_test", "nl_not_linearizable", "q3_removed", "underspecified_screen"],
+      "relations": [{"def": "main", "difference_within": []}]
+    },
+    "nl_separate": {
+      "split": "test",
+      "reference": "r1",
+      "role": "IndustryOR NL_NOT_LINEARIZABLE cases, reported separately (not in main, not in the MDE sample size)",
+      "terms": [{"set": "industryor_main_rev2026_100_excl0905", "only": ["nl_not_linearizable"]}],
+      "must_exclude": ["seen_20260905_test"],
+      "allow_empty": true
+    },
+    "dev_signal55": {
+      "split": "dev",
+      "reference": "r1",
+      "role": "dev correctness signal for gene iteration and checkpoint diagnostics: MAMO cleaned dev 30 + IndustryOR dev 25",
+      "terms": [
+        {"set": "mamo_main_clean111"},
+        {"set": "industryor_main_rev2026_100"}
+      ],
+      "expect": {"n": 55, "by_benchmark": {"mamo_complex_lp": 30, "industryor": 25}}
+    },
+    "dev_all85": {
+      "split": "dev",
+      "reference": "r1",
+      "role": "all dev cases (pipeline checks); correctness is a signal only on dev_signal55",
+      "terms": [
+        {"set": "mamo_sensitivity_full211"},
+        {"set": "industryor_main_rev2026_100"}
+      ],
+      "expect": {"n": 85, "by_benchmark": {"mamo_complex_lp": 60, "industryor": 25}},
+      "relations": [{"def": "dev_signal55", "superset": true}]
+    },
+    "dev_error_type_only30": {
+      "split": "dev",
+      "reference": "not_a_signal",
+      "role": "the 30 MAMO dev cases removed by the cleaning: error types only, never a correctness signal",
+      "terms": [{"set": "mamo_sensitivity_full211", "minus": ["mamo_main_clean111"]}],
+      "expect": {"n": 30, "by_benchmark": {"mamo_complex_lp": 30}},
+      "relations": [{"def": "dev_all85", "difference_within": []}, {"def": "dev_signal55", "disjoint": true}]
+    }
+  }
+}

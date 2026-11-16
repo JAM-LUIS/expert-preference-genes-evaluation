@@ -1,0 +1,211 @@
+{
+ "generator": "baselines/llmopt/template_ref.py",
+ "go": {
+  "template_sha256": "5d00c7c57b65651906a5696cf5fac099016152eaa49d682bcfd2cc4533464ead",
+  "go_version": "go1.25.6",
+  "renderer": "tools/qwen3_template_ref/main.go"
+ },
+ "jinja": {
+  "template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "jinja2_version": "3.1.6",
+  "environment": "ImmutableSandboxedEnvironment(trim_blocks, lstrip_blocks, loopcontrols), add_generation_prompt=True, tools=None"
+ },
+ "cases": [
+  {
+   "name": "probe_workflow",
+   "messages": [
+    {
+     "role": "user",
+     "content": "The following is a synthetic text used only to test prompt rendering. $\\min_{x} f(x)$ s.t. $g(x) \\leq b$, where $x = (x_1, \\ldots, x_d)^\\top$.\n```\n## Sets: \n[You need to fill in]\n```\nKeep {{ braces }}, `backticks` and a trailing newline.\n"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nThe following is a synthetic text used only to test prompt rendering. $\\min_{x} f(x)$ s.t. $g(x) \\leq b$, where $x = (x_1, \\ldots, x_d)^\\top$.\n```\n## Sets: \n[You need to fill in]\n```\nKeep {{ braces }}, `backticks` and a trailing newline.\n<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nThe following is a synthetic text used only to test prompt rendering. $\\min_{x} f(x)$ s.t. $g(x) \\leq b$, where $x = (x_1, \\ldots, x_d)^\\top$.\n```\n## Sets: \n[You need to fill in]\n```\nKeep {{ braces }}, `backticks` and a trailing newline.\n<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "probe_tool_turn",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Probe A: answer with one word."
+    },
+    {
+     "role": "assistant",
+     "content": "Alpha"
+    },
+    {
+     "role": "tool",
+     "content": "probe tool result 7"
+    },
+    {
+     "role": "user",
+     "content": "Probe B: answer with one word."
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nProbe A: answer with one word.<|im_end|>\n<|im_start|>assistant\nAlpha<|im_end|>\n<|im_start|>tool\nprobe tool result 7<|im_end|>\n<|im_start|>user\nProbe B: answer with one word.<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nProbe A: answer with one word.<|im_end|>\n<|im_start|>assistant\nAlpha<|im_end|>\n<|im_start|>user\n<tool_response>\nprobe tool result 7\n</tool_response><|im_end|>\n<|im_start|>user\nProbe B: answer with one word.<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "probe_consecutive_users",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Probe C, part one."
+    },
+    {
+     "role": "user",
+     "content": "Probe C, part two."
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nProbe C, part one.\n\nProbe C, part two.<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nProbe C, part one.<|im_end|>\n<|im_start|>user\nProbe C, part two.<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "user_only",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Hi"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nHi<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "user_whitespace",
+   "messages": [
+    {
+     "role": "user",
+     "content": "  leading and trailing spaces  \n\n"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n  leading and trailing spaces  \n\n<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\n  leading and trailing spaces  \n\n<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "user_unicode_and_template_syntax",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Unicode ✓ ü 数 and {{ .Content }} and {% if x %}y{% endif %} text\n"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nUnicode ✓ ü 数 and {{ .Content }} and {% if x %}y{% endif %} text\n<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nUnicode ✓ ü 数 and {{ .Content }} and {% if x %}y{% endif %} text\n<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "system_user",
+   "messages": [
+    {
+     "role": "system",
+     "content": "S line 1\nS line 2\n"
+    },
+    {
+     "role": "user",
+     "content": "U"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nS line 1\nS line 2\n<|im_end|>\n<|im_start|>user\nU<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nS line 1\nS line 2\n<|im_end|>\n<|im_start|>user\nU<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "user_assistant_user",
+   "messages": [
+    {
+     "role": "user",
+     "content": "A"
+    },
+    {
+     "role": "assistant",
+     "content": "B"
+    },
+    {
+     "role": "user",
+     "content": "C"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA<|im_end|>\n<|im_start|>assistant\nB<|im_end|>\n<|im_start|>user\nC<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nA<|im_end|>\n<|im_start|>assistant\nB<|im_end|>\n<|im_start|>user\nC<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "assistant_last",
+   "messages": [
+    {
+     "role": "user",
+     "content": "U"
+    },
+    {
+     "role": "assistant",
+     "content": "partial"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nU<|im_end|>\n<|im_start|>assistant\npartial<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nU<|im_end|>\n<|im_start|>assistant\npartial<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "two_tools",
+   "messages": [
+    {
+     "role": "user",
+     "content": "Q"
+    },
+    {
+     "role": "assistant",
+     "content": "calling"
+    },
+    {
+     "role": "tool",
+     "content": "r1"
+    },
+    {
+     "role": "tool",
+     "content": "r2"
+    },
+    {
+     "role": "user",
+     "content": "next"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nQ<|im_end|>\n<|im_start|>assistant\ncalling<|im_end|>\n<|im_start|>tool\nr1<|im_end|>\n<|im_start|>tool\nr2<|im_end|>\n<|im_start|>user\nnext<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nQ<|im_end|>\n<|im_start|>assistant\ncalling<|im_end|>\n<|im_start|>user\n<tool_response>\nr1\n</tool_response>\n<tool_response>\nr2\n</tool_response><|im_end|>\n<|im_start|>user\nnext<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "two_systems",
+   "messages": [
+    {
+     "role": "system",
+     "content": "S1"
+    },
+    {
+     "role": "system",
+     "content": "S2"
+    },
+    {
+     "role": "user",
+     "content": "U"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nS1\n\nS2<|im_end|>\n<|im_start|>user\nU<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nS1<|im_end|>\n<|im_start|>system\nS2<|im_end|>\n<|im_start|>user\nU<|im_end|>\n<|im_start|>assistant\n"
+  },
+  {
+   "name": "system_later",
+   "messages": [
+    {
+     "role": "user",
+     "content": "U1"
+    },
+    {
+     "role": "system",
+     "content": "S2"
+    },
+    {
+     "role": "user",
+     "content": "U2"
+    }
+   ],
+   "modelfile": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nU1<|im_end|>\n<|im_start|>system\nS2<|im_end|>\n<|im_start|>user\nU2<|im_end|>\n<|im_start|>assistant\n",
+   "gguf": "<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nU1<|im_end|>\n<|im_start|>system\nS2<|im_end|>\n<|im_start|>user\nU2<|im_end|>\n<|im_start|>assistant\n"
+  }
+ ]
+}

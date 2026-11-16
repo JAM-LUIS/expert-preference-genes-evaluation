@@ -1,0 +1,243 @@
+{
+ "schema": "orgene.r1.holm.v1",
+ "data": "TEST",
+ "generated_by": "analysis/r1/holm.py",
+ "prereg": {
+  "file": "configs/prereg_analysis.json",
+  "sha256": "c593f51c13b16d807d19d8773ffb3862d480929dc7909a6667a96ce638dff93e",
+  "status": "draft",
+  "pending_used": {}
+ },
+ "inputs": [
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@2_vs_C3E@2.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3E@2_vs_C0.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@1_vs_C3E@2.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@2_vs_C3L@1.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C2E@2_vs_C2.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3@2_vs_C3@0.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@2_vs_C0.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@2_vs_C1.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@2_vs_C2.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@2_vs_C3@2.TEST.json",
+  "experiments/test-main-20261006/analysis_20261010/paired.C3L@1_vs_C3T@1.TEST.json"
+ ],
+ "families": [
+  {
+   "family": "primary",
+   "alpha": 0.05,
+   "m": 1,
+   "data": "TEST",
+   "results": [
+    {
+     "name": "C3L_vs_C3E",
+     "p": 0.0625,
+     "rank": 1,
+     "p_adj": 0.0625,
+     "reject": false,
+     "a": "C3L@2",
+     "b": "C3E@2",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.04,
+     "ci": [
+      0.008,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "family": "ladder",
+   "alpha": 0.05,
+   "m": 5,
+   "data": "TEST",
+   "results": [
+    {
+     "name": "C3E_vs_C0",
+     "p": 0.0625,
+     "rank": 1,
+     "p_adj": 0.3125,
+     "reject": false,
+     "a": "C3E@2",
+     "b": "C0",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.04,
+     "ci": [
+      0.008,
+      0.08
+     ]
+    },
+    {
+     "name": "C3L1_vs_C3E",
+     "p": 0.0625,
+     "rank": 2,
+     "p_adj": 0.3125,
+     "reject": false,
+     "a": "C3L@1",
+     "b": "C3E@2",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.04,
+     "ci": [
+      0.008,
+      0.08
+     ]
+    },
+    {
+     "name": "C3L2_vs_C3L1",
+     "p": 1.0,
+     "rank": 3,
+     "p_adj": 1.0,
+     "reject": false,
+     "a": "C3L@2",
+     "b": "C3L@1",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "name": "C2E_vs_C2",
+     "p": 1.0,
+     "rank": 4,
+     "p_adj": 1.0,
+     "reject": false,
+     "a": "C2E@2",
+     "b": "C2",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.008,
+     "ci": [
+      0.0,
+      0.024
+     ]
+    },
+    {
+     "name": "C3_2_vs_C3_0",
+     "p": 1.0,
+     "rank": 5,
+     "p_adj": 1.0,
+     "reject": false,
+     "a": "C3@2",
+     "b": "C3@0",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "family": "controls",
+   "alpha": 0.05,
+   "m": 4,
+   "data": "TEST",
+   "results": [
+    {
+     "name": "C3L_vs_C0",
+     "p": 0.001953125,
+     "rank": 2,
+     "p_adj": 0.005859375,
+     "reject": true,
+     "a": "C3L@2",
+     "b": "C0",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.08,
+     "ci": [
+      0.032,
+      0.128
+     ]
+    },
+    {
+     "name": "C3L_vs_C1",
+     "p": 6.960169412195683e-05,
+     "rank": 1,
+     "p_adj": 0.0002784067764878273,
+     "reject": true,
+     "a": "C3L@2",
+     "b": "C1",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.192,
+     "ci": [
+      0.104,
+      0.28
+     ]
+    },
+    {
+     "name": "C3L_vs_C2",
+     "p": 0.05958388801809633,
+     "rank": 3,
+     "p_adj": 0.11916777603619266,
+     "reject": false,
+     "a": "C3L@2",
+     "b": "C2",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.104,
+     "ci": [
+      0.008,
+      0.2
+     ]
+    },
+    {
+     "name": "C3L_vs_C3",
+     "p": 0.11727520595741225,
+     "rank": 4,
+     "p_adj": 0.11916777603619266,
+     "reject": false,
+     "a": "C3L@2",
+     "b": "C3@2",
+     "model": "qwen3:8b",
+     "scope": "pooled",
+     "analysis_set": "main",
+     "diff": 0.088,
+     "ci": [
+      -0.008,
+      0.184
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped_families": [],
+ "gated": [
+  {
+   "id": "H2",
+   "gate": "C3L_vs_C3E",
+   "gate_rejected": false,
+   "tested": false,
+   "alpha": 0.05,
+   "comparison": "C3L1_vs_C3T1",
+   "a": "C3L@1",
+   "b": "C3T@1",
+   "model": "qwen3:8b",
+   "scope": "pooled",
+   "p": null,
+   "reject": false,
+   "diff": 0.04,
+   "ci": [
+    0.008,
+    0.08
+   ],
+   "reading": "estimate only (gate not rejected)"
+  }
+ ]
+}

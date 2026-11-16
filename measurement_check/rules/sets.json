@@ -1,0 +1,191 @@
+{
+ "rule": "SET_RULE_20261013",
+ "sets": {
+  "A1": {
+   "block": "A",
+   "problems": [
+    "P01",
+    "P02",
+    "P03"
+   ],
+   "programs": [
+    "P01-A",
+    "P02-A",
+    "P02-B",
+    "P03-A",
+    "P03-B"
+   ]
+  },
+  "A2": {
+   "block": "A",
+   "problems": [
+    "P04",
+    "P05",
+    "P06"
+   ],
+   "programs": [
+    "P04-A",
+    "P04-B",
+    "P05-A",
+    "P06-A",
+    "P06-B",
+    "P06-C"
+   ]
+  },
+  "A3": {
+   "block": "A",
+   "problems": [
+    "P07",
+    "P08",
+    "P09"
+   ],
+   "programs": [
+    "P07-A",
+    "P07-B",
+    "P08-A",
+    "P08-B",
+    "P08-C",
+    "P09-A"
+   ]
+  },
+  "A4": {
+   "block": "A",
+   "problems": [
+    "P10",
+    "P11",
+    "P12"
+   ],
+   "programs": [
+    "P10-A",
+    "P10-B",
+    "P11-A",
+    "P11-B",
+    "P12-A",
+    "P12-B"
+   ]
+  },
+  "B1": {
+   "block": "B",
+   "problems": [
+    "P13",
+    "P14",
+    "P15"
+   ],
+   "programs": [
+    "P13-A",
+    "P13-B",
+    "P14-A",
+    "P14-B",
+    "P15-A",
+    "P15-B"
+   ]
+  },
+  "B2": {
+   "block": "B",
+   "problems": [
+    "P16",
+    "P17",
+    "P18"
+   ],
+   "programs": [
+    "P16-A",
+    "P16-B",
+    "P17-A",
+    "P18-A",
+    "P18-B",
+    "P18-C"
+   ]
+  },
+  "B3": {
+   "block": "B",
+   "problems": [
+    "P19",
+    "P20",
+    "P21"
+   ],
+   "programs": [
+    "P19-A",
+    "P20-A",
+    "P20-B",
+    "P20-C",
+    "P21-A",
+    "P21-B"
+   ]
+  },
+  "B4": {
+   "block": "B",
+   "problems": [
+    "P22",
+    "P23"
+   ],
+   "programs": [
+    "P22-A",
+    "P22-B",
+    "P23-A",
+    "P23-B",
+    "P23-C"
+   ]
+  },
+  "C1": {
+   "block": "C",
+   "problems": [
+    "P24",
+    "P25",
+    "P26"
+   ],
+   "programs": [
+    "P24-A",
+    "P25-A",
+    "P26-A"
+   ]
+  },
+  "C2": {
+   "block": "C",
+   "problems": [
+    "P27",
+    "P28",
+    "P29"
+   ],
+   "programs": [
+    "P27-A",
+    "P27-B",
+    "P27-C",
+    "P28-A",
+    "P28-B",
+    "P28-C",
+    "P29-A"
+   ]
+  },
+  "C3": {
+   "block": "C",
+   "problems": [
+    "P30",
+    "P31",
+    "P32"
+   ],
+   "programs": [
+    "P30-A",
+    "P30-B",
+    "P30-C",
+    "P31-A",
+    "P31-B",
+    "P32-A",
+    "P32-B"
+   ]
+  },
+  "C4": {
+   "block": "C",
+   "problems": [
+    "P33",
+    "P34"
+   ],
+   "programs": [
+    "P33-A",
+    "P33-B",
+    "P33-C",
+    "P34-A",
+    "P34-B"
+   ]
+  }
+ }
+}

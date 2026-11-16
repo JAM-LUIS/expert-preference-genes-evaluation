@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "orgene.activation_lexicon.v1",
+  "status": "author_approved_dev",
+  "note": "Author-approved iteration 0 (2026-09-30). Feature definitions unchanged from the approved proposal; development use only, not a frozen release.",
+  "features": {
+    "binary_terms": {
+      "kind": "any",
+      "description": "yes/no and selection wording: whether, either ... or, or not, select, choose",
+      "patterns": [
+        "\\bwhether\\b",
+        "\\byes\\s*(?:/|-|or)\\s*no\\b",
+        "\\beither\\b[^.]{0,80}\\bor\\b",
+        "\\bor not\\b",
+        "\\bselect(?:s|ed|ing|ion)?\\b",
+        "\\b(?:choose|chooses|chose|chosen|choosing)\\b",
+        "\\bon\\s*(?:/|-)\\s*off\\b"
+      ]
+    },
+    "count_terms": {
+      "kind": "count",
+      "description": "counting wording: how many, number of",
+      "patterns": [
+        "\\bhow many\\b",
+        "\\bnumbers? of\\b"
+      ]
+    },
+    "fixed_cost_terms": {
+      "kind": "any",
+      "description": "fixed, set-up, start-up, opening or one-time charges",
+      "patterns": [
+        "\\bfixed (?:costs?|charges?|fees?|expenses?)\\b",
+        "\\bset-?up (?:costs?|charges?|fees?)\\b",
+        "\\bstart-?up (?:costs?|charges?|fees?)\\b",
+        "\\b(?:opening|activation|installation) (?:costs?|charges?|fees?)\\b",
+        "\\bone-?time (?:costs?|charges?|fees?|payments?|investments?)\\b"
+      ]
+    },
+    "fractional_ok_terms": {
+      "kind": "any",
+      "description": "wording that allows fractional or continuous amounts of the decisions (fractional, divisible, non-integer, any amount, need not be an integer)",
+      "patterns": [
+        "\\b(?:fractions?|fractional(?:ly)?|divisible|non-?integers?|non-?integral|real[- ]valued|real numbers?|continuous (?:quantit(?:y|ies)|amounts?|variables?|values?)|partial (?:units?|batch(?:es)?|lots?|loads?)|any (?:non-?negative |positive )?(?:amount|quantity)|need not be (?:an )?integers?|(?:does|do) not (?:need|have) to be (?:an )?(?:integers?|whole))\\b"
+      ]
+    },
+    "integer_terms": {
+      "kind": "any",
+      "description": "explicit integrality wording: integer, whole number, indivisible, cannot be fractional",
+      "patterns": [
+        "\\bintegers?\\b",
+        "\\bwhole (?:numbers?|units?|amounts?)\\b",
+        "\\bindivisible\\b",
+        "\\b(?:cannot|can ?not|can't|must not|may not) be (?:split|divided|fractional|fractioned|broken up)\\b",
+        "\\bnon-?fractional\\b",
+        "\\bno fractional\\b",
+        "\\bfractional (?:units|amounts|quantities|values) (?:are|is) not (?:allowed|permitted|possible)\\b",
+        "\\bdiscrete (?:units|quantities|numbers?)\\b"
+      ]
+    },
+    "inventory_terms": {
+      "kind": "any",
+      "description": "inventory, holding or storage costs, carry-over, backlog",
+      "patterns": [
+        "\\binventor(?:y|ies)\\b",
+        "\\bholding (?:costs?|charges?|fees?)\\b",
+        "\\bstorage (?:costs?|charges?|fees?)\\b",
+        "\\bcarr(?:y|ies|ied|ying)[- ]?over\\b",
+        "\\bback-?(?:log|logs|logged|order|orders|ordered)\\b",
+        "\\b(?:in|into|from) stock\\b",
+        "\\bstock(?:piles?|piled| levels?)\\b",
+        "\\b(?:ending|starting|initial|opening|closing|safety) stock\\b"
+      ]
+    },
+    "logical_terms": {
+      "kind": "any",
+      "description": "logical conditions between decisions: if ... then, if/only if/unless/whenever/provided that + a decision verb, not both, mutually exclusive, only one of, at most k of the, a limit on how many different options/types are used",
+      "patterns": [
+        "\\bif\\b[^.;]{0,150}\\bthen\\b",
+        "\\bonly if\\b",
+        "\\bunless\\b",
+        "\\b(?:at least|at most|exactly|no more than) (?:one|two|three|\\d+) of (?:the|these|them)\\b",
+        "\\b(?:cannot|can ?not|can't|must not|may not) both\\b",
+        "\\bnot both\\b",
+        "\\bmutually exclusive\\b",
+        "\\bif (?:it|they|(?:a|an|the) \\w+) (?:is|are) (?:used|opened|built|selected|chosen|produced|operated|made|hired|rented|leased)\\b",
+        "\\b(?:if|only if|unless|whenever|provided that)\\b[^.;:?!]{0,60}?\\b(?:produc(?:e|es|ed|ing)|manufactur(?:e|es|ed|ing)|mak(?:e|es|ing)|made|order(?:s|ed|ing)?|us(?:e|es|ed|ing)|open(?:s|ed|ing)?|buil(?:d|ds|t|ding)|select(?:s|ed|ing)?|choos(?:e|es|ing)|chose|chosen|tak(?:e|es|en|ing)|took|buy(?:s|ing)?|bought|purchas(?:e|es|ed|ing)|ship(?:s|ped|ping)?|send(?:s|ing)?|sent|assign(?:s|ed|ing)?|invest(?:s|ed|ing)?|hir(?:e|es|ed|ing)|rent(?:s|ed|ing)?|leas(?:e|es|ed|ing)|run(?:s|ning)?|ran|operat(?:e|es|ed|ing)|process(?:es|ed|ing)?|install(?:s|ed|ing)?|locat(?:e|es|ed|ing)|visit(?:s|ed|ing)?|grow(?:s|n|ing)?|grew|plant(?:s|ed|ing)?|schedul(?:e|es|ed|ing)|includ(?:e|es|ed|ing)|accept(?:s|ed|ing)?|launch(?:es|ed|ing)?|fund(?:s|ed|ing)?|decid(?:e|es|ed|ing) to|sign(?:s|ed|ing)?|contract(?:s|ed|ing)?)\\b",
+        "\\b(?:if|whenever)\\b[^.;:?!]{0,100}?,[^.;:?!]{0,60}?\\b(?:must also|will also|should also|must not|will not|cannot|can not|can't|may not|should not|is not allowed to|are not allowed to)\\b",
+        "\\b(?:not both|mutually exclusive|(?:cannot|can ?not|can't|must not|may not|should not) both|only one of (?:the|these|those|them)|at most one of (?:the|these|those|them))\\b",
+        "\\b(?:at most|at least|exactly|no more than|not more than|more than|no fewer than|fewer than|up to|only) (?:one|two|three|four|five|six|seven|eight|nine|ten|\\d+) (?:(?:different|distinct) \\w+|types?|kinds?|of (?:the|these|those|them))\\b"
+      ]
+    },
+    "multi_period_terms": {
+      "kind": "any",
+      "description": "several time periods: next N months, month 1, planning horizon, two month names",
+      "patterns": [
+        "\\bmulti-?period\\b",
+        "\\bplanning horizon\\b",
+        "\\b(?:next|following|coming|upcoming) (?:\\d+|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve) (?:days|weeks|months|quarters|years|periods|seasons)\\b",
+        "\\b(?:each|every) of the (?:next |following |coming )?(?:\\d+|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve) (?:days|weeks|months|quarters|years|periods|seasons)\\b",
+        "\\b(?:period|month|week|quarter|year|day|season) (?:[1-9]|1[0-2]|one|two|three|four)\\b",
+        "\\b(?:first|second|third|fourth) (?:day|week|month|quarter|year|period|season)\\b",
+        "\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b[^.]{0,200}?\\b(?:january|february|march|april|june|july|august|september|october|november|december)\\b"
+      ]
+    },
+    "network_flow_terms": {
+      "kind": "any",
+      "description": "networks, flows, routes, arcs, nodes, transport and shipping between locations",
+      "patterns": [
+        "\\bflows?\\b",
+        "\\bnetworks?\\b",
+        "\\brout(?:e|es|ed|ing)\\b",
+        "\\barcs?\\b",
+        "\\bnodes?\\b",
+        "\\bpipelines?\\b",
+        "\\btransport(?:s|ed|ing|ation)?\\b",
+        "\\bship(?:s|ped|ping|ments?)?\\b",
+        "\\bfrom (?:each|every) \\w+ to (?:each|every)\\b",
+        "\\bdistribution (?:centers?|centres?)\\b",
+        "\\b(?:supply|demand) (?:nodes?|points?)\\b"
+      ]
+    },
+    "ratio_percent_terms": {
+      "kind": "any",
+      "description": "percentages, ratios, proportions, fractions of a total",
+      "patterns": [
+        "\\d\\s*%",
+        "\\bper ?cent(?:age)?s?\\b",
+        "\\bratios?\\b",
+        "\\bproportion(?:s|al|ally)?\\b",
+        "\\bfraction of\\b",
+        "\\bshare of\\b",
+        "\\b(?:at least|at most|no more than|no less than|more than|less than|exactly) (?:half|one half|a half|a third|one third|a quarter|one quarter|two thirds|three quarters)\\b"
+      ]
+    }
+  }
+}

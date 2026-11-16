@@ -1,0 +1,13 @@
+INTEGER_VERSION: Optimal 26.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 24.035087830000002
+  x_Apples = 0.0
+  x_Bread = 0.0
+  x_Cheese = 0.0
+  x_Chicken = 5.9986505
+  x_Fish = 0.0
+  x_Lentils = 0.0
+  x_Rice = 0.020242915
+  x_Steak = 0.0
+  x_Tofu = 0.0

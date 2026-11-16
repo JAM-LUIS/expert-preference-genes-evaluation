@@ -1,0 +1,147 @@
+{
+ "adjudicator_minutes": {
+  "rows_with_minutes": 32,
+  "total": 697.0
+ },
+ "audit": {
+  "reference_check": {
+   "round1_n": 10,
+   "round1_overturn_rate": 0.1,
+   "round1_overturned": [
+    "mamo_complex_lp-0036"
+   ],
+   "round2_n": 0,
+   "round2_needed": true,
+   "round2_overturn_rate": null,
+   "round2_overturned": [],
+   "round2_performed": false
+  },
+  "type_label": {
+   "round1_n": 10,
+   "round1_overturn_rate": 0.0,
+   "round1_overturned": [],
+   "round2_n": 0,
+   "round2_needed": false,
+   "round2_overturn_rate": null,
+   "round2_overturned": [],
+   "round2_performed": false
+  }
+ },
+ "auto_method": "independent_agreement",
+ "codes": {
+  "A": "batch A agents",
+  "B": "batch B agents",
+  "C": "adjudicator"
+ },
+ "comparison_sha256": "7ae2f939b8b092742e931c9a7288d32ac81c90dc0e2eeec8512320c916bd998d",
+ "created": "2026-10-10",
+ "deviations": {
+  "cases": {
+   "industryor-0039": "no_verdict_fall_back_to_agreement",
+   "industryor-0045": "after_linearization_from_batches",
+   "industryor-0096": "label_cell_stands"
+  },
+  "file_sha256": "e358a4270d3635c1de7fda606820209fd06e176335df637502c3987600143352",
+  "round2_candidates_kept_automatic": [
+   "industryor-0003",
+   "industryor-0081",
+   "mamo_complex_lp-0012",
+   "mamo_complex_lp-0014",
+   "mamo_complex_lp-0017",
+   "mamo_complex_lp-0039",
+   "mamo_complex_lp-0053",
+   "mamo_complex_lp-0064",
+   "mamo_complex_lp-0140",
+   "mamo_complex_lp-0207"
+  ],
+  "round2_not_performed": [
+   "reference_check"
+  ],
+  "rules": {
+   "after_linearization_from_batches": "class after linearisation not given by C (deviation 2026-10-10): the class batches A and B both gave",
+   "label_cell_stands": "C gave a class after linearisation next to a label other than NL_LINEARIZABLE (deviation 2026-10-10): the label cell stands, the dependent cell is dropped",
+   "no_verdict_fall_back_to_agreement": "no verdict returned by C (deviation 2026-10-10): reference kept because batches A and B both match it within tolerance",
+   "round2_not_performed": "round-2 audit not performed (deviation 2026-10-10): automatic settlement kept"
+  }
+ },
+ "files": {
+  "ref_check.csv": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+  "reference_check_scope.json": "e4aa44f9a2e3426c0eff452b8dfe71a9c575c5dff26f2243d327c057f62a52ff",
+  "type_final_labels.csv": "35b236554cbf4a3f5af919026404f48f9e4ad466efaf1be736adb5aee187a612"
+ },
+ "pending": [],
+ "problems": [
+  "round1 industryor-0026: type cells filled although this row needs no type (ignored)"
+ ],
+ "reference_check_sample": {
+  "final_verdict": {
+   "AMBIGUOUS": 27,
+   "CORRECT": 37,
+   "INCORRECT": 2
+  },
+  "method": {
+   "adjudication": 29,
+   "independent_agreement": 37
+  },
+  "n": 66,
+  "route": {
+   "ADJUDICATE": 29,
+   "AUDIT": 10,
+   "AUTO_CORRECT": 27
+  }
+ },
+ "schema": "orgene-r1/annotation_agent/adjudication_summary/v4",
+ "screening_unsampled_industryor": {
+  "final_verdict": {
+   "AMBIGUOUS": 7,
+   "INCORRECT": 2
+  },
+  "findings": [
+   "industryor-0002",
+   "industryor-0005",
+   "industryor-0015",
+   "industryor-0023",
+   "industryor-0045",
+   "industryor-0054",
+   "industryor-0065",
+   "industryor-0071",
+   "industryor-0097"
+  ],
+  "route": {
+   "SCREEN_FLAG": 9,
+   "SCREEN_KEEP": 50
+  }
+ },
+ "sheet2_sha256": null,
+ "sheet_sha256": "af3f582b07c6aa9611b55e0f2593dbd1746429df3fe51fa59a74928e32c1ec1a",
+ "type_label": {
+  "final_label": {
+   "IP": 46,
+   "LINEAR_UNRESOLVED": 3,
+   "LP": 24,
+   "MILP": 15,
+   "NL_LINEARIZABLE": 10,
+   "NL_NOT_LINEARIZABLE": 2
+  },
+  "linear_unresolved": [
+   "industryor-0011",
+   "industryor-0042",
+   "industryor-0065"
+  ],
+  "method": {
+   "independent_agreement": 86,
+   "third_party": 14
+  },
+  "n": 100,
+  "nl_not_linearizable": [
+   "industryor-0096",
+   "industryor-0097"
+  ],
+  "route": {
+   "ADJUDICATE": 14,
+   "AUDIT": 10,
+   "AUTO": 73,
+   "UNRESOLVED": 3
+  }
+ }
+}

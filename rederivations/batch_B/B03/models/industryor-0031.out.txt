@@ -1,0 +1,17 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1190.4099999999996
+  n_I = 1430.0
+  n_II = 500.0
+  n_III = 324.0
+  x_III_A2 = 324.0
+  x_III_B2 = 324.0
+  x_II_A1 = 0.0
+  x_II_A2 = 500.0
+  x_II_B1 = 500.0
+  x_I_A1 = 1200.0
+  x_I_A2 = 230.0
+  x_I_B1 = 0.0
+  x_I_B2 = 859.0
+  x_I_B3 = 571.0
+INTEGERS_RELAXED: Optimal 1190.5665411999996 (13 general-integer variables made continuous; binaries kept)

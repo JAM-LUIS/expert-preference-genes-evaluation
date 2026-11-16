@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 640.0
+  trips_large = 6.0
+  trips_moto = 1.0
+  use_large = 1.0
+  use_moto = 1.0
+INTEGERS_RELAXED: Optimal 620.0 (3 general-integer variables made continuous; binaries kept)

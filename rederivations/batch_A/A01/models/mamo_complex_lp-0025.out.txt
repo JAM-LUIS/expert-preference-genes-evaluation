@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 16.0
+  x_Chicken = 7.0
+  x_Lentils = 9.0
+INTEGERS_RELAXED: Optimal 15.861723399999999 (6 general-integer variables made continuous; binaries kept)

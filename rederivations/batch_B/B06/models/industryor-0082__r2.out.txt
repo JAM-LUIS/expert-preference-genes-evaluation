@@ -1,0 +1,13 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 30.400000000000006
+  z_1_2 = 1.0
+  z_2_2 = 1.0
+  z_3_3 = 1.0
+  z_4_1 = 1.0
+  z_5_2 = 1.0
+type 1: 2 stores
+type 2: 2 stores
+type 3: 3 stores
+type 4: 1 stores
+type 5: 2 stores

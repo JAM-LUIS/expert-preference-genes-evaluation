@@ -1,0 +1,4 @@
+- Read the whole problem statement twice before writing anything, and identify what is being decided, what is being optimized, and what limits the decisions.
+- Define every decision variable with a clear meaning, its index set, and whether it is continuous, integer, or binary.
+- State the objective precisely and make sure its direction (minimize or maximize) matches what the problem asks for.
+- Translate each requirement in the problem into one or more constraints, and check that no requirement has been skipped.

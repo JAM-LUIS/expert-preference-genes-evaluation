@@ -1,0 +1,10 @@
+STATUS: LocallyOptimal
+FINAL_OBJECTIVE: 115.0
+  pool_sulfur_pct = 3.0
+  a = 50.000000
+  b = 0.000000
+  d = -0.000000
+  pool_to_PA = 50.000000
+  pool_to_PB = -0.000000
+  C_to_PA = 50.000000
+  C_to_PB = 0.000000

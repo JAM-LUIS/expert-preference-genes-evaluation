@@ -1,0 +1,13 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 446011.0
+  x_0_1 = 345.0
+  x_0_2 = 966.0
+  x_0_3 = 643.0
+  x_2_4 = 470.0
+  x_3_0 = 589.0
+  x_3_1 = 617.0
+  x_3_4 = 434.0
+  y_0 = 1.0
+  y_2 = 1.0
+  y_3 = 1.0

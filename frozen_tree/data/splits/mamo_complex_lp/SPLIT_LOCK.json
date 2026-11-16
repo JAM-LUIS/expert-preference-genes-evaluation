@@ -1,0 +1,10 @@
+{
+  "cases_path": "data/cases/mamo_complex_lp.jsonl",
+  "cases_sha256": "743b6c1ed2179a77b5943b57ce24956831d6edf3a6aa206cbbf045e4497b009a",
+  "seed": 20260905,
+  "n_dev": 60,
+  "n_test": 151,
+  "numeric_only": true,
+  "dev_sha256": "3e179dd617c2ffb6ec12c4e8a6fc3be96fe84a45a2dc00c3a34343849e3969fb",
+  "test_sha256": "b4f0f6c26cdd3f937e5406471ff229e96ca70f1d44c7afe58eefab36c48bdca7"
+}

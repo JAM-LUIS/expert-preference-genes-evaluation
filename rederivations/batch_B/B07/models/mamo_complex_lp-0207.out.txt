@@ -1,0 +1,11 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 78450.0
+  inv_end1 = 10.0
+  overtime2 = 10.0
+  overtime3 = 35.0
+  regular1 = 40.0
+  regular2 = 40.0
+  regular3 = 40.0
+  regular4 = 25.0
+INTEGERS_RELAXED: Optimal 78450.0 (12 general-integer variables made continuous; binaries kept)

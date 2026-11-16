@@ -1,0 +1,11 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 123.8
+  n_broccoli = 1.0
+  n_mushrooms = 1.0
+  n_spinach = 1.0
+  p_chicken = 5.0
+  y_broccoli = 1.0
+  y_mushrooms = 1.0
+  y_spinach = 1.0
+INTEGERS_RELAXED: Optimal 123.8 (5 general-integer variables made continuous; binaries kept)

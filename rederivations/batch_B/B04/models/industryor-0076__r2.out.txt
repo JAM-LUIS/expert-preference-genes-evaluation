@@ -1,0 +1,8 @@
+CAP_MODE: carried_only CHARGE_U0: False
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4700.0
+  x_0_0 100.0
+  x_1_1 140.0
+  x_2_2 200.0
+  x_3_3 160.0

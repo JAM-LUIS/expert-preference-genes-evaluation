@@ -1,0 +1,359 @@
+{
+ "cases_sha256": "743b6c1ed2179a77b5943b57ce24956831d6edf3a6aa206cbbf045e4497b009a",
+ "entries": [
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0003",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 32.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0006",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 26.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0012",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 49.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0014",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 14.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0017",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 47.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0019",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 14.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0021",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 22.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0024",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 24.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0025",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 16.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0033",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 44.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0036",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 14.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0039",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 15.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0053",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 13079.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0063",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": 127.0,
+   "original_value": 50.0,
+   "verdict": "INCORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0064",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 173.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0083",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": 145.0,
+   "original_value": 138.0,
+   "verdict": "INCORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0101",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 96.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0122",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 54.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "C",
+   "case_id": "mamo_complex_lp-0128",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "adjudication",
+   "new_value": null,
+   "original_value": 47.0,
+   "verdict": "AMBIGUOUS"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0135",
+   "checkers": [
+    "A",
+    "B",
+    "C"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 89.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0138",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 43.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0140",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 446011.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0153",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 273940.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0154",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 469200.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "adjudicator": "",
+   "case_id": "mamo_complex_lp-0207",
+   "checkers": [
+    "A",
+    "B"
+   ],
+   "date": "2026-10-10",
+   "evidence_sha256": "c1851d51646d471b701b3c5ac7983448a366296530ac176b97315aac1bd52d52",
+   "method": "independent_agreement",
+   "new_value": null,
+   "original_value": 78450.0,
+   "verdict": "CORRECT"
+  }
+ ],
+ "rules_sha256": "8c14104e40fcf83cbfe8de58c05aac48c569b58c1daaecedebc09cb09e838b0b",
+ "schema": "orgene.reference_overrides.v1",
+ "source": "mamo_complex_lp"
+}

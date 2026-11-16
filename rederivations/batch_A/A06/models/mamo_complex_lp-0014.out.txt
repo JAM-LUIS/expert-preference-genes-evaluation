@@ -1,0 +1,5 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 14.0
+  x_Beans = 14.0
+INTEGERS_RELAXED: Optimal 13.413333 (5 general-integer variables made continuous; binaries kept)

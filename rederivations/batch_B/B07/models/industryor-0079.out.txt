@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 9800.0
+  bookshelves = 150.0
+  tables = 10.0
+INTEGERS_RELAXED: Optimal 9800.0 (3 general-integer variables made continuous; binaries kept)

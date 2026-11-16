@@ -1,0 +1,13 @@
+stage1 Optimal 0.0 stage2 Optimal 1000.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 2500.0
+total assigned: 8500.0 in preferred city: 5500.0 assigned not in preferred city: 3000.0
+  (1, 1, 'D') 1000.0
+  (1, 1, 'N') 500.0
+  (2, 2, 'D') 500.0
+  (2, 2, 'N') 1000.0
+  (3, 1, 'N') 1500.0
+  (4, 3, 'D') 1500.0
+  (5, 2, 'D') 1500.0
+  (6, 3, 'N') 1000.0

@@ -1,0 +1,7322 @@
+{
+  "config_registry_sha256": "08fc34a4f7e40cba6292c2683ccb6a77aa66ffcaa446c28959372176be09d7de",
+  "dependency_moves": [
+    {
+      "from_index": 0,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 300,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 0,
+      "source": {
+        "case_id": "mamo_complex_lp-0204",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 183,
+      "unit": {
+        "case_id": "mamo_complex_lp-0204",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 0,
+      "source": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 64,
+      "unit": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C3T",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 0,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 89,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 0,
+      "source": {
+        "case_id": "mamo_complex_lp-0153",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 268,
+      "unit": {
+        "case_id": "mamo_complex_lp-0153",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 1,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 183,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3E",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 4,
+      "source": {
+        "case_id": "mamo_complex_lp-0021",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 156,
+      "unit": {
+        "case_id": "mamo_complex_lp-0021",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 4,
+      "source": {
+        "case_id": "mamo_complex_lp-0204",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 45,
+      "unit": {
+        "case_id": "mamo_complex_lp-0204",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 4,
+      "source": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 216,
+      "unit": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C3A",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 6,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 152,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 6,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 194,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 6,
+      "source": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 234,
+      "unit": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 11,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 191,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 13,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 178,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3L",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 13,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 255,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 14,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 34,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 14,
+      "source": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 291,
+      "unit": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C3E",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 16,
+      "source": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 200,
+      "unit": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C3A",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 16,
+      "source": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 212,
+      "unit": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 17,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 117,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 17,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 197,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 17,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 28,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 17,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 175,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 17,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 281,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3T",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 17,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 239,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 18,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 254,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3T",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 19,
+      "source": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 195,
+      "unit": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 19,
+      "source": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 122,
+      "unit": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 20,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 314,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 23,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 252,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 23,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 233,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 25,
+      "source": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 38,
+      "unit": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 25,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 82,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 41,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 106,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3T",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 41,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 279,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 44,
+      "source": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 204,
+      "unit": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 47,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 67,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3E",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 47,
+      "source": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 81,
+      "unit": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 49,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 187,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 52,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 55,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 52,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 84,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3E",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 60,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 192,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 60,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 284,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 63,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 288,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 69,
+      "source": {
+        "case_id": "mamo_complex_lp-0131",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 228,
+      "unit": {
+        "case_id": "mamo_complex_lp-0131",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 70,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 275,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3L",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 72,
+      "source": {
+        "case_id": "mamo_complex_lp-0094",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 189,
+      "unit": {
+        "case_id": "mamo_complex_lp-0094",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 75,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 228,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 79,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 276,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 79,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 243,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 82,
+      "source": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 207,
+      "unit": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 82,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 242,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 88,
+      "source": {
+        "case_id": "mamo_complex_lp-0108",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 320,
+      "unit": {
+        "case_id": "mamo_complex_lp-0108",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 88,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 90,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3A",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 95,
+      "source": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 110,
+      "unit": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 96,
+      "source": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 268,
+      "unit": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 97,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 306,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 98,
+      "source": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 156,
+      "unit": {
+        "case_id": "mamo_complex_lp-0064",
+        "config_id": "C3L",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 105,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 243,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3A",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 107,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 312,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 107,
+      "source": {
+        "case_id": "mamo_complex_lp-0144",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 293,
+      "unit": {
+        "case_id": "mamo_complex_lp-0144",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 120,
+      "source": {
+        "case_id": "mamo_complex_lp-0204",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 141,
+      "unit": {
+        "case_id": "mamo_complex_lp-0204",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 120,
+      "source": {
+        "case_id": "mamo_complex_lp-0101",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 331,
+      "unit": {
+        "case_id": "mamo_complex_lp-0101",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 123,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 213,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 125,
+      "source": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 284,
+      "unit": {
+        "case_id": "mamo_complex_lp-0029",
+        "config_id": "C3L",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 131,
+      "source": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 303,
+      "unit": {
+        "case_id": "mamo_complex_lp-0034",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 133,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 293,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3T",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 145,
+      "source": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 267,
+      "unit": {
+        "case_id": "mamo_complex_lp-0031",
+        "config_id": "C3A",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 148,
+      "source": {
+        "case_id": "mamo_complex_lp-0026",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 174,
+      "unit": {
+        "case_id": "mamo_complex_lp-0026",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 148,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 235,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 149,
+      "source": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 192,
+      "unit": {
+        "case_id": "mamo_complex_lp-0078",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 153,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 194,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 153,
+      "source": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 264,
+      "unit": {
+        "case_id": "mamo_complex_lp-0087",
+        "config_id": "C3E",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 153,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 255,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 155,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      },
+      "to_index": 214,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3E",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 2
+      }
+    },
+    {
+      "from_index": 155,
+      "source": {
+        "case_id": "mamo_complex_lp-0001",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 295,
+      "unit": {
+        "case_id": "mamo_complex_lp-0001",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 172,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 189,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 193,
+      "source": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      },
+      "to_index": 203,
+      "unit": {
+        "case_id": "mamo_complex_lp-0140",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 193,
+      "source": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C0",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      },
+      "to_index": 197,
+      "unit": {
+        "case_id": "mamo_complex_lp-0192",
+        "config_id": "C3L",
+        "registry_entry": "gptoss-20b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 221,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      },
+      "to_index": 278,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.var07",
+        "repeat": 1
+      }
+    },
+    {
+      "from_index": 241,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 291,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3L",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 254,
+      "source": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C2",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 268,
+      "unit": {
+        "case_id": "mamo_complex_lp-0036",
+        "config_id": "C2E",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    },
+    {
+      "from_index": 282,
+      "source": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C0",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      },
+      "to_index": 290,
+      "unit": {
+        "case_id": "mamo_complex_lp-0163",
+        "config_id": "C3A",
+        "registry_entry": "qwen3-8b.main",
+        "repeat": 0
+      }
+    }
+  ],
+  "exact_reverse": false,
+  "matrix_sha256": "adbce4aa08c643bc63d69daabed3b25550ec925b5728c482966a651962e1c358",
+  "matrix_units": [
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    }
+  ],
+  "order": "random",
+  "order_rule": "seeded shuffle; raw reverse if requested; move consumers immediately after sources",
+  "raw_units": [
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    }
+  ],
+  "reverse_protocol_status": "not_requested",
+  "schema_version": 1,
+  "seed": 20261005,
+  "units": [
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0021",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0046",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0094",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0026",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0005",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0131",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0084",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0153",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0139",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0028",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0183",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C0",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0192",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0144",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0063",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0163",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0001",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0204",
+      "config_id": "C3",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0020",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C0",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0036",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3E",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 2
+    },
+    {
+      "case_id": "mamo_complex_lp-0087",
+      "config_id": "C3L",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 1
+    },
+    {
+      "case_id": "mamo_complex_lp-0105",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C2",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0108",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0078",
+      "config_id": "C3T",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0031",
+      "config_id": "C1",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0029",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C3L",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3A",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0140",
+      "config_id": "C0R-E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0064",
+      "config_id": "C3E",
+      "registry_entry": "qwen3-8b.var07",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0111",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0034",
+      "config_id": "C1",
+      "registry_entry": "gptoss-20b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C2",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    },
+    {
+      "case_id": "mamo_complex_lp-0101",
+      "config_id": "C2E",
+      "registry_entry": "qwen3-8b.main",
+      "repeat": 0
+    }
+  ]
+}

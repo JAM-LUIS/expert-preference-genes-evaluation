@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 2924.1379
+  h_A_2 = 100.0
+  h_B_1 = 88.275862
+  h_B_2 = 61.724138
+  h_C_1 = 80.0
+  h_D_2 = 53.793103
+  h_D_3 = 146.2069
+  products = 2924.1379

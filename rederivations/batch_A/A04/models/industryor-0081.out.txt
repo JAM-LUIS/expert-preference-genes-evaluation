@@ -1,0 +1,19 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 28.6
+  left_0 = 0.0
+  left_1 = 1.0
+  left_10 = 1.0
+  left_11 = 0.0
+  left_12 = 1.0
+  left_13 = 1.0
+  left_14 = 0.0
+  left_2 = 0.0
+  left_3 = 0.0
+  left_4 = 0.0
+  left_5 = 1.0
+  left_6 = 1.0
+  left_7 = 0.0
+  left_8 = 0.0
+  left_9 = 1.0
+  z = 28.6

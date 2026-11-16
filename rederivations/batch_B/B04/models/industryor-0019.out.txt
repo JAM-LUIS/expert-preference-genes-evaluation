@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 4000.0
+  nA 0.0
+  nB 0.0
+  nC 10.0
+  yA 0.0
+  yB 1.0
+INTEGERS_RELAXED: Optimal 4000.0

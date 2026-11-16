@@ -1,0 +1,9 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 630.0
+  w_1_2_1_2 = 1.0
+  w_1_2_2_1 = 1.0
+  w_2_1_1_2 = 1.0
+  w_2_1_2_1 = 1.0
+  x_1_2 = 1.0
+  x_2_1 = 1.0

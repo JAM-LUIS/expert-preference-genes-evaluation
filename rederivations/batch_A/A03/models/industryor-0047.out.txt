@@ -1,0 +1,8 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 20241.7999
+  chickens = 5.0
+  corn_ha = 39.313333
+  cows = 21.0
+  external_days_aw = 21.0
+INTEGERS_RELAXED: Optimal 20260.8697 (4 general-integer variables made continuous; binaries kept)

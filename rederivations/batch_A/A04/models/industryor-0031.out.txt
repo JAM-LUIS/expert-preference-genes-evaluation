@@ -1,0 +1,15 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 1190.4099999999999
+  q_I = 1430.0
+  q_II = 500.0
+  q_III = 324.0
+  x_('A1',_'I') = 1200.0
+  x_('A2',_'I') = 230.0
+  x_('A2',_'II') = 500.0
+  x_('A2',_'III') = 324.0
+  x_('B1',_'II') = 500.0
+  x_('B2',_'I') = 859.0
+  x_('B2',_'III') = 324.0
+  x_('B3',_'I') = 571.0
+INTEGERS_RELAXED: Optimal 1190.5665411999994 (13 general-integer variables made continuous; binaries kept)

@@ -1,0 +1,16 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 153.0
+  u_2 = 5.0
+  u_3 = 2.0
+  u_4 = 3.0
+  u_5 = 1.0
+  u_6 = 6.0
+  u_7 = 4.0
+  x_1_5 = 1.0
+  x_2_6 = 1.0
+  x_3_4 = 1.0
+  x_4_7 = 1.0
+  x_5_3 = 1.0
+  x_6_1 = 1.0
+  x_7_2 = 1.0

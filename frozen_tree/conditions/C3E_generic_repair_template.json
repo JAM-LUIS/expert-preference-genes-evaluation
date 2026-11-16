@@ -1,0 +1,26 @@
+{
+ "schemaVersion": "orgene.generic_repair_template.v1",
+ "lines": {
+  "timeout": "Your program did not finish within the time limit.",
+  "stderr_head": "Your program failed to run. stderr:",
+  "no_output": "Your program did not produce the two required output lines.",
+  "status": "The solver reported status: {status}.",
+  "protocol": "Your program must call .solve() and then print exactly two final lines:\nSTATUS: <pulp.LpStatus[prob.status]>\nFINAL_OBJECTIVE: <the objective value as a plain number>"
+ },
+ "stderr_block": {
+  "fence": "```",
+  "tail_chars": 1200
+ },
+ "closing": {
+  "program": "Fix it and return the complete corrected Python program in a single ```python block. Do not explain; do not omit any part.",
+  "spec_and_program": "Fix it and return the complete corrected answer in the same format (the JSON spec block followed by the full Python program). Do not explain; do not omit any part."
+ },
+ "line_for_predicate": {
+  "predicate.code_present.v1": "run",
+  "predicate.executes.v1": "run",
+  "predicate.status_optimal_or_justified.v1": "status",
+  "predicate.solve_before_report.v1": "protocol",
+  "predicate.status_reported.v1": "protocol"
+ },
+ "template_sha256": "ddb95169c40091c83210c5217a29a8bbf124d55f71fdaa392178d70fc6e41dcb"
+}

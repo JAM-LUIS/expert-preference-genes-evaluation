@@ -1,0 +1,26 @@
+{
+  "kind": "subset",
+  "name": "mamo_main_clean111",
+  "rule": "dev = parent dev ∩ subset; test = parent test ∩ subset; no case changes side; cases outside the subset are dropped, never re-sampled",
+  "parent_lock": "data/splits/mamo_complex_lp/SPLIT_LOCK.json",
+  "parent_lock_sha256": "15db1d2069f4f56760d440bd953b57234c2ee5381cc2fd695eeb4d97ad4216cf",
+  "parent_dev_sha256": "3e179dd617c2ffb6ec12c4e8a6fc3be96fe84a45a2dc00c3a34343849e3969fb",
+  "parent_test_sha256": "b4f0f6c26cdd3f937e5406471ff229e96ca70f1d44c7afe58eefab36c48bdca7",
+  "cases_path": "data/cases/mamo_complex_lp.jsonl",
+  "cases_sha256": "743b6c1ed2179a77b5943b57ce24956831d6edf3a6aa206cbbf045e4497b009a",
+  "seed": 20260905,
+  "subset_source": {
+    "path": "data/analysis_sets/analysis_sets.v2.json",
+    "sha256": "6baf6b7f8678e78f12884f5775ebbfda8d4b396e9b793abee6133f1462a5205d",
+    "set": "mamo_main_clean111"
+  },
+  "subset_sha256": "657c002fcaf5afa11b67b01f1daf639d9cfa20afbcd0ba22f78d3dd47e065294",
+  "n_dev": 30,
+  "n_test": 81,
+  "dev_sha256": "cbf22bfadd65e351603c86aeaf42a72e35fb53a6314cd37038e961284cdc784c",
+  "test_sha256": "c877ee5d9e679c7f7cb87cce5103dcac49258c511d4e8451f7d28e80b4e81544",
+  "n_removed_dev": 30,
+  "n_removed_test": 70,
+  "removed_dev_sha256": "2dc8a69127255a368d0f8a3e6553222ce4a32e75b0461f670a01b6ceda64ee65",
+  "removed_test_sha256": "b15e3bbfda0de6af321ba9df6e8adc18826a1074f71731f4414fee3b0b88dd48"
+}

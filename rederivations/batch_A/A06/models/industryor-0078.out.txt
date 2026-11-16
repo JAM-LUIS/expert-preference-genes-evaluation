@@ -1,0 +1,11 @@
+LEVEL P1 optimum: 0.0
+LEVEL P2 optimum: 0.0
+LEVEL P3 optimum: 172.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 172.0
+  d1m = 1e-07
+  d2p = 172.0
+  x1 = 972.0
+  x2 = 320.0
+PROFIT_AT_SOLUTION: 400.0

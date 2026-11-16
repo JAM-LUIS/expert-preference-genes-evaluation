@@ -1,0 +1,6 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 600.0
+  len_W10_0_0_1 = 2000.0
+  len_W10_0_1_0 = 1000.0
+  len_W20_1_2_0 = 1000.0

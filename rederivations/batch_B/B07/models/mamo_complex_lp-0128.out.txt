@@ -1,0 +1,19 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 47.0
+  F = 47.0
+  f_0_1 = 3.0
+  f_0_2 = 9.0
+  f_0_3 = 7.0
+  f_0_4 = 4.0
+  f_0_5 = 1.0
+  f_0_6 = 10.0
+  f_0_7 = 6.0
+  f_0_8 = 7.0
+  f_1_8 = 3.0
+  f_2_8 = 9.0
+  f_3_8 = 7.0
+  f_4_8 = 4.0
+  f_5_8 = 1.0
+  f_6_8 = 10.0
+  f_7_8 = 6.0

@@ -1,0 +1,22 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 134.0
+  buy_1 = 7.0
+  clean_1 = 4.0
+  dirty_10 = 7.0
+  dirty_7 = 1.0
+  dirty_8 = 4.0
+  dirty_9 = 6.0
+  fast_1 = 1.0
+  fast_2 = 2.0
+  fast_3 = 2.0
+  fast_4 = 3.0
+  fast_5 = 5.0
+  fast_6 = 3.0
+  fast_7 = 2.0
+  slow_1 = 2.0
+  slow_2 = 3.0
+  slow_4 = 1.0
+  slow_5 = 1.0
+  slow_6 = 2.0
+  slow_7 = 1.0

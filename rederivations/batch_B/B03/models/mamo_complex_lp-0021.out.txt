@@ -1,0 +1,8 @@
+INTEGER_VERSION: Optimal 22.0
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 21.942028
+  x_Beans = 0.0
+  x_Cheese = 0.0
+  x_Chicken = 0.0
+  x_Rice = 10.971014

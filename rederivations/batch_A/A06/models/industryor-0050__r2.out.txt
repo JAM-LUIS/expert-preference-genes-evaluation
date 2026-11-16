@@ -1,0 +1,10 @@
+STATUS: Optimal
+SOLUTION_STATUS: Optimal Solution Found
+FINAL_OBJECTIVE: 9300.0
+  buy11 = 500.0
+  buy8 = 500.0
+  buy9 = 500.0
+  sell10 = 500.0
+  sell12 = 500.0
+  sell7 = 200.0
+  sell9 = 500.0

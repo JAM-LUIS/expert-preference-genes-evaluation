@@ -4,17 +4,21 @@
 >
 > A sentence cut from the last draft of the article. It was cut for style. We still mean it.
 
-A journal article says what it can defend against four reviewers. A repository can say a little more, as long as it says how sure it is. Every item on this page carries a label:
+A journal article says what it can defend against four reviewers. Ours had four, and they were thorough. This page holds what was left over: the numbers that did not fit, the rules we buried, a few opinions, and a list of things we meant to do. None of it has been peer-reviewed. Some of it has barely been author-reviewed.
+
+Reader advisory: several items below make the authors look less clever than the abstract does. We considered deleting them, but that would have been a post hoc analysis.
+
+A repository can say more than an article, as long as it says how sure it is. Every item on this page carries a label:
 
 | Label | Meaning |
 |---|---|
 | **measured** | Read straight from the released test outputs. `python quickstart/beyond_the_paper.py` prints every such number. |
 | **post hoc** | A comparison nobody registered before the test, with no correction for looking at many things. A description of one run. |
-| **hunch** | What we think is going on. No test behind it. |
-| **not done** | Something we wanted and did not do. |
+| **hunch** | What we think is going on. No test behind it, only tone of voice. |
+| **not done** | Something we wanted and did not do. The honest version of "future work". |
 | **from the notebook** | Decisions recorded while the rules were being written, on development problems only. |
 
-Nothing here changes what the article claims. Where this page and the article disagree, the article is the one that was reviewed.
+Nothing here changes what the article claims. Where this page and the article disagree, the article is the one that was reviewed. This is the one that was fun to write.
 
 ## 1. "Optimal" is not "correct"
 

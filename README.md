@@ -19,13 +19,15 @@ Code, data and every raw output of the article
 
 > Yuxin Zhang and Qi Deng. Expert Preference Genes for Optimization-Model Specification in Engineering Decision Support: Versioned Executable Review Rules for Language-Model Formulation of Mixed-Integer Programs. *Engineering Applications of Artificial Intelligence*, 2026, in press.
 
+The title has twenty words. The idea has eight: read the model before you believe the number.
+
 ## The problem, in one breath
 
 A solver never complains about a wrong model. Leave out a constraint and it still hands you an answer, with six confident decimals. Language models now write these models for people, so somebody has to read the model before the number is believed.
 
-An experienced modeler reads it with a list of habits in mind: do the indices match, is every big-M tied to the data, is anything nonlinear hiding in a Python `if`. We wrote 21 of those habits down as small records we call **expert preference genes**. Each one has a scope, a check a computer can run, a repair instruction, and a note on where it came from. The checks read the program; when one fails, its finding goes back to the language model, at most twice.
+An experienced modeler reads it with a list of habits in mind: do the indices match, is every big-M tied to the data, is anything nonlinear hiding in a Python `if`. We wrote 21 of those habits down as small records we call **expert preference genes**. No biology is involved. Each one has a scope, a check a computer can run, a repair instruction, and a note on where it came from. The checks read the program; when one fails, its finding goes back to the language model, at most twice.
 
-Then we froze everything, registered it, and ran a test we had not seen.
+Then we froze everything, registered it, and ran a test we had not seen. Registering your predictions in public is a reliable way to find out which of them were wrong.
 
 ## What the test said
 
@@ -36,9 +38,9 @@ Then we froze everything, registered it, and ran a test we had not seen.
 | was told what the rules found (gene repair) | **47.2%** |
 
 - **Gene repair beat writing once** by 8.0 points (adjusted p = 0.006).
-- **Gene repair against generic repair: +4.0 points, five problems gained, none lost, p = 0.0625.** By the rule we registered before the test, that is not a win, and the article says so. We are not going to round 0.0625 down for a README.
+- **Gene repair against generic repair: +4.0 points, five problems gained, none lost, p = 0.0625.** By the rule we registered before the test, that is not a win, and the article says so. One more problem would have made it one. We did not go looking for it.
 - **The rules were right about what is wrong.** They sent 49 programs to repair, and all 49 were wrong. Repair then fixed ten of them. Finding the fault is the strong half; getting the model to fix it is the weak half.
-- A second, larger model showed no difference between the two repairs. Nothing solved any of the eight engineering-source instances.
+- A second, larger model showed no difference between the two repairs. It also beat our best number with no rules at all, which we mention here before someone else does. Nothing solved any of the eight engineering-source instances.
 - Two independent experts judged 68 of the programs blind, to check that "the solver agrees with the reference" means what we use it for: 2.5% false positives, 10.0% false negatives.
 
 <p align="center">

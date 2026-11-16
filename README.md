@@ -45,6 +45,14 @@ Then we froze everything, registered it, and ran a test we had not seen.
   <img src="figures/fig_results_overview.png" alt="Accuracy by condition, what repair did to the 76 wrong first programs, and the main difference under every analysis" width="760">
 </p>
 
+## What the paper did not say
+
+An article says what it can defend against four reviewers. This repository says a little more, with a label on every item for how sure we are: [`UNSAID.md`](UNSAID.md).
+
+- Of the 76 wrong programs the model wrote first, 39 printed `STATUS: Optimal`.
+- Good modeling advice, given to the model in advance, cost it eleven points. The rules, applied as checks afterwards, gained eight.
+- Fourteen problems beat everything we tried. The list is there. Have a go.
+
 ## Try it in two minutes
 
 ```bash
@@ -133,8 +141,9 @@ If you evaluate on these benchmarks, take the table. It is free, and it will sto
 | `post_unsealing_tools/` | Scripts written after the scores were unsealed and kept outside the frozen tree (the manuscript says where each is used). |
 | `registrations/` | The text of the seven time-stamped registration records, the five freeze manifests, the registered preregistration and the measurement-check plan. |
 | `reference_check/` | Scripts and summaries of the blind recomputation of 125 benchmark references and its adjudication, including the four dated departures from the registered procedure. Counts and identifiers only. |
-| `quickstart/` | Four small scripts and one example: recompute the headline numbers, let the rules read your program, score your results with the checked references, replay stored checks. |
+| `quickstart/` | Small scripts and one example: recompute the headline numbers, let the rules read your program, score your results with the checked references, replay stored checks, recompute the numbers of `UNSAID.md`. |
 | `RULES.md` | The 21 rules as a table you can read without parsing JSON. |
+| `UNSAID.md` | What the article did not say: numbers it left out, rules that were rejected, hunches, and what we wanted and did not do. |
 | `references/checked_references.csv` | Every checked reference of the two benchmarks: original value, verdict, corrected value. Ids and numbers only. |
 | `rederivations/` | The two blind recomputations of 125 references (the models the agents wrote, their outputs, the comparison). See `rederivations/README.md`. |
 | `measurement_check/` | The expert check of the solver-based measure (Sections 4.6 and 6.5): the blinded booklet of 68 sampled programs, the key, the two returned judgment workbooks, the assignment rules and the analysis output. Reviewers are identified by number only. See `measurement_check/README.md`. |
